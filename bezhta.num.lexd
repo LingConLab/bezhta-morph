@@ -1,0 +1,163 @@
+PATTERNS
+(NumRoot[-1,-2] Tens) (Part Ordinal (OblSuffix[ord] NumInfl)?) | (CompoundOrdinal CompOrdInfl | CompOrdInfl_Attr) | Part # порядковые и собирательные 30-90
+NumRoot Hundreds Part? # 100-900
+NumRoot-Obl OblSuffix[digit] NumInfl #склонение по основным падежам 1-10, 20
+(NumRoot[-1,-2] Tens) | (NumRoot Hundreds) | Thousand OblSuffix[num] NumInfl #склонение по основным падежам 30-1000
+
+NumRoot[-1,-4]|Ten|Twenty (Ordinal (OblSuffix[ord] NumInfl)?) | (CompoundOrdinal CompOrdInfl | CompOrdInfl_Attr) # порядковые 2-10
+First [<ord>:]
+NumRoot[1] (Part Ordinal (OblSuffix[ord] NumInfl)?) |  (CompoundOrdinal CompOrdInfl | CompOrdInfl_Attr) # порядковое 1
+NumRoot[4] ([<ord>:ш] NumInfl?) | (CompoundOrdinal CompOrdInfl | CompOrdInfl_Attr) # порядковое 4
+NumRoot Hundreds (Part Ordinal (OblSuffix[ord] NumInfl)?) | (CompoundOrdinal CompOrdInfl | CompOrdInfl_Attr) # порядковые 100-900
+(NumRoot Hundreds)? Thousand (Part Ordinal (OblSuffix[ord] NumInfl)?) | (CompoundOrdinal_2 CompOrdInfl | CompOrdInfl_Attr) # Xсоттысячный
+
+
+NumRoot-Mult Multiple Part # кратные 1-10, 20
+NumRoot[-1,-2] Tens|Hundreds|Thousand Inf Multiple # большие кратные 
+NumRoot Part # собирательные
+Distributive[-1] [<dstr>:] [<abs>:а] | (OblSuffix[digit] NumInfl)  # дистрибутивные (по X)
+
+
+LEXICON NumRoot
+гьоᴴс[1]	# один
+къона[2]	# два
+лъана		# три
+оьᴴкъоьнаь[4]	# четыре
+лъина		# пять
+илъна		# шесть
+алӏна		# семь
+белӏна		# восемь
+аьчӏена		# девять
+
+LEXICON First
+гьоᴴс:аьᴴйдда̄ьш # первый
+
+LEXICON NumRoot-Mult
+гьоᴴс:гьаᴴкъка[1]		# один
+къона:кӏа[2]			# два
+лъана:лъа			# три
+оьᴴкъоьнаь:оьᴴкъоьваь	# четыре
+лъина:лъийа			# пять
+илъна:илъей			# шесть
+алӏна:алӏова		# семь
+белӏна:белӏейа		# восемь  
+аьчӏена:аьчӏейа		# девять
+ацӏона:ацӏова		# десять
+хъона:хъова			# двадцать
+гьазай:гьазаййа		# тысяча
+
+
+LEXICON Distributive
+гьоᴴс:гьо̄ᴴ-гьоᴴс[1]	# один
+къона:къо̄-къон	# два
+лъана:лъа̄-лъан		# три
+оьᴴкъоьнаь:о̄ьᴴ-оьᴴкъоьн	# четыре
+лъина:лъӣ-лъин		# пять
+илъна:ӣ-илън		# шесть
+алӏна:а̄-алӏн		# семь
+белӏна:бе̄-белӏн		# восемь
+аьчӏена:а̄ь-аьчӏен		# девять
+ацӏона:а̄-ацӏон		# десять
+хъона:хъо̄-хъон		# двадцать
+
+LEXICON NumRoot-Obl
+гьоᴴс:сид	# один
+къона:къон	# два
+лъана:лъан		# три
+оьᴴкъоьнаь:оьᴴкъоьн	# четыре #какая косвенная основа?
+лъина:лъин		# пять
+илъна:илън		# шесть
+алӏна:алӏн		# семь
+белӏна:белӏн		# восемь
+аьчӏена:аьчӏен		# девять
+ацӏона:ацӏон		# десять
+хъона:хъон		# двадцать
+
+LEXICON NumInfl
+<erg>:
+<genI>:с
+<genII>:ла
+<dat>:л
+<ins>:д
+
+LEXICON OblSuffix
+<obl>:и[digit]
+<obl>:ла[num]
+<obl>:ли[ord]
+
+LEXICON Ten
+ацӏона		# десять
+
+LEXICON Twenty
+хъона		# двадцать
+
+LEXICON Tens
+<ten>:йиг
+
+LEXICON Hundreds
+<hundred>:чӏитӏ
+
+LEXICON Thousand
+<thousand>:гьазай	# тысяча
+
+LEXICON Billion
+милион	# миллион
+милиард # миллиард
+
+LEXICON Inf
+<inf>:а
+
+LEXICON Ordinal
+<ord>:с
+
+LEXICON CompoundOrdinal
+<compord>:ийāлӏей
+
+LEXICON CompOrdInfl_Attr #аттрибутивная парадигма по Комри (стр. 297) 
+<abs><sg>:о
+<erg><sg>:а̄
+<genI><sg>:а̄
+<genII><sg>:а̄
+<dat><sg>:а̄
+<ins><sg>:а̄
+<abs><pl>:а̄
+<erg><pl>:а̄
+<genI><pl>:а̄
+<genII><pl>:а̄
+<dat><pl>:а̄
+<ins><pl>:а̄
+
+LEXICON CompOrdInfl
+<abs>:о
+<erg>:а
+<genI>:ас
+<genII>:ала
+<dat>:ал
+<ins>:ад
+
+LEXICON CompoundOrdinal_2 #(Комри и др. 2015: 562) в трехкомпонентных числительных, но выглядит сомнительно
+<compord>:илӏей
+
+LEXICON Multiple
+<mult>:х
+LEXICON Part
+<part>:на
+
+LEXICON Essive
+<super><essive>:кьа
+<sub><essive>:лӏ
+<ad><essive>:гъа
+<apud><essive>:дой
+<cum><essive>:гъой
+<in><essive>:ъ
+<cont><essive>:лъ
+<poss><essive>:хъа
+
+LEXICON Lative
+<lative>:{и}л
+
+LEXICON Translative
+<translative>:кьа̄
+
+LEXICON Distant
+<dist>да̄
