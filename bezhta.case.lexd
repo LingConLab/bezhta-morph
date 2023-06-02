@@ -16,14 +16,14 @@ LEXICON Essive
 <poss><essive>:хъа[poss]
 
 LEXICON Lative
-<lative>:{ил}
+<lative>:{л}
 
 LEXICON Translative
 <translative>:кьа̄
 <translative>:лкьа̄[ad,poss]
 
 LEXICON Ablative
-<ablative>:{ис}
+<ablative>:{с} #как описывать в twol, если где-то по гармонии гласных меняется на ос, где-то -- на ис?
 <ablative>:со[sub,cont]
 
 LEXICON Distant

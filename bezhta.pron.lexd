@@ -1,4 +1,6 @@
 PATTERNS
+
+#----PERSONAL PRONOUNS-----
 PersonalPronoun[abs] [<abs>:]
 PersonalPronoun[erg] Infl[erg]
 PersonalPronoun[gen] Infl[gen]
@@ -8,17 +10,22 @@ PersonalPronoun[ins] Infl[ins]
 PersonalPronoun[1sg]
 PersonalPronoun[2sg]
 
-PersonalPronoun[ins] Essive Distant? (Lative|Ablative[-sub,-cont]|Translative[-ad,-poss])?
-PersonalPronoun[ins] Essive[-sub,-cont] Ablative[-sub,-cont]
-PersonalPronoun[ins] Essive[sub] Ablative[sub]
-PersonalPronoun[ins] Essive[cont] Ablative[cont]
+PersonalPronoun[ins]|Demonstratives-Obl|Demonstratives-Plural-Obl Essive Distant? (Lative|Ablative[-sub,-cont]|Translative[-ad,-poss])?
+PersonalPronoun[ins]|Demonstratives-Obl|Demonstratives-Plural-Obl Essive[-sub,-cont] Ablative[-sub,-cont]
+PersonalPronoun[ins]|Demonstratives-Obl|Demonstratives-Plural-Obl Essive[sub] Ablative[sub]
+PersonalPronoun[ins]|Demonstratives-Obl|Demonstratives-Plural-Obl Essive[cont] Ablative[cont]
+PersonalPronoun[ins]|Demonstratives-Obl|Demonstratives-Plural-Obl Essive[ad] Translative[ad,poss]
+PersonalPronoun[ins]|Demonstratives-Obl|Demonstratives-Plural-Obl Essive[poss] Translative[ad,poss]
 
-PersonalPronoun[ins] Essive[-ad,-poss] Translative[-ad,-poss]
-PersonalPronoun[ins] Essive[ad] Translative[ad,poss]
-PersonalPronoun[ins] Essive[poss] Translative[ad,poss]
+PersonalPronoun[ins]|Demonstratives-Obl|Demonstratives-Plural-Obl OblSuffix[num] Essive (Lative|Ablative[-sub,-cont])?
+PersonalPronoun[ins]|Demonstratives-Obl|Demonstratives-Plural-Obl Essive OblSuffix[num] (Lative|Ablative[-sub,-cont])?
 
-PersonalPronoun[ins] OblSuffix[num] Essive (Lative|Ablative[-sub,-cont])?
-PersonalPronoun[ins] Essive OblSuffix[num] (Lative|Ablative[-sub,-cont])?
+#----DEMONSTRATIVES-----
+Demonstratives [<abs>:]
+Demonstratives-Plural-Abs [<abs>:]
+Demonstratives-Obl Infl
+Demonstratives-Plural-Obl Infl
+
 LEXICON PersonalPronoun
 до[abs,erg] # я
 до<obl><gen>:дие[1sg]
@@ -38,4 +45,62 @@ LEXICON PersonalPronoun
 
 миже[abs,erg] #вы
 миже<obl>:мизо[gen,dat,ins]
+
+LEXICON Demonstratives 
+гьуди
+вагьди
+гьули
+вагьли
+гьуги
+вагьги
+гьодо
+вагьдо
+гьоло
+вагьло
+гього
+вагьго
+
+LEXICON Demonstratives-Obl
+гьуди<obl>:гьоцо
+гьули<obl>:гьолцо
+гьуги<obl>:гьогцо
+гьодо<obl>:гьолӏо
+гьоло<obl>:гьоллъо
+гього<obl>:гьоглӏо
+вагьди<obl>:вагьадцо
+вагьди<obl>:вагьацо
+вагьли<obl>:вагьалцо
+вагьги<obl>:вагьагцо
+вагьдо<obl>:вагьадлӏо
+вагьдо<obl>:вагьалӏо
+вагьло<obl>:вагьаллъо
+вагьго<obl>:вагьаглӏо
+
+LEXICON Demonstratives-Plural-Abs
+гьуди<pl>:гьоддо̄л
+гьули<pl>:гьолло̄л
+гьуги<pl>:гьогго̄л
+вагьди<pl>:вагьаддо̄л
+вагьли<pl>:вагьалло̄л
+вагьги<pl>:вагьагго̄л
+гьодо<pl>:гьоддо̄л
+гьоло<pl>:гьолло̄л
+гього<pl>:гьогго̄л
+вагьдо<pl>:вагьаддо̄л
+вагьло<pl>:вагьалло̄л
+вагьго<pl>:вагьагго̄л
+
+LEXICON Demonstratives-Plural-Obl
+гьуди<pl><obl>:гьодло
+гьули<pl><obl>:гьолло
+гьуги<pl><obl>:гьогло
+вагьди<pl><obl>:вагьадло
+вагьли<pl><obl>:вагьалло
+вагьги<pl><obl>:вагьагло
+гьодо<pl><obl>:гьодло
+гьоло<pl><obl>:гьолло
+гього<pl><obl>:гьогло
+вагьдо<pl><obl>:вагьадло
+вагьло<pl><obl>:вагьалло
+вагьго<pl><obl>:вагьагло
 
