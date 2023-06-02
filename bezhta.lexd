@@ -75,13 +75,6 @@ LEXICON NumRoot-Obl
 ацӏона:ацӏон		# десять
 хъона:хъон		# двадцать
 
-LEXICON Infl
-<erg>:
-<genI>:с
-<genII>:ла
-<dat>:л
-<ins>:д
-
 LEXICON OblSuffix
 <obl>:и[digit]
 <obl>:ла[num]
