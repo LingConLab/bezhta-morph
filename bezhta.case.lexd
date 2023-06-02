@@ -1,0 +1,35 @@
+LEXICON Infl
+<erg>:[erg]
+<genI>:с[gen]
+<genII>:ла[gen2]
+<dat>:л[dat]
+<ins>:д[ins]
+
+LEXICON Essive
+<super><essive>:кьа
+<sub><essive>:лӏ[sub]
+<ad><essive>:гъа[ad]
+<apud><essive>:дой
+<cum><essive>:гъой
+<in><essive>:ъ[in]
+<cont><essive>:лъ[cont]
+<poss><essive>:хъа[poss]
+
+LEXICON Lative
+<lative>:{ил}
+
+LEXICON Translative
+<translative>:кьа̄
+<translative>:лкьа̄[ad,poss]
+
+LEXICON Ablative
+<ablative>:{ис}
+<ablative>:со[sub,cont]
+
+LEXICON Distant
+<dist>:да̄
+
+LEXICON OblSuffix
+<obl>:и[digit]
+<obl>:ла[num]
+<obl>:ли[ord]

@@ -145,3 +145,79 @@ LEXICON Multiple
 LEXICON Part
 <part>:на
 
+PATTERNS
+PersonalPronoun[abs] [<abs>:]
+PersonalPronoun[erg] Infl[erg]
+PersonalPronoun[gen] Infl[gen]
+PersonalPronoun[gen2] Infl[gen2]
+PersonalPronoun[dat] Infl[dat]
+PersonalPronoun[ins] Infl[ins]
+PersonalPronoun[1sg]
+PersonalPronoun[2sg]
+
+PersonalPronoun[ins] Essive Distant? (Lative|Ablative[-sub,-cont]|Translative[-ad,-poss])?
+PersonalPronoun[ins] Essive[-sub,-cont] Ablative[-sub,-cont]
+PersonalPronoun[ins] Essive[sub] Ablative[sub]
+PersonalPronoun[ins] Essive[cont] Ablative[cont]
+
+PersonalPronoun[ins] Essive[-ad,-poss] Translative[-ad,-poss]
+PersonalPronoun[ins] Essive[ad] Translative[ad,poss]
+PersonalPronoun[ins] Essive[poss] Translative[ad,poss]
+
+PersonalPronoun[ins] OblSuffix[num] Essive (Lative|Ablative[-sub,-cont])?
+PersonalPronoun[ins] Essive OblSuffix[num] (Lative|Ablative[-sub,-cont])?
+LEXICON PersonalPronoun
+до[abs,erg] # я
+до<obl><gen>:дие[1sg]
+до<obl>:ди[dat]
+до<obl>:дие[gen2]
+до<obl>:дӣ[ins,loc]
+
+ми[abs,erg] #ты
+ми<obl><gen>:дибо[2sg]
+ми<obl>:дибо[gen2]
+ми<obl>:ду[dat]
+ми<obl>:дӯ[ins,loc]
+
+иле[abs,erg] #мы
+ми<obl>:ило[gen,dat,ins]
+ми<obl>:ил[gen2]
+
+миже[abs,erg] #вы
+миже<obl>:мизо[gen,dat,ins]
+
+LEXICON Infl
+<erg>:[erg]
+<genI>:с[gen]
+<genII>:ла[gen2]
+<dat>:л[dat]
+<ins>:д[ins]
+
+LEXICON Essive
+<super><essive>:кьа
+<sub><essive>:лӏ[sub]
+<ad><essive>:гъа[ad]
+<apud><essive>:дой
+<cum><essive>:гъой
+<in><essive>:ъ[in]
+<cont><essive>:лъ[cont]
+<poss><essive>:хъа[poss]
+
+LEXICON Lative
+<lative>:{ил}
+
+LEXICON Translative
+<translative>:кьа̄
+<translative>:лкьа̄[ad,poss]
+
+LEXICON Ablative
+<ablative>:{ис}
+<ablative>:со[sub,cont]
+
+LEXICON Distant
+<dist>:да̄
+
+LEXICON OblSuffix
+<obl>:и[digit]
+<obl>:ла[num]
+<obl>:ли[ord]
