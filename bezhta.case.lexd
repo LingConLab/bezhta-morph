@@ -23,13 +23,9 @@ LEXICON Translative
 <translative>:лкьа̄[ad,poss]
 
 LEXICON Ablative
-<ablative>:{с} #как описывать в twol, если где-то по гармонии гласных меняется на ос, где-то -- на ис?
+<ablative>:{с} 
 <ablative>:со[sub,cont]
 
-LEXICON Distant
-<dist>:да̄
+LEXICON Directive
+<dir>:да̄
 
-LEXICON OblSuffix
-<obl>:и[digit]
-<obl>:ла[num]
-<obl>:ли[ord]

@@ -10,21 +10,35 @@ PersonalPronoun[ins] Infl[ins]
 PersonalPronoun[1sg]
 PersonalPronoun[2sg]
 
-PersonalPronoun[ins]|Demonstratives-Obl|Demonstratives-Plural-Obl Essive Distant? (Lative|Ablative[-sub,-cont]|Translative[-ad,-poss])?
-PersonalPronoun[ins]|Demonstratives-Obl|Demonstratives-Plural-Obl Essive[-sub,-cont] Ablative[-sub,-cont]
-PersonalPronoun[ins]|Demonstratives-Obl|Demonstratives-Plural-Obl Essive[sub] Ablative[sub]
-PersonalPronoun[ins]|Demonstratives-Obl|Demonstratives-Plural-Obl Essive[cont] Ablative[cont]
-PersonalPronoun[ins]|Demonstratives-Obl|Demonstratives-Plural-Obl Essive[ad] Translative[ad,poss]
-PersonalPronoun[ins]|Demonstratives-Obl|Demonstratives-Plural-Obl Essive[poss] Translative[ad,poss]
+#----Locatives-----
 
-PersonalPronoun[ins]|Demonstratives-Obl|Demonstratives-Plural-Obl OblSuffix[num] Essive (Lative|Ablative[-sub,-cont])?
-PersonalPronoun[ins]|Demonstratives-Obl|Demonstratives-Plural-Obl Essive OblSuffix[num] (Lative|Ablative[-sub,-cont])?
+PersonalPronoun[ins]|Demonstratives-Obl|Demonstratives-Plural-Obl|Interrogatives-Obl[-who]|Reflexive-Obl Essive Directive? (Lative|Ablative[-sub,-cont]|Translative[-ad,-poss])?
+PersonalPronoun[ins]|Demonstratives-Obl|Demonstratives-Plural-Obl|Interrogatives-Obl[-who]|Reflexive-Obl Essive[-sub,-cont] Ablative[-sub,-cont]
+PersonalPronoun[ins]|Demonstratives-Obl|Demonstratives-Plural-Obl|Interrogatives-Obl[-who]|Reflexive-Obl Essive[sub] Ablative[sub]
+PersonalPronoun[ins]|Demonstratives-Obl|Demonstratives-Plural-Obl|Interrogatives-Obl[-who]|Reflexive-Obl Essive[cont] Ablative[cont]
+PersonalPronoun[ins]|Demonstratives-Obl|Demonstratives-Plural-Obl|Interrogatives-Obl[-who]|Reflexive-Obl Essive[ad] Translative[ad,poss]
+PersonalPronoun[ins]|Demonstratives-Obl|Demonstratives-Plural-Obl|Interrogatives-Obl[-who]|Reflexive-Obl Essive[poss] Translative[ad,poss]
+
+PersonalPronoun[ins]|Demonstratives-Obl|Demonstratives-Plural-Obl|Interrogatives-Obl[-who] Infl[gen2] Essive (Lative|Ablative[-sub,-cont])?
+PersonalPronoun[ins]|Demonstratives-Obl|Demonstratives-Plural-Obl|Interrogatives-Obl[-who] Essive Infl[gen2] (Lative|Ablative[-sub,-cont])?
 
 #----DEMONSTRATIVES-----
 Demonstratives [<abs>:]
 Demonstratives-Plural-Abs [<abs>:]
 Demonstratives-Obl Infl
 Demonstratives-Plural-Obl Infl
+
+#----INTERROGATIVES-----
+Interrogatives [<abs>:]
+Interrogatives-Obl[what] Infl
+Interrogatives-Obl[who] Infl[erg]
+Interrogatives-Obl[who] [<gen>:й]
+Interrogatives-Obl[who2] Infl[-erg,-gen]
+
+#----REFLEXIVES----- 
+Reflexive ReflexivePlural?
+(PersonalPronoun[abs] [<abs>:]) | Demonstratives Reflexive 
+Reflexive-Obl Infl
 
 LEXICON PersonalPronoun
 до[abs,erg] # я
@@ -91,16 +105,64 @@ LEXICON Demonstratives-Plural-Abs
 вагьго<pl>:вагьагго̄л
 
 LEXICON Demonstratives-Plural-Obl
-гьуди<pl><obl>:гьодло
-гьули<pl><obl>:гьолло
-гьуги<pl><obl>:гьогло
-вагьди<pl><obl>:вагьадло
-вагьли<pl><obl>:вагьалло
-вагьги<pl><obl>:вагьагло
-гьодо<pl><obl>:гьодло
-гьоло<pl><obl>:гьолло
-гього<pl><obl>:гьогло
-вагьдо<pl><obl>:вагьадло
-вагьло<pl><obl>:вагьалло
-вагьго<pl><obl>:вагьагло
+гьуди<obl.pl>:гьодло
+гьули<obl.pl>:гьолло
+гьуги<obl.pl>:гьогло
+вагьди<obl.pl>:вагьадло
+вагьли<obl.pl>:вагьалло
+вагьги<obl.pl>:вагьагло
+гьодо<obl.pl>:гьодло
+гьоло<obl.pl>:гьолло
+гього<obl.pl>:гьогло
+вагьдо<obl.pl>:вагьадло
+вагьло<obl.pl>:вагьалло
+вагьго<obl.pl>:вагьагло
+
+LEXICON PronAdjectives #доделать склонение
+гьуддийо
+вагьаддийо
+гьуллийо
+вагьаллийо
+гьуггийо
+вагьаггийо
+гьодолас
+вагьдолас
+вагьадолас
+гьололас 
+вагьлолас
+вагьалолас
+гьоголас
+вагьголас
+вагьаголас
+гьодола
+вагьдола
+вагьаддола
+гьолола
+вагьлола
+вагьаллола
+гьогола
+вагьгола
+вагьаггола
+
+LEXICON Interrogatives
+сукӏо #кто
+сийо #что
+
+LEXICON Interrogatives-Obl
+сукӏо<obl>:лъо[who] #кто
+сукӏо<obl>:лъо̄[who2] #кто
+сийо<obl>:лъини[what] #что
+
+LEXICON Reflexive
+<refl>:жуь
+<refl>:зу
+
+LEXICON ReflexivePlural
+<pl>:во̄ьл
+
+LEXICON Reflexive-Obl
+жуь<obl><refl>:гьини
+зу<obl><refl>:гьини
+жуьво̄ьл<obl><refl><pl>:гьиде
+зуво̄ьл<obl><refl><pl>:гьиде
 

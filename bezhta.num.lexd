@@ -18,7 +18,7 @@ NumRoot Part # собирательные
 Distributive[-1] [<dstr>:] [<abs>:а] | (OblSuffix[digit] Infl)  # дистрибутивные (по X)
 
 #пространственная парадигма
-NumRoot-Obl Essive Distant? (Lative|Translative|Ablative[-sub,-cont])?
+NumRoot-Obl Essive Directive? (Lative|Translative|Ablative[-sub,-cont])?
 
 LEXICON NumRoot
 гьоᴴс[1]	# один
@@ -53,7 +53,7 @@ LEXICON Distributive
 гьоᴴс:гьо̄ᴴ-гьоᴴс[1]	# один
 къона:къо̄-къон	# два
 лъана:лъа̄-лъан		# три
-оьᴴкъоьнаь:о̄ьᴴ-оьᴴкъоьн	# четыре
+оьᴴкъоьнаь:о̄о̄ьᴴ-оьᴴкъоьн	# четыре
 лъина:лъӣ-лъин		# пять
 илъна:ӣ-илън		# шесть
 алӏна:а̄-алӏн		# семь
@@ -137,4 +137,10 @@ LEXICON Multiple
 <mult>:х
 LEXICON Part
 <part>:на
+
+LEXICON OblSuffix
+<obl>:и[digit]
+<obl>:ла[num]
+<obl>:ли[ord]
+
 
