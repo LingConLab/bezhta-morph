@@ -2,6 +2,7 @@ PATTERNS
 (NumRoot[-1,-2] Tens) (Part Ordinal (OblSuffix[ord] Infl)?) | (CompoundOrdinal CompOrdInfl | CompOrdInfl_Attr) | Part # порядковые и собирательные 30-90
 NumRoot Hundreds Part? # 100-900
 NumRoot-Obl OblSuffix[digit] Infl #склонение по основным падежам 1-10, 20
+NumRoot-Obl[1] OblSuffix[digit] Infl[-genII] Reciprocal #реципрокальное местоимение 
 (NumRoot[-1,-2] Tens) | (NumRoot Hundreds) | Thousand OblSuffix[num] Infl #склонение по основным падежам 30-1000
 
 NumRoot[-1,-4]|Ten|Twenty (Ordinal (OblSuffix[ord] Infl)?) | (CompoundOrdinal CompOrdInfl | CompOrdInfl_Attr) # порядковые 2-10
@@ -18,7 +19,10 @@ NumRoot Part # собирательные
 Distributive[-1] [<dstr>:] [<abs>:а] | (OblSuffix[digit] Infl)  # дистрибутивные (по X)
 
 #пространственная парадигма
-NumRoot-Obl Essive Directive? (Lative|Translative|Ablative[-sub,-cont])?
+NumRoot-Obl[-1] Essive Directive? (Lative|Translative|Ablative[-sub,-cont])?
+NumRoot-Obl[1] Essive[-sub,-in,-cont] Directive? (Lative|Translative|Ablative[-sub,-cont])? Reciprocal?
+NumRoot-Obl[1] OblSuffix[digit] Essive[sub]|Essive[in]|Essive[cont] Directive? (Lative|Translative|Ablative[-sub,-cont])? Reciprocal?
+
 
 LEXICON NumRoot
 гьоᴴс[1]	# один
@@ -63,7 +67,7 @@ LEXICON Distributive
 хъона:хъо̄-хъон		# двадцать
 
 LEXICON NumRoot-Obl
-гьоᴴс:сид	# один
+гьоᴴс:сид[1]	# один
 къона:къон	# два
 лъана:лъан		# три
 оьᴴкъоьнаь:оьᴴкъоьн	# четыре #какая косвенная основа?
@@ -156,17 +160,6 @@ PersonalPronoun[ins] Infl[ins]
 PersonalPronoun[1sg]
 PersonalPronoun[2sg]
 
-#----Locatives-----
-
-PersonalPronoun[ins]|Demonstratives-Obl|Demonstratives-Plural-Obl|Interrogatives-Obl[-who]|Reflexive-Obl Essive Directive? (Lative|Ablative[-sub,-cont]|Translative[-ad,-poss])?
-PersonalPronoun[ins]|Demonstratives-Obl|Demonstratives-Plural-Obl|Interrogatives-Obl[-who]|Reflexive-Obl Essive[-sub,-cont] Ablative[-sub,-cont]
-PersonalPronoun[ins]|Demonstratives-Obl|Demonstratives-Plural-Obl|Interrogatives-Obl[-who]|Reflexive-Obl Essive[sub] Ablative[sub]
-PersonalPronoun[ins]|Demonstratives-Obl|Demonstratives-Plural-Obl|Interrogatives-Obl[-who]|Reflexive-Obl Essive[cont] Ablative[cont]
-PersonalPronoun[ins]|Demonstratives-Obl|Demonstratives-Plural-Obl|Interrogatives-Obl[-who]|Reflexive-Obl Essive[ad] Translative[ad,poss]
-PersonalPronoun[ins]|Demonstratives-Obl|Demonstratives-Plural-Obl|Interrogatives-Obl[-who]|Reflexive-Obl Essive[poss] Translative[ad,poss]
-
-PersonalPronoun[ins]|Demonstratives-Obl|Demonstratives-Plural-Obl|Interrogatives-Obl[-who] Infl[gen2] Essive (Lative|Ablative[-sub,-cont])?
-PersonalPronoun[ins]|Demonstratives-Obl|Demonstratives-Plural-Obl|Interrogatives-Obl[-who] Essive Infl[gen2] (Lative|Ablative[-sub,-cont])?
 
 #----DEMONSTRATIVES-----
 Demonstratives [<abs>:]
@@ -175,16 +168,54 @@ Demonstratives-Obl Infl
 Demonstratives-Plural-Obl Infl
 
 #----INTERROGATIVES-----
-Interrogatives [<abs>:]
-Interrogatives-Obl[what] Infl
-Interrogatives-Obl[who] Infl[erg]
-Interrogatives-Obl[who] [<gen>:й]
-Interrogatives-Obl[who2] Infl[-erg,-gen]
+Interrogatives [<abs>:] (Indefinite IndefiniteParticle?)? | (Negative (Universal UniversalParticle?))?
+Interrogatives-Obl[what] Infl (Indefinite IndefiniteParticle?)?
+Interrogatives-Obl[what] Infl (Negative (Universal UniversalParticle?))?
+Interrogatives-Obl[who] Infl[erg] (Indefinite IndefiniteParticle?)?
+Interrogatives-Obl[who] Infl[erg] (Negative (Universal UniversalParticle?))?
+Interrogatives-Obl[who] [<gen>:й] (Negative (Universal UniversalParticle?))?
+Interrogatives-Obl[who] [<gen>:йс] (Indefinite IndefiniteParticle?)? 
+Interrogatives-Obl[who2] Infl[-erg,-gen] (Indefinite IndefiniteParticle?)?
+Interrogatives-Obl[who2] Infl[-erg,-gen] (Negative (Universal UniversalParticle?))?
 
 #----REFLEXIVES----- 
 Reflexive ReflexivePlural?
 (PersonalPronoun[abs] [<abs>:]) | Demonstratives Reflexive 
 Reflexive-Obl Infl
+
+#----UNIVERSAL PRONOUNS----- 
+UniversalRoot [<abs>:]
+UniversalRoot-Obl Infl
+
+#----DISTRIBUTIVES----- 
+DistributiveRoot [<abs>:]
+DistributiveRoot [<obl>:ли] Infl
+
+#----Other----- 
+Other [<abs>:] ([<add>:на] | [<add>:со])?
+OtherObl Infl
+
+#----Locatives-----
+
+PersonalPronoun[ins]|Demonstratives-Obl|Demonstratives-Plural-Obl|Reflexive-Obl|UniversalRoot-Obl|(DistributiveRoot [<obl>:ли]) Essive Directive? (Lative|Ablative[-sub,-cont]|Translative[-ad,-poss])?
+PersonalPronoun[ins]|Demonstratives-Obl|Demonstratives-Plural-Obl|Reflexive-Obl|UniversalRoot-Obl|(DistributiveRoot [<obl>:ли]) Essive[-sub,-cont] Ablative[-sub,-cont]
+PersonalPronoun[ins]|Demonstratives-Obl|Demonstratives-Plural-Obl|Reflexive-Obl|UniversalRoot-Obl|(DistributiveRoot [<obl>:ли]) Essive[sub] Ablative[sub]
+PersonalPronoun[ins]|Demonstratives-Obl|Demonstratives-Plural-Obl|Reflexive-Obl|UniversalRoot-Obl|(DistributiveRoot [<obl>:ли]) Essive[cont] Ablative[cont]
+PersonalPronoun[ins]|Demonstratives-Obl|Demonstratives-Plural-Obl|Reflexive-Obl|UniversalRoot-Obl|(DistributiveRoot [<obl>:ли]) Essive[ad] Translative[ad,poss]
+PersonalPronoun[ins]|Demonstratives-Obl|Demonstratives-Plural-Obl|Reflexive-Obl|UniversalRoot-Obl|(DistributiveRoot [<obl>:ли]) Essive[poss] Translative[ad,poss]
+
+PersonalPronoun[ins]|Demonstratives-Obl|Demonstratives-Plural-Obl|UniversalRoot-Obl|(DistributiveRoot [<obl>:ли]) Infl[gen2] Essive (Lative|Ablative[-sub,-cont])?
+PersonalPronoun[ins]|Demonstratives-Obl|Demonstratives-Plural-Obl|UniversalRoot-Obl|(DistributiveRoot [<obl>:ли]) Essive Infl[gen2] (Lative|Ablative[-sub,-cont])?
+
+Interrogatives-Obl[-who] Essive Directive? (Lative|Ablative[-sub,-cont]|Translative[-ad,-poss])? (Indefinite IndefiniteParticle?)? | (Negative (Universal UniversalParticle?))?
+Interrogatives-Obl[-who] Essive[-sub,-cont] Ablative[-sub,-cont] (Indefinite IndefiniteParticle?)? | (Negative (Universal UniversalParticle?))?
+Interrogatives-Obl[-who] Essive[sub] Ablative[sub] (Indefinite IndefiniteParticle?)? | (Negative (Universal UniversalParticle?))?
+Interrogatives-Obl[-who] Essive[cont] Ablative[cont] (Indefinite IndefiniteParticle?)? | (Negative (Universal UniversalParticle?))?
+Interrogatives-Obl[-who] Essive[ad] Translative[ad,poss] (Indefinite IndefiniteParticle?)? | (Negative (Universal UniversalParticle?))?
+Interrogatives-Obl[-who] Essive[poss] Translative[ad,poss] (Indefinite IndefiniteParticle?)? | (Negative (Universal UniversalParticle?))?
+
+Interrogatives-Obl[-who] Infl[gen2] Essive (Lative|Ablative[-sub,-cont])? (Indefinite IndefiniteParticle?)? | (Negative (Universal UniversalParticle?))?
+Interrogatives-Obl[-who] Essive Infl[gen2] (Lative|Ablative[-sub,-cont])? (Indefinite IndefiniteParticle?)? | (Negative (Universal UniversalParticle?))?
 
 LEXICON PersonalPronoun
 до[abs,erg] # я
@@ -200,8 +231,8 @@ LEXICON PersonalPronoun
 ми<obl>:дӯ[ins,loc]
 
 иле[abs,erg] #мы
-ми<obl>:ило[gen,dat,ins]
-ми<obl>:ил[gen2]
+иле<obl>:ило[gen,dat,ins]
+иле<obl>:ил[gen2]
 
 миже[abs,erg] #вы
 миже<obl>:мизо[gen,dat,ins]
@@ -291,8 +322,15 @@ LEXICON PronAdjectives #доделать склонение
 вагьаггола
 
 LEXICON Interrogatives
-сукӏо #кто
-сийо #что
+сукӏо[who] #кто
+сийо[what] #что
+нӣйо #какой
+ла #сколько
+лас #какой по счету
+нигъа #как
+на̄ #где, куда
+нито #когда
+лъинибза #почему
 
 LEXICON Interrogatives-Obl
 сукӏо<obl>:лъо[who] #кто
@@ -312,6 +350,45 @@ LEXICON Reflexive-Obl
 жуьво̄ьл<obl><refl><pl>:гьиде
 зуво̄ьл<obl><refl><pl>:гьиде
 
+LEXICON Reciprocal
+<recp>:-гьоᴴсо #пока с -, т.к. еще не разобралась с модулем апертиум для обработки таких случаев
+
+LEXICON Indefinite
+<indf>:ди
+
+LEXICON IndefiniteParticle
+<indf>:-суди
+
+LEXICON UniversalParticle
+<univ>:-суди
+
+LEXICON Negative
+<neg>:на
+
+LEXICON UniversalRoot
+га̄ьгьийо # все
+къацӏцӏо # все
+
+LEXICON UniversalRoot-Obl
+га̄ьгьийо<obl>:га̄ьгьийа
+къацӏцӏо<obl>:къацӏцӏола
+
+LEXICON Universal
+<univ>:зу
+
+LEXICON DistributiveRoot
+жӣжиб # каждый
+сибаб # каждый
+шибаб # каждый
+
+LEXICON Other
+бади #другой
+бадо #другая
+
+LEXICON OtherObl
+бади<obl>:бацо
+бадо<obl>:балӏо
+
 LEXICON Infl
 <erg>:[erg]
 <genI>:с[gen]
@@ -320,11 +397,11 @@ LEXICON Infl
 <ins>:д[ins]
 
 LEXICON Essive
-<super><essive>:кьа
+<super><essive>:кьа[super]
 <sub><essive>:лӏ[sub]
 <ad><essive>:гъа[ad]
-<apud><essive>:дой
-<cum><essive>:гъой
+<apud><essive>:дой[apud]
+<cum><essive>:гъой[cum]
 <in><essive>:ъ[in]
 <cont><essive>:лъ[cont]
 <poss><essive>:хъа[poss]

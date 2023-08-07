@@ -6,11 +6,11 @@ LEXICON Infl
 <ins>:д[ins]
 
 LEXICON Essive
-<super><essive>:кьа
+<super><essive>:кьа[super]
 <sub><essive>:лӏ[sub]
 <ad><essive>:гъа[ad]
-<apud><essive>:дой
-<cum><essive>:гъой
+<apud><essive>:дой[apud]
+<cum><essive>:гъой[cum]
 <in><essive>:ъ[in]
 <cont><essive>:лъ[cont]
 <poss><essive>:хъа[poss]

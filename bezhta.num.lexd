@@ -2,6 +2,7 @@ PATTERNS
 (NumRoot[-1,-2] Tens) (Part Ordinal (OblSuffix[ord] Infl)?) | (CompoundOrdinal CompOrdInfl | CompOrdInfl_Attr) | Part # порядковые и собирательные 30-90
 NumRoot Hundreds Part? # 100-900
 NumRoot-Obl OblSuffix[digit] Infl #склонение по основным падежам 1-10, 20
+NumRoot-Obl[1] OblSuffix[digit] Infl[-genII] Reciprocal #реципрокальное местоимение 
 (NumRoot[-1,-2] Tens) | (NumRoot Hundreds) | Thousand OblSuffix[num] Infl #склонение по основным падежам 30-1000
 
 NumRoot[-1,-4]|Ten|Twenty (Ordinal (OblSuffix[ord] Infl)?) | (CompoundOrdinal CompOrdInfl | CompOrdInfl_Attr) # порядковые 2-10
@@ -18,7 +19,10 @@ NumRoot Part # собирательные
 Distributive[-1] [<dstr>:] [<abs>:а] | (OblSuffix[digit] Infl)  # дистрибутивные (по X)
 
 #пространственная парадигма
-NumRoot-Obl Essive Directive? (Lative|Translative|Ablative[-sub,-cont])?
+NumRoot-Obl[-1] Essive Directive? (Lative|Translative|Ablative[-sub,-cont])?
+NumRoot-Obl[1] Essive[-sub,-in,-cont] Directive? (Lative|Translative|Ablative[-sub,-cont])? Reciprocal?
+NumRoot-Obl[1] OblSuffix[digit] Essive[sub]|Essive[in]|Essive[cont] Directive? (Lative|Translative|Ablative[-sub,-cont])? Reciprocal?
+
 
 LEXICON NumRoot
 гьоᴴс[1]	# один
@@ -63,7 +67,7 @@ LEXICON Distributive
 хъона:хъо̄-хъон		# двадцать
 
 LEXICON NumRoot-Obl
-гьоᴴс:сид	# один
+гьоᴴс:сид[1]	# один
 къона:къон	# два
 лъана:лъан		# три
 оьᴴкъоьнаь:оьᴴкъоьн	# четыре #какая косвенная основа?
