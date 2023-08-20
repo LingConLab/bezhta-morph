@@ -1,10 +1,256 @@
+PATTERNS 
+AdjRoot [<abs.sg>:] | AdjNumber[pl.a]
+AdjRoot-Aus AdjNumber[-pl.a] | Obl
+
+
+LEXICON Class
+<cl>:[1]
+<cl>:й[2]
+<cl>:б[3]
+<cl>:й[4]
+
+LEXICON ClassPl
+<cl>:б[1,2]
+<cl>:й[3,4]
+
+LEXICON AdjNumber
+<abs.sg>:{о}[sg]
+<abs.pl>:{а}[pl.a]
+<abs.pl>:{а̄}[pl.aus]
+
+LEXICON Obl
+<obl.sg>:{а}
+<obl.pl>:{а̄}
+
+LEXICON AdjRoot
+аслийаб # основной, главный
+аькаьлаб # общий
+динийаб # религиозный
+гьикматаб # удивительный, восхитительный
+къуватаб # сильный, мощный
+къаридаб # печальный, грустный
+инкъаб # глухой, тугоухий
+мутӏиъаб # покорный
+пасадаб # расточительный
+майданаб # ровный, равнинный
+саламатаб # большой
+сумураб # плиссированный
+табанаб # определенный
+чӏобогойаб # напрасный
+акӏойо:акӏо # рябой
+цӏоцӏойо:цӏоӏо # жесткий
+цигъойо:цигъо # ленивый
+зиъойо:зиъо # невысокий
+гьоъойо:гьоъо # высокий
+агурийагъас # кирпичный
+гьасагъас # голубой
+гьелӏальъцоъос # зеленый
+ницагъас # голубой
+колӏлӏоницаъас # темно-голубой
+уклиъис # желтый
+хоцӏцӏоуклиъис # темно-красный
+чакъилагъас # фиолетовый
+чӏанилаъас # бордовый
+шахилакоъос # розовый
+аьᴴйда̄ьш # передний
+аьйдлаа̄ьш # старинный
+бадолъола̄с # старинный
+гисас # внешний
+гисда̄кьас # наружний
+гьехбехъхъас # давнишний
+жес # сегодняшний
+желӏбас # нынешний
+икьеш # прошлогодний
+икъелалъцос # позапрошлогодний
+кӏетӏакьас # правый
+лӏийос # нижний
+лӏилмас # зимний
+лӏобокъас # обеденный 
+марчӏокӏолъсо # вечерний
+муьгъаьтта̄ьш # задний
+нишеш # ночной
+нисда̄с # послеобеденный
+оᴴкьакьас # левый
+сибовас # осенний
+хисас # завтрашний
+хискьас # утренний 
+цӏихос # далекий
+цӏихода̄с # далекий
+эмеда̄с # весенний
+эᴴдос # внутренний
+
+LEXICON AdjRoot-Aus
+гъаьгъаьтӏ # мутный
+кӏетӏ # хороший 
+укъ[cl] # большой
+итӏин # маленький
+бикдий # полный
+боцдий # слепой
+лаьхъдий # хромой
+лаькьиндий # усталый
+хаькьиндий # хлесткий
+бохала̄гьий # злой
+гъугъдий # злой
+гьогьмандий # причудливый
+лолдий # хитрый
+мелей # наивный
+незролдий # капризный
+гомдий # холмообразный
+кьухъий # хороший
+кӏохий # плохой
+лъаькъей # крепкий
+аьᴴхъей # наклонный 
+гомордий # круглый
+гейдий # овальный
+гъациндий # свисающий
+гъигъдий # невысокий
+кӏоьхдий # кривой
+маьчӏиндий # саблевидный
+чӏекӏдий # кривой
+гьаьлдий # белый
+ничдий # голубой
+лъахдий # серый
+чӏекдий # коричневый
+лъикъиндий # водянистый
+цикъиндий # водянистый 
+къаькъаьл # худощавый
+лӏалӏал # подвижный
+пӏаьпӏаьл # лысый
+хахал # шершавый
+цоцил # гнилой
+цӏацӏал # сухопарый
+кьолл # глупый
+хъоьхъил # грубый
+цулл # ненасытный
+гилъилл # глубокий
+гьоьгьоьл # рыхлый
+къоькъил # жесткий
+сасал # рассыпчатый
+татал # дряблый
+хихил # скользкий 
+кокил # гнилой
+кьакьал # рваный
+тоьтил # мягкий
+чӏачӏал # дискантный
+бихал # длинный
+кӏакӏал # гладкий
+цӏодол # черный
+мажал # дикий
+чачал # кислый
+ицил # старый
+чӏоьчӏил # бойкий
+гаьмм # худой
+аьᴴкъкъ # подозрительный
+гъаьйй # гнилой
+лаьхх # гравийный
+хелл # ровный 
+аьхъхъ # плохой
+гъаьйй # гнилой
+гьацц # меткий
+аьчӏчӏ[cl] # холодный
+ихх[cl] # теплый
+келл # старый
+кьихх # влажный
+лӏанн # редкий
+оьхх # плохой
+цацц # плохой
+чӏаьгъгъ # дискантный
+шаьтӏтӏ # голый
+аьхх # крупный
+гьуᴴкькь # широкий
+аьᴴшш[cl] # короткий
+кӏатӏтӏ # короткий
+нуьшш # мелкий
+сутт # невысокий
+хетӏтӏ # толстый
+хъусс # узкий
+цӏатӏтӏ # узкий
+боьтӏтӏ # тупой
+къицӏцӏ # ровный
+кьолл # неглубокий
+кӏийй # кривой
+хоькӏкӏ # выпуклый
+чӏайй # кривой
+дохъхъ # тусклый
+каьчч # светлый 
+колӏлӏ # темный
+цӏудд # красный
+кацц # высокопитательный
+лъикк # жидкий
+муьжж # прогорклый
+цугъгъ # сухой
+цулл # ненавистный 
+
+LEXICON AdjRoot-NoPl
+аᴴзай # грязный
+аᴴза̄ # грязный
+билӏай # крепкий
+билӏа̄ # крепкий
+лӏокъай # плесневелый
+лӏокъа̄ # плесневелый
+нийа̄ # сладкий
+никъай # горький
+никъа̄ # горький
+тоьбаьй # слабый
+тоьба̄ь # слабый
+халааьᴴжа̄ь # колючий
+халааьᴴжаьй # колючий
+хирхоькӏилай # шероховатый
+хирхоькӏила̄ # шероховатый
+хоьваьй # рубцеватый
+хоьва̄ь # рубцеватый
+хъимай # пасмурный
+хъима̄ # пасмурный
+хъобай # бледный
+хъоба̄ # бледный
+цихай # соленый
+циха̄ # соленый
+цоцокъа̄й # жирный
+цоцокъа̄ # жирный
+чахрай # полосатый
+чахра̄ # полосатый
+меседд # богатый
+
+LEXICON Infl
+<erg>:[erg]
+<genI>:с[gen]
+<genII>:ла[gen2]
+<dat>:л[dat]
+<ins>:д[ins]
+
+LEXICON Essive
+<super><essive>:кьа[super]
+<sub><essive>:лӏ[sub]
+<ad><essive>:гъа[ad]
+<apud><essive>:дой[apud]
+<cum><essive>:гъой[cum]
+<in><essive>:ъ[in]
+<cont><essive>:лъ[cont]
+<poss><essive>:хъа[poss]
+
+LEXICON Lative
+<lative>:{л}
+
+LEXICON Translative
+<translative>:{кьа̄}
+<translative>:лкьа̄[ad,poss]
+
+LEXICON Ablative
+<ablative>:{с} 
+<ablative>:со[sub,cont]
+
+LEXICON Directive
+<dir>:да̄
+
 PATTERNS
-(NumRoot[-1,-2] Tens) (Part Ordinal (OblSuffix[ord] Infl)?) | (CompoundOrdinal CompOrdInfl | CompOrdInfl_Attr) | Part # порядковые и собирательные 30-90
+(NumRoot[-1,-2] Tens) ((Part Ordinal (OblSuffix[ord] Infl)?) | (CompoundOrdinal CompOrdInfl | CompOrdInfl_Attr))? | Part # порядковые и собирательные 30-90
 NumRoot Hundreds Part? # 100-900
+NumRoot [<abs>:]
 NumRoot-Obl OblSuffix[digit] Infl #склонение по основным падежам 1-10, 20
 NumRoot-Obl[1] OblSuffix[digit] Infl[-genII] Reciprocal #реципрокальное местоимение 
-(NumRoot[-1,-2] Tens) | (NumRoot Hundreds) | Thousand OblSuffix[num] Infl #склонение по основным падежам 30-1000
+(NumRoot[-1,-2] Tens) | (NumRoot Hundreds) | Thousand OblSuffix[num] Infl #склонение по основным падежам 30-1000 
 
+Ten|Twenty Part 
 NumRoot[-1,-4]|Ten|Twenty (Ordinal (OblSuffix[ord] Infl)?) | (CompoundOrdinal CompOrdInfl | CompOrdInfl_Attr) # порядковые 2-10
 First [<ord>:]
 NumRoot[1] (Part Ordinal (OblSuffix[ord] Infl)?) |  (CompoundOrdinal CompOrdInfl | CompOrdInfl_Attr) # порядковое 1
@@ -13,16 +259,19 @@ NumRoot Hundreds (Part Ordinal (OblSuffix[ord] Infl)?) | (CompoundOrdinal CompOr
 (NumRoot Hundreds)? Thousand (Part Ordinal (OblSuffix[ord] Infl)?) | (CompoundOrdinal_2 CompOrdInfl | CompOrdInfl_Attr) # Xсоттысячный
 
 
-NumRoot-Mult Multiple Part # кратные 1-10, 20
-NumRoot[-1,-2] Tens|Hundreds|Thousand Inf Multiple # большие кратные 
+NumRoot-Mult[-1] Multiple Part # кратные 2-10, 20
+NumRoot-Mult[1] [<mult>:]
+NumRoot[-1,-2] Tens|Hundreds|Thousand Inf Multiple # большие кратные
+NumRoot[1] Hundreds Inf Multiple
+Thousand Inf Multiple 
 NumRoot Part # собирательные
 Distributive[-1] [<dstr>:] [<abs>:а] | (OblSuffix[digit] Infl)  # дистрибутивные (по X)
 
 #пространственная парадигма
 NumRoot-Obl[-1] Essive Directive? (Lative|Translative|Ablative[-sub,-cont])?
 NumRoot-Obl[1] Essive[-sub,-in,-cont] Directive? (Lative|Translative|Ablative[-sub,-cont])? Reciprocal?
-NumRoot-Obl[1] OblSuffix[digit] Essive[sub]|Essive[in]|Essive[cont] Directive? (Lative|Translative|Ablative[-sub,-cont])? Reciprocal?
-
+NumRoot-Obl[1] OblSuffix[digit] Essive[sub]|Essive[cont] Directive? (Lative|Translative|Ablative[sub,cont])? Reciprocal?
+NumRoot-Obl[1] OblSuffix[digit] Essive[in] (Lative|Translative|Ablative[-sub,-cont])? Reciprocal?
 
 LEXICON NumRoot
 гьоᴴс[1]	# один
@@ -39,12 +288,12 @@ LEXICON First
 гьоᴴс:аьᴴйдда̄ьш # первый
 
 LEXICON NumRoot-Mult
-гьоᴴс:гьаᴴкъка[1]		# один
+гьоᴴс:гьаᴴкъкъа[1]		# один
 къона:кӏа[2]			# два
 лъана:лъа			# три
 оьᴴкъоьнаь:оьᴴкъоьваь	# четыре
 лъина:лъийа			# пять
-илъна:илъей			# шесть
+илъна:илъейа			# шесть
 алӏна:алӏова		# семь
 белӏна:белӏейа		# восемь  
 аьчӏена:аьчӏейа		# девять
@@ -70,7 +319,7 @@ LEXICON NumRoot-Obl
 гьоᴴс:сид[1]	# один
 къона:къон	# два
 лъана:лъан		# три
-оьᴴкъоьнаь:оьᴴкъоьн	# четыре #какая косвенная основа?
+оьᴴкъоьнаь:оьᴴкъоьн	# четыре 
 лъина:лъин		# пять
 илъна:илън		# шесть
 алӏна:алӏн		# семь
@@ -104,7 +353,7 @@ LEXICON Billion
 милиард # миллиард
 
 LEXICON Inf
-<inf>:а
+<inf>:йа
 
 LEXICON Ordinal
 <ord>:с
@@ -192,7 +441,8 @@ DistributiveRoot [<abs>:]
 DistributiveRoot [<obl>:ли] Infl
 
 #----Other----- 
-Other [<abs>:] ([<add>:на] | [<add>:со])?
+Other [<abs>:] [<add>:на]?
+Other [<abs>:] [<add>:со]?
 OtherObl Infl
 
 #----Locatives-----
@@ -384,39 +634,9 @@ LEXICON DistributiveRoot
 LEXICON Other
 бади #другой
 бадо #другая
+баддо̄л #другие
 
 LEXICON OtherObl
 бади<obl>:бацо
 бадо<obl>:балӏо
-
-LEXICON Infl
-<erg>:[erg]
-<genI>:с[gen]
-<genII>:ла[gen2]
-<dat>:л[dat]
-<ins>:д[ins]
-
-LEXICON Essive
-<super><essive>:кьа[super]
-<sub><essive>:лӏ[sub]
-<ad><essive>:гъа[ad]
-<apud><essive>:дой[apud]
-<cum><essive>:гъой[cum]
-<in><essive>:ъ[in]
-<cont><essive>:лъ[cont]
-<poss><essive>:хъа[poss]
-
-LEXICON Lative
-<lative>:{л}
-
-LEXICON Translative
-<translative>:кьа̄
-<translative>:лкьа̄[ad,poss]
-
-LEXICON Ablative
-<ablative>:{с} 
-<ablative>:со[sub,cont]
-
-LEXICON Directive
-<dir>:да̄
-
+баддо̄л<obl>:бадло

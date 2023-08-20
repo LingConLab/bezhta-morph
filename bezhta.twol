@@ -8,12 +8,41 @@ Alphabet
 %{с%}:с
 %{с%}:ис
 %{с%}:ос
+%{с%}:со
 
+%{кьа̄%}:кьа̄
+%{кьа̄%}:лкьа̄
+
+%{а%}:а
+%{а%}:аь
+%{а%}:ла
+%{а%}:ва̄
+
+%{а̄%}:а̄
+%{а̄%}:а̄ь
+%{а̄%}:а̄ьᴴ
+
+%{о%}:о
+%{о%}:оь
+%{о%}:оьᴴ
 ;
+
+Sets
+  Vowels = а е и о у ы э ю я ӣ ӯ а̄ о̄ е̄;
+  Consonants = б в г д ж з й к л м н п р с т ф х ц ч ш щ;
+  Mods = ь ъ I;
+ 
+Definitions
+
+C = :Consonants [ :Mods ]*;
+  
 Rules
 
 "lative suffix realization"
 %{л%}:ил <=> л ӏ _ ;
+
+"lative suffix realization"
+%{л%}:ил <=> и ъ _ ;
 
 "lative suffix realization"
 %{л%}:ол <=> о ъ _ ;
@@ -26,3 +55,36 @@ Rules
 
 "ablative suffix realization"
 %{с%}:ос <=> о̄ ъ _ ; 
+
+"ablative suffix realization"
+%{с%}:со <=> л X _ ; where X in Mods;
+
+"translative suffix realization"
+%{кьа̄%}:лкьа̄ <=> ь а _ ;
+
+"translative suffix realization"
+%{кьа̄%}:лкьа̄ <=> ъ а _ ;
+
+"adjective plural suffix realization"
+%{а%}:ла <=> б _ ; 
+
+"adjective plural suffix realization"
+%{а%}:ва̄ <=> о _ ; 
+
+"adjective plural suffix realization"
+%{а%}:а <=> с _ ;
+
+"adjective plural suffix realization"
+%{а%}:аь <=> ш _ ;
+
+"adjective plural suffix realization ā -> а̄ь"
+%{а̄%}:а̄ь <=> Vowels ь X+ _  ; where X in C;
+
+"adjective singular suffix realization o -> oь"
+%{о%}:оь <=> Vowels ь X+ _  ; where X in C;
+
+"adjective plural suffix realization ā -> а̄ьᴴ"
+%{а̄%}:а̄ьᴴ <=> Vowels ь ᴴ X+ _  ; where X in C;
+
+"adjective singular suffix realization o -> oьᴴ"
+%{о%}:оьᴴ <=> Vowels ь ᴴ X+ _  ; where X in C;

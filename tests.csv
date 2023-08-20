@@ -1,0 +1,111 @@
+analysis,form,mustpass,source,page,description
+лъана<ten>,лъанайиг,pass,Comrie&Khalilov&Khalilova,293,тридцать
+оьᴴкъоьнаь<ten>,оьᴴкъоьнайиг,pass,Comrie&Khalilov&Khalilova,293,сорок
+лъина<ten>,лъинайиг,pass,Comrie&Khalilov&Khalilova,293,пятьдесят
+илъна<ten>,илънайиг,pass,Comrie&Khalilov&Khalilova,293,шестьдесят
+алӏна<ten>,алӏнайиг,pass,Comrie&Khalilov&Khalilova,293,семьдесят
+белӏна<ten>,белӏнайиг,pass,Comrie&Khalilov&Khalilova,293,восемьдесят
+аьчӏена<ten>,аьчӏенайиг,pass,Comrie&Khalilov&Khalilova,293,девяносто
+гьоᴴс<hundred>,гьоᴴсчӏитӏ,pass,Comrie&Khalilov&Khalilova,293,сто
+къона<hundred>,къоначӏитӏ,pass,Comrie&Khalilov&Khalilova,293,двести
+лъана<hundred>,лъаначӏитӏ,pass,Comrie&Khalilov&Khalilova,293,сто
+оьᴴкъоьнаь<hundred>,оьᴴкъоьнаьчӏитӏ,pass,Comrie&Khalilov&Khalilova,293,четыреста
+лъина<hundred>,лъиначӏитӏ,pass,Comrie&Khalilov&Khalilova,293,пятьсот
+илъна<hundred>,илъначӏитӏ,pass,Comrie&Khalilov&Khalilova,293,шестьсот
+алӏна<hundred>,алӏначӏитӏ,pass,Comrie&Khalilov&Khalilova,293,семьсот
+белӏна<hundred>,белӏначӏитӏ,pass,Comrie&Khalilov&Khalilova,293,восемьсот
+аьчӏена<hundred>,аьчӏеначӏитӏ,pass,Comrie&Khalilov&Khalilova,293,девятьсот
+гьоᴴс<ord>,аьᴴйдда̄ьш,pass,Comrie&Khalilov&Khalilova,293,первый
+къона<ord>,къонас,pass,Comrie&Khalilov&Khalilova,293,второй
+лъана<ord>,лъанас,pass,Comrie&Khalilov&Khalilova,293,третий
+оьᴴкъоьнаь<ord>,оьᴴкъоьнаьш,pass,Comrie&Khalilov&Khalilova,293,четвертый
+лъина<ord>,лъинас,pass,Comrie&Khalilov&Khalilova,293,пятый
+илъна<ord>,илънас,pass,Comrie&Khalilov&Khalilova,293,шестой
+алӏна<ord>,алӏнас,pass,Comrie&Khalilov&Khalilova,293,седьмой
+белӏна<ord>,белӏнас,pass,Comrie&Khalilov&Khalilova,293,восьмой
+аьчӏена<ord>,аьчӏенас,pass,Comrie&Khalilov&Khalilova,293,девятый
+ацӏона<ord>,ацӏонас,pass,Comrie&Khalilov&Khalilova,293,десятый
+хъона<ord>,хъонас,pass,Comrie&Khalilov&Khalilova,293,двадцатый
+гьазай<thousand><part><ord>,гьазайнас,pass,Comrie&Khalilov&Khalilova,293,тысячный
+гьоᴴс<compord><abs><sg>,гьоᴴсийāлӏейо,pass,Comrie&Khalilov&Khalilova,293,первый
+къона<compord><abs><sg>,къонаийāлӏейо,pass,Comrie&Khalilov&Khalilova,293,второй
+лъана<compord><abs><sg>,лъанаийāлӏейо,pass,Comrie&Khalilov&Khalilova,293,третий
+оьᴴкъоьнаь<compord><abs><sg>оьᴴкъоьнаьийāлӏейо,pass,Comrie&Khalilov&Khalilova,293,четвертый
+лъина<compord><abs><sg>,лъинаийāлӏейо,pass,Comrie&Khalilov&Khalilova,293,пятый
+илъна<compord><abs><sg>,илънаийāлӏейо,pass,Comrie&Khalilov&Khalilova,293,шестой
+алӏна<compord><abs><sg>,алӏнаийāлӏейо,pass,Comrie&Khalilov&Khalilova,293,седьмой
+белӏна<compord><abs><sg>,белӏнаийāлӏейо,pass,Comrie&Khalilov&Khalilova,293,восьмой
+аьчӏена<compord><abs><sg>,аьчӏенаийāлӏейо,pass,Comrie&Khalilov&Khalilova,293,девятый
+ацӏона<compord><abs><sg>,ацӏонаийāлӏейо,pass,Comrie&Khalilov&Khalilova,293,десятый
+гьоᴴс<mult>,гьаᴴкъкъа,pass,Comrie&Khalilov&Khalilova,294,один раз
+къона<mult><part>,кӏахна,pass,Comrie&Khalilov&Khalilova,294,два раза
+лъана<mult><part>,лъахна,pass,Comrie&Khalilov&Khalilova,294,три раза
+оьᴴкъоьнаь<mult><part>,оьᴴкъоьваьхна,pass,Comrie&Khalilov&Khalilova,294,четыре раза
+лъина<mult><part>,лъийахна,pass,Comrie&Khalilov&Khalilova,294,пять раз
+илъна<mult><part>,илъейахна,pass,Comrie&Khalilov&Khalilova,294,шесть раз
+алӏна<mult><part>,алӏовахна,pass,Comrie&Khalilov&Khalilova,294,семь раз
+белӏна<mult><part>,белӏейахна,pass,Comrie&Khalilov&Khalilova,294,восемь раз
+аьчӏена<mult><part>,аьчӏейахна,pass,Comrie&Khalilov&Khalilova,294,девять раз
+ацӏона<mult><part>,ацӏовахна,pass,Comrie&Khalilov&Khalilova,294,десять раз
+хъона<mult><part>,хъовахна,pass,Comrie&Khalilov&Khalilova,294,двадцать раз
+гьазай<thousand><inf><mult>,гьазаййах,pass,Comrie&Khalilov&Khalilova,294,тысячу раз
+гьоᴴс<hundred><inf><mult>,гьоᴴсчӏитӏйах,pass,Comrie&Khalilov&Khalilova,294,сто раз
+къона<part>,къонана,pass,Comrie&Khalilov&Khalilova,294,по два
+лъана<part>,лъанана,pass,Comrie&Khalilov&Khalilova,294,по три
+оьᴴкъоьнаь<part>,оьᴴкъоьнаьнаь,pass,Comrie&Khalilov&Khalilova,294,по четыре
+лъина<part>,лъинана,pass,Comrie&Khalilov&Khalilova,294,по пять
+илъна<part>,илънана,pass,Comrie&Khalilov&Khalilova,294,по шесть
+алӏна<part>,алӏнана,pass,Comrie&Khalilov&Khalilova,294,по семь
+белӏна<part>,белӏнана,pass,Comrie&Khalilov&Khalilova,294,по восемь
+аьчӏена<part>,аьчӏенана,pass,Comrie&Khalilov&Khalilova,294,по девять
+ацӏона<part>,ацӏонана,pass,Comrie&Khalilov&Khalilova,294,по десять
+гьоᴴс<abs>,гьоᴴс,pass,Comrie&Khalilov&Khalilova,295,абсолютив
+гьоᴴс<obl><erg>,сиди,pass,Comrie&Khalilov&Khalilova,295,эргатив
+гьоᴴс<obl><genI>,сидис,pass,Comrie&Khalilov&Khalilova,295,генитив I
+гьоᴴс<obl><genII>,сидила,pass,Comrie&Khalilov&Khalilova,295,генитив II
+гьоᴴс<obl><dat>,сидил,pass,Comrie&Khalilov&Khalilova,295,датив
+гьоᴴс<obl><ins>,сидид,pass,Comrie&Khalilov&Khalilova,295,инструменталис
+лъана<abs>,лъана,pass,Comrie&Khalilov&Khalilova,295,абсолютив
+лъана<obl><erg>,лъани,pass,Comrie&Khalilov&Khalilova,295,эргатив
+лъана<obl><genI>,лъанис,pass,Comrie&Khalilov&Khalilova,295,генитив I
+лъана<obl><genII>,лъанила,pass,Comrie&Khalilov&Khalilova,295,генитив II
+лъана<obl><dat>,лъанил,pass,Comrie&Khalilov&Khalilova,295,датив
+лъана<obl><ins>,лъанид,pass,Comrie&Khalilov&Khalilova,295,инструменталис
+гьазай<thousand><obl><erg>,гьазайла,pass,Comrie&Khalilov&Khalilova,295,эргатив
+гьазай<thousand><obl><genI>,гьазайлас,pass,Comrie&Khalilov&Khalilova,295,генитив 1
+гьазай<thousand><obl><genII>,гьазайлала,pass,Comrie&Khalilov&Khalilova,295,генитив 2
+гьазай<thousand><obl><dat>,гьазайлал,pass,Comrie&Khalilov&Khalilova,295,датив
+гьазай<thousand><obl><ins>,гьазайлад,pass,Comrie&Khalilov&Khalilova,295,инструменталис
+илъна<ten><obl><erg>,илънайигла,pass,Comrie&Khalilov&Khalilova,295,эргатив
+илъна<ten><obl><genI>,илънайиглас,pass,Comrie&Khalilov&Khalilova,295,генитив 1
+илъна<ten><obl><genII>,илънайиглала,pass,Comrie&Khalilov&Khalilova,295,генитив 2
+илъна<ten><obl><dat>,илънайиглал,pass,Comrie&Khalilov&Khalilova,295,датив
+илъна<ten><obl><ins>,илънайиглад,pass,Comrie&Khalilov&Khalilova,295,инструменталис
+лъина<hundred><obl><erg>,лъиначӏитӏла,pass,Comrie&Khalilov&Khalilova,295,эргатив
+лъина<hundred><obl><genI>,лъиначӏитӏлас,pass,Comrie&Khalilov&Khalilova,295,генитив 1
+лъина<hundred><obl><genII>,лъиначӏитӏлала,pass,Comrie&Khalilov&Khalilova,295,генитив 2
+лъина<hundred><obl><dat>,лъиначӏитӏлал,pass,Comrie&Khalilov&Khalilova,295,датив
+лъина<hundred><obl><ins>,лъиначӏитӏлад,pass,Comrie&Khalilov&Khalilova,295,инструменталис
+гьоᴴс<super><essive>,сидкьа,pass,Comrie&Khalilov&Khalilova,296,суперэссив I
+гьоᴴс<super><essive><lative>,сидкьал,pass,Comrie&Khalilov&Khalilova,296,суперлатив I
+гьоᴴс<super><essive><ablative>,сидкьас,pass,Comrie&Khalilov&Khalilova,296,супераблатив I
+гьоᴴс<super><essive><translative>,сидкьалкьа̄,pass,Comrie&Khalilov&Khalilova,296,супертранслатив I
+гьоᴴс<obl><sub><essive>,сидилӏ,pass,Comrie&Khalilov&Khalilova,296,субэссив I
+гьоᴴс<obl><sub><essive><lative>,сидилӏил,pass,Comrie&Khalilov&Khalilova,296,сублатив I
+гьоᴴс<obl><sub><essive><ablative>,сидилӏсо,pass,Comrie&Khalilov&Khalilova,296,сублатив I
+гьоᴴс<ad><essive>,сидгъа,pass,Comrie&Khalilov&Khalilova,296,адэссив I
+гьоᴴс<ad><essive><lative>,сидгъал,pass,Comrie&Khalilov&Khalilova,296,адлатив I
+гьоᴴс<ad><essive><ablative>,сидгъас,pass,Comrie&Khalilov&Khalilova,296,адаблатив I
+гьоᴴс<apud><essive>,сиддой,pass,Comrie&Khalilov&Khalilova,296,апудэссив I
+гьоᴴс<apud><essive><lative>,сиддойл,pass,Comrie&Khalilov&Khalilova,296,апудлатив I
+гьоᴴс<apud><essive><ablative>,сиддойс,pass,Comrie&Khalilov&Khalilova,296,апудаблатив I
+гьоᴴс<cum><essive>,сидгъой,pass,Comrie&Khalilov&Khalilova,296,кумэссив I
+гьоᴴс<cum><essive><lative>,сидгъойл,pass,Comrie&Khalilov&Khalilova,296,кумлатив I
+гьоᴴс<cum><essive><ablative>,сидгъойс,pass,Comrie&Khalilov&Khalilova,296,кумлабатив I
+гьоᴴс<obl><in><essive>,сидиъ,pass,Comrie&Khalilov&Khalilova,296,инэссив I
+гьоᴴс<obl><in><essive><lative>,сидиъил,pass,Comrie&Khalilov&Khalilova,296,инлатив I
+гьоᴴс<obl><in><essive><ablative>,сидиъис,pass,Comrie&Khalilov&Khalilova,296,инлабатив I
+гьоᴴс<poss><essive>,сидхъа,pass,Comrie&Khalilov&Khalilova,296,поссэссив I
+гьоᴴс<poss><essive><lative>,сидхъал,pass,Comrie&Khalilov&Khalilova,296,посслатив I
+гьоᴴс<poss><essive><ablative>,сидхъас,pass,Comrie&Khalilov&Khalilova,296,поссаблатив I
+
