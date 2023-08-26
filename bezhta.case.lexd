@@ -1,6 +1,6 @@
 LEXICON Infl
 <erg>:[erg]
-<genI>:с[gen]
+<genI>:{genI}[gen]
 <genII>:ла[gen2]
 <dat>:л[dat]
 <ins>:д[ins]
@@ -20,11 +20,9 @@ LEXICON Lative
 
 LEXICON Translative
 <translative>:{кьа̄}
-<translative>:лкьа̄[ad,poss]
 
 LEXICON Ablative
 <ablative>:{с} 
-<ablative>:со[sub,cont]
 
 LEXICON Directive
 <dir>:да̄

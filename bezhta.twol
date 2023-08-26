@@ -1,14 +1,22 @@
 Alphabet
 	а а̄ б в г д е е̄ ж з и ӣ й к л м н о о̄ п р с т у ӯ ф х ц ч ш щ ъ ы ь ӏ ᴴ э ю я
 
+%{genI%}:с
+%{genI%}:ш
+
+%{и%}:0
+%{и%}:и
+
 %{л%}:л
 %{л%}:ил
 %{л%}:ол
+%{л%}:ал
 
 %{с%}:с
 %{с%}:ис
 %{с%}:ос
 %{с%}:со
+%{с%}:ас
 
 %{кьа̄%}:кьа̄
 %{кьа̄%}:лкьа̄
@@ -30,7 +38,7 @@ Alphabet
 Sets
   Vowels = а е и о у ы э ю я ӣ ӯ а̄ о̄ е̄;
   Consonants = б в г д ж з й к л м н п р с т ф х ц ч ш щ;
-  Mods = ь ъ I;
+  Mods = ь ъ ӏ;
  
 Definitions
 
@@ -38,25 +46,53 @@ C = :Consonants [ :Mods ]*;
   
 Rules
 
-"lative suffix realization"
+"genI suffix realization с --> ш "
+%{genI%}:ш <=> е _ ;
+
+"vowel dropping in locative forms"
+%{и%}:0 <=> _ X ; where X in (г х к);
+
+"vowel dropping in locative forms"
+%{и%}:0 <=> _ д о й;
+
+
+"lative suffix realization л --> ил"
 %{л%}:ил <=> л ӏ _ ;
 
-"lative suffix realization"
-%{л%}:ил <=> и ъ _ ;
+"lative suffix realization л --> ил"
+%{л%}:ил <=> и (л) ъ _ ;
 
-"lative suffix realization"
+"lative suffix realization л --> ил"
+%{л%}:ил <=> о л ъ _ ;
+
+"lative suffix realization л --> ил"
+%{л%}:ил <=> о̄ л ъ _ ;
+
+"lative suffix realization л --> ил"
+%{л%}:ил <=> л а л ъ  _ ;
+
+"lative suffix realization л --> ол"
 %{л%}:ол <=> о ъ _ ;
 
-"ablative suffix realization"
+"lative suffix realization л --> ол"
+%{л%}:ол <=> о̄ ъ _ ;
+
+"lative suffix realization л --> ал"
+%{л%}:ал <=> а ъ _ ;
+
+"ablative suffix realization с --> ис"
 %{с%}:ис <=> и ъ _ ; 
 
-"ablative suffix realization"
+"ablative suffix realization с --> ос"
 %{с%}:ос <=> о ъ _ ; 
 
-"ablative suffix realization"
+"ablative suffix realization с --> ас"
+%{с%}:ас <=> а ъ _ ;
+
+"ablative suffix realization с --> ос"
 %{с%}:ос <=> о̄ ъ _ ; 
 
-"ablative suffix realization"
+"ablative suffix realization с --> со"
 %{с%}:со <=> л X _ ; where X in Mods;
 
 "translative suffix realization"
