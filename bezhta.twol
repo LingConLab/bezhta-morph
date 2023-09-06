@@ -21,15 +21,20 @@ Alphabet
 %{кьа̄%}:кьа̄
 %{кьа̄%}:лкьа̄
 
+%{adj.pl%}:а
+%{adj.pl%}:аь
+%{adj.pl%}:ла
+%{adj.pl%}:лаь
+%{adj.pl%}:ва̄
+
 %{а%}:а
 %{а%}:аь
-%{а%}:ла
-%{а%}:ва̄
 
 %{а̄%}:а̄
 %{а̄%}:а̄ь
 %{а̄%}:а̄ьᴴ
 
+%{о%}:0
 %{о%}:о
 %{о%}:оь
 %{о%}:оьᴴ
@@ -49,12 +54,14 @@ Rules
 "genI suffix realization с --> ш "
 %{genI%}:ш <=> е _ ;
 
+"genI suffix realization с --> ш "
+%{genI%}:ш <=> Vowels ь _ ;
+
 "vowel dropping in locative forms"
 %{и%}:0 <=> _ X ; where X in (г х к);
 
 "vowel dropping in locative forms"
 %{и%}:0 <=> _ д о й;
-
 
 "lative suffix realization л --> ил"
 %{л%}:ил <=> л ӏ _ ;
@@ -102,25 +109,32 @@ Rules
 %{кьа̄%}:лкьа̄ <=> ъ а _ ;
 
 "adjective plural suffix realization"
-%{а%}:ла <=> б _ ; 
+%{adj.pl%}:ла <=> Vowels б _ ; 
 
 "adjective plural suffix realization"
-%{а%}:ва̄ <=> о _ ; 
+%{adj.pl%}:лаь <=> Vowels ь б _ ; 
 
 "adjective plural suffix realization"
-%{а%}:а <=> с _ ;
+%{adj.pl%}:ва̄ <=> о _ ; 
 
 "adjective plural suffix realization"
-%{а%}:аь <=> ш _ ;
+%{adj.pl%}:аь <=> ш _ ;
+
+"adjective suffix realization a -> аь"
+%{а%}:аь <=> Vowels ь X+ _  ; where X in C;
 
 "adjective plural suffix realization ā -> а̄ь"
-%{а̄%}:а̄ь <=> Vowels ь X+ _  ; where X in C;
+%{а̄%}:а̄ь <=> Vowels ь X+ _  ; where X in C; 
 
 "adjective singular suffix realization o -> oь"
-%{о%}:оь <=> Vowels ь X+ _  ; where X in C;
+%{о%}:оь <=> Vowels ь X+ _  ; where X in C; 
+
+"adjective singular suffix realization"
+%{о%}:0 <=> Vowels _  ;
 
 "adjective plural suffix realization ā -> а̄ьᴴ"
 %{а̄%}:а̄ьᴴ <=> Vowels ь ᴴ X+ _  ; where X in C;
 
 "adjective singular suffix realization o -> oьᴴ"
 %{о%}:оьᴴ <=> Vowels ь ᴴ X+ _  ; where X in C;
+

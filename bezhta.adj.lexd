@@ -1,7 +1,13 @@
 PATTERNS 
-AdjRoot [<abs.sg>:] | AdjNumber[pl.a]
-AdjRoot-Aus AdjNumber[-pl.a] | Obl
+#аттрибутивная парадигма
+AdjRoot-Aus|AdjRoot-NoPl AdjNumber[sg]
+AdjRoot-NoPl AdjObl[sg]
+AdjRoot [<abs.sg>:]
+AdjRoot AdjNumber[pl.a]
+AdjRoot-Aus AdjNumber[pl.aus]|AdjObl[-avar]
 
+#субстантивированная парадигма
+AdjRoot-Aus AdjObl[sg] Infl 
 
 LEXICON Class
 <cl>:[1]
@@ -15,16 +21,17 @@ LEXICON ClassPl
 
 LEXICON AdjNumber
 <abs.sg>:{о}[sg]
-<abs.pl>:{а}[pl.a]
+<abs.pl>:{adj.pl}[pl.a]
 <abs.pl>:{а̄}[pl.aus]
 
-LEXICON Obl
-<obl.sg>:{а}
-<obl.pl>:{а̄}
+LEXICON AdjObl
+<obl.sg>:{а}[sg]
+<obl.sg>:ли[avar]
+<obl.pl>:{а̄}[pl]
 
 LEXICON AdjRoot
 аслийаб # основной, главный
-аькаьлаб # общий
+аькаьлаьб # общий
 динийаб # религиозный
 гьикматаб # удивительный, восхитительный
 къуватаб # сильный, мощный
@@ -38,6 +45,7 @@ LEXICON AdjRoot
 табанаб # определенный
 чӏобогойаб # напрасный
 акӏойо:акӏо # рябой
+акӏо̄ # рябой
 цӏоцӏойо:цӏоӏо # жесткий
 цигъойо:цигъо # ленивый
 зиъойо:зиъо # невысокий
@@ -53,7 +61,7 @@ LEXICON AdjRoot
 чӏанилаъас # бордовый
 шахилакоъос # розовый
 аьᴴйда̄ьш # передний
-аьйдлаа̄ьш # старинный
+аьйдла̄ьш # старинный
 бадолъола̄с # старинный
 гисас # внешний
 гисда̄кьас # наружний
@@ -80,6 +88,7 @@ LEXICON AdjRoot
 эᴴдос # внутренний
 
 LEXICON AdjRoot-Aus
+йукъ # большой
 гъаьгъаьтӏ # мутный
 кӏетӏ # хороший 
 укъ[cl] # большой
