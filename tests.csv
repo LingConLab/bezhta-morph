@@ -436,9 +436,15 @@ analysis,form,mustpass,source,page,description
 боцдий<obl.sg>,боцдийа,pass,Comrie&Khalilov&Khalilova,289,склонение прилагательных
 боцдий<abs.pl>,боцдийа̄,pass,Comrie&Khalilov&Khalilova,289,склонение прилагательных
 боцдий<obl.pl>,боцдийа̄,pass,Comrie&Khalilov&Khalilova,289,склонение прилагательных
-йукъ<abs.sg>,йукъо,pass,Comrie&Khalilov&Khalilova,289,склонение прилагательных
-йукъ<obl.sg><erg>,йукъа,pass,Comrie&Khalilov&Khalilova,289,склонение прилагательных
-йукъ<obl.sg><genI>,йукъас,pass,Comrie&Khalilov&Khalilova,289,склонение прилагательных
-йукъ<obl.sg><genII>,йукъала,pass,Comrie&Khalilov&Khalilova,289,склонение прилагательных
-йукъ<obl.sg><dat>,йукъал,pass,Comrie&Khalilov&Khalilova,289,склонение прилагательных
-йукъ<obl.sg><ins>,йукъад,pass,Comrie&Khalilov&Khalilova,289,склонение прилагательных
+<cl>укъ<abs.sg>,йукъо,pass,Comrie&Khalilov&Khalilova,289,склонение прилагательных
+<cl>укъ<obl.sg><erg>,йукъа,pass,Comrie&Khalilov&Khalilova,289,склонение прилагательных
+<cl>укъ<obl.sg><genI>,йукъас,pass,Comrie&Khalilov&Khalilova,289,склонение прилагательных
+<cl>укъ<obl.sg><genII>,йукъала,pass,Comrie&Khalilov&Khalilova,289,склонение прилагательных
+<cl>укъ<obl.sg><dat>,йукъал,pass,Comrie&Khalilov&Khalilova,289,склонение прилагательных
+<cl>укъ<obl.sg><ins>,йукъад,pass,Comrie&Khalilov&Khalilova,289,склонение прилагательных
+аваданаб<obl.sg>,аваданабли,pass,Comrie&Khalilov&Khalilova,289,склонение прилагательных, заимствованных из аварского 
+аваданаб<obl.pl>,аваданабла,pass,Comrie&Khalilov&Khalilova,290,склонение прилагательных, заимствованных из аварского
+къаридаб<obl.sg><genI>,къаридаблис,pass,Comrie&Khalilov&Khalilova,290,склонение прилагательных, заимствованных из аварского
+къаридаб<obl.pl><genI>,къаридабла̄с,pass,Comrie&Khalilov&Khalilova,290,склонение прилагательных, заимствованных из аварского  
+боцдий<abs.sg><emp>,боцдийосо,pass,Comrie&Khalilov&Khalilova,291,выделительная форма 
+лӏаьмм<abs.sg><emp>,лӏаьммоьшоь,pass,Comrie&Khalilov&Khalilova,291,выделительная форма 

@@ -23,9 +23,10 @@ Alphabet
 
 %{adj.pl%}:а
 %{adj.pl%}:аь
-%{adj.pl%}:ла
-%{adj.pl%}:лаь
 %{adj.pl%}:ва̄
+
+%{ла%}:ла
+%{ла%}:лаь
 
 %{а%}:а
 %{а%}:аь
@@ -38,6 +39,10 @@ Alphabet
 %{о%}:о
 %{о%}:оь
 %{о%}:оьᴴ
+
+%{со%}:со
+%{со%}:шоь
+
 ;
 
 Sets
@@ -108,11 +113,11 @@ Rules
 "translative suffix realization"
 %{кьа̄%}:лкьа̄ <=> ъ а _ ;
 
-"adjective plural suffix realization"
-%{adj.pl%}:ла <=> Vowels б _ ; 
+"avar adjective plural suffix realization"
+%{ла%}:ла <=> Vowels б _ ; 
 
-"adjective plural suffix realization"
-%{adj.pl%}:лаь <=> Vowels ь б _ ; 
+"avar adjective plural suffix realization"
+%{ла%}:лаь <=> Vowels ь б _ ; 
 
 "adjective plural suffix realization"
 %{adj.pl%}:ва̄ <=> о _ ; 
@@ -138,3 +143,6 @@ Rules
 "adjective singular suffix realization o -> oьᴴ"
 %{о%}:оьᴴ <=> Vowels ь ᴴ X+ _  ; where X in C;
 
+
+"adj emphatic suffix realization со --> шоь"
+%{со%}:шоь <=> %{о%}:оь _ ;

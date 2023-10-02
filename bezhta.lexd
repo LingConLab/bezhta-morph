@@ -1,13 +1,29 @@
 PATTERNS 
 #аттрибутивная парадигма
-AdjRoot-Aus|AdjRoot-NoPl AdjNumber[sg]
-AdjRoot-NoPl AdjObl[sg]
-AdjRoot [<abs.sg>:]
-AdjRoot AdjNumber[pl.a]
-AdjRoot-Aus AdjNumber[pl.aus]|AdjObl[-avar]
+AdjRoot-NoPl AdjNumber[sg] 
+AdjRoot-NoPl AdjObl[sg] 
+AdjRoot|AdjRoot-Avar [<abs.sg>:] Emphasis?
+AdjRoot AdjNumber[pl.a]|AdjObl[-avar]
+AdjRoot-Avar AdjNumber[avar]|AdjObl[avar]
 
-#субстантивированная парадигма
-AdjRoot-Aus AdjObl[sg] Infl 
+#классные прилагательные
+AdjRoot-Aus[-cl] AdjNumber[sg] Emphasis? 
+Class AdjRoot-Aus[cl] AdjNumber[sg]|AdjObl[sg] Emphasis?
+AdjRoot-Aus[-cl] AdjNumber[pl.aus]|AdjObl[-avar]
+ClassPl AdjRoot-Aus[cl] AdjNumber[pl.aus]|AdjObl[-avar,-sg]
+
+#субстантивная парадигма
+AdjRoot-Avar AdjObl[avar,-pl]|[<obl.pl>:ла̄] Infl
+AdjRoot AdjObl[-avar] Infl |(Essive Directive? (Lative|Ablative|Translative)?)
+AdjRoot AdjObl[-avar] Infl[gen2] Essive (Lative|Ablative)?
+AdjRoot AdjObl[-avar] Essive Infl[gen2] (Lative|Ablative)?
+
+Class AdjRoot-Aus[cl] AdjObl[sg] Infl |(Essive Directive? (Lative|Ablative|Translative)?)
+ClassPl AdjRoot-Aus[cl] AdjObl[pl,-avar] Infl |(Essive Directive? (Lative|Ablative|Translative)?)
+AdjRoot-Aus[-cl] AdjObl[-avar] Infl |(Essive Directive? (Lative|Ablative|Translative)?)
+AdjRoot-Aus[-cl] AdjObl[-avar] Infl[gen2] Essive (Lative|Ablative)?
+(Class AdjRoot-Aus[cl] AdjObl[sg]) | (ClassPl AdjRoot-Aus[cl] AdjObl[pl,-avar])  Infl[gen2] Essive (Lative|Ablative)?
+AdjRoot-Aus[-cl] AdjObl[-avar] Essive Infl[gen2] (Lative|Ablative)?
 
 LEXICON Class
 <cl>:[1]
@@ -22,14 +38,22 @@ LEXICON ClassPl
 LEXICON AdjNumber
 <abs.sg>:{о}[sg]
 <abs.pl>:{adj.pl}[pl.a]
+<abs.pl>:{ла}[avar]
 <abs.pl>:{а̄}[pl.aus]
+
+LEXICON Emphasis
+<emp>:{со}
 
 LEXICON AdjObl
 <obl.sg>:{а}[sg]
 <obl.sg>:ли[avar]
 <obl.pl>:{а̄}[pl]
+<obl.pl>:{ла}[avar,pl]
 
-LEXICON AdjRoot
+LEXICON AdjRoot-Avar
+аваданаб # веселый
+берцинаб # красивый
+аьдаьлаьб # скверный
 аслийаб # основной, главный
 аькаьлаьб # общий
 динийаб # религиозный
@@ -44,6 +68,11 @@ LEXICON AdjRoot
 сумураб # плиссированный
 табанаб # определенный
 чӏобогойаб # напрасный
+раьгьаьтаьб # спокойный
+талигьаб # счастливый
+цӏодораб # умный
+
+LEXICON AdjRoot
 акӏойо:акӏо # рябой
 акӏо̄ # рябой
 цӏоцӏойо:цӏоӏо # жесткий
@@ -88,7 +117,8 @@ LEXICON AdjRoot
 эᴴдос # внутренний
 
 LEXICON AdjRoot-Aus
-йукъ # большой
+лӏаьмм # короткий
+укъ[cl] # большой
 гъаьгъаьтӏ # мутный
 кӏетӏ # хороший 
 укъ[cl] # большой
