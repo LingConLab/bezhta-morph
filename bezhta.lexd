@@ -280,6 +280,50 @@ LEXICON Directive
 <dir>:да̄
 
 PATTERNS
+
+NounRoot[a] NounPl[a]
+NounRoot[ba] NounPl[ba]
+NounRoot[va] NounPl[va]
+
+
+LEXICON NounPl
+<pl>:{а}[a]
+<pl>:б{а}[ba]
+<pl>:в{а}[va]
+<pl>:д{а}[da]
+<pl>:й{а}[ja]
+<pl>:л{а}[la]
+
+LEXICON NounRoot
+муьш[a] # веник
+къаьм[a] # голова
+аьлӏ[a] # селение
+абоц[a] # бусинка
+мухун[a] # рубашка
+кьуьшен[a] # свитер
+оᴴх[a] # живот
+цӏитI[a] # нож
+къаьчӏаьл[a] # спица
+мокӏол[a] # постель
+роьъил[a] # кусок
+чӏамал[a] # нога
+ичӏей[ba] # жеребенок
+цӏимацӏ[ba] # десна
+азакӏ[ba] # кувалда
+боъой[ba] # носик носков
+гъамас[ba] # сундук
+шаьъаьт[ba] # часы
+гъуьруьш[ba] # рубль
+цӏараъ[ba] # посуда
+кид[ba] # девочка #СДЕЛАТЬ АССИМИЛЯЦИЮ
+йаьх[ba] # мера
+кӏоьйхоь[va] # баранка
+хойгъо[va] # пила
+мотӏо[va] # лицо
+болъо[va] # шея, затылок
+йоᴴсо[va] # стена
+
+PATTERNS
 (NumRoot[-1,-2] Tens) ((Part Ordinal (OblSuffix[ord] Infl)?) | (CompoundOrdinal CompOrdInfl | CompOrdInfl_Attr))? | Part # порядковые и собирательные 30-90
 NumRoot Hundreds Part? # 100-900
 NumRoot [<abs>:]

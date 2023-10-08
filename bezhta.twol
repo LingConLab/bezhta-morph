@@ -29,6 +29,7 @@ Alphabet
 %{ла%}:лаь
 
 %{а%}:а
+%{а%}:0
 %{а%}:аь
 
 %{а̄%}:а̄
@@ -125,22 +126,25 @@ Rules
 "adjective plural suffix realization"
 %{adj.pl%}:аь <=> ш _ ;
 
-"adjective suffix realization a -> аь"
+"a -> аь vowel harmony"
 %{а%}:аь <=> Vowels ь X+ _  ; where X in C;
 
-"adjective plural suffix realization ā -> а̄ь"
+"adjective suffix realization a -> аь"
+%{а%}:0 <=> а̄ _  ;
+
+"ā -> а̄ь vowel harmony"
 %{а̄%}:а̄ь <=> Vowels ь X+ _  ; where X in C; 
 
-"adjective singular suffix realization o -> oь"
+"o -> oь vowel harmony"
 %{о%}:оь <=> Vowels ь X+ _  ; where X in C; 
 
 "adjective singular suffix realization"
-%{о%}:0 <=> Vowels _  ;
+%{о%}:0 <=> а̄ _  ;
 
-"adjective plural suffix realization ā -> а̄ьᴴ"
+"ā -> а̄ьᴴ vowel harmony"
 %{а̄%}:а̄ьᴴ <=> Vowels ь ᴴ X+ _  ; where X in C;
 
-"adjective singular suffix realization o -> oьᴴ"
+"o -> oьᴴ vowel harmony"
 %{о%}:оьᴴ <=> Vowels ь ᴴ X+ _  ; where X in C;
 
 
