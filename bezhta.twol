@@ -4,6 +4,15 @@ Alphabet
 %{genI%}:с
 %{genI%}:ш
 
+%{adj.pl%}:а
+%{adj.pl%}:аь
+%{adj.pl%}:ва̄
+
+%{pst%}:ийо
+%{pst%}:йо
+%{pst%}:ло
+%{pst%}:лоь
+
 %{и%}:0
 %{и%}:и
 
@@ -20,10 +29,6 @@ Alphabet
 
 %{кьа̄%}:кьа̄
 %{кьа̄%}:лкьа̄
-
-%{adj.pl%}:а
-%{adj.pl%}:аь
-%{adj.pl%}:ва̄
 
 %{ла%}:ла
 %{ла%}:лаь
@@ -44,6 +49,11 @@ Alphabet
 %{со%}:со
 %{со%}:шоь
 
+%{д%}:д
+%{д%}:б
+
+%{н%}:л
+%{н%}:н
 ;
 
 Sets
@@ -82,7 +92,7 @@ Rules
 %{л%}:ил <=> о̄ л ъ _ ;
 
 "lative suffix realization л --> ил"
-%{л%}:ил <=> л а л ъ  _ ;
+%{л%}:ил <=> л %{а%}:а л ъ  _ ;
 
 "lative suffix realization л --> ол"
 %{л%}:ол <=> о ъ _ ;
@@ -91,7 +101,7 @@ Rules
 %{л%}:ол <=> о̄ ъ _ ;
 
 "lative suffix realization л --> ал"
-%{л%}:ал <=> а ъ _ ;
+%{л%}:ал <=> %{а%}:а ъ _ ;
 
 "ablative suffix realization с --> ис"
 %{с%}:ис <=> и ъ _ ; 
@@ -114,12 +124,6 @@ Rules
 "translative suffix realization"
 %{кьа̄%}:лкьа̄ <=> ъ а _ ;
 
-"avar adjective plural suffix realization"
-%{ла%}:ла <=> Vowels б _ ; 
-
-"avar adjective plural suffix realization"
-%{ла%}:лаь <=> Vowels ь б _ ; 
-
 "adjective plural suffix realization"
 %{adj.pl%}:ва̄ <=> о _ ; 
 
@@ -129,7 +133,7 @@ Rules
 "a -> аь vowel harmony"
 %{а%}:аь <=> Vowels ь X+ _  ; where X in C;
 
-"adjective suffix realization a -> аь"
+"adjective suffix realization a -> 0"
 %{а%}:0 <=> а̄ _  ;
 
 "ā -> а̄ь vowel harmony"
@@ -147,6 +151,11 @@ Rules
 "o -> oьᴴ vowel harmony"
 %{о%}:оьᴴ <=> Vowels ь ᴴ X+ _  ; where X in C;
 
-
 "adj emphatic suffix realization со --> шоь"
 %{со%}:шоь <=> %{о%}:оь _ ;
+
+"regressive assimilation д --> б before б"
+%{д%}:б <=>  _ б ;
+
+"regressive assimilation н --> л before л"
+%{н%}:л <=>  _ л ;

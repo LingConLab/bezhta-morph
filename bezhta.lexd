@@ -25,20 +25,10 @@ AdjRoot-Aus[-cl] AdjObl[-avar] Infl[gen2] Essive (Lative|Ablative)?
 (Class AdjRoot-Aus[cl] AdjObl[sg]) | (ClassPl AdjRoot-Aus[cl] AdjObl[pl,-avar])  Infl[gen2] Essive (Lative|Ablative)?
 AdjRoot-Aus[-cl] AdjObl[-avar] Essive Infl[gen2] (Lative|Ablative)?
 
-LEXICON Class
-<cl>:[1]
-<cl>:й[2]
-<cl>:б[3]
-<cl>:й[4]
-
-LEXICON ClassPl
-<cl>:б[1,2]
-<cl>:й[3,4]
-
 LEXICON AdjNumber
 <abs.sg>:{о}[sg]
 <abs.pl>:{adj.pl}[pl.a]
-<abs.pl>:{ла}[avar]
+<abs.pl>:л{а}[avar]
 <abs.pl>:{а̄}[pl.aus]
 
 LEXICON Emphasis
@@ -253,7 +243,7 @@ LEXICON AdjRoot-NoPl
 LEXICON Infl
 <erg>:[erg]
 <genI>:{genI}[gen]
-<genII>:ла[gen2]
+<genII>:л{а}[gen2]
 <dat>:л[dat]
 <ins>:д[ins]
 
@@ -279,22 +269,58 @@ LEXICON Ablative
 LEXICON Directive
 <dir>:да̄
 
+LEXICON Class
+<I>:[1]
+<II>:й[2]
+<III>:б[3]
+<IV>:й[4]
+
+LEXICON ClassPl
+<hpl>:б[1,2]
+<nhpl>:й[3,4]
+
+
 PATTERNS
 
-NounRoot[a] NounPl[a]
-NounRoot[ba] NounPl[ba]
-NounRoot[va] NounPl[va]
+#множественное число
+NounRoot NounPl [<abs>:]
 
+#склонение по падежам
+NounRoot [<abs>:]
+NounRoot-Obl|NounRoot-Obl-Pl Infl |(Essive Directive? (Lative|Ablative|Translative)?)
+NounRoot-Obl|NounRoot-Obl-Pl Infl[gen2] Essive (Lative|Ablative)?
+NounRoot-Obl|NounRoot-Obl-Pl Essive Infl[gen2] (Lative|Ablative)?
 
 LEXICON NounPl
-<pl>:{а}[a]
-<pl>:б{а}[ba]
-<pl>:в{а}[va]
-<pl>:д{а}[da]
-<pl>:й{а}[ja]
-<pl>:л{а}[la]
+<pl>:{а}
+<pl>:б{а}
+<pl>:в{а}
+<pl>:д{а}
+<pl>:й{а}
+<pl>:л{а}
+<pl>:{а̄}[long] # морфонология та же, что и у прилагательных, НО: у сущ. нет варианта а̄ьᴴ...
+
+
+LEXICON NounRoot-Obl
+# здесь будут косвенные основы, пока несколько примеров на разные типы
+сора<obl>:сорали # лиса
+окко<obl>:оккола # деньги
+мамали<obl>:мамалийа # петух
+кид<obl>:кибба # девочка
+бикь<obl>:бикьи # баран
+кьамо<obl>:кьама # крыша
+гьас<obl>:гьаса # небо
+ийо<obl>:ийо # мать
+во<obl>:вой # собака
+
+LEXICON NounRoot-Obl-Pl
+# здесь будут косвенные основы множественного числа, пока несколько примеров на разные типы
+аᴴцла<obl>:аᴴцла̄ # двери
+або̄л<obl>:абола̄ # отцы
+багьа̄<obl>:багьа̄ # цены
 
 LEXICON NounRoot
+# пока корни по материалам грамматики с указанием на суффикс множественного числа
 муьш[a] # веник
 къаьм[a] # голова
 аьлӏ[a] # селение
@@ -315,13 +341,46 @@ LEXICON NounRoot
 шаьъаьт[ba] # часы
 гъуьруьш[ba] # рубль
 цӏараъ[ba] # посуда
-кид[ba] # девочка #СДЕЛАТЬ АССИМИЛЯЦИЮ
+ки{д}[ba] # девочка 
 йаьх[ba] # мера
 кӏоьйхоь[va] # баранка
 хойгъо[va] # пила
 мотӏо[va] # лицо
 болъо[va] # шея, затылок
 йоᴴсо[va] # стена
+бабу[va] # носок
+уъу[va] # отверстие
+уцӏу[va] # мерка
+аᴴъуᴴ[va] #осел
+кӏоьхуь[va] # крючок
+дибитӏо[va] # барабан
+гьалалъцо[va] # обувь
+шаьшаьтӏоь[va] # свирель
+тӏабакӏо[va] # поднос
+гьугьудо[va] # удод
+акламо[va] # верблюд
+цӏаъалкъако[va] # горская скрипка
+аьᴴгъаьᴴлаьлъчоь[va] # серьга
+ко̄[da] # рука
+къо̄[da] # стул
+къейо[da] # плечо
+оьжоь:оьж[da] # стул
+тӏийо[da] # мост
+шело[da] # рог
+хилӏо[da] # брюки
+гъемо[da] # надмогильный камень
+гаьжоь[da] # клык
+гьабо[da] # крыло
+аьᴴкоь[da] # лопата
+бекӏе[ja] # ковер
+ухтури[ja] # напильник
+лӏине[ja] # зима
+лӏух[la] # потолок
+тӏига{н}[la] # лом
+мугува:мугув[long] # лапти
+хаьтӏаь:хаьтӏ[long] # тарелка
+тицIийо:тицIий[long] # пояс
+кьакъало:кьакъал[long] # шапка
 
 PATTERNS
 (NumRoot[-1,-2] Tens) ((Part Ordinal (OblSuffix[ord] Infl)?) | (CompoundOrdinal CompOrdInfl | CompOrdInfl_Attr))? | Part # порядковые и собирательные 30-90
@@ -743,3 +802,156 @@ LEXICON OtherObl
 бади<obl>:бацо
 бадо<obl>:балӏо
 баддо̄л<obl>:бадло
+PATTERNS
+Verb > Question
+ClassVerb > Question
+
+PATTERN Imperative
+Mood[imp] > Mood[rog]
+Mood[imp] > ([:а]? Mood[prmI]) > [<prmII>:ъ]
+Mood[prmIII]
+
+PATTERN TAM
+#--- positive forms ---
+Infinitive > Mood[dub] # dubitative mood
+Past | Present | Future > Mood[hyp] #	hypothetical mood
+Plusquamperfect
+Imperative
+Mood[proh]
+Mood[opt]
+([:и] | [:е] | [:о])? Mood[cond] > ([<invc>:л] | [<cnc>:на])	#	conditional, concessive conditional
+Past | Present Mood[irr]	#	probabilitive (irreal conditional)
+
+#--- negative forms ---
+Negation[-neg]
+Mood[neg.opt]
+Negation[neg] Mood[cond] > ([<invc>:л] | [<cnc>:на])
+
+PATTERN Verb
+VerbRoot(1)[-cl] :VerbNumberInfix(1) VerbRoot(2)[-cl] VerbNumberInfix(2): TAM
+
+PATTERN ClassVerb
+
+VerbRoot(1)[cl] :ClassInfix(1) VerbRoot(2)[cl] ClassInfix(2): TAM
+Class VerbRoot(1)[cl] :VerbNumberInfix(1)[sg] VerbRoot(2)[cl] VerbNumberInfix(2)[sg]: TAM
+ClassPl VerbRoot(1)[cl] :VerbNumberInfix(1)[-sg] VerbRoot(2)[cl] VerbNumberInfix(2)[-sg]: TAM
+
+LEXICON VerbRoot(2)
+а[cl] гъ[cl] # снимать
+зо гъ # находиться
+оь л # хватать
+го т # постелить
+г[cl] в[cl] # идти
+г[cl] л[cl] # класть
+т[cl] кӏ[cl] # использовать
+тӏ[cl] тӏ[cl] # бросить
+г[cl] цӏ[cl] # появиться
+у[cl] гъ[cl] # умирать
+о[cl] лъ[cl] # заканчиваться
+ги тӏ # налить
+их[cl] лъ[cl] #согреться
+
+LEXICON VerbNumberInfix(2)
+:[sg] <sg>:[sg]
+:а <pl>:а
+:ба <pl>:ба
+:ва <pl>:ва
+:ваба <pl>:ваба
+:йа <pl>:йа
+:йаба <pl>:йаба
+
+LEXICON ClassInfix(2)
+:о <I>:о
+:и <II>:и
+:у <III/IV>:у
+
+LEXICON Causative #непонятно, какие гласные вставляются перед суффиксом
+<caus>:л[morph]
+<caus>:лл[morph]
+
+LEXICON Transitivity
+<tr>:кӏ
+<intr>:к
+<tr>:лӏ
+<tr>:л
+<intr>:лъ
+
+#---- Tense ----
+LEXICON Past # законченное прошедшее (аорист), (Forker 2011) глоссирует как WPST
+<pst>:ийо
+<pst>:йо
+<pst>:ойо
+<pst>:л{о}
+
+LEXICON Negation
+<neg>:{а}ъ[neg]
+<neg><pst>:еъеш[pst]
+<neg><pst>:йъеш[pst]
+<neg><prs>:аъас #Гласные основы глагола е, и, о переходят в а, гласный корня -а- гласный исчезает перед гласным аффикса.
+<neg><prs>:аьъаьш 
+<neg><imp>:ассаъ
+<neg><imp>:ссаъ
+<neg><imp>:аьшшаьъ
+<neg><imp>:шшаьъ
+<neg><cnvb>:ечӏе
+<neg><cnvb>:йчӏе
+
+LEXICON Present
+<prs>:ца
+<prs>:чаь
+<prs>:с
+<prs>:ш
+<prs>:ис
+<prs>:ос
+<prs>:оьщ
+
+LEXICON Future
+<fut>:ас
+<fut>:аьш
+
+LEXICON Plusquamperfect
+<ppf>:а̄гьийо
+<ppf>:а̄ьгьийо
+
+#---- Mood ----
+
+LEXICON Mood
+<imp>:{а}[imp]
+<imp>:[imp]
+<imp>:и[imp]
+<imp>:е[imp]
+<imp>:{о}[imp]
+<proh>:а̄къа[proh]
+<opt>:акъос[opt]
+<opt>:къос[opt]
+<neg.opt>:акъаъас[opt.neg]
+<neg.opt>:къаъас[opt.neg]
+<rog>:ло̄[rog]
+<rog>:ловале[rog]
+<rog>:лоало[rog]
+<prmI>:л{а}[prmI]
+<prmII>:ъ[prmII]
+<prmIII>:{а}ла̄[prmIII]
+<cond>:да[cond]
+<irr>:къода̄[irr]
+<dub>:ла̄[dub]
+<dub>:ла̄ъ[dub]
+<hyp>:ле[hyp]
+
+#---- Aspect -----
+LEXICON Aspect
+<dur>:ла
+<dur>:ва
+<dur>:да
+<dur>:а
+
+#---- Non-finite forms ----
+
+LEXICON Infinitive 
+<inf>:{а}л
+
+LEXICON Question
+<q>:д
+<q>:ди
+<q>:лӏо̄
+

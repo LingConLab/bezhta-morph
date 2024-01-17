@@ -1,7 +1,7 @@
 LEXICON Infl
 <erg>:[erg]
 <genI>:{genI}[gen]
-<genII>:ла[gen2]
+<genII>:л{а}[gen2]
 <dat>:л[dat]
 <ins>:д[ins]
 
@@ -26,4 +26,15 @@ LEXICON Ablative
 
 LEXICON Directive
 <dir>:да̄
+
+LEXICON Class
+<I>:[1]
+<II>:й[2]
+<III>:б[3]
+<IV>:й[4]
+
+LEXICON ClassPl
+<hpl>:б[1,2]
+<nhpl>:й[3,4]
+
 

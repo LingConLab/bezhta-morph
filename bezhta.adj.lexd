@@ -25,20 +25,10 @@ AdjRoot-Aus[-cl] AdjObl[-avar] Infl[gen2] Essive (Lative|Ablative)?
 (Class AdjRoot-Aus[cl] AdjObl[sg]) | (ClassPl AdjRoot-Aus[cl] AdjObl[pl,-avar])  Infl[gen2] Essive (Lative|Ablative)?
 AdjRoot-Aus[-cl] AdjObl[-avar] Essive Infl[gen2] (Lative|Ablative)?
 
-LEXICON Class
-<cl>:[1]
-<cl>:й[2]
-<cl>:б[3]
-<cl>:й[4]
-
-LEXICON ClassPl
-<cl>:б[1,2]
-<cl>:й[3,4]
-
 LEXICON AdjNumber
 <abs.sg>:{о}[sg]
 <abs.pl>:{adj.pl}[pl.a]
-<abs.pl>:{ла}[avar]
+<abs.pl>:л{а}[avar]
 <abs.pl>:{а̄}[pl.aus]
 
 LEXICON Emphasis
