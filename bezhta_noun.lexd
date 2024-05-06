@@ -1,0 +1,49 @@
+PATTERNS
+Noun > (ConjClitics | Question)
+Noun > (PartClitics | Question)
+Noun > (AdpAffixes | Question)
+
+PATTERN Noun
+#множественное число
+NounRoot[а] [<n>:] NounPl[а] [<abs>:]
+NounRoot[ба] [<n>:] NounPl[ба] [<abs>:]
+NounRoot[ва] [<n>:] NounPl[ва] [<abs>:]
+NounRoot[да] [<n>:] NounPl[да] [<abs>:]
+NounRoot[йа] [<n>:] NounPl[йа] [<abs>:]
+NounRoot[ла] [<n>:] NounPl[ла] [<abs>:]
+NounRoot[бо] [<n>:] NounPl[бо] [<abs>:]
+NounRoot[рол] [<n>:] NounPl[рол] [<abs>:]
+NounRoot[ро] [<n>:] NounPl[ро] [<abs>:]
+NounRootLong[long] [<n>:] NounPl[long] [<abs>:]
+
+
+
+#склонение по падежам
+NounRoot [<n>:] [<abs>:]
+NounRoot-Obl Infl |(Essive Directive? (Lative|Ablative|Translative)?)
+NounRoot-Obl Infl[gen2] Essive (Lative|Ablative)?
+NounRoot-Obl Essive Infl[gen2] (Lative|Ablative)?
+
+NounRoot Noun-Pl-Obl Infl |(Essive Directive? (Lative|Ablative|Translative)?)
+NounRoot Noun-Pl-Obl Infl[gen2] Essive (Lative|Ablative)?
+NounRoot Noun-Pl-Obl Essive Infl[gen2] (Lative|Ablative)?
+
+LEXICON NounPl
+<pl>:а[а] # КАК СДЕЛАТЬ аа -> а̄??
+<pl>:аь[а]
+<pl>:б{а}[ба]
+<pl>:в{а}[ва]
+<pl>:д{а}[да]
+<pl>:й{а}[йа]
+<pl>:л{а}[ла]
+<pl>:б{о}[бо]
+<pl>:р{о}л[рол]
+<pl>:р{о}[ро]
+<pl>:{а̄}[long]
+
+LEXICON Noun-Pl-Obl
+<obl>:а
+<obl>:аь
+<obl>:ла
+<obl>:
+

@@ -1,0 +1,205 @@
+PATTERNS
+Verb > (Question | ConjClitics | PartClitics)
+ClassVerb > (Question | ConjClitics | PartClitics)
+
+PATTERN DoVerb
+Class Do[inf] Infinitive > Mood[dub]
+Class Do[inf] Imperative
+Class Do[val] Antipassive NegativeForms | TAM
+Class Do[pl] TAM | NagativeForms
+
+PATTERN Imperative
+Mood[imp] > Mood[rog]
+Mood[imp] > ([:а]? Mood[prmI]) > [<prmII>:ъ]
+Mood[prmIII]
+
+PATTERN Valency
+Antipassive
+Causative > Antipassive
+
+PATTERN TAM
+#--- positive forms ---
+Infinitive > Mood[dub] # dubitative mood
+Vowel? Past | Present | Future > Mood[hyp] #	hypothetical mood
+Plusquamperfect
+Imperative
+Mood[proh]
+Mood[opt]
+Mood[cond] > ([<invc>:л] | [<cnc>:на])	#	conditional, concessive conditional
+Vowel? Past | Present Mood[irr]	#	probabilitive (irreal conditional)
+Vowel? Participle[prs]
+Vowel? Participle[pst]
+Infinitive Participle[fut]
+Vowel? Converb[-prs,-inf]
+Vowel? Present Converb[prs]
+Infinitive Converb[inf]
+Vowel? Past Converb[pfv]
+
+#--- negative forms ---
+PATTERN NegativeForms
+Negation[-neg]
+Mood[neg.opt]
+Negation[neg] Mood[cond] > ([<invc>:л] | [<cnc>:на])
+Negation[neg] Participle
+Negation[pst] Converb[pfv]
+
+PATTERN Verb
+VerbRoot(1)[-cl] Antipassive? :VerbNumberInfix(1) VerbRoot(2)[-cl] VerbNumberInfix(2): Valency? Modal? TAM | NegativeForms 
+
+PATTERN ClassVerb
+
+VerbRootInf(1) :ClassInfix(1) Antipassive? VerbRootInf(2) ClassInfix(2): Vowel? Valency? Modal? TAM | NegativeForms
+Class VerbRoot(1)[cl] Antipassive? :VerbNumberInfix(1)[sg] VerbRoot(2)[cl] VerbNumberInfix(2)[sg]: Valency? Modal? TAM | NegativeForms
+ClassPl VerbRoot(1)[cl] Antipassive? :VerbNumberInfix(1)[-sg] VerbRoot(2)[cl] VerbNumberInfix(2)[-sg]: Valency? Modal? TAM | NegativeForms
+
+LEXICON VerbNumberInfix(2)
+:[sg] <v><sg>:[sg]
+:а[а,h] <v><pl>:а[а,h]
+:ба[ба,h] <v><pl>:ба[ба,h]
+:ва[ва,h] <v><pl>:ва[ва,h]
+:ваба[ваба,h] <v><pl>:ваба[ваба,h]
+:йа[йа,h] <v><pl>:йа[йа]
+:йаба[йаба,h] <v><pl>:йаба[йаба,h]
+:аь[аь,s] <v><pl>:аь[аь,s]
+:ба[баь,s] <v><pl>:ба[баь,s]
+:ва[ваь,s] <v><pl>:ва[ваь,s]
+
+LEXICON ClassInfix(2)
+:о <v><I>:о
+:и <v><II>:и
+:у <v><III/IV>:у
+
+LEXICON Causative 
+<caus>:л
+<caus>:лл
+<caus>:илл
+<caus>:гол
+
+LEXICON Antipassive
+<antip>:ла[h]
+<antip>:лаь[s]
+<antip>:да[da,h]
+<antip>:даь[s]
+<antip>:ва[h]
+<antip>:ваь[s]
+<antip>:а[h]
+<antip>:аь[s]
+
+LEXICON Transitivity
+<tr>:кӏ[кӏ]
+<intr>:к[к]
+<tr>:лӏ[лӏ]
+<tr>:л[л]
+<intr>:лъ[лъ]
+
+#---- Tense ----
+LEXICON Past 
+<pst>:йо[v]
+<pst>:ийо[c]
+<pst>:ло[l,h]
+<pst>:лоь[l,s]
+
+LEXICON Negation
+<neg>:аъ[neg]
+<neg>:аьъ[neg]
+<neg><pst>:еъеш[pst]
+<neg><pst>:йъеш[pst]
+<neg><prs>:аъас[h] 
+<neg><prs>:аьъаьш
+<neg><imp>:ассаъ
+<neg><imp>:ссаъ
+<neg><imp>:аьшшаьъ
+<neg><imp>:шшаьъ
+<neg><pfv.cvb>:ечӏе
+<neg><pfv.cvb>:йчӏе
+
+LEXICON Present
+<prs>:ца[l,c,h]
+<prs>:чаь[l,c,s]
+<prs>:с[v,h]
+<prs>:ш[v,s]
+
+LEXICON Future
+<fut>:ас
+<fut>:аьш
+
+LEXICON Plusquamperfect
+<ppf>:а̄гьийо
+<ppf>:а̄ьгьийо
+
+#---- Mood ----
+
+LEXICON Mood
+<imp>:{а}[imp]
+<imp>:[imp]
+<imp>:и[imp]
+<imp>:е[imp]
+<imp>:{о}[imp]
+<proh>:а̄къа[proh]
+<opt>:акъос[opt]
+<opt>:къос[opt]
+<neg.opt>:акъаъас[opt.neg]
+<neg.opt>:къаъас[opt.neg]
+<rog>:ло̄[rog]
+<rog>:ловале[rog]
+<rog>:лоало[rog]
+<prmI>:л{а}[prmI]
+<prmII>:ъ[prmII]
+<prmIII>:{а}ла̄[prmIII]
+<cond>:да[cond]
+<irr>:къода̄[irr]
+<dub>:ла̄[dub]
+<dub>:ла̄ъ[dub]
+<hyp>:ле[hyp]
+
+LEXICON Modal
+<pot>:йлъ
+<pot>:лъ
+<pot>:йцӏ
+<pot>:йчӏ
+<vol>:акъ
+<vol>:къа
+
+#---- Non-finite forms ----
+
+LEXICON Infinitive 
+<inf>:{а}л
+
+LEXICON Masdar
+<nmlz>:лъи
+<nmlz>:ни
+
+LEXICON Participle
+<prs.ptsp>:цас[prs]
+<prs.ptsp>:чаьш[prs]
+<pst.ptsp>:йо[pst]
+<fut.ptsp>:лъийо[fut]
+
+LEXICON Converb
+<pfv.cvb>:на[h,pfv]
+<pfv.cvb>:на[s,pfv]
+<prs.cvb>:лаъ[h,prs]
+<prs.cvb>:лаьъ[s,prs]
+<simul.cvb>:лъ
+<simul.cvb>:лъо
+<ant.cvb>:лъол
+<cvb>:а̄лъо
+<cvb>:а̄лъол
+<cvb>:лъегьна[inf]
+<since.cvb>:с[since,h]
+<since.cvb>:ш[since,s]
+
+# ---- Discourse ----
+LEXICON Question
+<q>:д
+<q>:ди
+<q>:лӏо̄
+
+LEXICON Vowel
+<vwl>:и[и]
+<vwl>:е[е]
+<vwl>:а[а]
+<vwl>:о[о]
+
+
+

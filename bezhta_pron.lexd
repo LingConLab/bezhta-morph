@@ -1,6 +1,16 @@
 PATTERNS
+Personal > (ConjClitics | PartClitics)
+Demonstrative > (ConjClitics | PartClitics)
+Interrogative > (ConjClitics | PartClitics)
+IndefiniteP > (ConjClitics | PartClitics)
+ReflexiveP > (ConjClitics | PartClitics)
+UniversalP > (ConjClitics | PartClitics)
+DistributiveP > (ConjClitics | PartClitics)
+OtherPronoun > (ConjClitics | PartClitics)
+PronounLocatives > (ConjClitics | PartClitics)
 
 #----PERSONAL PRONOUNS-----
+PATTERN Personal
 PersonalPronoun[abs] [<abs>:]
 PersonalPronoun[erg] Infl[erg]
 PersonalPronoun[gen] Infl[gen]
@@ -12,6 +22,7 @@ PersonalPronoun[2sg]
 
 
 #----DEMONSTRATIVES-----
+PATTERN Demonstrative
 Demonstratives[1,4] Proximity[1,4] [<abs>:]
 Demonstratives[2,3] Proximity[2,3] [<abs>:]
 Demonstratives-Plural-Abs [<abs>:]
@@ -19,6 +30,7 @@ Demonstratives-Obl Infl
 Demonstratives-Plural-Obl Infl
 
 #----INTERROGATIVES-----
+PATTERN Interrogative
 Interrogatives [<abs>:] (Indefinite IndefiniteParticle?)?
 Interrogatives [<abs>:] Negative (Universal UniversalParticle?)?
 Interrogatives-Obl[what] Infl (Indefinite IndefiniteParticle?)?
@@ -31,28 +43,35 @@ Interrogatives-Obl[who2] Infl[-erg,-gen] (Indefinite IndefiniteParticle?)?
 Interrogatives-Obl[who2] Infl[-erg,-gen] (Negative (Universal UniversalParticle?)?)?
 
 #----INDEFINITES-----
+PATTERN IndefiniteP
 ExpressiveIndefinite[-cl]|(Class ExpressiveIndefinite[cl])|ExpressiveIndefinite-Pl[-cl]|(ClassPl ExpressiveIndefinite-Pl) [<abs>:]
 ExpressiveIndefinite-Obl[-cl]|(Class ExpressiveIndefinite-Obl[cl])|ExpressiveIndefinite-Pl-Obl[-cl]|(ClassPl ExpressiveIndefinite-Pl-Obl[cl]) Infl
 
 #----REFLEXIVES----- 
+PATTERN ReflexiveP
 Reflexive ReflexivePlural?
 (PersonalPronoun[abs] [<abs>:]) | Demonstratives Reflexive 
 Reflexive-Obl Infl
 
 #----UNIVERSAL PRONOUNS----- 
+PATTERN UniversalP
 UniversalRoot [<abs>:]
 UniversalRoot-Obl Infl
 
 #----DISTRIBUTIVES----- 
+PATTERN DistributiveP
 DistributiveRoot [<abs>:]
 DistributiveRoot [<obl>:ли] Infl
 
 #----Other----- 
+PATTERN OtherPronoun
 Other [<abs>:] [<add>:на]?
 Other [<abs>:] [<add>:со]?
 OtherObl Infl
 
 #----Locatives-----
+
+PATTERN PronounLocatives
 
 PersonalPronoun[ins]|Demonstratives-Obl|Demonstratives-Plural-Obl|Reflexive-Obl|UniversalRoot-Obl|(DistributiveRoot [<obl>:ли])|ExpressiveIndefinite-Obl[-cl]|(Class ExpressiveIndefinite-Obl[cl])|ExpressiveIndefinite-Pl-Obl[-cl]|(ClassPl ExpressiveIndefinite-Pl-Obl[cl]) Essive Directive? (Lative|Ablative|Translative)?
 
@@ -65,29 +84,29 @@ Interrogatives-Obl[-who] Infl[gen2] Essive (Lative|Ablative)? (Indefinite Indefi
 Interrogatives-Obl[-who] Essive Infl[gen2] (Lative|Ablative)? (Indefinite IndefiniteParticle?)? | (Negative (Universal UniversalParticle?)?)?
 
 LEXICON PersonalPronoun
-до[abs,erg] # я
-до<obl><genI>:дие[1sg]
-до<obl>:ди[dat]
-до<obl>:дие[gen2]
-до<obl>:дӣ[ins,loc]
+до<pron>:до[abs,erg] # я
+до<pron><obl><genI>:дие[1sg]
+до<pron><obl>:ди[dat]
+до<pron><obl>:дие[gen2]
+до<pron><obl>:дӣ[ins,loc]
 
-ми[abs,erg] #ты
-ми<obl><genI>:дибо[2sg]
-ми<obl>:дибо[gen2]
-ми<obl>:ду[dat]
-ми<obl>:дӯ[ins,loc]
+ми<pron>:ми[abs,erg] #ты
+ми<pron><obl><genI>:дибо[2sg]
+ми<pron><obl>:дибо[gen2]
+ми<pron><obl>:ду[dat]
+ми<pron><obl>:дӯ[ins,loc]
 
-иле[abs,erg] #мы
-иле<obl>:ило[gen,dat,ins]
-иле<obl>:ил[gen2]
+иле<pron>:иле[abs,erg] #мы
+иле<pron><obl>:ило[gen,dat,ins]
+иле<pron><obl>:ил[gen2]
 
-миже[abs,erg] #вы
-миже<obl>:мизо[gen,gen2,dat,ins]
+миже<pron>:миже[abs,erg] #вы
+миже<pron><obl>:мизо[gen,gen2,dat,ins]
 
 LEXICON Demonstratives
-гьу[1,4] 
-вагь[1,4]
-гьо[2,3]
+гьу<dem>:гьу[1,4] 
+вагь<dem>:вагь[1,4]
+гьо<dem>:гьо[2,3]
 
 LEXICON Proximity
 <prox.1/4>:ди[1,4] # близость к говорящему
@@ -98,48 +117,48 @@ LEXICON Proximity
 <dist.2/3>:го[2,3] # дальность
 
 LEXICON Demonstratives-Obl
-гьу<prox.1/4><obl>:гьоцо
-гьу<med.1/4><obl>:гьолцо
-гьу<dist.1/4><obl>:гьогцо
-гьо<prox.2/3><obl>:гьолӏо
-гьо<med.2/3><obl>:гьоллъо
-гьо<dist.2/3><obl>:гьоглӏо
-вагь<prox.1/4><obl>:вагьадцо
-вагь<prox.1/4><obl>:вагьацо
-вагь<med.1/4><obl>:вагьалцо
-вагь<dist.1/4><obl>:вагьагцо
-вагь<prox.2/3><obl>:вагьадлӏо
-вагь<prox.2/3><obl>:вагьалӏо
-вагь<med.2/3><obl>:вагьаллъо
-вагь<dist.2/3><obl>:вагьаглӏо
+гьу<dem><prox.1/4><obl>:гьоцо
+гьу<dem><med.1/4><obl>:гьолцо
+гьу<dem><dist.1/4><obl>:гьогцо
+гьо<dem><prox.2/3><obl>:гьолӏо
+гьо<dem><med.2/3><obl>:гьоллъо
+гьо<dem><dist.2/3><obl>:гьоглӏо
+вагь<dem><prox.1/4><obl>:вагьадцо
+вагь<dem><prox.1/4><obl>:вагьацо
+вагь<dem><med.1/4><obl>:вагьалцо
+вагь<dem><dist.1/4><obl>:вагьагцо
+вагь<dem><prox.2/3><obl>:вагьадлӏо
+вагь<dem><prox.2/3><obl>:вагьалӏо
+вагь<dem><med.2/3><obl>:вагьаллъо
+вагь<dem><dist.2/3><obl>:вагьаглӏо
 
 LEXICON Demonstratives-Plural-Abs
-гьу<prox.1/4><pl>:гьоддо̄л
-гьу<med.1/4><pl>:гьолло̄л
-гьу<dist.1/4><pl>:гьогго̄л
-вагь<prox.1/4><pl>:вагьаддо̄л
-вагь<med.1/4><pl>:вагьалло̄л
-вагь<dist.1/4><pl>:вагьагго̄л
-гьо<prox.2/3><pl>:гьоддо̄л
-гьо<med.2/3><pl>:гьолло̄л
-гьо<dist.2/3><pl>:гьогго̄л
-вагь<prox.2/3><pl>:вагьаддо̄л
-вагь<med.2/3>:вагьалло̄л
-вагь<prox.2/3>:вагьагго̄л
+гьу<dem><prox.1/4><pl>:гьоддо̄л
+гьу<dem><med.1/4><pl>:гьолло̄л
+гьу<dem><dist.1/4><pl>:гьогго̄л
+вагь<dem><prox.1/4><pl>:вагьаддо̄л
+вагь<dem><med.1/4><pl>:вагьалло̄л
+вагь<dem><dist.1/4><pl>:вагьагго̄л
+гьо<dem><prox.2/3><pl>:гьоддо̄л
+гьо<dem><med.2/3><pl>:гьолло̄л
+гьо<dem><dist.2/3><pl>:гьогго̄л
+вагь<dem><prox.2/3><pl>:вагьаддо̄л
+вагь<dem><med.2/3>:вагьалло̄л
+вагь<dem><prox.2/3>:вагьагго̄л
 
 LEXICON Demonstratives-Plural-Obl
-гьу<prox.1/4><obl.pl>:гьодло
-гьу<med.1/4><obl.pl>:гьолло
-гьу<dist.1/4><obl.pl>:гьогло
-вагь<prox.1/4><obl.pl>:вагьадло
-вагь<med.1/4><obl.pl>:вагьалло
-вагь<dist.1/4><obl.pl>:вагьагло
-гьо<prox.2/3><obl.pl>:гьодло
-гьо<med.2/3><obl.pl>:гьолло
-гьо<dist.2/3><obl.pl>:гьогло
-вагь<prox.2/3><obl.pl>:вагьадло
-вагь<med.2/3><obl.pl>:вагьалло
-вагь<prox.2/3><obl.pl>:вагьагло
+гьу<dem><prox.1/4><obl.pl>:гьодло
+гьу<dem><med.1/4><obl.pl>:гьолло
+гьу<dem><dist.1/4><obl.pl>:гьогло
+вагь<dem><prox.1/4><obl.pl>:вагьадло
+вагь<dem><med.1/4><obl.pl>:вагьалло
+вагь<dem><dist.1/4><obl.pl>:вагьагло
+гьо<dem><prox.2/3><obl.pl>:гьодло
+гьо<dem><med.2/3><obl.pl>:гьолло
+гьо<dem><dist.2/3><obl.pl>:гьогло
+вагь<dem><prox.2/3><obl.pl>:вагьадло
+вагь<dem><med.2/3><obl.pl>:вагьалло
+вагь<dem><prox.2/3><obl.pl>:вагьагло
 
 LEXICON PronAdjectives #доделать склонение
 гьуддийо # вот такой, как этот, невидимый
@@ -168,20 +187,20 @@ LEXICON PronAdjectives #доделать склонение
 вагьаггола # столько
 
 LEXICON Interrogatives
-сукӏо[who] #кто
-сийо[what] #что
-нӣйо #какой
-ла #сколько
-лас #какой по счету
-нигъа #как
-на̄ #где, куда
-нито #когда
-лъинибза #почему
+сукӏо<pron>:сукӏо[who] #кто
+сийо<pron>:сийо[what] #что
+нӣйо<pron>:нӣйо #какой
+ла<pron>:ла #сколько
+лас<pron>:лас #какой по счету
+нигъа<pron>:нигъа #как
+на̄<pron>:на̄ #где, куда
+нито<pron>:нито #когда
+лъинибза<pron>:лъинибза #почему
 
 LEXICON Interrogatives-Obl
-сукӏо<obl>:лъо[who] #кто
-сукӏо<obl>:лъо̄[who2] #кто
-сийо<obl>:лъин{и}[what] #что
+сукӏо<pron><obl>:лъо[who] #кто
+сукӏо<pron><obl>:лъо̄[who2] #кто
+сийо<pron><obl>:лъин{и}[what] #что
 
 LEXICON Reflexive
 <refl>:жуь
@@ -197,34 +216,34 @@ LEXICON Reflexive-Obl
 зу<refl><pl><obl>:гьиде
 
 LEXICON Reciprocal
-<recp>:-гьоᴴсо #пока с -, т.к. еще не разобралась с модулем апертиум для обработки таких случаев
+<recp>:-гьоᴴсо 
 
 LEXICON Indefinite
 <indf>:ди
 
 LEXICON ExpressiveIndefinite
-атӏтӏийо[cl]
-атӏийо[cl] # любой
-бокьараб # любой
-бокькьараб # любой
+атӏтӏийо<pron>:атӏтӏийо[cl]
+атӏийо<pron>:атӏийо[cl] # любой
+бокьараб<pron>:бокьараб # любой
+бокькьараб<pron>:бокькьараб # любой
 
 LEXICON ExpressiveIndefinite-Pl
-атӏийо<pl>:атӏтӏийа̄[cl]
-атӏтӏийо<pl>:атӏийа̄[cl] # любой
-бокьараб<pl>:бокьарабла # любой
-бокькьараб<pl>:бокькьарабла # любой
+атӏийо<pron><pl>:атӏтӏийа̄[cl]
+атӏтӏийо<pron><pl>:атӏийа̄[cl] # любой
+бокьараб<pron><pl>:бокьарабла # любой
+бокькьараб<pron><pl>:бокькьарабла # любой
 
 LEXICON ExpressiveIndefinite-Obl
-атӏийо<obl>:атӏийа[cl] # любой
-атӏтӏийо<obl>:атӏтӏийа[cl] # любой
-бокьараб<obl>:бокьарабли # любой
-бокькьараб<obl>:бокькьарабли # любой
+атӏийо<pron><obl>:атӏийа[cl] # любой
+атӏтӏийо<pron><obl>:атӏтӏийа[cl] # любой
+бокьараб<pron><obl>:бокьарабли # любой
+бокькьараб<pron><obl>:бокькьарабли # любой
 
 LEXICON ExpressiveIndefinite-Pl-Obl
-атӏийо<obl.pl>:атӏтӏийа̄[cl]
-атӏтӏийо<obl.pl>:атӏийа̄[cl] # любой
-бокьараб<obl.pl>:бокьарабла̄ # любой
-бокькьараб<obl.pl>:бокькьарабла̄ # любой
+атӏийо<pron><obl.pl>:атӏтӏийа̄[cl]
+атӏтӏийо<pron><obl.pl>:атӏийа̄[cl] # любой
+бокьараб<pron><obl.pl>:бокьарабла̄ # любой
+бокькьараб<pron><obl.pl>:бокькьарабла̄ # любой
 
 LEXICON IndefiniteParticle
 <indf>:-суди
@@ -236,27 +255,27 @@ LEXICON Negative
 <neg>:на
 
 LEXICON UniversalRoot
-га̄ьгьийо # все
-къацӏцӏо # все
+га̄ьгьийо<pron>:га̄ьгьийо # все
+къацӏцӏо<pron>:къацӏцӏо # все
 
 LEXICON UniversalRoot-Obl
-га̄ьгьийо<obl>:га̄ьгьийа
-къацӏцӏо<obl>:къацӏцӏола
+га̄ьгьийо<pron><obl>:га̄ьгьийа
+къацӏцӏо<pron><obl>:къацӏцӏола
 
 LEXICON Universal
 <univ>:зу
 
 LEXICON DistributiveRoot
-жӣжиб # каждый
-сибаб # каждый
-шибаб # каждый
+жӣжиб<pron>:жӣжиб # каждый
+сибаб<pron>:сибаб # каждый
+шибаб<pron>:шибаб # каждый
 
 LEXICON Other
-бади #другой
-бадо #другая
-баддо̄л #другие
+бади<pron>:бади #другой
+бадо<pron>:бадо #другая
+баддо̄л<pron>:баддо̄л #другие
 
 LEXICON OtherObl
-бади<obl>:бацо
-бадо<obl>:балӏо
-баддо̄л<obl>:бадло
+бади<pron><obl>:бацо
+бадо<pron><obl>:балӏо
+баддо̄л<pron><obl>:бадло
