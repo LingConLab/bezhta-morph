@@ -1,0 +1,11 @@
+Alphabet
+	а а̄ б в г д е е̄ ж з и ӣ й к л м н о о̄ п р с т у ӯ ф х ц ч ш щ ъ ы ь ӏ ᴴ э э̄ ю я 
+	;
+Sets
+  Vowels = а е и о у ы э ю я ӣ ӯ а̄ о̄ е̄ э̄;
+  Consonants = б в г д ж з й к л м н п р с т ф х ц ч ш щ;
+  Mods = ь ъ ӏ;
+ 
+Rules
+"denasalization of vowel after м"
+ᴴ:0 <=> # м Vowels (ь) _ ; 

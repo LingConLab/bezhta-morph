@@ -1,43 +1,35 @@
 Alphabet
-	а а̄ б в г д е е̄ ж з и ӣ й к л м н о о̄ п р с т у ӯ ф х ц ч ш щ ъ ы ь ӏ ᴴ э э̄ ю я %-
-	д:б н:л
-
-%{genI%}:с
-%{genI%}:ш
-
-%{и%}:0
-%{и%}:и
-
-%{л%}:л
-%{л%}:ил
-%{л%}:ол
-%{л%}:ал
-
-%{с%}:с
-%{с%}:ис
-%{с%}:ос
-%{с%}:со
-%{с%}:ас
-
-%{кьа̄%}:кьа̄
-%{кьа̄%}:лкьа̄
-
-%{ла%}:ла
-%{ла%}:лаь
-
-%{а%}:а
-%{а%}:аь
-
-%{а̄%}:а̄
-%{а̄%}:а̄ь
-%{а̄%}:а̄ьᴴ
-
-%{о%}:о
-%{о%}:оь
-%{о%}:оьᴴ
-
-%{со%}:со
-%{со%}:шоь
+	а а̄ б в г д е е̄ ж з и ӣ й к л м н о о̄ п р с т у ӯ ф х ц ч ш щ ъ ы ь ӏ ᴴ э э̄ ю я 
+	%{и%}:0
+	%{и%}:и
+	
+	%{V%}:0
+	%{V%}:о
+	%{V%}:и
+	%{V%}:а
+	
+	%{V2%}:0
+	%{V2%}:о
+	
+	%{C%}:0
+	%{C%}:л
+	
+	%{gen%}:с
+	%{gen%}:ш
+	
+	%{UM%}:0
+	%{UM%}:ь
+	
+	%{з%}:з
+	%{з%}:ж
+	%{ц%}:ц
+	%{ц%}:ч
+	%{цӏ%}:цӏ
+	%{цӏ%}:чӏ
+	
+	%{N%}:б
+	%{N%}:м
+	
 ;
 
 Sets
@@ -51,86 +43,78 @@ C = :Consonants [ :Mods ]*;
   
 Rules
 
-"genI suffix realization с --> ш "
-%{genI%}:ш <=> е _ ;
-
-"genI suffix realization с --> ш "
-%{genI%}:ш <=> Vowels ь _ ;
-
 "vowel dropping in locative forms"
 %{и%}:0 <=> _ X ; where X in (г х к);
 
 "vowel dropping in locative forms"
 %{и%}:0 <=> _ д о й;
 
-"lative suffix realization л --> ил"
-%{л%}:ил <=> л ӏ _ ;
+"genI suffix realization с --> ш "
+%{gen%}:ш <=> е _ ;
+
+"genI suffix realization с --> ш "
+%{gen%}:ш <=> Vowels ь _ ;
 
 "lative suffix realization л --> ил"
-%{л%}:ил <=> и (л) ъ _ ;
+%{V%}:и <=> л ӏ _ л;
 
 "lative suffix realization л --> ил"
-%{л%}:ил <=> о л ъ _ ;
+%{V%}:и <=> и (л) ъ _ л;
 
 "lative suffix realization л --> ил"
-%{л%}:ил <=> о̄ л ъ _ ;
+%{V%}:и <=> о л ъ _ л;
 
 "lative suffix realization л --> ил"
-%{л%}:ил <=> л %{а%}:а л ъ  _ ;
+%{V%}:и <=> о̄ л ъ _ л;
+
+"lative suffix realization л --> ил"
+%{V%}:и <=> л а л ъ _ л;
 
 "lative suffix realization л --> ол"
-%{л%}:ол <=> о ъ _ ;
+%{V%}:о <=> о ъ _ л;
 
 "lative suffix realization л --> ол"
-%{л%}:ол <=> о̄ ъ _ ;
+%{V%}:о <=> о̄ ъ _ л;
 
 "lative suffix realization л --> ал"
-%{л%}:ал <=> %{а%}:а ъ _ ;
+%{V%}:а <=> а ъ _ л;
 
 "ablative suffix realization с --> ис"
-%{с%}:ис <=> и ъ _ ; 
+%{V%}:и <=> и ъ _ с; 
 
 "ablative suffix realization с --> ос"
-%{с%}:ос <=> о ъ _ ; 
+%{V%}:о <=> о ъ _ с; 
 
 "ablative suffix realization с --> ас"
-%{с%}:ас <=> а ъ _ ;
+%{V%}:а <=> а ъ _ с;
 
 "ablative suffix realization с --> ос"
-%{с%}:ос <=> о̄ ъ _ ; 
+%{V%}:о <=> о̄ ъ _ с; 
 
 "ablative suffix realization с --> со"
-%{с%}:со <=> л X _ ; where X in Mods;
+%{V2%}:о <=> л X (%{V%}:) с _ ; where X in Mods;
 
 "translative suffix realization"
-%{кьа̄%}:лкьа̄ <=> ь а _ ;
+%{C%}:л <=> ь а _ к ь а̄;
 
 "translative suffix realization"
-%{кьа̄%}:лкьа̄ <=> ъ а _ ;
+%{C%}:л <=> ъ а _ к ь а̄;
 
-"a -> аь vowel harmony"
-%{а%}:аь <=> Vowels ь X+ _  ; where X in C;
+"vowel harmony"
+%{UM%}:ь <=> Vowels ь X+ [а̄ | а | о ] _  ; where X in C;
 
-"ā -> а̄ь vowel harmony"
-%{а̄%}:а̄ь <=> Vowels ь X+ _  ; where X in C; 
+"с --> ш"
+%{с%}:ш <=> ь _ ; и _ е ; е _ е ; а _ е ;
 
-"o -> oь vowel harmony"
-%{о%}:оь <=> Vowels ь X+ _  ; where X in C; 
+"цӏ --> чӏ"
+%{цӏ%}:чӏ <=> и _ е ; е _ е ; а _ е ;
 
-"ā -> а̄ьᴴ vowel harmony"
-%{а̄%}:а̄ьᴴ <=> Vowels ь ᴴ X+ _  ; where X in C;
+"ц --> ч"
+%{ц%}:ч <=> и _ е ; е _ е ; а _ е ;
 
-"o -> oьᴴ vowel harmony"
-%{о%}:оьᴴ <=> Vowels ь ᴴ X+ _  ; where X in C;
+"з --> ж"
+%{з%}:ж <=> и _ е ; е _ е ; а _ е ;
 
-"regressive assimilation д --> б before б"
-д:б <=>  _ б ;
+"б --> м before nasals"
+%{N%}:м <=> # _ Vowels (ь) ᴴ; 
 
-"regressive assimilation н --> л before л"
-н:л <=>  _ л ;
-
-"б --> м assimilation before nasals"
-б:м <=> # _ Vowels (ь) ᴴ ;
-
-"denasalization"
-ᴴ:0 <=> # б Vowels (ь) _ ;

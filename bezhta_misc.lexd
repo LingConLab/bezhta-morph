@@ -1,6 +1,7 @@
 PATTERNS
 Conjunctions
 Participles
+Interjections
 
 LEXICON AdpAffixes
 <post>:лабза # вместо, ради
@@ -75,6 +76,9 @@ LEXICON Participles
 эггу	#	разве
 суди	#	либо, -то
 лӏо	#	мол
+
+LEXICON Quotative
+<quot>:лӏо	#	мол
 
 LEXICON Interjections
 вабабай	# ой-ой-ой

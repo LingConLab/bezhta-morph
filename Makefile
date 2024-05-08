@@ -11,9 +11,9 @@ var.transliterator.hfst: variants
 	hfst-strings2fst -j variants -o var.hfst
 	hfst-repeat -f 1 var.hfst -o var.transliterator.hfst
 	rm var.hfst
-
+	
 # generate generator
-bezhta.generator.hfst: bezhta.lexd bezhta.twol.hfst
+bezhta.generator.hfst: bezhta.lexd bezhta.twol.hfst 
 	lexd $< | hfst-txt2fst -o bezhta_.generator.hfst
 	hfst-compose-intersect bezhta_.generator.hfst bezhta.twol.hfst -o $@
 	rm bezhta_.generator.hfst

@@ -1,7 +1,7 @@
 LEXICON Infl
 <erg>:[erg]
-<genI>:{genI}[gen]
-<genII>:л{а}[gen2]
+<genI>:{gen}[gen]
+<genII>:ла[gen2]
 <dat>:л[dat]
 <ins>:д[ins]
 
@@ -16,13 +16,13 @@ LEXICON Essive
 <poss><essive>:хъа[poss]
 
 LEXICON Lative
-<lative>:{л}
+<lative>:{V}л
 
 LEXICON Translative
-<translative>:{кьа̄}
+<translative>:{C}кьа̄
 
 LEXICON Ablative
-<ablative>:{с} 
+<ablative>:{V}с{V2}
 
 LEXICON Directive
 <dir>:да̄

@@ -26,15 +26,11 @@ AdjRoot-Aus[-cl] AdjObl[-avar] Infl[gen2] Essive (Lative|Ablative)?
 AdjRoot-Aus[-cl] AdjObl[-avar] Essive Infl[gen2] (Lative|Ablative)?
 
 LEXICON AdjNumber
-<abs.sg>:о[sg]
-<abs.sg>:оь[sg]
-<abs.pl>:а[pl.a]
-<abs.pl>:аь[pl.a]
+<abs.sg>:о{UM}[sg]
+<abs.pl>:а{UM}[pl.a]
 <abs.pl>:ва̄[pl.a]
-<abs.pl>:ла[avar]
-<abs.pl>:лаь[avar]
-<abs.pl>:а̄[pl.aus]
-<abs.pl>:а̄ь[pl.aus]
+<abs.pl>:ла{UM}[avar]
+<abs.pl>:а̄{UM}[pl.aus]
 <abs.pl>:а̄ьᴴ[pl.aus]
 
 LEXICON Emphasis
@@ -42,10 +38,10 @@ LEXICON Emphasis
 <emp>:шоь
 
 LEXICON AdjObl
-<obl.sg>:{а}[sg]
+<obl.sg>:а{UM}[sg]
 <obl.sg>:ли[avar]
-<obl.pl>:{а̄}[pl]
-<obl.pl>:{ла}[avar,pl]
+<obl.pl>:а̄{UM}[pl]
+<obl.pl>:ла{UM}[avar,pl]
 
 LEXICON AdjRoot-Avar
 аваданаб<adj>:аваданаб # веселый

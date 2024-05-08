@@ -26,15 +26,11 @@ AdjRoot-Aus[-cl] AdjObl[-avar] Infl[gen2] Essive (Lative|Ablative)?
 AdjRoot-Aus[-cl] AdjObl[-avar] Essive Infl[gen2] (Lative|Ablative)?
 
 LEXICON AdjNumber
-<abs.sg>:о[sg]
-<abs.sg>:оь[sg]
-<abs.pl>:а[pl.a]
-<abs.pl>:аь[pl.a]
+<abs.sg>:о{UM}[sg]
+<abs.pl>:а{UM}[pl.a]
 <abs.pl>:ва̄[pl.a]
-<abs.pl>:ла[avar]
-<abs.pl>:лаь[avar]
-<abs.pl>:а̄[pl.aus]
-<abs.pl>:а̄ь[pl.aus]
+<abs.pl>:ла{UM}[avar]
+<abs.pl>:а̄{UM}[pl.aus]
 <abs.pl>:а̄ьᴴ[pl.aus]
 
 LEXICON Emphasis
@@ -42,10 +38,10 @@ LEXICON Emphasis
 <emp>:шоь
 
 LEXICON AdjObl
-<obl.sg>:{а}[sg]
+<obl.sg>:а{UM}[sg]
 <obl.sg>:ли[avar]
-<obl.pl>:{а̄}[pl]
-<obl.pl>:{ла}[avar,pl]
+<obl.pl>:а̄{UM}[pl]
+<obl.pl>:ла{UM}[avar,pl]
 
 LEXICON AdjRoot-Avar
 аваданаб<adj>:аваданаб # веселый
@@ -256,6 +252,7 @@ Class Adverb[cl]
 
 LEXICON Adverb
 каъ
+кьа̄ь
 къолӏ
 нухъулӏ
 къей
@@ -276,6 +273,7 @@ LEXICON Adverb
 лӏийо
 бета
 икье
+же
 желӏба
 гизила
 жейса
@@ -347,11 +345,399 @@ LEXICON Adverb
 мицаъ
 муьгъаьлӏ
 да̄ла
+авадан	#	 весело, жизнерадостно
+агада̄	#	 со знач. в западной половине села
+ага̄	#	 со знач. вне села
+азодо	#	 летом
+азодойцӏо	#	 к лету
+айада̄	#	 со знач. в восточной половине (части) села, на востоке
+анталаъ	#	 вовремя
+арад	#	 в прошлом
+архийанат	#	 надолго, вечно
+асли	#	 как раз, точь-в-точь, в пору
+атада̄	#	 там, туда
+ата̄	#	 1) далеко (объект виден)
+ахо	#	 1) хорошо
+аххо	#	 сильно
+аьдаьдаь	#	 напрасно, бесцельно, попусту, зря
+аьдаьтаьлдаь	#	 1) сильно
+аьжаьибалда	#	 удивительно, необыкновенно
+аьйд	#	 раньше, в старину
+аьйдла̄ьгъаьд	#	 по старинке, по-старому
+аьлаьмаьтаьлдаь	#	 странно, удивленно
+аьлӏаьчаьл	#	 очень много
+аᴴцӏда̄	#	 1) в острую сторону, острием
+аᴴцӏда̄лаъ	#	 острием (клином) вперед
+аьᴴйда̄ькьа̄ь	#	 спереди, впереди
+аьᴴйдда̄ь	#	 вначале, сначала, сперва
+аьᴴтӏаь	#	 много (тляд.)
+аьᴴхъегъа	#	 наклонно, под наклоном
+аьᴴйда̄ь	#	 1) впервые
+бадалаъ	#	 со знач. вместо тебя, за тебя
+бадо̄лъо	#	 в старину
+балкьасзу	#	 1) вдруг, неожиданно
+балъго	#	 тайно, тайком
+батӏацца	#	 1) по-другому
+баьвликьа	#	 на четвереньках
+бежкьалагъад	#	 по-бежтин-  ски
+белла̄гъа	#	 со знач. 1) за яловыми (овцами или коровами) 2) перен. в штрафную
+бета	#	 1. 1) после, потом
+бетагъа	#	 со знач. в сторону
+беталалъ	#	 в следующий раз, потом
+бетала̄лъо	#	 потом, через некоторое время
+бехъхъада̄	#	 на восточной стороне (села), на востоке
+бизалба̄кьа	#	 1) форма жеребьевки в игре 2) название первой стадии игры в «чижики»
+бихъхъаъда̄	#	 1) на южном склоне
+боглаъ	#	 вовремя
+боькъоьъ	#	 исподлобья (выражать недовольство)
+букъа̄гъад	#	 по-взрослому, как взрослый
+букьа̄кьа	#	 в знач. по углам
+бустӏулликьа	#	 кубарем, кувырком
+вагьагга̄	#	 так (как тот, как он)
+вагьагга̄зу	#	 1) просто так
+вагьадда̄	#	 вот так
+вагьадда̄зу	#	 1) просто так 2) так, даром, бесплатно
+вагьалла̄	#	 вот так
+вагьга̄	#	 так, вот так (дальше от говорящего и слушающего)
+вагьгишинаб	#	 столько
+вагьда̄	#	 вот так (как тот) (близко к говорящему)
+вагьдишинаб	#	 столько
+вагьла̄	#	 так, вот так (дальше от говорящего и слушающего)
+вагьла̄зу	#	 просто так
+вагьлишинаб	#	 столько
+валав	#	 ни разу, никогда
+воддиъ	#	 ежедневно, каждый день
+гама̄д	#	 много (букв. кипами, кучами)
+гаьлъгъаь	#	 так (как есть)
+гаьлълъа̄ьчоь	#	 там (на том же месте)
+га̄д	#	 много
+гелокьас	#	 вдруг, неожиданно, внезапно
+гелокьассу	#	 вдруг, неожиданно, внезапно
+гелокьас	#	 иногда, временами
+гигьид	#	 тайком, скрытно
+гизила	#	 в следующем году
+гизилалалъ	#	 через два года
+гизилала̄лъ	#	 через тричетыре года
+гикьа	#	 в знач. на краю
+йикьа	#	 на краю ♦ гикьайикьа онкъал дойти до крайности (до предела)
+гикьайцӏо	#	 со знач. на краю
+гилакьа	#	 на плечах
+гилъ	#	 глубоко, вглубь
+гилӏ	#	 вниз
+гисда̄	#	 наружу, на улице
+готӏарилӏ	#	 быстро и стремительно
+гъугълокьа	#	 на корточках
+гьако	#	 поздно
+гьакьа	#	 пешком
+къолӏда̄	#	 валетом
+гьалошаьтӏтӏоь	#	 босиком
+гьацо	#	 прицельно, метко
+гьабсаъат	#	 сейчас
+гьаьгъаь	#	 со знач. перед глазами ♦ гьаьгъаь аьнйда̄ь йецал а) стоять перед глазами б) представить, вспомнить в) не забывать
+гьаьдуьршаь	#	 наготове
+чочоъ	#	 на закорки, на закорках (на плечи)
+гьаьлкизиан	#	 много, в большом количестве
+гьаьллид	#	 1) силой
+гьаьлликъа	#	 с силой
+гьаьте	#	 медленно
+гьаьтейцӏо	#	 со знач. в 9 или 10 часов дня
+гьаьткун	#	 1) беспрерывно, безостановочно
+гьаᴴже	#	 теперь, сейчас, ныне
+гьаᴴкъкъа	#	 иногда
+гьаᴴкъкъадана	#	 хоть раз
+гьаᴴкъкъалаъ	#	 иногда, редко
+гьаᴴкъкъана	#	 ни разу, никогда
+гьеᴴх	#	 очень быстро, мгновенно
+гьеᴴхда̄ла	#	 недавно
+гьеᴴхзу	#	 давно, давным-давно
+гье̄ᴴхзу	#	 давным-давно, очень давно
+гьеᴴх	#	 часто
+гьид	#	 со знач. на дороге, в пути
+гьид	#	 со знач. в дороге, в пути
+гьисабалда	#	 осторожно
+гьицада̄	#	 очень близко, совсем рядом
+тигъа	#	 близко, поблизости
+гьиᴴхъхъалакьа̄	#	 по порядку, по очереди
+гьолӏоъ	#	 здесь, тут, сюда
+гьоъокьа	#	 высоко, выше
+къона	#	 немного, немножко, несколько, один-два
+гьоᴴсолаъ	#	 иногда, временами
+гьоᴴсолаъ	#	 иногда
+гьоᴴссу	#	 всегда
+гьоᴴсцо	#	 одиноко
+гьоьншшоьнаь	#	 ничего
+гьотта̄	#	 везде, всюду (там-тут)
+гьугишинаб	#	 столько
+гьугиъ	#	 там
+гьудишинаб	#	 столько
+гьулишинаб	#	  столько
+гьулиъ	#	 там, туда
+гьуьчӏбо̄ьлъ	#	 только что, недавно
+гьуьчӏбо̄ьлъда̄ьлаь	#	 только что, недавно
+гьуᴴкьогъа	#	 широко, свободно
+гьакьа	#	 просторно, привольно
+гьуᴴлъ	#	 вчера
+гьуᴴлъбехъхъа	#	 со вчерашнего дня
+гьуᴴлъбос	#	 позавчера
+гьуᴴлълалъ	#	 позавчера
+гьуᴴлъла̄лъ	#	 позапозавчера
+гӏозийаб	#	 много (тляд.)
+даим	#	 постоянно
+даьгь	#	 мало, немного
+даьгьаьбба̄ьжаь	#	 еще немного, еще чуть-чуть
+дена	#	 1) со знач. против
+бета	#	 1) везде, всюду
+денана	#	 опять, еще раз
+дӣс	#	 много, достаточно, обильно, часто
+жаллагужа	#	 редко сначала, снова (тляд.)
+же	#	 теперь, сейчас, ныне
+жегун	#	 пока, еще
+къкъа	#	 до сих пор, все еще, пока ♦ же-гьанкъкъа кьодогъодойцIо гей пока витает в облаках (букв. пока наверху-вверх есть)
+гьоᴴкьо	#	 вот-вот
+гьуьчӏбо̄лъ	#	 только что, буквально недавно
+данде	#	 только что, сейчас
+жейса	#	 сегодня
+жейсакцал	#	 до сегодняшнего дня, до сих пор
+хиса	#	 сегодня-завтра, в эти дни
+жека̄лъо	#	 именно теперь, сейчас
+жекцал	#	 до сих пор
+желакьа̄	#	 с этого времени, с этого момента (чуть раньше времени)
+желӏба	#	 в этом году
+желӏбалалъ	#	 в этом году, с этого года
+желӏбалаъ	#	 с этого года, в этом году
+жена	#	 1) и сейчас, и теперь
+заипса	#	 слабо, истощенно
+замаллиъ	#	 время от времени
+замаллиъ	#	 вовремя
+зат	#	 редко много чего-л. (тляд.)
+золлид	#	 1) силой
+залад	#	 1) едва, насилу, с большим трудом
+икье	#	 в знач. в прошлом году
+икьебехъхъа	#	 с прошлого года
+икьебос	#	 в знач. в прошлом году
+икьелалъ	#	 в знач. в позапрошлом году
+илъенда̄	#	 с шести сторон, в шести местах
+илъенина	#	 вшестером
+иргалкьа	#	 по очереди
+итӏина̄кьа	#	 в знач. с детства, с малых лет
+итӏӣно	#	 еще немного
+кепликьа	#	 весело
+ицила̄гъад	#	 по-стариковски
+ицӏцӏагъад	#	 заново, снова, сначала
+ицӏцӏакьа	#	 вначале
+ӣна	#	 понемногу, мало
+ӣна	#	 мало
+ӣна̄къа	#	 постепенно
+йазихлъилаъ	#	 1) бедно 2) беспомощно
+йалӏокъей	#	 днем
+йалӏохъовадда̄	#	 в полночь
+йаьгьаьгга̄ьжуь	#	 1) просто так
+йаьгьла̄ь	#	 так
+йиглад	#	 в знач. 1) десятками 2) много
+йигъа	#	 вглубь
+йикъесзу	#	 явно
+йоькькьаь	#	 мало, немного, чуть-чуть, негусто
+йоькькьалил	#	 на некоторое время, на короткое время
+йоькькьаьшша̄ьжаь	#	 еще немного, еще чуть-чуть
+йоькькьа̄ьжаь	#	 еще немного
+йуьргъаьлаьъ	#	 иноходью
+кайлӏоваъ	#	 мгновенно
+кеш	#	 даром, бесплатно
+кешдайни	#	 назло
+кеш	#	 даром, бесплатно
+кийалда	#	 со знач. 1) в покое
+кикокьа	#	 легко, налегке
+кокьа	#	 китла-котла (название второго этапа игры в «чижики»)
+колӏгъа	#	 в знач. в темноте
+къайкьа	#	 рано
+къацӏойцӏо	#	 вместе, совместно
+къейцӏо	#	 по земле
+къекъегъа	#	 1) широко, свободно
+къацӏо	#	 вместе, совместно
+къокъго	#	 коротко, кратко
+къонда̄	#	 с двух сторон, в двух местах
+къонина	#	 вдвоем
+кьапӏун	#	 быстро
+кьа̄ь	#	 1) обратно
+кьода̄лъи	#	 надолго, в долгое время
+лӏийода̄	#	 везде, всюду (букв. вверх-вниз)
+кьодогуцӏо	#	 поверхностно, формально
+йикьа	#	 на самом верху
+кьодойцӏолакьа̄ь	#	 1) сверху 2) перен. по верхней (горной дороге, по тропинке
+лӏийо	#	 вверх-вниз
+кьодтуцӏо	#	 1) наверху, сверху
+кьоьллаькьа̄ь	#	 1) по направлению вниз
+кьодо	#	 на самом верху, на верхней части чего-л.
+кьухъналда	#	 красиво, хорошо
+кӏаьйда̄ь	#	 наизнанку
+кӏетӏакьалаъ	#	 направо, справа
+кӏетӏаъкьа̄	#	 по-хорошему, добром
+кӏинкьа	#	 на одной ноге (тляд.)
+ла	#	 сколько (по счету)
+ласоди	#	 1) несколько
+ла̄хди	#	 вопр. сколько раз
+лебалалда	#	 красиво
+лъанина	#	 втроем
+лъаьраьъаьллигъад	#	 по-кумыкски
+лъехъиъ	#	 со знач. на одной стороне косо (характеризует состояние  обуви со стопанными задниками и каблуками)
+лъинибза	#	 почему, отчего, изза чего
+лъинина	#	 впятером
+лъина	#	 по пять, по пяти
+кьапӏилакьа	#	 ловко, быстро, быстрым движением
+лӏийода̄	#	 1) книзу 2) очень низко
+лӏийойцӏо	#	 внизу, снизу
+лӏийойцӏолакьа̄ь	#	 1) снизу 2) перен. по нижней (шоссейной) дороге
+лӏийокьа	#	 низко, невысоко
+кьодо	#	 везде, всюду (букв.верх-вниз)
+лӏийолакьа̄	#	 1) вверх
+лӏилма	#	 зимой
+лӏилӏгъа	#	 ежегодно, каждый год
+лӏийо	#	 на самом внизу
+лӏобагъа	#	 до полудня
+лӏобакьа	#	 в обед
+лӏолӏогъа	#	 в знач. приоткрыто
+малъликьа	#	 со знач. по совету, по указу
+марчӏокӏолъ	#	 в сумерках, вечером
+мекъса	#	 1) неправильно
+мехлаъ	#	 иногда
+милъиъ	#	 со знач. на колени
+милӏалъ	#	 со знач. во сне
+мискинлъилаъ	#	 бедно, убого, в нищете
+мицаъ	#	 со знач. местами
+нада̄д	#	 куда, где
+суди	#	 где-нибудь, гделибо
+наьгьаькъдаь	#	 напрасно, зря, бесцельно
+на̄да̄	#	 где, куда
+на̄да̄ла̄кьа̄	#	 откуда
+на̄да̄с	#	 откуда
+на̄ди	#	 где-то, куда-то
+на̄кьа̄д	#	 откуда, с какого места
+на̄кьа̄ди	#	 откуда-то, с какогото места
+на̄кьа̄на	#	 1) ниоткуда
+на̄кьа̄назу	#	 отовсюду, со всех сторон
+на̄на	#	 нигде
+на̄назу	#	 везде, всюду
+на̄ди	#	 везде, всюду (букв. откуда-куда)
+на̄сна	#	 1) ниоткуда
+на̄сназу	#	 отовсюду, со всех концов
+нигъад	#	 как, каким образом
+нигъади	#	 1) недружелюбно, неприветливо 2) плохо (состояние здоровья) 3) плохо, неудобно
+нигъана	#	 отриц. никак
+нисдайлил	#	 в знач. после обеда, в послеобеденное время
+нисда̄	#	 к вечеру, вечером (3–6 часов
+нитод	#	 когда
+нитогаьлъдаьнаь	#	 когданибудь
+нитоди	#	 1) когда-нибудь
+нитокцалди	#	 1) до каких пор
+нитона	#	 никогда
+ниттоназу	#	 1) всегда
+нише	#	 ночью
+нишебехъхъа	#	 с ночи
+йалӏокъей	#	 днем и ночью
+нишейцӏо	#	 ночью, к ночи
+нухъулӏ	#	 под мышкой
+оьлкьаь	#	 вдруг, неожиданно (хаш.)
+оьхоьгъаь	#	 плохо, некрасиво
+оᴴкъаъда̄	#	 в знач. 1) на теневой стороне
+оᴴкьакьалаъ	#	 налево (на левой стороне)
+оᴴъоᴴъ	#	 дет. на закорках (на верхнюю часть спины)
+оьнкъоьнда̄ь	#	 с четырех сторон, в четырех местах
+оьᴴкъоьнина	#	 вчетвером
+къоьнхаьбаьла̄ькьаь	#	 на четвереньках
+пигьа	#	 1) дешево, недорого
+подлиъ	#	 в знач. в подготовительный класс, в подготовительном классе
+ришша	#	 прямо (тляд.)
+рулӏуъдола	#	 очень мало
+сагъда	#	 1) много, достаточно
+саламатго	#	 1) со знач. здоров
+сагьиралда	#	 хитро, лукаво
+саламацца	#	 1) весьма, довольно, заметно, значительно
+са̄ла	#	 на (в) одном месте
+са̄лана	#	 1) нигде
+са̄ла	#	 местами
+сибова	#	 осенью
+сидда̄	#	 в одно место, в одну сторону
+сикӏолӏӣда̄	#	 ничком, лицом вниз
+симакьа	#	 назло
+сидда̄	#	 местами
+со̄ᴴ	#	 вокруг, кругом
+сувал	#	 почему (тляд.)
+суди	#	 почему-то
+суле	#	 почему (же)
+тасталкьа	#	 рядами
+тук	#	 иногда
+терхилакьа	#	 быстро, поспешно и незаметно
+тели	#	 много, больше, чем положено
+тигъа	#	 вплотную
+тигъайцӏо	#	 вплотную к чемул.
+нигъа	#	 туда-сюда, везде, всюду (букв. вплотную и тому подобное)
+тикьада̄	#	 в знач. на ту сторону, на другую сторону
+тилӏ	#	 1. на ту сторону, на другую сторону
+тисда̄	#	 в знач. к ним (к соседям), у них
+нисда̄	#	 везде
+тохса	#	 1) беспечно
+тӏагузо	#	 еще
+тӏимкьа	#	 на цыпочках
+тӏири	#	 нисколько, ни капли
+тӏокӏаб	#	 больше
+тӏуббан	#	 полностью
+унгосалда	#	 всерьёз
+ургъунго	#	 умышленно, нарочно
+ургъунна	#	 умышленно, нарочно, намеренно, специально
+уруслигъад	#	 по-русски
+уцбат	#	 1) вдруг, неожиданно
+уьчӏаьраьлда	#	 1) полностью
+хасгу	#	 особенно
+хелегъа	#	 на ровном месте
+хехса	#	 быстро
+хизанийад	#	 в знач. со всей семьей, с чадами и домочадцами
+хира	#	 1. дорого
+хиса	#	 завтра
+хисалалъ	#	 послезавтра
+хисалалъиллаъ	#	 послепослезавтра, на третий день
+хисала̄лъ	#	 1) (после) послепослезавтра, на четвертый день
+хисалалъ	#	 завтрапослезавтра
+хисда̄ла	#	 утром, в утреннее время, в первой половине дня
+хискьа	#	 утром
+хискьабехъхъа	#	 в знач. весь день, целый день
+хискьалаъ	#	 по утрам
+хиссакьа	#	 рано утром, под утро
+хухлокьа	#	 торчком
+хуьрчуьлла̄ькьаь	#	 кувырком, кубарем
+хъаплӏо	#	 неожиданно, внезапно
+хъатла̄кьа	#	 на четвереньках
+хъацалкьа	#	 галопом
+хъаьчӏго	#	 грубо
+хъохъда̄	#	 1) неправильно
+цат	#	 плохо, нехорошо
+центӏа	#	 1) моментально, мгновенно (тляд.) 2) неожиданно
+цӏакъ	#	 очень
+цӏаслаъ	#	 всерьез
+цӏиддаса	#	 заново, снова, сначала
+цӏикӏун	#	 много (больше обычного)
+цӏихода̄	#	 очень далеко
+чамги	#	 несколько раз, много раз
+чангу	#	 много, часто
+чӏаьгоь	#	 живо, живьем
+чӏаьй	#	 криво, косо
+чӏекӏдо	#	 криво, косо
+чӏай	#	 зигзагом, криво
+чӏоьбоьгоь	#	 1) напрасно, попусту, зря
+шак	#	 подозрительно, сомнительно
+шаьтӏтӏаькьаь	#	 голо, обнаженно
+шеблакьа	#	 на боку, боком, бочком
+шуьшоьгъаь	#	 налегке (в легкой одежде)
+эзеъан	#	 много, достаточно
+эмедайцӏо	#	 к весне
+эмеда̄	#	 весной
+эᴴдда̄	#	 внутри, внутрь ♦ эндда̄лако онсилъийо йовал отдыхать, особо не усердствовать в работе (букв. делать как вол, запряженный во внутреннюю часть ярма)
+
+
 
 LEXICON Infl
 <erg>:[erg]
-<genI>:{genI}[gen]
-<genII>:л{а}[gen2]
+<genI>:{gen}[gen]
+<genII>:ла[gen2]
 <dat>:л[dat]
 <ins>:д[ins]
 
@@ -366,13 +752,13 @@ LEXICON Essive
 <poss><essive>:хъа[poss]
 
 LEXICON Lative
-<lative>:{л}
+<lative>:{V}л
 
 LEXICON Translative
-<translative>:{кьа̄}
+<translative>:{C}кьа̄
 
 LEXICON Ablative
-<ablative>:{с} 
+<ablative>:{V}с{V2}
 
 LEXICON Directive
 <dir>:да̄
@@ -391,6 +777,7 @@ LEXICON ClassPl
 PATTERNS
 Conjunctions
 Participles
+Interjections
 
 LEXICON AdpAffixes
 <post>:лабза # вместо, ради
@@ -466,6 +853,9 @@ LEXICON Participles
 суди	#	либо, -то
 лӏо	#	мол
 
+LEXICON Quotative
+<quot>:лӏо	#	мол
+
 LEXICON Interjections
 вабабай	# ой-ой-ой
 вададай	# ой-ой-ой
@@ -486,9 +876,7 @@ LEXICON Interjections
 аман
 
 PATTERNS
-Noun > (ConjClitics | Question)
-Noun > (PartClitics | Question)
-Noun > (AdpAffixes | Question)
+Noun Quotative? (Question | ConjClitics | PartClitics)?
 
 PATTERN Noun
 #множественное число
@@ -502,8 +890,7 @@ NounRoot[бо] [<n>:] NounPl[бо] [<abs>:]
 NounRoot[рол] [<n>:] NounPl[рол] [<abs>:]
 NounRoot[ро] [<n>:] NounPl[ро] [<abs>:]
 NounRootLong[long] [<n>:] NounPl[long] [<abs>:]
-
-
+SuppletiveRoot
 
 #склонение по падежам
 NounRoot [<n>:] [<abs>:]
@@ -511,28 +898,26 @@ NounRoot-Obl Infl |(Essive Directive? (Lative|Ablative|Translative)?)
 NounRoot-Obl Infl[gen2] Essive (Lative|Ablative)?
 NounRoot-Obl Essive Infl[gen2] (Lative|Ablative)?
 
-NounRoot Noun-Pl-Obl Infl |(Essive Directive? (Lative|Ablative|Translative)?)
-NounRoot Noun-Pl-Obl Infl[gen2] Essive (Lative|Ablative)?
-NounRoot Noun-Pl-Obl Essive Infl[gen2] (Lative|Ablative)?
+NounRoot | SuppletiveRoot Noun-Pl-Obl Infl |(Essive Directive? (Lative|Ablative|Translative)?)
+NounRoot | SuppletiveRoot Noun-Pl-Obl Infl[gen2] Essive (Lative|Ablative)?
+NounRoot | SuppletiveRoot Noun-Pl-Obl Essive Infl[gen2] (Lative|Ablative)?
 
 LEXICON NounPl
-<pl>:а[а] # КАК СДЕЛАТЬ аа -> а̄??
-<pl>:аь[а]
-<pl>:б{а}[ба]
-<pl>:в{а}[ва]
-<pl>:д{а}[да]
-<pl>:й{а}[йа]
-<pl>:л{а}[ла]
-<pl>:б{о}[бо]
-<pl>:р{о}л[рол]
-<pl>:р{о}[ро]
-<pl>:{а̄}[long]
+<pl>:а{UM}[а] # КАК СДЕЛАТЬ аа -> а̄??
+<pl>:ба{UM}[ба]
+<pl>:ва{UM}[ва]
+<pl>:да{UM}[да]
+<pl>:йа{UM}[йа]
+<pl>:ла{UM}[ла]
+<pl>:бо{UM}[бо]
+<pl>:ро{UM}л[рол]
+<pl>:ро{UM}[ро]
+<pl>:а̄{UM}[long]
 
 LEXICON Noun-Pl-Obl
-<obl>:а
-<obl>:аь
-<obl>:ла
-<obl>:
+<pl><obl>:а{UM}
+<pl><obl>:ла{UM}
+<pl><obl>:
 
 LEXICON NounRootLong
 мугува:мугув[long] # лапти
@@ -540,13 +925,19 @@ LEXICON NounRootLong
 тицӏийо:тицӏий[long] # пояс
 кьакъало:кьакъал[long] # шапка
 
+LEXICON SuppletiveRoot
+сукӏо<pl>:аьдаьмлаь
+сукӏо<pl>:сукӏабо
+
 LEXICON NounRoot
+аᴴкъло	#	ум
 илмо	 # знание
 иса
 мугува
 хаьтӏаь
 тицӏийо
 кьакъало
+сикӏо[да,ва]
 муьш[а] # веник
 къаьм[a] # голова
 аьлӏ[а] # селение
@@ -2944,6 +3335,7 @@ LEXICON NounRoot
 эхула[ро]	#	зоол. трясогузка (тляд.)
 
 LEXICON NounRoot-Obl
+аᴴкъло<n><obl>:аᴴкълона
 иса<n><obl>:иса
 окко<n><obl>:оккола # деньги
 абази<n><obl>:абазийа
@@ -5198,6 +5590,7 @@ LEXICON NounRoot-Obl
 сик<n><obl>:сики
 сик<n><obl>:сикли
 сикӏахо<n><obl>:сикӏахоли
+сикӏо<n><obl>:сукӏа
 сила<n><obl>:силали
 симахъойолъи<n><obl>:симахъойолъила
 симе<n><obl>:симе
@@ -5222,6 +5615,7 @@ LEXICON NounRoot-Obl
 судийалъи<n><obl>:судийалъила
 судхана<n><obl>:судханали
 суз<n><obl>:сузли
+сукӏо<n><obl>:сукӏо
 сумкӏа<n><obl>:сумкӏала
 суннат<n><obl>:суннатли
 сунтӏ<n><obl>:сунтӏли
@@ -6379,15 +6773,15 @@ LEXICON OblSuffix
 
 
 PATTERNS
-Personal > (ConjClitics | PartClitics)
-Demonstrative > (ConjClitics | PartClitics)
-Interrogative > (ConjClitics | PartClitics)
-IndefiniteP > (ConjClitics | PartClitics)
-ReflexiveP > (ConjClitics | PartClitics)
-UniversalP > (ConjClitics | PartClitics)
-DistributiveP > (ConjClitics | PartClitics)
-OtherPronoun > (ConjClitics | PartClitics)
-PronounLocatives > (ConjClitics | PartClitics)
+Personal Quotative? (Question | ConjClitics | PartClitics)?
+Demonstrative Quotative? (Question | ConjClitics | PartClitics)?
+Interrogative Quotative? (Question | ConjClitics | PartClitics)?
+IndefiniteP Quotative? (Question | ConjClitics | PartClitics)?
+ReflexiveP Quotative? (Question | ConjClitics | PartClitics)?
+UniversalP Quotative? (Question | ConjClitics | PartClitics)?
+DistributiveP Quotative? (Question | ConjClitics | PartClitics)?
+OtherPronoun Quotative? (Question | ConjClitics | PartClitics)?
+PronounLocatives Quotative? (Question | ConjClitics | PartClitics)?
 
 #----PERSONAL PRONOUNS-----
 PATTERN Personal
@@ -6399,15 +6793,24 @@ PersonalPronoun[dat] Infl[dat]
 PersonalPronoun[ins] Infl[ins]
 PersonalPronoun[1sg]
 PersonalPronoun[2sg]
+Reciprocal
 
 
 #----DEMONSTRATIVES-----
 PATTERN Demonstrative
 Demonstratives[1,4] Proximity[1,4] [<abs>:]
 Demonstratives[2,3] Proximity[2,3] [<abs>:]
+Demonstratives[1,4] Proximity[1,4] (Essive Directive? (Lative|Ablative|Translative)?)
+Demonstratives[1,4] Proximity[1,4] Infl[gen2] Essive (Lative|Ablative)? # "местоименные наречия"
+Demonstratives[1,4] Proximity[1,4] Essive Infl[gen2] (Lative|Ablative)?
+Demonstratives[2,3] Proximity[2,3] (Essive Directive? (Lative|Ablative|Translative)?)
+Demonstratives[2,3] Proximity[2,3] Infl[gen2] Essive (Lative|Ablative)?
+Demonstratives[2,3] Proximity[2,3]  Essive Infl[gen2] (Lative|Ablative)?
 Demonstratives-Plural-Abs [<abs>:]
 Demonstratives-Obl Infl
 Demonstratives-Plural-Obl Infl
+Demonstratives[1,4] DemonstrativeAdv
+Demonstratives[g] [<h><part>:на] | [<nh><part>:ла]
 
 #----INTERROGATIVES-----
 PATTERN Interrogative
@@ -6484,9 +6887,14 @@ LEXICON PersonalPronoun
 миже<pron><obl>:мизо[gen,gen2,dat,ins]
 
 LEXICON Demonstratives
-гьу<dem>:гьу[1,4] 
-вагь<dem>:вагь[1,4]
+гьу<dem>:гьу[1,4,g] 
+вагь<dem>:вагь[1,2,3,4]
 гьо<dem>:гьо[2,3]
+
+LEXICON DemonstrativeAdv
+<prox><adv>:да̄
+<med><adv>:ла̄
+<dist><adv>:га̄
 
 LEXICON Proximity
 <prox.1/4>:ди[1,4] # близость к говорящему
@@ -6502,6 +6910,7 @@ LEXICON Demonstratives-Obl
 гьу<dem><dist.1/4><obl>:гьогцо
 гьо<dem><prox.2/3><obl>:гьолӏо
 гьо<dem><med.2/3><obl>:гьоллъо
+гьо<dem><med.2/3><obl>:гьолълъо
 гьо<dem><dist.2/3><obl>:гьоглӏо
 вагь<dem><prox.1/4><obl>:вагьадцо
 вагь<dem><prox.1/4><obl>:вагьацо
@@ -6540,7 +6949,7 @@ LEXICON Demonstratives-Plural-Obl
 вагь<dem><med.2/3><obl.pl>:вагьалло
 вагь<dem><prox.2/3><obl.pl>:вагьагло
 
-LEXICON PronAdjectives #доделать склонение
+LEXICON PronAdjectives 
 гьуддийо # вот такой, как этот, невидимый
 вагьаддийо # вот такой, как этот, видимый
 гьуллийо # вот такой, как этот, невидимый
@@ -6574,6 +6983,8 @@ LEXICON Interrogatives
 лас<pron>:лас #какой по счету
 нигъа<pron>:нигъа #как
 на̄<pron>:на̄ #где, куда
+на̄да<pron>:на̄да̄ #где, куда
+нада<pron>:нада̄ #где, куда
 нито<pron>:нито #когда
 лъинибза<pron>:лъинибза #почему
 
@@ -6596,7 +7007,7 @@ LEXICON Reflexive-Obl
 зу<refl><pl><obl>:гьиде
 
 LEXICON Reciprocal
-<recp>:-гьоᴴсо 
+<recp>:гьоᴴсо 
 
 LEXICON Indefinite
 <indf>:ди
@@ -6636,10 +7047,12 @@ LEXICON Negative
 
 LEXICON UniversalRoot
 га̄ьгьийо<pron>:га̄ьгьийо # все
+гаьгьийо<pron>:гаьгьийо # все
 къацӏцӏо<pron>:къацӏцӏо # все
 
 LEXICON UniversalRoot-Obl
 га̄ьгьийо<pron><obl>:га̄ьгьийа
+гаьгьийо<pron>:гаьгьийа
 къацӏцӏо<pron><obl>:къацӏцӏола
 
 LEXICON Universal
@@ -6660,61 +7073,158 @@ LEXICON OtherObl
 бадо<pron><obl>:балӏо
 баддо̄л<pron><obl>:бадло
 PATTERNS
-Verb > (Question | ConjClitics | PartClitics)
-ClassVerb > (Question | ConjClitics | PartClitics)
+Verb Quotative? (Question | ConjClitics | PartClitics)? 
+ClassVerb Quotative? (Question | ConjClitics | PartClitics)?
+DoVerb Quotative? (Question | ConjClitics | PartClitics)?
+LookVerb Quotative? (Question | ConjClitics | PartClitics)?
+Aux Quotative? (Question | ConjClitics | PartClitics)?
+AvarBorrowings
+ShortForms
 
 PATTERN DoVerb
-Class Do[inf] Infinitive > Mood[dub]
-Class Do[inf] Imperative
-Class Do[val] Antipassive NegativeForms | TAM
-Class Do[pl] TAM | NagativeForms
+Class Do[inf] | Do[val] Modal? (TAM_cons_h | TAM_vowel_h)
+Class Do[val] Valency_h? Modal? (TAM_cons_h | TAM_vowel_h)
+ClassPl Do[pl] Valency_h? Modal? TAM_cons_h | TAM_vowel_h
 
-PATTERN Imperative
-Mood[imp] > Mood[rog]
-Mood[imp] > ([:а]? Mood[prmI]) > [<prmII>:ъ]
-Mood[prmIII]
+PATTERN LookVerb
+Look Valency_h? Modal? (TAM_cons_h | TAM_vowel_h)
 
-PATTERN Valency
-Antipassive
-Causative > Antipassive
+# ---- h-paradigm (back vowels) -----
+PATTERN TAM_h
+Past
+PATTERN TAM_s
+Past 
 
-PATTERN TAM
-#--- positive forms ---
-Infinitive > Mood[dub] # dubitative mood
-Vowel? Past | Present | Future > Mood[hyp] #	hypothetical mood
-Plusquamperfect
-Imperative
+PATTERN Imperative_h
+Mood[imp,h] 
+Mood[imp,h] Mood[rog]
+Mood[imp,h] > ([:а]? Mood[prmI,h]) > [<prmII>:ъ]
+Mood[prmIII,h]
+
+PATTERN Valency_h
+Antipassive[h]
+Causative > Antipassive[h]
+
+PATTERN TAM_vowel_h
+Past[h] | Present[h] > (Mood[hyp] | Mood[irr])
+Negation[neg,h]? Mood[cond] > ([<invc>:л] | [<cnc>:на])
+Participle[prs,h] | Participle[pst,h]
+Converb[pfv,h]
+Converb[simul,h] | Converb[ant,h] | Converb[act,h]
+Essive[ad]
+Converb[how,h] > Converb[why,h]
+Present[h] Converb[prs,h] > Converb[since,h]
+Past[h] > Converb[pfv,h] 
+Past[h] > Masdar[pst]
+Masdar[st]
+
+PATTERN TAM_cons_h
+Infinitive[h] > Mood[dub] # dubitative mood
+Imperative_h
+Future[h] > Mood[hyp]
+Plusquamperfect[h]
 Mood[proh]
 Mood[opt]
-Mood[cond] > ([<invc>:л] | [<cnc>:на])	#	conditional, concessive conditional
-Vowel? Past | Present Mood[irr]	#	probabilitive (irreal conditional)
-Vowel? Participle[prs]
-Vowel? Participle[pst]
-Infinitive Participle[fut]
-Vowel? Converb[-prs,-inf]
-Vowel? Present Converb[prs]
-Infinitive Converb[inf]
-Vowel? Past Converb[pfv]
+Mood[opt.neg]
+Infinitive[h] Participle[fut]
+Infinitive[h] Converb[inf]
+Converb[after,h] | (Converb[before,h] > Translative)
+Converb[place,h] > (Translative | Lative | Ablative)
+Converb[goal]
+Masdar[st]
+#negation
+Negation[pst,h]
+Negation[prs,h] > Converb[prs,h]
+Negation[neg,h] Present[h] Converb[prs,h] > Converb[since,h]
+Negation[cvb]
+Negation[imp,h]
+Negation[neg] Participle[prs,h]
+Converb[before,h] Negation[loc] Translative
 
-#--- negative forms ---
-PATTERN NegativeForms
-Negation[-neg]
-Mood[neg.opt]
-Negation[neg] Mood[cond] > ([<invc>:л] | [<cnc>:на])
-Negation[neg] Participle
-Negation[pst] Converb[pfv]
+# ---- s-paradigm (front vowels) -----
+PATTERN TAM_vowel_s
+Past[s] | Present[s] > (Mood[hyp] | Mood[irr])
+Negation[neg,s]? Mood[cond] > ([<invc>:л] | [<cnc>:на])
+Participle[prs,s] | Participle[pst,s]
+Converb[pfv,s]
+Converb[simul,s] | Converb[ant,s] | Converb[act,s]
+Essive[ad]
+Converb[how,s] > Converb[why,s]
+Present[s] Converb[prs,s] > Converb[since,s]
+Past[s] > Converb[pfv,s] 
+Past[s] > Masdar[pst]
+Masdar[st]
+
+PATTERN TAM_cons_s
+Infinitive[s] > Mood[dub] # dubitative mood
+Imperative_h
+Future[s] > Mood[hyp]
+Plusquamperfect[s]
+Mood[proh]
+Mood[opt]
+Mood[opt.neg]
+Infinitive[s] Participle[fut]
+Infinitive[s] Converb[inf]
+Converb[after,s] | (Converb[before,s] > Translative)
+Converb[place,s] > (Translative | Lative | Ablative)
+Converb[goal]
+Masdar[st]
+#negation
+Negation[pst,s]
+Negation[prs,s] > Converb[prs,s]
+Negation[neg,s] Present[s] Converb[prs,s] > Converb[since,s]
+Negation[cvb]
+Negation[imp,s]
+Negation[neg] Participle[prs,s]
+Converb[before,s] Negation[loc] Translative
+
+PATTERN Imperative_s
+Mood[imp,s] > Mood[rog]
+Mood[imp,s] > ([:а]? Mood[prmI,s]) > [<prmII>:ъ]
+Mood[prmIII,s]
+
+PATTERN Valency_s
+Antipassive[s]
+Causative > Antipassive[s]
 
 PATTERN Verb
-VerbRoot(1)[-cl] Antipassive? :VerbNumberInfix(1) VerbRoot(2)[-cl] VerbNumberInfix(2): Valency? Modal? TAM | NegativeForms 
+VerbRoot(1)[-cl,h] Antipassive[h]? :VerbNumberInfix(1)[h] VerbRoot(2)[-cl,h] VerbNumberInfix(2)[h]: Modal? TAM_vowel_h
+VerbRoot-Sh(1)[-cl,h] Antipassive[h]? :VerbNumberInfix(1)[h] VerbRoot-Sh(2)[-cl,h] VerbNumberInfix(2)[h]: Modal? TAM_cons_h
+VerbRoot(1)[-cl,h] Antipassive[h]? :VerbNumberInfix(1)[h] VerbRoot(2)[-cl,h] VerbNumberInfix(2)[h]: Valency_h Modal? (TAM_vowel_h | TAM_cons_h)
+
+VerbRoot(1)[-cl,s] Antipassive[s]? :VerbNumberInfix(1)[s] VerbRoot(2)[-cl,s] VerbNumberInfix(2)[s]: Modal? TAM_vowel_s
+VerbRoot-Sh(1)[-cl,s] Antipassive[s]? :VerbNumberInfix(1)[s] VerbRoot-Sh(2)[-cl,s] VerbNumberInfix(2)[s]: Modal? TAM_cons_s
+VerbRoot(1)[-cl,s] Antipassive[s]? :VerbNumberInfix(1)[s] VerbRoot(2)[-cl,s] VerbNumberInfix(2)[s]: Valency_s Modal? (TAM_vowel_s | TAM_cons_s)
 
 PATTERN ClassVerb
 
-VerbRootInf(1) :ClassInfix(1) Antipassive? VerbRootInf(2) ClassInfix(2): Vowel? Valency? Modal? TAM | NegativeForms
-Class VerbRoot(1)[cl] Antipassive? :VerbNumberInfix(1)[sg] VerbRoot(2)[cl] VerbNumberInfix(2)[sg]: Valency? Modal? TAM | NegativeForms
-ClassPl VerbRoot(1)[cl] Antipassive? :VerbNumberInfix(1)[-sg] VerbRoot(2)[cl] VerbNumberInfix(2)[-sg]: Valency? Modal? TAM | NegativeForms
+VerbRootInf(1)[h] :ClassInfix(1)[h] Antipassive[h]? :VerbNumberInfix(1)[-sg,h]? VerbRootInf(2)[h] ClassInfix(2)[h]: VerbNumberInfix(2)[-sg,h]:? Modal? TAM_vowel_h
+#VerbRootInf-Sh(1)[h] :ClassInfix(1)[h] Antipassive[h]? :VerbNumberInfix(1)[-sg,h]? VerbRootInf-Sh(2)[h] ClassInfix(2)[h]: VerbNumberInfix(2)[-sg,h]:? Modal? TAM_cons_h
+VerbRootInf(1)[h] :ClassInfix(1)[h] Antipassive[h]? :VerbNumberInfix(1)[-sg,h]? VerbRootInf(2)[h] ClassInfix(2)[h]: VerbNumberInfix(2)[-sg,h]:? Valency_h Modal? (TAM_vowel_h | TAM_cons_h)
+
+VerbRootInf(1)[s] :ClassInfix(1)[s] Antipassive[s]? :VerbNumberInfix(1)[-sg,s]? VerbRootInf(2)[s] ClassInfix(2)[s]: VerbNumberInfix(2)[-sg,s]:? Modal? TAM_vowel_s
+VerbRootInf-Sh(1)[s] :ClassInfix(1)[s] Antipassive[s]? :VerbNumberInfix(1)[-sg,s]? VerbRootInf-Sh(2)[s] ClassInfix(2)[s]: VerbNumberInfix(2)[-sg,s]:? Modal? TAM_cons_s
+VerbRootInf(1)[s] :ClassInfix(1)[s] Antipassive[s]? :VerbNumberInfix(1)[-sg,s]? VerbRootInf(2)[s] ClassInfix(2)[s]: VerbNumberInfix(2)[-sg,s]:? Valency_s Modal? (TAM_vowel_s | TAM_cons_s)
+
+
+Class VerbRoot(1)[cl,h] Antipassive[h]? :VerbNumberInfix(1)[sg,h] VerbRoot(2)[cl,h] VerbNumberInfix(2)[sg,h]: Modal? TAM_vowel_h
+Class VerbRoot-Sh(1)[cl,h] Antipassive[h]? :VerbNumberInfix(1)[sg,h] VerbRoot-Sh(2)[cl,h] VerbNumberInfix(2)[sg,h]: Modal? TAM_cons_h
+Class VerbRoot(1)[cl,h] Antipassive[h]? :VerbNumberInfix(1)[sg,h] VerbRoot(2)[cl,h] VerbNumberInfix(2)[sg,h]: Valency_h Modal? (TAM_vowel_h | TAM_cons_h)
+
+Class VerbRoot(1)[cl,s] Antipassive[s]? :VerbNumberInfix(1)[sg,s] VerbRoot(2)[cl,s] VerbNumberInfix(2)[sg,s]: Modal? TAM_vowel_s
+Class VerbRoot-Sh(1)[cl,s] Antipassive[s]? :VerbNumberInfix(1)[sg,s] VerbRoot-Sh(2)[cl,s] VerbNumberInfix(2)[sg,s]: Modal? TAM_cons_s
+Class VerbRoot(1)[cl,s] Antipassive[s]? :VerbNumberInfix(1)[sg,s] VerbRoot(2)[cl,s] VerbNumberInfix(2)[sg,s]: Valency_s Modal? (TAM_vowel_s | TAM_cons_s)
+
+ClassPl VerbRoot(1)[cl,h] Antipassive[h]? :VerbNumberInfix(1)[-sg,h] VerbRoot(2)[cl,h] VerbNumberInfix(2)[-sg,h]: Modal? TAM_vowel_h
+ClassPl VerbRoot-Sh(1)[cl,h] Antipassive[h]? :VerbNumberInfix(1)[-sg,h] VerbRoot-Sh(2)[cl,h] VerbNumberInfix(2)[-sg,h]: Modal? TAM_cons_h
+ClassPl VerbRoot(1)[cl,h] Antipassive[h]? :VerbNumberInfix(1)[-sg,h] VerbRoot(2)[cl,h] VerbNumberInfix(2)[-sg,h]: Valency_s Modal? (TAM_vowel_s | TAM_cons_s)
+
+ClassPl VerbRoot(1)[cl,s] Antipassive[s]? :VerbNumberInfix(1)[-sg,s] VerbRoot(2)[cl,s] VerbNumberInfix(2)[-sg,s]: Modal? TAM_vowel_s
+ClassPl VerbRoot-Sh(1)[cl,s] Antipassive[s]? :VerbNumberInfix(1)[-sg,s] VerbRoot-Sh(2)[cl,s] VerbNumberInfix(2)[-sg,s]: Modal? TAM_cons_s
+ClassPl VerbRoot(1)[cl,s] Antipassive[s]? :VerbNumberInfix(1)[-sg,s] VerbRoot(2)[cl,s] VerbNumberInfix(2)[-sg,s]: Valency_s Modal? (TAM_vowel_s | TAM_cons_s)
 
 LEXICON VerbNumberInfix(2)
-:[sg] <v><sg>:[sg]
+:[sg,h,s] <v><sg>:[sg,h,s]
 :а[а,h] <v><pl>:а[а,h]
 :ба[ба,h] <v><pl>:ба[ба,h]
 :ва[ва,h] <v><pl>:ва[ва,h]
@@ -6726,9 +7236,11 @@ LEXICON VerbNumberInfix(2)
 :ва[ваь,s] <v><pl>:ва[ваь,s]
 
 LEXICON ClassInfix(2)
-:о <v><I>:о
-:и <v><II>:и
-:у <v><III/IV>:у
+:о[h] <v><I>:о[h]
+:и[h,s] <v><II>:и[h,s]
+:у[h] <v><III/IV>:у[h]
+:оь[s] <v><I>:оь[s]
+:уь[s] <v><III/IV>:уь[s]
 
 LEXICON Causative 
 <caus>:л
@@ -6739,63 +7251,61 @@ LEXICON Causative
 LEXICON Antipassive
 <antip>:ла[h]
 <antip>:лаь[s]
-<antip>:да[da,h]
+<antip>:да[h]
 <antip>:даь[s]
 <antip>:ва[h]
 <antip>:ваь[s]
 <antip>:а[h]
 <antip>:аь[s]
-
-LEXICON Transitivity
-<tr>:кӏ[кӏ]
-<intr>:к[к]
-<tr>:лӏ[лӏ]
-<tr>:л[л]
-<intr>:лъ[лъ]
+<antip>:йа[h]
+<antip>:йаь[s]
 
 #---- Tense ----
 LEXICON Past 
-<pst>:йо[v]
-<pst>:ийо[c]
+<pst>:йо[h,s,v]
+<pst>:ийо[h,s,c]
 <pst>:ло[l,h]
 <pst>:лоь[l,s]
 
 LEXICON Negation
-<neg>:аъ[neg]
-<neg>:аьъ[neg]
-<neg><pst>:еъеш[pst]
-<neg><pst>:йъеш[pst]
-<neg><prs>:аъас[h] 
-<neg><prs>:аьъаьш
-<neg><imp>:ассаъ
-<neg><imp>:ссаъ
-<neg><imp>:аьшшаьъ
-<neg><imp>:шшаьъ
-<neg><pfv.cvb>:ечӏе
-<neg><pfv.cvb>:йчӏе
+<neg>:аъ[neg,h]
+<neg>:аьъ[neg,s]
+<neg>:еъ[h,s,loc]
+<neg><pst>:еъеш[pst,h,s]
+<neg><pst>:йъеш[pst,h,s]
+<neg><prs>:аъас[prs,h] 
+<neg><prs>:аьъаьш[prs,s]
+<neg><imp>:ассаъ[imp,h]
+<neg><imp>:ссаъ[imp,h]
+<neg><imp>:аьшшаьъ[imp,s]
+<neg><imp>:шшаьъ[imp,s]
+<neg><pfv.cvb>:ечӏе[cvb,h,s]
+<neg><pfv.cvb>:йчӏе[cvb,h,s]
 
 LEXICON Present
 <prs>:ца[l,c,h]
 <prs>:чаь[l,c,s]
-<prs>:с[v,h]
-<prs>:ш[v,s]
+<prs>:с[v,s,h]
+<prs>:ш[v,s,h]
 
 LEXICON Future
-<fut>:ас
-<fut>:аьш
+<fut>:ас[h]
+<fut>:аьш[s]
 
 LEXICON Plusquamperfect
-<ppf>:а̄гьийо
-<ppf>:а̄ьгьийо
+<ppf>:а̄гьийо[h]
+<ppf>:а̄ьгьийо[s]
 
 #---- Mood ----
 
 LEXICON Mood
-<imp>:{а}[imp]
-<imp>:[imp]
-<imp>:и[imp]
-<imp>:е[imp]
-<imp>:{о}[imp]
+<imp>:а[imp,h]
+<imp>:аь[imp,s]
+<imp>:[imp,h,s]
+<imp>:и[imp,h,s]
+<imp>:е[imp,h,s]
+<imp>:о[imp,h]
+<imp>:оь[imp,s]
 <proh>:а̄къа[proh]
 <opt>:акъос[opt]
 <opt>:къос[opt]
@@ -6804,13 +7314,16 @@ LEXICON Mood
 <rog>:ло̄[rog]
 <rog>:ловале[rog]
 <rog>:лоало[rog]
-<prmI>:л{а}[prmI]
+<prmI>:ла[prmI,h]
+<prmI>:лаь[prmI,s]
 <prmII>:ъ[prmII]
-<prmIII>:{а}ла̄[prmIII]
+<prmIII>:ала̄[prmIII,h]
+<prmIII>:аьла̄[prmIII,s]
 <cond>:да[cond]
 <irr>:къода̄[irr]
 <dub>:ла̄[dub]
 <dub>:ла̄ъ[dub]
+<dub>:лаъ[dub] # "частица хезитации"
 <hyp>:ле[hyp]
 
 LEXICON Modal
@@ -6820,126 +7333,343 @@ LEXICON Modal
 <pot>:йчӏ
 <vol>:акъ
 <vol>:къа
+<vol>:къо
 
 #---- Non-finite forms ----
 
 LEXICON Infinitive 
-<inf>:{а}л
+<inf>:ал[h]
+<inf>:аьл[s]
 
 LEXICON Masdar
-<nmlz>:лъи
-<nmlz>:ни
+<nmlz>:лъи[pst]
+<nmlz>:ни[st]
 
 LEXICON Participle
-<prs.ptsp>:цас[prs]
-<prs.ptsp>:чаьш[prs]
-<pst.ptsp>:йо[pst]
-<fut.ptsp>:лъийо[fut]
+<prs.ptsp>:цас[h,prs]
+<prs.ptsp>:чаьш[s,prs]
+<pst.ptsp>:йо[pst,h,s]
+<pst.ptsp>:ийо[pst,h,s]
+<fut.ptsp>:лъийо[fut,h,s]
 
 LEXICON Converb
 <pfv.cvb>:на[h,pfv]
-<pfv.cvb>:на[s,pfv]
+<pfv.cvb>:наь[s,pfv]
 <prs.cvb>:лаъ[h,prs]
 <prs.cvb>:лаьъ[s,prs]
-<simul.cvb>:лъ
-<simul.cvb>:лъо
-<ant.cvb>:лъол
-<cvb>:а̄лъо
-<cvb>:а̄лъол
-<cvb>:лъегьна[inf]
+<simul.cvb>:лъ[h,s,simul]
+<simul.cvb>:лъо[h,s,simul]
+<ant.cvb>:лъол[h,s,ant]
+<cvb>:а̄лъо[h,s,after]
+<cvb>:а̄лъол[h,s,before]
+<cvb>:лъегьна[inf,h,s]
 <since.cvb>:с[since,h]
 <since.cvb>:ш[since,s]
+<lim.cvb>:ца[lim,h]
+<lim.cvb>:ица[lim,h]
+<lim.cvb>:чаь[lim,s]
+<lim.cvb>:ичаь[lim,s]
+<cvb>:ваъ[act,h,s]
+<cvb>:ийаъ[act,h,s]
+<cvb>:йаъ[act,h,s]
+<cvb>:лаъ[act,h,s]
+<cvb>:гъа[how,h,s]
+<cvb>:да̄л[why,h,s]
+<cvb>:а̄цо[place,h]
+<cvb>:а̄ьчоь[place,s]
+<cvb>:ъгъа[goal,h,s]
 
 # ---- Discourse ----
 LEXICON Question
 <q>:д
 <q>:ди
-<q>:лӏо̄
-
-LEXICON Vowel
-<vwl>:и[и]
-<vwl>:е[е]
-<vwl>:а[а]
-<vwl>:о[о]
 
 
-
-PATTERNS
-Aux
 
 LEXICON Aux
-<aux>:гей	#	есть
+<aux><prs>:гей	#	есть
 <aux><neg>:гаьъаь
+<aux><neg>:гаьъа
+<aux><irr>:га̄ь
+<aux><irr>:га̄ьлъе
+<aux><neg><ptsp>:гаьччоь # не имеющий
+<aux><ptsp>:гаьгьийо # имеющий
+<must>:нуцӏос
 
 LEXICON Do
-ов[inf]
-овагь[pl]
-огь[val]
+ов:ов[inf]
+ов<pl>:овагь[pl]
+ов:огь[val]
+ов:ой[val]
+ов<prs>:о̄[val]
 
-LEXICON VerbRoot(2)
-а[cl] гъ[cl] # снимать
-зо гъ # находиться
-оь л # хватать
-го т # постелить
-о[cl] лъ[cl] # заканчиваться
-ги тӏ # налить
-их[cl] лъ[cl] #согреться
-зу къ #быть
-ни с
-еᴴ[cl] гье[cl]
-атI[cl] [cl]
-оᴴ[cl] къе[cl]
-аᴴса[cl] [cl]	
-аьᴴ[cl] хъе[cl]
-ега[cl] [cl]
-аьᴴче[cl] [cl]	
-агъо[cl] [cl]	
-акъо[cl] [cl]	
-ахъ[cl] [cl]
-аьчI[cl] лъ[cl]
-аьᴴше[cl] лъ[cl]
-е[cl] гъ[cl]
-егъа[cl] кI[cl]
-и[cl] къе[cl]
-и[cl] къо[cl]
-и[cl] кье[cl]
-и[cl] тI[cl]
-еᴴ[cl] й[cl]
-аь[cl] кьел[cl]
-иᴴъа[cl] [cl]	
-иᴴ[cl] з[cl]
-иᴴ[cl] хъо[cl]
-иᴴ[cl] цо[cl]
-о[cl] гъо[cl]
-о[cl] кI[cl]
-о[cl] лъо[cl]
-о[cl] х[cl]
-о[cl] кчи[cl]
-о[cl] цI[cl]
-оь[cl] шоь[cl]
-оᴴ[cl] со[cl]
-оьᴴ[cl] тIоь[cl]
-у[cl] гъо[cl]
-укъ[cl] лъ[cl]
-уь[cl] к[cl]
-у[cl] тI[cl]
-уь[cl] чI[cl]
-уьᴴ[cl] къ[cl]
-уᴴ[cl] х[cl]
-уьᴴ[cl] хъ[cl]
-уᴴ[cl] ц[cl]
-оᴴ[cl] къо[cl]
-е[cl] кIе[cl]
-ийа[cl] [cl]
-е[cl] к[cl]
-оь[cl] чоь[cl]
-уьчāь[cl] хе[cl]
+LEXICON ShortForms # стяженные формы настоящего времени; непонятно, как иначе моделировать
+гв<I><v><prs>:го̄с
+гв<II><v><pl><prs>:гӣс
+гв<III/IV><v><pl><prs>:гӯс
+
+LEXICON Look
+гоцӏохъ<v><I>:гоцӏохъ
+гоцӏохъ<v><II>:гичӏехъ
+гоцӏохъ<v><III/IV>:гуцӏохъ
+гоцӏохъ<v><pl>:гуцӏобахъ[pl]
+говацӏ<v><I><antip>:говацӏ
+говацӏ<v><II><antip>:гийацӏ
+говацӏ<v><III/IV><antip>:гувацӏ
+говацӏ<v><I><antip><pl>:гувабацӏ
+говацӏ<v><II><antip><pl>:гийабацӏ
+говацӏ<v><III/IV><antip><pl>:гувабацӏ
+говацӏ<v><I><antip>:говацӏо
+говацӏ<v><II><antip>:гийацӏо
+говацӏ<v><III/IV><antip>:гувацӏо
+говацӏ<v><I><antip><pl>:гувабацӏо
+говацӏ<v><II><antip><pl>:гийабацӏо
+говацӏ<v><III/IV><antip><pl>:гувабацӏо
+
+LEXICON VerbRoot(2) # глагольная основа
+ни[h] со[h]  # сказать
+зо[h] гъ[h] # находиться
+оь[s] л[s] # хватать
+го[h] то[h] # постелить
+ги[h] тӏ[h] # налить
+зу[h] къо[h] # быть
+еᴴ[cl,h] гье[cl,h]	#	открывать
+а[cl,h] тӏ[cl,h]	#	любить
+оᴴ[cl,h] къе[cl,h]	#	приходить
+аᴴса[cl,h] [cl,h]	#	мерить
+аьᴴ[cl,s] хъе[cl,s]	#	шить
+ега[cl,h] [cl,h]	#	виднеться
+аьᴴ[cl,s] че[cl,s]	#	лизать
+а[cl,h] гъо[cl,h]	#	снимать, отнимать
+а[cl,h] къо[cl,h]	#	принести
+а[cl,h] хъ[cl,h]	#	происходить, родиться
+аьчӏ[cl,s] лъ[cl,s]	#	мерзнуть
+аьᴴше[cl,h] лъ[cl,h]	#	быть коротким
+е[cl,h] гъ[cl,h]	#	драться
+егъа[cl,h] кӏ[cl,h]	#	содержать
+и[cl,h] къе[cl,h]	#	знать
+и[cl,h] къо[cl,h]	#	созревать
+и[cl,h] кье[cl,h]	#	убивать
+и[cl,h] тӏ[cl,h]	#	делиться
+еᴴ[cl,h] йе[cl,h]	#	отпустить
+аь[cl,h] кьел[cl,h]	#	ударить
+иᴴъа[cl,h] [cl,h]	#	мокнуть
+иᴴ[cl,h] з[cl,h]	#	искать
+иᴴ[cl,h] хъо[cl,h]	#	закрывать
+иᴴ[cl,h] цо[cl,h]	#	связать
+о[cl,h] гъо[cl,h]	#	кормить
+о[cl,h] кӏ[cl,h]	#	брать
+о[cl,h] лъо[cl,h]	#	заканчиваться
+о[cl,h] х[cl,h]	#	держать
+о[cl,h] кчи[cl,h]	#	брать
+о[cl,h] цӏ[cl,h]	#	гнать
+оь[cl,s] шоь[cl,s]	#	жиреть
+оᴴ[cl,h] со[cl,h]	#	складывать
+оьᴴ[cl,s] тӏоь[cl,s]	#	копать
+у[cl,h] гъо[cl,h]	#	умереть
+укъ[cl,h] лъ[cl,h]	#	расти
+уь[cl,s] к[cl,s]	#	рваться
+у[cl,h] тӏ[cl,h]	#	лечь
+уь[cl,s] чӏ[cl,s]	#	резать
+уьᴴ[cl,s] къоь[cl,s]	#	нагнуться
+уᴴ[cl,h] хо[cl,h]	#	резать
+уьᴴ[cl,s] хъ[cl,s]	#	есть
+уᴴ[cl,h] цо[cl,h]	#	воровать
+оᴴ[cl,h] къо[cl,h]	#	прийти
+е[cl,h] кӏе[cl,h]	#	гореть
+ийа[cl,h] [cl,h]	#	плакать
+е[cl,h] к[cl,h]	#	падать/ронять
+оь[cl,s] чоь[cl,s]	#	уходить
+уьчāь[cl,s] хе[cl,s]	#	спать
+иᴴ[cl,h] хъо[cl,h]	#	находить
+иᴴ[cl,h] со[cl,h]	#	продаваться
+оги[cl,h] цӏ[cl,h]	#	прыгать
+еᴴ[cl,h] хе[cl,h]	#	касаться
+е[cl,h] {ц}е[cl,h]	#	останавливаться
+е[cl,h] с[cl,h]	#	есть
+еᴴ[cl,h] кье[cl,h]	#	идти
+оᴴ[cl,h] со[cl,h]	#	рушиться
+еᴴцца[cl,h] к[cl,h]	#	вырываться
+о[cl,h] ъ[cl,h]	#	теряться
+е[cl,h] {з}е[cl,h]	#	нести
+и[cl,h] {з}е[cl,h]	#	побеждать
+аь[cl,s] хе[cl,s]	#	рваться
+кӏис[h] а[h]	#	играть
+кӏо[h] кӏо[h]	#	болеть
+хъо[h] хъо[h]	#	сохнуть
+ну[h] ко[h]	#	голодать
+гъай[h] лӏо[h]	#	кипеть
+кӏаьй[s] лӏоь[s]	#	поворачиваться
+оьгь[s] лӏоь[s]	#	кашлять
+гье[h] ле[h]	#	вариться
+лъи[h] цӏе[h]	#	одеваться
+гьи[h] цӏе[h]	#	бояться
+гьа[h] ъо[h]	#	молоть
+ту[h] хъ[h]	#	слышать
+низа[h] а[h]	#	мыть
+ни[h] лӏ[h]	#	давать
+лъоᴴва[h] а[h]	#	смеяться
+лала[h] лӏо[h]	#	кричать
+кусу[h] ъ[h]	#	брить
+
+LEXICON VerbRoot-Sh(2) # глагольная основа с усечением гласного (для императива и инфинитива)
+ни:ни[h] со:с[h]  # сказать
+зо:зо[h] гъ:гъ[h] # находиться
+оь:оь[s] л:л[s] # хватать
+го:го[h] то:т[h] # постелить
+ги:ги[h] тӏ:тӏ[h] # налить
+зу:зу[h] къо:къ[h] # быть
+еᴴ:еᴴ[cl,h] гье:гь[cl,h]	#	открывать
+а:а[cl,h] тӏ:тӏ[cl,h]	#	любить
+оᴴ:оᴴ[cl,h] къе:къ[cl,h]	#	приходить
+аᴴса:аᴴса[cl,h] :[cl,h]	#	мерить
+аьᴴ:аьᴴ[cl,s] хъе:хъ[cl,s]	#	шить
+ега:ега[cl,h] :[cl,h]	#	виднеться
+аьᴴ:аьᴴ[cl,s] че:ч[cl,s]	#	лизать
+а:а[cl,h] гъо:гъ[cl,h]	#	снимать, отнимать
+а:а[cl,h] къо:къ[cl,h]	#	принести
+а:а[cl,h] хъ:хъ[cl,h]	#	происходить, родиться
+аьчӏ:аьчӏ[cl,s] лъ:лъ[cl,s]	#	мерзнуть
+аьᴴше:аьᴴше[cl,h] лъ:лъ[cl,h]	#	быть коротким
+е:е[cl,h] гъ:гъ[cl,h]	#	драться
+егъа:егъа[cl,h] кӏ:кӏ[cl,h]	#	содержать
+и:и[cl,h] къе:къ[cl,h]	#	знать
+и:и[cl,h] къо:къ[cl,h]	#	созревать
+и:и[cl,h] кье:кь[cl,h]	#	убивать
+и:и[cl,h] тӏ:тӏ[cl,h]	#	делиться
+еᴴ:еᴴ[cl,h] йе:й[cl,h]	#	отпустить
+аь:аь[cl,h] кьел:кьел[cl,h]	#	ударить
+иᴴъа:иᴴъа[cl,h] :[cl,h]	#	мокнуть
+иᴴ:иᴴ[cl,h] з:з[cl,h]	#	искать
+иᴴ:иᴴ[cl,h] хъо:хъ[cl,h]	#	закрывать
+иᴴ:иᴴ[cl,h] цо:ц[cl,h]	#	связать
+о:о[cl,h] гъо:гъ[cl,h]	#	кормить
+о:о[cl,h] кӏ:кӏ[cl,h]	#	брать
+о:о[cl,h] лъо:лъ[cl,h]	#	заканчиваться
+о:о[cl,h] х:х[cl,h]	#	держать
+о:о[cl,h] кчи:кч[cl,h]	#	брать
+о:о[cl,h] цӏ:цӏ[cl,h]	#	гнать
+оь:оь[cl,s] шоь:ш[cl,s]	#	жиреть
+оᴴ:оᴴ[cl,h] со:с[cl,h]	#	складывать
+оьᴴ:оьᴴ[cl,s] тӏоь:тӏ[cl,s]	#	копать
+у:у[cl,h] гъо:гъ[cl,h]	#	умереть
+укъ:укъ[cl,h] лъ:лъ[cl,h]	#	расти
+уь:уь[cl,s] к:к[cl,s]	#	рваться
+у:у[cl,h] тӏ:тӏ[cl,h]	#	лечь
+уь:уь[cl,s] чӏ:чӏ[cl,s]	#	резать
+уьᴴ:уьᴴ[cl,s] къоь:къ[cl,s]	#	нагнуться
+уᴴ:уᴴ[cl,h] хо:х[cl,h]	#	резать
+уьᴴ:уьᴴ[cl,s] хъ:хъ[cl,s]	#	есть
+уᴴ:уᴴ[cl,h] цо:ц[cl,h]	#	воровать
+оᴴ:оᴴ[cl,h] къо:къ[cl,h]	#	прийти
+е:е[cl,h] кӏе:кӏ[cl,h]	#	гореть
+ийа:ийа[cl,h] :[cl,h]	#	плакать
+е:е[cl,h] к:к[cl,h]	#	падать/ронять
+оь:оь[cl,s] чоь:ч[cl,s]	#	уходить
+уьчāь:уьчāь[cl,s] хе:х[cl,s]	#	спать
+иᴴ:иᴴ[cl,h] хъо:хъ[cl,h]	#	находить
+иᴴ:иᴴ[cl,h] со:с[cl,h]	#	продаваться
+оги:оги[cl,h] цӏ:цӏ[cl,h]	#	прыгать
+еᴴ:еᴴ[cl,h] хе:х[cl,h]	#	касаться
+е:е[cl,h] чӏе:ц[cl,h]	#	останавливаться
+е:е[cl,h] с:с[cl,h]	#	есть
+еᴴ:еᴴ[cl,h] кье:кь[cl,h]	#	идти
+оᴴ:оᴴ[cl,h] со:с[cl,h]	#	рушиться
+еᴴцца:еᴴцца[cl,h] к:к[cl,h]	#	вырываться
+о:о[cl,h] ъ:ъ[cl,h]	#	теряться
+е:е[cl,h] же:{з}[cl,h]	#	нести
+и:и[cl,h] же:{з}[cl,h]	#	побеждать
+аь:аь[cl,s] хе:х[cl,s]	#	рваться
+кӏис:кӏис[h] а:[h]	#	играть
+кӏо:кӏо[h] кӏо:кӏ[h]	#	болеть
+хъо:хъо[h] хъо:хъ[h]	#	сохнуть
+ну:ну[h] ко:к[h]	#	голодать
+гъай:гъай[h] лӏо:лӏ[h]	#	кипеть
+кӏаьй:кӏаьй[s] лӏоь:лӏ[s]	#	поворачиваться
+оьгь:оьгь[s] лӏоь:лӏ[s]	#	кашлять
+гье:гье[h] ле:л[h]	#	вариться
+лъи:лъи[h] цӏе:цӏ[h]	#	одеваться
+гьи:гьи[h] цӏе:цӏ[h]	#	бояться
+гьа:гьа[h] ъо:ъ[h]	#	молоть
+ту:ту[h] хъ:хъ[h]	#	слышать
+низа:низа[h] а:[h]	#	мыть
+ни:ни[h] лӏ:лӏ[h]	#	давать
+лъоᴴва:лъоᴴва[h] а:[h]	#	смеяться
+лала:лала[h] лӏо:лӏ[h]	#	кричать
+кусу:кусу[h] ъ:ъ[h]	#	брить
 
 LEXICON VerbRootInf(2)
-г в # идти
-г й # идти
-г л # класть
-т кӏ # использовать
-г цӏ # появиться
-тӏ тӏ # бросить
+г[h] в[h] # идти
+г[h] й[h] # идти
+г[h] л[h] # класть
+т[h] кӏ[h] # использовать
+г[h] цӏо[h] # появиться
+тӏ[h] тӏ[h] # бросить
+н[h] хъ[h]  # просить
+г[h] хъ[h]	#	быть переполненным
+т[h] хъ[h]	#	заниматься
+г[s] {с}е[s]	#	трогать
+г[h] кӏ[h] # бить
 
+LEXICON VerbRootInf-Sh(2)
+г:г[h] в:в[h] # идти
+г:г[h] й:й[h] # идти
+г:г[h] л:л[h] # класть
+т:т[h] кӏ:кӏ[h] # использовать
+г:г[h] цӏо:цӏ[h] # появиться
+тӏ:тӏ[h] тӏ:тӏ[h] # бросить
+н:н[h] хъ:хъ[h]  # просить
+г:г[h] хъ:хъ[h]	#	быть переполненным
+т:т[h] хъ:хъ[h]	#	заниматься
+г:г[s] с:{с}[s]	#	трогать
+г:г[h] кӏ:кӏ[h] # бить
+
+LEXICON AvarBorrowings #infinitives borrowed from Avar that function as a part of a complex predicate, (Comrie et al. 2015) p. 567
+вохзи
+гуьргьизи
+гъанкъизи
+гьалтӏизи
+гьалцизи
+гьардизи
+дандилъзи
+кикзи
+каьъзи
+къази
+къамартӏизи
+къачӏази
+къеркьизи
+къудзи
+кьагьзи
+рекъази
+ригьзи
+ургъизи
+тарзи
+тӏубази
+уьджи
+эдеъзи
+эдегӏзи
+эзи
+вецци
+гьарзи
+зурзи
+къакъази
+кьапӏзи
+тӏамзи
+гоччи
+къосси
+тӏаьъзи
+цӏикӏлъизи
+чӏаръин
+галигзи
+дагъзи
+зарзи
+зурхъурзи
+кьархизи
+оьллъизи
+къишкӏизи
+кьеркъизи
+пикрулдизи
+согъози
+рази
+энекзи
+цӏуми

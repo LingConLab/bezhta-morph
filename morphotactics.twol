@@ -1,6 +1,0 @@
-Alphabet %<vwl%> %<vwl%>:0 > ;
-
-Rules
-
-"remove <vwl> tag"
-%<vwl%>:0 <=> > _ ;

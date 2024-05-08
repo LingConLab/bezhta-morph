@@ -1,13 +1,13 @@
 PATTERNS
-Personal > (ConjClitics | PartClitics)
-Demonstrative > (ConjClitics | PartClitics)
-Interrogative > (ConjClitics | PartClitics)
-IndefiniteP > (ConjClitics | PartClitics)
-ReflexiveP > (ConjClitics | PartClitics)
-UniversalP > (ConjClitics | PartClitics)
-DistributiveP > (ConjClitics | PartClitics)
-OtherPronoun > (ConjClitics | PartClitics)
-PronounLocatives > (ConjClitics | PartClitics)
+Personal Quotative? (Question | ConjClitics | PartClitics)?
+Demonstrative Quotative? (Question | ConjClitics | PartClitics)?
+Interrogative Quotative? (Question | ConjClitics | PartClitics)?
+IndefiniteP Quotative? (Question | ConjClitics | PartClitics)?
+ReflexiveP Quotative? (Question | ConjClitics | PartClitics)?
+UniversalP Quotative? (Question | ConjClitics | PartClitics)?
+DistributiveP Quotative? (Question | ConjClitics | PartClitics)?
+OtherPronoun Quotative? (Question | ConjClitics | PartClitics)?
+PronounLocatives Quotative? (Question | ConjClitics | PartClitics)?
 
 #----PERSONAL PRONOUNS-----
 PATTERN Personal
@@ -19,15 +19,24 @@ PersonalPronoun[dat] Infl[dat]
 PersonalPronoun[ins] Infl[ins]
 PersonalPronoun[1sg]
 PersonalPronoun[2sg]
+Reciprocal
 
 
 #----DEMONSTRATIVES-----
 PATTERN Demonstrative
 Demonstratives[1,4] Proximity[1,4] [<abs>:]
 Demonstratives[2,3] Proximity[2,3] [<abs>:]
+Demonstratives[1,4] Proximity[1,4] (Essive Directive? (Lative|Ablative|Translative)?)
+Demonstratives[1,4] Proximity[1,4] Infl[gen2] Essive (Lative|Ablative)? # "местоименные наречия"
+Demonstratives[1,4] Proximity[1,4] Essive Infl[gen2] (Lative|Ablative)?
+Demonstratives[2,3] Proximity[2,3] (Essive Directive? (Lative|Ablative|Translative)?)
+Demonstratives[2,3] Proximity[2,3] Infl[gen2] Essive (Lative|Ablative)?
+Demonstratives[2,3] Proximity[2,3]  Essive Infl[gen2] (Lative|Ablative)?
 Demonstratives-Plural-Abs [<abs>:]
 Demonstratives-Obl Infl
 Demonstratives-Plural-Obl Infl
+Demonstratives[1,4] DemonstrativeAdv
+Demonstratives[g] [<h><part>:на] | [<nh><part>:ла]
 
 #----INTERROGATIVES-----
 PATTERN Interrogative
@@ -104,9 +113,14 @@ LEXICON PersonalPronoun
 миже<pron><obl>:мизо[gen,gen2,dat,ins]
 
 LEXICON Demonstratives
-гьу<dem>:гьу[1,4] 
-вагь<dem>:вагь[1,4]
+гьу<dem>:гьу[1,4,g] 
+вагь<dem>:вагь[1,2,3,4]
 гьо<dem>:гьо[2,3]
+
+LEXICON DemonstrativeAdv
+<prox><adv>:да̄
+<med><adv>:ла̄
+<dist><adv>:га̄
 
 LEXICON Proximity
 <prox.1/4>:ди[1,4] # близость к говорящему
@@ -122,6 +136,7 @@ LEXICON Demonstratives-Obl
 гьу<dem><dist.1/4><obl>:гьогцо
 гьо<dem><prox.2/3><obl>:гьолӏо
 гьо<dem><med.2/3><obl>:гьоллъо
+гьо<dem><med.2/3><obl>:гьолълъо
 гьо<dem><dist.2/3><obl>:гьоглӏо
 вагь<dem><prox.1/4><obl>:вагьадцо
 вагь<dem><prox.1/4><obl>:вагьацо
@@ -160,7 +175,7 @@ LEXICON Demonstratives-Plural-Obl
 вагь<dem><med.2/3><obl.pl>:вагьалло
 вагь<dem><prox.2/3><obl.pl>:вагьагло
 
-LEXICON PronAdjectives #доделать склонение
+LEXICON PronAdjectives 
 гьуддийо # вот такой, как этот, невидимый
 вагьаддийо # вот такой, как этот, видимый
 гьуллийо # вот такой, как этот, невидимый
@@ -194,6 +209,8 @@ LEXICON Interrogatives
 лас<pron>:лас #какой по счету
 нигъа<pron>:нигъа #как
 на̄<pron>:на̄ #где, куда
+на̄да<pron>:на̄да̄ #где, куда
+нада<pron>:нада̄ #где, куда
 нито<pron>:нито #когда
 лъинибза<pron>:лъинибза #почему
 
@@ -216,7 +233,7 @@ LEXICON Reflexive-Obl
 зу<refl><pl><obl>:гьиде
 
 LEXICON Reciprocal
-<recp>:-гьоᴴсо 
+<recp>:гьоᴴсо 
 
 LEXICON Indefinite
 <indf>:ди
@@ -256,10 +273,12 @@ LEXICON Negative
 
 LEXICON UniversalRoot
 га̄ьгьийо<pron>:га̄ьгьийо # все
+гаьгьийо<pron>:гаьгьийо # все
 къацӏцӏо<pron>:къацӏцӏо # все
 
 LEXICON UniversalRoot-Obl
 га̄ьгьийо<pron><obl>:га̄ьгьийа
+гаьгьийо<pron>:гаьгьийа
 къацӏцӏо<pron><obl>:къацӏцӏола
 
 LEXICON Universal
