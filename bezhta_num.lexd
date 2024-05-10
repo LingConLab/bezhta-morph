@@ -1,7 +1,7 @@
 PATTERNS
 (NumRoot[-1,-2] Tens) ((Part Ordinal (OblSuffix[ord] Infl)?) | (CompoundOrdinal CompOrdInfl | CompOrdInfl_Attr))? | Part # порядковые и собирательные 30-90
 NumRoot Hundreds Part? # 100-900
-NumRoot [<abs>:]
+NumRoot | Ten | Twenty [<abs>:]
 NumRoot-Obl OblSuffix[digit] Infl #склонение по основным падежам 1-10, 20
 NumRoot-Obl[1] OblSuffix[digit] Infl[-genII] Reciprocal #реципрокальное местоимение 
 (NumRoot[-1,-2] Tens) | (NumRoot Hundreds) | Thousand OblSuffix[num] Infl #склонение по основным падежам 30-1000 
@@ -44,7 +44,7 @@ LEXICON NumRoot
 аьчӏена<num>:аьчӏена	# девять
 
 LEXICON First
-гьоᴴс<num><ord>:аьᴴйдда̄ьш # первый
+гьоᴴс<num><ord>:аьᴴйддāьш # первый
 
 LEXICON NumRoot-Mult
 гьоᴴс<num>:гьаᴴкъкъа[1]		# один
@@ -62,17 +62,17 @@ LEXICON NumRoot-Mult
 
 
 LEXICON Distributive
-гьоᴴс<num>:гьо̄ᴴ-гьоᴴс[1]	# один
-къона<num>:къо̄-къон	# два
-лъана<num>:лъа̄-лъан		# три
-оьᴴкъоьнаь<num>:о̄о̄ьᴴ-оьᴴкъоьн	# четыре
+гьоᴴс<num>:гьōᴴ-гьоᴴс[1]	# один
+къона<num>:къō-къон	# два
+лъана<num>:лъā-лъан		# три
+оьᴴкъоьнаь<num>:ōьᴴ-оьᴴкъоьн	# четыре
 лъина<num>:лъӣ-лъин		# пять
 илъна<num>:ӣ-илън		# шесть
-алӏна<num>:а̄-алӏн		# семь
-белӏна<num>:бе̄-белӏн		# восемь
-аьчӏена<num>:а̄ь-аьчӏен		# девять
-ацӏона<num>:а̄-ацӏон		# десять
-хъона<num>:хъо̄-хъон		# двадцать
+алӏна<num>:ā-алӏн		# семь
+белӏна<num>:бē-белӏн		# восемь
+аьчӏена<num>:āь-аьчӏен		# девять
+ацӏона<num>:ā-ацӏон		# десять
+хъона<num>:хъō-хъон		# двадцать
 
 LEXICON NumRoot-Obl
 гьоᴴс<num>:сид[1]	# один
@@ -122,17 +122,17 @@ LEXICON CompoundOrdinal
 
 LEXICON CompOrdInfl_Attr #аттрибутивная парадигма по Комри (стр. 297) 
 <abs><sg>:о
-<erg><sg>:а̄
-<genI><sg>:а̄
-<genII><sg>:а̄
-<dat><sg>:а̄
-<ins><sg>:а̄
-<abs><pl>:а̄
-<erg><pl>:а̄
-<genI><pl>:а̄
-<genII><pl>:а̄
-<dat><pl>:а̄
-<ins><pl>:а̄
+<erg><sg>:ā
+<genI><sg>:ā
+<genII><sg>:ā
+<dat><sg>:ā
+<ins><sg>:ā
+<abs><pl>:ā
+<erg><pl>:ā
+<genI><pl>:ā
+<genII><pl>:ā
+<dat><pl>:ā
+<ins><pl>:ā
 
 LEXICON CompOrdInfl
 <abs>:о

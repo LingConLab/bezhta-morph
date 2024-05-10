@@ -19,22 +19,22 @@ LEXICON Lative
 <lative>:{V}л
 
 LEXICON Translative
-<translative>:{C}кьа̄
+<translative>:{C}кьā
 
 LEXICON Ablative
 <ablative>:{V}с{V2}
 
 LEXICON Directive
-<dir>:да̄
+<dir>:дā
 
 LEXICON Class
-<I>:[1]
+<I>:{Cl}[1]
 <II>:й[2]
-<III>:б[3]
+<III>:{N}[3]
 <IV>:й[4]
 
 LEXICON ClassPl
-<hpl>:б[1,2]
+<hpl>:{N}[1,2]
 <nhpl>:й[3,4]
 
 

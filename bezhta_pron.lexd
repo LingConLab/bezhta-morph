@@ -55,6 +55,7 @@ Interrogatives-Obl[who2] Infl[-erg,-gen] (Negative (Universal UniversalParticle?
 PATTERN IndefiniteP
 ExpressiveIndefinite[-cl]|(Class ExpressiveIndefinite[cl])|ExpressiveIndefinite-Pl[-cl]|(ClassPl ExpressiveIndefinite-Pl) [<abs>:]
 ExpressiveIndefinite-Obl[-cl]|(Class ExpressiveIndefinite-Obl[cl])|ExpressiveIndefinite-Pl-Obl[-cl]|(ClassPl ExpressiveIndefinite-Pl-Obl[cl]) Infl
+NegativeIndefinite [<pron>:] [<neg>:]
 
 #----REFLEXIVES----- 
 PATTERN ReflexiveP
@@ -118,9 +119,9 @@ LEXICON Demonstratives
 гьо<dem>:гьо[2,3]
 
 LEXICON DemonstrativeAdv
-<prox><adv>:да̄
-<med><adv>:ла̄
-<dist><adv>:га̄
+<prox><adv>:дā
+<med><adv>:лā
+<dist><adv>:гā
 
 LEXICON Proximity
 <prox.1/4>:ди[1,4] # близость к говорящему
@@ -145,21 +146,22 @@ LEXICON Demonstratives-Obl
 вагь<dem><prox.2/3><obl>:вагьадлӏо
 вагь<dem><prox.2/3><obl>:вагьалӏо
 вагь<dem><med.2/3><obl>:вагьаллъо
+вагь<dem><med.2/3><obl>:вагьалълъо
 вагь<dem><dist.2/3><obl>:вагьаглӏо
 
 LEXICON Demonstratives-Plural-Abs
-гьу<dem><prox.1/4><pl>:гьоддо̄л
-гьу<dem><med.1/4><pl>:гьолло̄л
-гьу<dem><dist.1/4><pl>:гьогго̄л
-вагь<dem><prox.1/4><pl>:вагьаддо̄л
-вагь<dem><med.1/4><pl>:вагьалло̄л
-вагь<dem><dist.1/4><pl>:вагьагго̄л
-гьо<dem><prox.2/3><pl>:гьоддо̄л
-гьо<dem><med.2/3><pl>:гьолло̄л
-гьо<dem><dist.2/3><pl>:гьогго̄л
-вагь<dem><prox.2/3><pl>:вагьаддо̄л
-вагь<dem><med.2/3>:вагьалло̄л
-вагь<dem><prox.2/3>:вагьагго̄л
+гьу<dem><prox.1/4><pl>:гьоддōл
+гьу<dem><med.1/4><pl>:гьоллōл
+гьу<dem><dist.1/4><pl>:гьоггōл
+вагь<dem><prox.1/4><pl>:вагьаддōл
+вагь<dem><med.1/4><pl>:вагьаллōл
+вагь<dem><dist.1/4><pl>:вагьаггōл
+гьо<dem><prox.2/3><pl>:гьоддōл
+гьо<dem><med.2/3><pl>:гьоллōл
+гьо<dem><dist.2/3><pl>:гьоггōл
+вагь<dem><prox.2/3><pl>:вагьаддōл
+вагь<dem><med.2/3>:вагьаллōл
+вагь<dem><prox.2/3>:вагьаггōл
 
 LEXICON Demonstratives-Plural-Obl
 гьу<dem><prox.1/4><obl.pl>:гьодло
@@ -208,15 +210,15 @@ LEXICON Interrogatives
 ла<pron>:ла #сколько
 лас<pron>:лас #какой по счету
 нигъа<pron>:нигъа #как
-на̄<pron>:на̄ #где, куда
-на̄да<pron>:на̄да̄ #где, куда
-нада<pron>:нада̄ #где, куда
+нā<pron>:нā #где, куда
+нāда<pron>:нāдā #где, куда
+нада<pron>:надā #где, куда
 нито<pron>:нито #когда
 лъинибза<pron>:лъинибза #почему
 
 LEXICON Interrogatives-Obl
 сукӏо<pron><obl>:лъо[who] #кто
-сукӏо<pron><obl>:лъо̄[who2] #кто
+сукӏо<pron><obl>:лъō[who2] #кто
 сийо<pron><obl>:лъин{и}[what] #что
 
 LEXICON Reflexive
@@ -224,7 +226,7 @@ LEXICON Reflexive
 <refl>:зу
 
 LEXICON ReflexivePlural
-<pl>:во̄ьл
+<pl>:вōьл
 
 LEXICON Reflexive-Obl
 жуь<refl><obl>:гьин{и}
@@ -245,8 +247,8 @@ LEXICON ExpressiveIndefinite
 бокькьараб<pron>:бокькьараб # любой
 
 LEXICON ExpressiveIndefinite-Pl
-атӏийо<pron><pl>:атӏтӏийа̄[cl]
-атӏтӏийо<pron><pl>:атӏийа̄[cl] # любой
+атӏийо<pron><pl>:атӏтӏийā[cl]
+атӏтӏийо<pron><pl>:атӏийā[cl] # любой
 бокьараб<pron><pl>:бокьарабла # любой
 бокькьараб<pron><pl>:бокькьарабла # любой
 
@@ -257,10 +259,10 @@ LEXICON ExpressiveIndefinite-Obl
 бокькьараб<pron><obl>:бокькьарабли # любой
 
 LEXICON ExpressiveIndefinite-Pl-Obl
-атӏийо<pron><obl.pl>:атӏтӏийа̄[cl]
-атӏтӏийо<pron><obl.pl>:атӏийа̄[cl] # любой
-бокьараб<pron><obl.pl>:бокьарабла̄ # любой
-бокькьараб<pron><obl.pl>:бокькьарабла̄ # любой
+атӏийо<pron><obl.pl>:атӏтӏийā[cl]
+атӏтӏийо<pron><obl.pl>:атӏийā[cl] # любой
+бокьараб<pron><obl.pl>:бокьараблā # любой
+бокькьараб<pron><obl.pl>:бокькьараблā # любой
 
 LEXICON IndefiniteParticle
 <indf>:-суди
@@ -271,13 +273,18 @@ LEXICON UniversalParticle
 LEXICON Negative
 <neg>:на
 
+LEXICON NegativeIndefinite
+гьоᴴссукӏона
+гьоьшшонаь
+гьоьшшона
+
 LEXICON UniversalRoot
-га̄ьгьийо<pron>:га̄ьгьийо # все
+гāьгьийо<pron>:гāьгьийо # все
 гаьгьийо<pron>:гаьгьийо # все
 къацӏцӏо<pron>:къацӏцӏо # все
 
 LEXICON UniversalRoot-Obl
-га̄ьгьийо<pron><obl>:га̄ьгьийа
+гāьгьийо<pron><obl>:гāьгьийа
 гаьгьийо<pron>:гаьгьийа
 къацӏцӏо<pron><obl>:къацӏцӏола
 
@@ -292,9 +299,9 @@ LEXICON DistributiveRoot
 LEXICON Other
 бади<pron>:бади #другой
 бадо<pron>:бадо #другая
-баддо̄л<pron>:баддо̄л #другие
+баддōл<pron>:баддōл #другие
 
 LEXICON OtherObl
 бади<pron><obl>:бацо
 бадо<pron><obl>:балӏо
-баддо̄л<pron><obl>:бадло
+баддōл<pron><obl>:бадло

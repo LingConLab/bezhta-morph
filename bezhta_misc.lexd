@@ -6,7 +6,7 @@ Interjections
 LEXICON AdpAffixes
 <post>:лабза # вместо, ради
 <post>:аъ # кроме
-<post>:да̄ла # из-за
+<post>:дāла # из-за
 
 LEXICON Conjunctions
 амма	#	но
@@ -28,7 +28,7 @@ LEXICON ConjClitics
 <conj>:ла
 <if>:со
 <conj>:гъас	#	такой, как
-<conj>:гъада̄с	#	подобный
+<conj>:гъадāс	#	подобный
 <conj>:дола	#	как
 <conj>:долас	#	столько
 <conj>:лъийо	#	подобный
@@ -43,16 +43,16 @@ LEXICON PartClitics
 <part>:со
 <part>:чен
 <part>:аъ
-<part>:ла̄
+<part>:лā
 <part>:че
 <part>:эче
 <part>:д
 <part>:ди
 <part>:ле
 <quot>:лӏо
-<emph>:са̄ъ
-<emph>:а̄ъ
-<emph>:йа̄ъ
+<emph>:сāъ
+<emph>:āъ
+<emph>:йāъ
 
 LEXICON Participles
 лабза	#	ради
@@ -71,7 +71,7 @@ LEXICON Participles
 аᴴъаᴴгь #	нет
 эᴴъэᴴгь #	нет
 суна	#	нисколько
-гьа̄ᴴ	#	что
+гьāᴴ	#	что
 чӏараб	#	неужели
 эггу	#	разве
 суди	#	либо, -то
@@ -89,7 +89,7 @@ LEXICON Interjections
 валалай
 валалагь
 йе
-йе̄
+йē
 гьаᴴ
 гьеᴴгь
 ле

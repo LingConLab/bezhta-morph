@@ -5,6 +5,7 @@ DoVerb Quotative? (Question | ConjClitics | PartClitics)?
 LookVerb Quotative? (Question | ConjClitics | PartClitics)?
 Aux Quotative? (Question | ConjClitics | PartClitics)?
 AvarBorrowings
+Light
 ShortForms
 
 PATTERN DoVerb
@@ -16,10 +17,6 @@ PATTERN LookVerb
 Look Valency_h? Modal? (TAM_cons_h | TAM_vowel_h)
 
 # ---- h-paradigm (back vowels) -----
-PATTERN TAM_h
-Past
-PATTERN TAM_s
-Past 
 
 PATTERN Imperative_h
 Mood[imp,h] 
@@ -28,20 +25,20 @@ Mood[imp,h] > ([:а]? Mood[prmI,h]) > [<prmII>:ъ]
 Mood[prmIII,h]
 
 PATTERN Valency_h
-Antipassive[h]
-Causative > Antipassive[h]
+Causative[a] Causative[b]
+Causative
 
 PATTERN TAM_vowel_h
 Past[h] | Present[h] > (Mood[hyp] | Mood[irr])
 Negation[neg,h]? Mood[cond] > ([<invc>:л] | [<cnc>:на])
-Participle[prs,h] | Participle[pst,h]
+Participle[prs,h]
 Converb[pfv,h]
 Converb[simul,h] | Converb[ant,h] | Converb[act,h]
 Essive[ad]
 Converb[how,h] > Converb[why,h]
 Present[h] Converb[prs,h] > Converb[since,h]
-Past[h] > Converb[pfv,h] 
-Past[h] > Masdar[pst]
+Past[h] Converb[pfv,h] 
+Past[h] Masdar[pst]
 Masdar[st]
 
 PATTERN TAM_cons_h
@@ -71,14 +68,14 @@ Converb[before,h] Negation[loc] Translative
 PATTERN TAM_vowel_s
 Past[s] | Present[s] > (Mood[hyp] | Mood[irr])
 Negation[neg,s]? Mood[cond] > ([<invc>:л] | [<cnc>:на])
-Participle[prs,s] | Participle[pst,s]
+Participle[prs,s]
 Converb[pfv,s]
 Converb[simul,s] | Converb[ant,s] | Converb[act,s]
 Essive[ad]
 Converb[how,s] > Converb[why,s]
 Present[s] Converb[prs,s] > Converb[since,s]
-Past[s] > Converb[pfv,s] 
-Past[s] > Masdar[pst]
+Past[s] Converb[pfv,s] 
+Past[s] Masdar[pst]
 Masdar[st]
 
 PATTERN TAM_cons_s
@@ -113,66 +110,61 @@ PATTERN Valency_s
 Antipassive[s]
 Causative > Antipassive[s]
 
-PATTERN Verb
-VerbRoot(1)[-cl,h] Antipassive[h]? :VerbNumberInfix(1)[h] VerbRoot(2)[-cl,h] VerbNumberInfix(2)[h]: Modal? TAM_vowel_h
-VerbRoot-Sh(1)[-cl,h] Antipassive[h]? :VerbNumberInfix(1)[h] VerbRoot-Sh(2)[-cl,h] VerbNumberInfix(2)[h]: Modal? TAM_cons_h
-VerbRoot(1)[-cl,h] Antipassive[h]? :VerbNumberInfix(1)[h] VerbRoot(2)[-cl,h] VerbNumberInfix(2)[h]: Valency_h Modal? (TAM_vowel_h | TAM_cons_h)
+PATTERN Verb # no gender agreement
+VerbRoot(1)[-cl,h] Antipassive[h]? VerbNumberInfix[h]? VerbRoot(2)[-cl,h] Modal? TAM_vowel_h
+VerbRoot-Sh(1)[-cl,h] Antipassive[h]? VerbNumberInfix[h]? VerbRoot-Sh(2)[-cl,h] Modal? TAM_cons_h
+VerbRoot(1)[-cl,h] Antipassive[h]? VerbNumberInfix[h]? VerbRoot(2)[-cl,h] Valency_h Modal? (TAM_vowel_h | TAM_cons_h)
 
-VerbRoot(1)[-cl,s] Antipassive[s]? :VerbNumberInfix(1)[s] VerbRoot(2)[-cl,s] VerbNumberInfix(2)[s]: Modal? TAM_vowel_s
-VerbRoot-Sh(1)[-cl,s] Antipassive[s]? :VerbNumberInfix(1)[s] VerbRoot-Sh(2)[-cl,s] VerbNumberInfix(2)[s]: Modal? TAM_cons_s
-VerbRoot(1)[-cl,s] Antipassive[s]? :VerbNumberInfix(1)[s] VerbRoot(2)[-cl,s] VerbNumberInfix(2)[s]: Valency_s Modal? (TAM_vowel_s | TAM_cons_s)
+VerbRoot(1)[-cl,s] Antipassive[s]? VerbNumberInfix[s]? VerbRoot(2)[-cl,s] Modal? TAM_vowel_s
+VerbRoot-Sh(1)[-cl,s] Antipassive[s]? VerbNumberInfix[s]? VerbRoot-Sh(2)[-cl,s] Modal? TAM_cons_s
+VerbRoot(1)[-cl,s] Antipassive[s]? VerbNumberInfix[s]? VerbRoot(2)[-cl,s] Valency_s Modal? (TAM_vowel_s | TAM_cons_s)
 
 PATTERN ClassVerb
 
-VerbRootInf(1)[h] :ClassInfix(1)[h] Antipassive[h]? :VerbNumberInfix(1)[-sg,h]? VerbRootInf(2)[h] ClassInfix(2)[h]: VerbNumberInfix(2)[-sg,h]:? Modal? TAM_vowel_h
-#VerbRootInf-Sh(1)[h] :ClassInfix(1)[h] Antipassive[h]? :VerbNumberInfix(1)[-sg,h]? VerbRootInf-Sh(2)[h] ClassInfix(2)[h]: VerbNumberInfix(2)[-sg,h]:? Modal? TAM_cons_h
-VerbRootInf(1)[h] :ClassInfix(1)[h] Antipassive[h]? :VerbNumberInfix(1)[-sg,h]? VerbRootInf(2)[h] ClassInfix(2)[h]: VerbNumberInfix(2)[-sg,h]:? Valency_h Modal? (TAM_vowel_h | TAM_cons_h)
+VerbRootInf(1)[h] ClassInfix[h] Antipassive[h]? VerbNumberInfix[h]? VerbRootInf(2)[h] Modal? TAM_vowel_h
+VerbRootInf-Sh(1)[h] ClassInfix[h] Antipassive[h]? VerbNumberInfix[h]? VerbRootInf-Sh(2)[h] Modal? TAM_cons_h
+VerbRootInf(1)[h] ClassInfix[h] Antipassive[h]? VerbNumberInfix[h]? VerbRootInf(2)[h] Valency_h Modal? (TAM_vowel_h | TAM_cons_h)
 
-VerbRootInf(1)[s] :ClassInfix(1)[s] Antipassive[s]? :VerbNumberInfix(1)[-sg,s]? VerbRootInf(2)[s] ClassInfix(2)[s]: VerbNumberInfix(2)[-sg,s]:? Modal? TAM_vowel_s
-VerbRootInf-Sh(1)[s] :ClassInfix(1)[s] Antipassive[s]? :VerbNumberInfix(1)[-sg,s]? VerbRootInf-Sh(2)[s] ClassInfix(2)[s]: VerbNumberInfix(2)[-sg,s]:? Modal? TAM_cons_s
-VerbRootInf(1)[s] :ClassInfix(1)[s] Antipassive[s]? :VerbNumberInfix(1)[-sg,s]? VerbRootInf(2)[s] ClassInfix(2)[s]: VerbNumberInfix(2)[-sg,s]:? Valency_s Modal? (TAM_vowel_s | TAM_cons_s)
+VerbRootInf(1)[s] ClassInfix[s] Antipassive[s]? VerbNumberInfix[s]? VerbRootInf(2)[s] Modal? TAM_vowel_s
+VerbRootInf-Sh(1)[s] ClassInfix[s] Antipassive[s]? VerbNumberInfix[s]? VerbRootInf-Sh(2)[s] Modal? TAM_cons_s
+VerbRootInf(1)[s] ClassInfix[s] Antipassive[s]? VerbNumberInfix[s]? VerbRootInf(2)[s] Valency_s Modal? (TAM_vowel_s | TAM_cons_s)
 
 
-Class VerbRoot(1)[cl,h] Antipassive[h]? :VerbNumberInfix(1)[sg,h] VerbRoot(2)[cl,h] VerbNumberInfix(2)[sg,h]: Modal? TAM_vowel_h
-Class VerbRoot-Sh(1)[cl,h] Antipassive[h]? :VerbNumberInfix(1)[sg,h] VerbRoot-Sh(2)[cl,h] VerbNumberInfix(2)[sg,h]: Modal? TAM_cons_h
-Class VerbRoot(1)[cl,h] Antipassive[h]? :VerbNumberInfix(1)[sg,h] VerbRoot(2)[cl,h] VerbNumberInfix(2)[sg,h]: Valency_h Modal? (TAM_vowel_h | TAM_cons_h)
+Class VerbRoot(1)[cl,h] Antipassive[h]? VerbRoot(2)[cl,h] Modal? TAM_vowel_h
+Class VerbRoot-Sh(1)[cl,h] Antipassive[h]? VerbRoot-Sh(2)[cl,h] Modal? TAM_cons_h
+Class VerbRoot(1)[cl,h] Antipassive[h]? VerbRoot(2)[cl,h] Valency_h Modal? (TAM_vowel_h | TAM_cons_h)
 
-Class VerbRoot(1)[cl,s] Antipassive[s]? :VerbNumberInfix(1)[sg,s] VerbRoot(2)[cl,s] VerbNumberInfix(2)[sg,s]: Modal? TAM_vowel_s
-Class VerbRoot-Sh(1)[cl,s] Antipassive[s]? :VerbNumberInfix(1)[sg,s] VerbRoot-Sh(2)[cl,s] VerbNumberInfix(2)[sg,s]: Modal? TAM_cons_s
-Class VerbRoot(1)[cl,s] Antipassive[s]? :VerbNumberInfix(1)[sg,s] VerbRoot(2)[cl,s] VerbNumberInfix(2)[sg,s]: Valency_s Modal? (TAM_vowel_s | TAM_cons_s)
+Class VerbRoot(1)[cl,s] Antipassive[s]? VerbRoot(2)[cl,s] Modal? TAM_vowel_s
+Class VerbRoot-Sh(1)[cl,s] Antipassive[s]? VerbRoot-Sh(2)[cl,s] Modal? TAM_cons_s
+Class VerbRoot(1)[cl,s] Antipassive[s]? VerbRoot(2)[cl,s] Valency_s Modal? (TAM_vowel_s | TAM_cons_s)
 
-ClassPl VerbRoot(1)[cl,h] Antipassive[h]? :VerbNumberInfix(1)[-sg,h] VerbRoot(2)[cl,h] VerbNumberInfix(2)[-sg,h]: Modal? TAM_vowel_h
-ClassPl VerbRoot-Sh(1)[cl,h] Antipassive[h]? :VerbNumberInfix(1)[-sg,h] VerbRoot-Sh(2)[cl,h] VerbNumberInfix(2)[-sg,h]: Modal? TAM_cons_h
-ClassPl VerbRoot(1)[cl,h] Antipassive[h]? :VerbNumberInfix(1)[-sg,h] VerbRoot(2)[cl,h] VerbNumberInfix(2)[-sg,h]: Valency_s Modal? (TAM_vowel_s | TAM_cons_s)
+ClassPl VerbRoot(1)[cl,h] Antipassive[h]? VerbNumberInfix[h] VerbRoot(2)[cl,h] Modal? TAM_vowel_h
+ClassPl VerbRoot-Sh(1)[cl,h] Antipassive[h]? VerbNumberInfix[h] VerbRoot-Sh(2)[cl,h] Modal? TAM_cons_h
+ClassPl VerbRoot(1)[cl,h] Antipassive[h]? VerbNumberInfix[h] VerbRoot(2)[cl,h] Valency_h Modal? (TAM_vowel_s | TAM_cons_s)
 
-ClassPl VerbRoot(1)[cl,s] Antipassive[s]? :VerbNumberInfix(1)[-sg,s] VerbRoot(2)[cl,s] VerbNumberInfix(2)[-sg,s]: Modal? TAM_vowel_s
-ClassPl VerbRoot-Sh(1)[cl,s] Antipassive[s]? :VerbNumberInfix(1)[-sg,s] VerbRoot-Sh(2)[cl,s] VerbNumberInfix(2)[-sg,s]: Modal? TAM_cons_s
-ClassPl VerbRoot(1)[cl,s] Antipassive[s]? :VerbNumberInfix(1)[-sg,s] VerbRoot(2)[cl,s] VerbNumberInfix(2)[-sg,s]: Valency_s Modal? (TAM_vowel_s | TAM_cons_s)
+ClassPl VerbRoot(1)[cl,s] Antipassive[s]? VerbNumberInfix[s] VerbRoot(2)[cl,s] Modal? TAM_vowel_s
+ClassPl VerbRoot-Sh(1)[cl,s] Antipassive[s]? VerbNumberInfix[s] VerbRoot-Sh(2)[cl,s] Modal? TAM_cons_s
+ClassPl VerbRoot(1)[cl,s] Antipassive[s]? VerbNumberInfix[s] VerbRoot(2)[cl,s] Valency_s Modal? (TAM_vowel_s | TAM_cons_s)
 
-LEXICON VerbNumberInfix(2)
-:[sg,h,s] <v><sg>:[sg,h,s]
-:а[а,h] <v><pl>:а[а,h]
-:ба[ба,h] <v><pl>:ба[ба,h]
-:ва[ва,h] <v><pl>:ва[ва,h]
-:ваба[ваба,h] <v><pl>:ваба[ваба,h]
-:йа[йа,h] <v><pl>:йа[йа]
-:йаба[йаба,h] <v><pl>:йаба[йаба,h]
-:аь[аь,s] <v><pl>:аь[аь,s]
-:ба[баь,s] <v><pl>:ба[баь,s]
-:ва[ваь,s] <v><pl>:ва[ваь,s]
+LEXICON VerbNumberInfix 
+<pl>:а[а,h]
+<pl>:ба[ба,h]
+<pl>:ва[ва,h]
+<pl>:йа[йа,h]
+<pl>:аь[аь,s]
+<pl>:баь[баь,s]
+<pl>:ваь[ваь,s]
 
-LEXICON ClassInfix(2)
-:о[h] <v><I>:о[h]
-:и[h,s] <v><II>:и[h,s]
-:у[h] <v><III/IV>:у[h]
-:оь[s] <v><I>:оь[s]
-:уь[s] <v><III/IV>:уь[s]
+LEXICON ClassInfix
+<I>:о[h]
+<II>:и[h,s]
+<III/IV>:у[h]
+<I>:оь[s]
+<III/IV>:уь[s]
 
 LEXICON Causative 
-<caus>:л
-<caus>:лл
-<caus>:илл
-<caus>:гол
+<caus>:{L}л[a]
+<caus>:{L}лл[b]
 
 LEXICON Antipassive
 <antip>:ла[h]
@@ -188,8 +180,7 @@ LEXICON Antipassive
 
 #---- Tense ----
 LEXICON Past 
-<pst>:йо[h,s,v]
-<pst>:ийо[h,s,c]
+<pst>:{L}йо[h,s,c,v]
 <pst>:ло[l,h]
 <pst>:лоь[l,s]
 
@@ -219,8 +210,8 @@ LEXICON Future
 <fut>:аьш[s]
 
 LEXICON Plusquamperfect
-<ppf>:а̄гьийо[h]
-<ppf>:а̄ьгьийо[s]
+<ppf>:āгьийо[h]
+<ppf>:āьгьийо[s]
 
 #---- Mood ----
 
@@ -232,23 +223,23 @@ LEXICON Mood
 <imp>:е[imp,h,s]
 <imp>:о[imp,h]
 <imp>:оь[imp,s]
-<proh>:а̄къа[proh]
+<proh>:āкъа[proh]
 <opt>:акъос[opt]
 <opt>:къос[opt]
 <neg.opt>:акъаъас[opt.neg]
 <neg.opt>:къаъас[opt.neg]
-<rog>:ло̄[rog]
+<rog>:лō[rog]
 <rog>:ловале[rog]
 <rog>:лоало[rog]
 <prmI>:ла[prmI,h]
 <prmI>:лаь[prmI,s]
 <prmII>:ъ[prmII]
-<prmIII>:ала̄[prmIII,h]
-<prmIII>:аьла̄[prmIII,s]
+<prmIII>:алā[prmIII,h]
+<prmIII>:аьлā[prmIII,s]
 <cond>:да[cond]
-<irr>:къода̄[irr]
-<dub>:ла̄[dub]
-<dub>:ла̄ъ[dub]
+<irr>:къодā[irr]
+<dub>:лā[dub]
+<dub>:лāъ[dub]
 <dub>:лаъ[dub] # "частица хезитации"
 <hyp>:ле[hyp]
 
@@ -274,8 +265,7 @@ LEXICON Masdar
 LEXICON Participle
 <prs.ptsp>:цас[h,prs]
 <prs.ptsp>:чаьш[s,prs]
-<pst.ptsp>:йо[pst,h,s]
-<pst.ptsp>:ийо[pst,h,s]
+<pst.ptsp>:{L}йо[pst,h,s]
 <fut.ptsp>:лъийо[fut,h,s]
 
 LEXICON Converb
@@ -286,8 +276,8 @@ LEXICON Converb
 <simul.cvb>:лъ[h,s,simul]
 <simul.cvb>:лъо[h,s,simul]
 <ant.cvb>:лъол[h,s,ant]
-<cvb>:а̄лъо[h,s,after]
-<cvb>:а̄лъол[h,s,before]
+<cvb>:āлъо[h,s,after]
+<cvb>:āлъол[h,s,before]
 <cvb>:лъегьна[inf,h,s]
 <since.cvb>:с[since,h]
 <since.cvb>:ш[since,s]
@@ -300,9 +290,9 @@ LEXICON Converb
 <cvb>:йаъ[act,h,s]
 <cvb>:лаъ[act,h,s]
 <cvb>:гъа[how,h,s]
-<cvb>:да̄л[why,h,s]
-<cvb>:а̄цо[place,h]
-<cvb>:а̄ьчоь[place,s]
+<cvb>:дāл[why,h,s]
+<cvb>:āцо[place,h]
+<cvb>:āьчоь[place,s]
 <cvb>:ъгъа[goal,h,s]
 
 # ---- Discourse ----

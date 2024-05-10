@@ -4,16 +4,24 @@ Noun Quotative? (Question | ConjClitics | PartClitics)?
 PATTERN Noun
 #множественное число
 NounRoot[а] [<n>:] NounPl[а] [<abs>:]
+NounRoot[аь] [<n>:] NounPl[аь] [<abs>:]
 NounRoot[ба] [<n>:] NounPl[ба] [<abs>:]
+NounRoot[баь] [<n>:] NounPl[баь] [<abs>:]
 NounRoot[ва] [<n>:] NounPl[ва] [<abs>:]
+NounRoot[ваь] [<n>:] NounPl[ваь] [<abs>:]
 NounRoot[да] [<n>:] NounPl[да] [<abs>:]
+NounRoot[даь] [<n>:] NounPl[даь] [<abs>:]
 NounRoot[йа] [<n>:] NounPl[йа] [<abs>:]
+NounRoot[йаь] [<n>:] NounPl[йаь] [<abs>:]
 NounRoot[ла] [<n>:] NounPl[ла] [<abs>:]
+NounRoot[лаь] [<n>:] NounPl[лаь] [<abs>:]
 NounRoot[бо] [<n>:] NounPl[бо] [<abs>:]
+NounRoot[боь] [<n>:] NounPl[боь] [<abs>:]
 NounRoot[рол] [<n>:] NounPl[рол] [<abs>:]
 NounRoot[ро] [<n>:] NounPl[ро] [<abs>:]
-NounRootLong[long] [<n>:] NounPl[long] [<abs>:]
-SuppletiveRoot
+NounRoot[роь] [<n>:] NounPl[роь] [<abs>:]
+NounRootLong[ā] [<n>:] NounPl[ā] [<abs>:]
+SuppletiveRoot [<n>:] [<pl>:]
 
 #склонение по падежам
 NounRoot [<n>:] [<abs>:]
@@ -21,21 +29,29 @@ NounRoot-Obl Infl |(Essive Directive? (Lative|Ablative|Translative)?)
 NounRoot-Obl Infl[gen2] Essive (Lative|Ablative)?
 NounRoot-Obl Essive Infl[gen2] (Lative|Ablative)?
 
-NounRoot | SuppletiveRoot Noun-Pl-Obl Infl |(Essive Directive? (Lative|Ablative|Translative)?)
-NounRoot | SuppletiveRoot Noun-Pl-Obl Infl[gen2] Essive (Lative|Ablative)?
-NounRoot | SuppletiveRoot Noun-Pl-Obl Essive Infl[gen2] (Lative|Ablative)?
+NounRoot | SuppletiveRoot Noun-Pl-Obl [<n>:] Infl |(Essive Directive? (Lative|Ablative|Translative)?)
+NounRoot | SuppletiveRoot Noun-Pl-Obl [<n>:] Infl[gen2] Essive (Lative|Ablative)?
+NounRoot | SuppletiveRoot Noun-Pl-Obl [<n>:] Essive Infl[gen2] (Lative|Ablative)?
 
 LEXICON NounPl
-<pl>:а{UM}[а] # КАК СДЕЛАТЬ аа -> а̄??
+<pl>:а{UM}[а] # КАК СДЕЛАТЬ аа -> ā??
+<pl>:аь[аь]
 <pl>:ба{UM}[ба]
+<pl>:баь[баь]
 <pl>:ва{UM}[ва]
+<pl>:ваь[ваь]
 <pl>:да{UM}[да]
+<pl>:да[даь]
 <pl>:йа{UM}[йа]
+<pl>:йа[йаь]
 <pl>:ла{UM}[ла]
+<pl>:лаь[лаь]
 <pl>:бо{UM}[бо]
+<pl>:боь[боь]
 <pl>:ро{UM}л[рол]
 <pl>:ро{UM}[ро]
-<pl>:а̄{UM}[long]
+<pl>:роь[роь]
+<pl>:ā{UM}[ā]
 
 LEXICON Noun-Pl-Obl
 <pl><obl>:а{UM}
