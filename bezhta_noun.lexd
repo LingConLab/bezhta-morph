@@ -25,13 +25,8 @@ SuppletiveRoot [<n>:] [<pl>:]
 
 #склонение по падежам
 NounRoot [<n>:] [<abs>:]
-NounRoot-Obl Infl |(Essive Directive? (Lative|Ablative|Translative)?)
-NounRoot-Obl Infl[gen2] Essive (Lative|Ablative)?
-NounRoot-Obl Essive Infl[gen2] (Lative|Ablative)?
-
-NounRoot | SuppletiveRoot Noun-Pl-Obl [<n>:] Infl |(Essive Directive? (Lative|Ablative|Translative)?)
-NounRoot | SuppletiveRoot Noun-Pl-Obl [<n>:] Infl[gen2] Essive (Lative|Ablative)?
-NounRoot | SuppletiveRoot Noun-Pl-Obl [<n>:] Essive Infl[gen2] (Lative|Ablative)?
+NounRoot-Obl Infl | LocativeInflection
+NounRoot | SuppletiveRoot Noun-Pl-Obl [<n>:] Infl | LocativeInflection
 
 LEXICON NounPl
 <pl>:а{UM}[а] # КАК СДЕЛАТЬ аа -> ā??

@@ -14,13 +14,10 @@ ClassPl AdjRoot[cl] | AdjRoot[cl,o] [<adj>:] AdjNumber[pl.aus] | AdjObl[-avar,-s
 
 #субстантивная парадигма
 AdjRoot[av] [<adj>:] AdjObl[avar,-pl]|[<obl.pl>:лā] Infl
-AdjRoot[-av,-cl] [<adj>:] AdjObl[-avar] Infl |(Essive Directive? (Lative|Ablative|Translative)?)
-AdjRoot[-av,-cl] [<adj>:] AdjObl[-avar] Infl[gen2] Essive (Lative|Ablative)?
-AdjRoot[-av,-cl] [<adj>:] AdjObl[-avar] Essive Infl[gen2] (Lative|Ablative)?
+AdjRoot[-av,-cl] [<adj>:] AdjObl[-avar] Infl | LocativeInflection
 
-Class AdjRoot[cl] [<adj>:] AdjObl[sg] Infl |(Essive Directive? (Lative|Ablative|Translative)?)
-ClassPl AdjRoot[cl] [<adj>:] AdjObl[pl,-avar] Infl |(Essive Directive? (Lative|Ablative|Translative)?)
-(Class AdjRoot[cl] [<adj>:] AdjObl[sg]) | (ClassPl [<adj>:] AdjRoot[cl] AdjObl[pl,-avar])  Infl[gen2] Essive (Lative|Ablative)?
+Class AdjRoot[cl] [<adj>:] AdjObl[sg] Infl | LocativeInflection
+ClassPl AdjRoot[cl] [<adj>:] AdjObl[pl,-avar] Infl | LocativeInflection
 
 LEXICON AdjNumber
 <abs.sg>:о{UM}[sg]
@@ -276,7 +273,6 @@ LEXICON AdjRoot
 кел-ицӏцӏо:кел-ицӏцӏ[o,unk]	#	старый, ветхий,
 келло:келл[o,unk]	#	старый
 кепаб[av]	#	приятный
-кикийо:кикий[o,unk]	#	прош. вр. от кикал 2) прич. прош. вр. от кикал 2. мелкий
 кикко:кикк[o,unk]	#	легкий, легковесный
 кик-микко:кик-микк[o,unk]	#	легкий, легковесный
 кӣ-кикко:кӣ-кикк[o,unk]	#	самый легкий
@@ -341,7 +337,6 @@ LEXICON AdjRoot
 лъахдийолъийо:лъахдийолъий[o,unk]	#	сероватый
 лъекъейо:лъекъей[o,unk]	#	гневливый
 лъаьраьъ[unk]	#	равнина, равнинный
-сизийо:сизий[o,unk]	#	прош. вр. от лъизал 2) прич. прош. вр. запутанный, спутанный
 лъикко:лъикк[o,unk]	#	жидкий
 лъикъā[unk]	#	водянистый
 лъикъиндийо:лъикъиндий[o,unk]	#	водянистый, жидкий
@@ -395,12 +390,10 @@ LEXICON AdjRoot
 нийāлъийо:нийāлъий[o,unk]	#	сладковатый
 никъāйо:никъāй[o,unk]	#	горький
 никъāлъийо:никъāлъий[o,unk]	#	горьковатый
-нисойо:нисой[o,unk]	#	прош. вр. от нисал сказал 2) прич. прош. вр. от нисал сказанный
 ницаб[av]	#	совестливый, стыдливый
 ницаъас[unk]	#	голубой
 ничдийо:ничдий[o,unk]	#	голубой
 нишеддо:нишедд[o,unk]	#	богатый,
-нӣ-нисойо:нӣ-нисой[o,unk]	#	прич. прош. вр. сказанный
 ночлъийо:ночлъий[o,unk]	#	мокрый
 нухъулӏ[unk]	#	нареч. под мышкой
 нуькуьчӏаьб[av]	#	презренный, подлый, ничтожный
@@ -452,7 +445,6 @@ LEXICON AdjRoot
 сахаб[av]	#	здоровый
 сахаватаб[av]	#	щедрый
 сибовас[unk]	#	осенний
-симахъойо:симахъой[o,unk]	#	прош. вр. от симахъал 2) прич. прош. вр. от симахъал 2. злой, злобный
 сукӏоназу[unk]	#	мест. опред. всякий
 сукӏос[unk]	#	чужой
 сумураб[av]	#	плиссированный
@@ -527,14 +519,11 @@ LEXICON AdjRoot
 цизовас[unk]	#	цезский, дидойский
 цикъиндийо:цикъиндий[o,unk]	#	водянистый
 цихайо:цихай[o,unk]	#	соленый
-цихийо:цихий[o,unk]	#	прош. вр. от цихал прич. прош. вр. от цихал 2. пьяный
 циᴴйакъā[unk]	#	пересоленный,
 цӣᴴ-цихайо:цӣᴴ-цихай[o,unk]	#	самый соленый
 цокеэш[unk]	#	непоседливый
-цолакейо:цолакей[o,unk]	#	прош. вр. от цолакал 2) прич. прош. вр. от цолакал 2. пасмурный, влажный
 цоцило:цоцил[o,unk]	#	гнилой
 цоцокъайо:цоцокъай[o,unk]	#	очень жирный,
-цоцойо:цоцой[o,unk]	#	прош. вр. от цоцал 2) прич. прош. вр. от цоцал 2. жирный, жировой
 цō-цоцило:цō-цоцил[o,unk]	#	самый гнилой
 цугъгъо:цугъгъ[o,unk]	#	сухой,
 цулло:цулл[o,unk]	#	ненасытный
@@ -560,7 +549,6 @@ LEXICON AdjRoot
 чаьчаьлоь:чаьчаьл[o,unk]	#	кислый
 чаьч-маьчаьлоь:чаьч-маьчаьл[o,unk]	#	кисловатый
 чергес[unk]	#	черкесский
-чикейо:чикей[o,unk]	#	прош. вр. от чикал 2) прич. прош. вр. от чикал 2. 1) грязный
 чик-чикейо:чик-чикей[o,unk]	#	грязный 2) перен. непристойный, нецензурный
 чӏаьгоьваб[av]	#	живой
 чӏаьгьаьйаб[av]	#	толстостеблистый
@@ -583,7 +571,6 @@ LEXICON AdjRoot
 шахилакоъос[unk]	#	розовый
 шаьтӏтӏоь:шаьтӏтӏ[o,unk]	#	голый, обнаженный
 шелодагаьччоь:шелодагаьчч[o,unk]	#	комолый
-шешейо:шешей[o,unk]	#	прош. вр. от шешал1,2 2) прич. прош. вр. от шешал1,2 2. густой
 шинаб[av]	#	мест. опред. каждый
 шуьшшоь:шуьшш[o,unk]	#	тонкий шуьшшоь хъал тонкий слой
 эдеъараб[av]	#	спешный, срочный
@@ -607,8 +594,6 @@ LEXICON AdjRoot
 аᴴцойо:аᴴцой[o,unk,cl]	#	чистый, очищенный
 аьᴴш-кӏаьтӏтӏоь:аьᴴш-кӏаьтӏтӏ[o,unk,cl]	#	короткий
 аьᴴшшоь:аьᴴшш[o,unk,cl]	#	короткий
-ечейо:ечей[o,unk,cl]	#	1. прош. вр. от йецал 2. лежалый
-еᴴхейо:еᴴхей[o,unk,cl]	#	1. прош. вр. от йенхал 2. липкий, липучий, клейкий, прилипающий
 икъō[unk,cl]	#	спелый
 икъойо:икъой[o,unk,cl]	#	спелый
 илӏā[unk,cl]	#	сильный, твердый
@@ -627,10 +612,8 @@ LEXICON AdjRoot
 уьᴴкъоьйо:уьᴴкъоьй[o,unk,cl]	#	кривой, искривленный, изогнутый
 ӯкъо:ӯкъ[o,unk,cl]	#	очень большой, огромный
 PATTERNS 
-Adverb [<adv>:] > Infl[-erg]
-Adverb Infl |(Essive Directive? (Lative|Ablative|Translative)?)
-Adverb Infl[gen2] Essive (Lative|Ablative)?
-Adverb Essive Infl[gen2] (Lative|Ablative)?
+Adverb [<adv>:] > (PartClitics | ConjClitics)
+Adverb [<adv>:] Infl[-erg] | LocativeInflection
 
 Class Adverb[cl]
 
@@ -1103,6 +1086,11 @@ LEXICON Adverb
 
 
 
+PATTERN LocativeInflection
+Essive Directive? (Lative|Ablative|Translative)?
+Infl[gen2] Essive (Lative|Ablative)?
+Essive Infl[gen2] (Lative|Ablative)?
+
 LEXICON Infl
 <erg>:[erg]
 <genI>:{gen}[gen]
@@ -1111,23 +1099,23 @@ LEXICON Infl
 <ins>:д[ins]
 
 LEXICON Essive
-<super><essive>:кьа[super]
-<sub><essive>:лӏ[sub]
-<ad><essive>:гъа[ad]
-<apud><essive>:дой[apud]
-<cum><essive>:гъой[cum]
-<in><essive>:ъ[in]
-<cont><essive>:лъ[cont]
-<poss><essive>:хъа[poss]
+<sup><ess>:кьа[super]
+<sub><ess>:лӏ[sub]
+<ad><ess>:гъа[ad]
+<apud><ess>:дой[apud]
+<cum><ess>:гъой[cum]
+<in><ess>:ъ[in]
+<cont><ess>:лъ[cont]
+<poss><ess>:хъа[poss]
 
 LEXICON Lative
-<lative>:{V}л
+<lat>:{V}л
 
 LEXICON Translative
-<translative>:{C}кьā
+<transl>:{C}кьā
 
 LEXICON Ablative
-<ablative>:{V}с{V2}
+<abl>:{V}с{V2}
 
 LEXICON Directive
 <dir>:дā
@@ -1144,9 +1132,9 @@ LEXICON ClassPl
 
 
 PATTERNS
-Conjunctions
-Participles
-Interjections
+Conjunctions [<conj>:]
+Particles [<part>:]
+Interjections [<inter>:]
 
 LEXICON AdpAffixes
 <post>:лабза # вместо, ради
@@ -1168,8 +1156,8 @@ LEXICON Conjunctions
 вагьалълъобза	#	поэтому
 
 LEXICON ConjClitics
-<conj>:на
-<conj>:наь
+<add>:на
+<add>:наь
 <conj>:ла
 <if>:со
 <conj>:гъас	#	такой, как
@@ -1199,14 +1187,12 @@ LEXICON PartClitics
 <emph>:āъ
 <emph>:йāъ
 
-LEXICON Participles
+LEXICON Particles
 лабза	#	ради
 бетта	#	да
 ха	#	конечно
 ӣᴴ	#	да
-ало	#	же
 баьгь	#	-ка
-вале	#	же
 вере	#	ну
 гьаᴴ #	а ну
 гьаᴴкъкъа #	-ка
@@ -1221,6 +1207,7 @@ LEXICON Participles
 эггу	#	разве
 суди	#	либо, -то
 лӏо	#	мол
+эче	# -ка
 
 LEXICON Quotative
 <quot>:лӏо	#	мол
@@ -1271,13 +1258,8 @@ SuppletiveRoot [<n>:] [<pl>:]
 
 #склонение по падежам
 NounRoot [<n>:] [<abs>:]
-NounRoot-Obl Infl |(Essive Directive? (Lative|Ablative|Translative)?)
-NounRoot-Obl Infl[gen2] Essive (Lative|Ablative)?
-NounRoot-Obl Essive Infl[gen2] (Lative|Ablative)?
-
-NounRoot | SuppletiveRoot Noun-Pl-Obl [<n>:] Infl |(Essive Directive? (Lative|Ablative|Translative)?)
-NounRoot | SuppletiveRoot Noun-Pl-Obl [<n>:] Infl[gen2] Essive (Lative|Ablative)?
-NounRoot | SuppletiveRoot Noun-Pl-Obl [<n>:] Essive Infl[gen2] (Lative|Ablative)?
+NounRoot-Obl Infl | LocativeInflection
+NounRoot | SuppletiveRoot Noun-Pl-Obl [<n>:] Infl | LocativeInflection
 
 LEXICON NounPl
 <pl>:а{UM}[а] # КАК СДЕЛАТЬ аа -> ā??
@@ -2937,6 +2919,7 @@ LEXICON NounRoot
 лӏаьрдаьмаьн[ла]	#	анат. лопатка; лӏаьдаьмаьн йисал произойти перелом (о лопатке)
 лӏеᴴй[ла]	#	газ (газообразные выделения желудка и кишок), метеоризм; лӏенй йенйал выпускать газы; лӏенй гувал произойти выделение газа ♦ лӏенй йенкьецал огьдāл работать долго  237 (усердно) (букв. работать до выделения газов)
 лӏигъо[ва]	#	толстое бревно (для распиливания на доски); лӏигъова сувасал рубить (распилить) толстые бревна; см. ангази, михъо, йаьжоь
+лӏи[бо,йа]
 лӏилейāгъаколъи[ва]	#	пастушество; лӏилейāгъаколъи йовал работать пастухом
 лӏилӏо[ва]	#	плетень, заграждение; гьудас лӏилӏо деревянное заграждение; лӏилӏо йовал загородить, перегородить; лӏилӏо гулал установить загрождение
 лӏине[ва]	#	зима; баьчӏчӏоь лӏине холодная (суровая) зима; биххо лӏине теплая зима; лӏине багъал провести зиму, зимовать, зазимовать; лӏине мокъал наступить (о зиме)
@@ -3254,11 +3237,11 @@ LEXICON NounRoot
 осийай[ла]	#	осетинка; см. оси
 отахи[йа]	#	комната; йукъо отахи большая комната; лъана отахи три комнаты; билӏоъ оьнкъоьнаь отахи гей в доме четыре комнаты (есть); см. билӏо
 отпускӏа[а]	#	отпуск; икьеш отпускӏа прошлогодний отпуск; желӏбас отпускӏа отпуск за этот год; отпускӏалис водбо отпускные дни; отпуска йокчал брать отпуск; отпускӏа нилӏал дать отпуск; отпускӏалиъ йенкьал идти в отпуск; отпускӏа йолъал закончиться (об отпуске)
-охилдаги[бохилдабагийа]	#	заика
 оьгъаь[а]	#	целина; оьгъаь болӏал поднять целину ▲
 оьдоьйлӏоь[ва]	#	кул. 1) пироги, чуду; холос оьдоьйлӏоь пироги (чуду), начиненные мясом 2) курзе; мицас оьдоьйлӏоь курзе из  крапивы; хилӏо название блюда  гаьччоь оьдоьйлӏоь (масса из вареной  кукурузной муки с сыром, схоже с ленивыми варениками); оьдоьйлӏоь бовал приготовить пироги (курзе, чуду); см. хокӏа
 оь[да]	#	1) сын; укъо оьжоь старший сын; оьждис оьжоь внук; оьждис кид внучка; оьждис ийо мать мальчика; мать сына; илос оьждаь ахо хъогьдабас наши сыновья хорошо учатся 2) мальчик; юноша; парень; алаллāлъ оьждаь ахо кисабас мальчики хорошо играют в городки ♦ оьжоь низāл праздновать (отмечать) рождение сына (букв. искупать сына) ▲
 оьжоьтӏе[йа]	#	девочка (которая ведет себя, как мальчик)
+оьжоь[да]	#	сын
 баьбаь[а]	#	лепешка (испеченная без добавления соды); оьлгьоьмбаьбаь бовал испечь лепешку
 оьллоьлъи[а]	#	достаточность, достаток ▲
 оьлоьхъаьн[ла]	#	парень, молодой человек; аьлӏаьш оьлоьхъаьллаь сельская молодежь; оьлоьхъаллис къуват сила молодого человека; кулублигъа оьлоьхъаьллаь къацӏобакийо около клуба молодежь собралась; гьуги кӏетӏо оьлоьхъаьн гей он хороший парень (есть)
@@ -3523,6 +3506,7 @@ LEXICON NounRoot
 судийалъи[ла]	#	профессия (должность) судьи; судийалъилаъ огьдāл работать судьей 2) судейство; судийалъи йовал провести судейство, судить
 судхана[а]	#	уст. суд; см. суд2
 суз[а]	#	бот. овес; см. айуз (тляд.)
+сукӏо[ба]
 сумкӏа[а]	#	сумка; баькъкъоь сумкӏа тяжелая сумка; сумкӏалас йинцо ручка сумки; сумкӏа безал нести сумку; сумкӏа боцӏлал наполнить сумку
 суннат[а]	#	рел. обрезание; суннат бовал совершить обрезание
 сунтӏ[а]	#	нюхательный табак; сунтӏ бовал нюхать табак
@@ -7947,8 +7931,8 @@ Reciprocal
 
 #----DEMONSTRATIVES-----
 PATTERN Demonstrative
-Demonstratives[1,4] Proximity[1,4] [<abs>:]
-Demonstratives[2,3] Proximity[2,3] [<abs>:]
+Demonstratives[1,4] Proximity[1,4] 
+Demonstratives[2,3] Proximity[2,3] 
 Demonstratives[1,4] Proximity[1,4] (Essive Directive? (Lative|Ablative|Translative)?)
 Demonstratives[1,4] Proximity[1,4] Infl[gen2] Essive (Lative|Ablative)? # "местоименные наречия"
 Demonstratives[1,4] Proximity[1,4] Essive Infl[gen2] (Lative|Ablative)?
@@ -7960,6 +7944,9 @@ Demonstratives-Obl Infl
 Demonstratives-Plural-Obl Infl
 Demonstratives[1,4] DemonstrativeAdv
 Demonstratives[g] [<h><part>:на] | [<nh><part>:ла]
+PronAdjectives[as] [<adj>:ийо] | ([<adj><obl>:ийа] Infl)
+Demonstratives[1,4] Proximity[1,4] [<conj>:ла] [<as>:с]
+Demonstratives[2,3] Proximity[2,3] [<conj>:ла] [<as>:с]
 
 #----INTERROGATIVES-----
 PATTERN Interrogative
@@ -8027,7 +8014,7 @@ LEXICON PersonalPronoun
 ми<pron><obl><genI>:дибо[2sg]
 ми<pron><obl>:дибо[gen2]
 ми<pron><obl>:ду[dat]
-ми<pron><obl>:дӯ[ins,loc]
+ми<pron><obl>:дȳ[ins,loc]
 
 иле<pron>:иле[abs,erg] #мы
 иле<pron><obl>:ило[gen,dat,ins]
@@ -8039,6 +8026,7 @@ LEXICON PersonalPronoun
 LEXICON Demonstratives
 гьу<dem>:гьу[1,4,g] 
 вагь<dem>:вагь[1,2,3,4]
+вагьа<dem>:вагьа[1,2,3,4]
 гьо<dem>:гьо[2,3]
 
 LEXICON DemonstrativeAdv
@@ -8047,84 +8035,66 @@ LEXICON DemonstrativeAdv
 <dist><adv>:гā
 
 LEXICON Proximity
-<prox.1/4>:ди[1,4] # близость к говорящему
-<med.1/4>:ли[1,4] # близость к слушающему
-<dist.1/4>:ги[1,4] # дальность
-<prox.2/3>:до[2,3] # близость к говорящему
-<med.2/3>:ло[2,3] # близость к слушающему
-<dist.2/3>:го[2,3] # дальность
+<prox><I/IV>:ди[1,4] # близость к говорящему
+<med><I/IV>:ли[1,4] # близость к слушающему
+<dist><I/IV>:ги[1,4] # дальность
+<prox><II/III>:до[2,3] # близость к говорящему
+<med><II/III>:ло[2,3] # близость к слушающему
+<dist><II/III>:го[2,3] # дальность
 
 LEXICON Demonstratives-Obl
-гьу<dem><prox.1/4><obl>:гьоцо
-гьу<dem><med.1/4><obl>:гьолцо
-гьу<dem><dist.1/4><obl>:гьогцо
-гьо<dem><prox.2/3><obl>:гьолӏо
-гьо<dem><med.2/3><obl>:гьоллъо
-гьо<dem><med.2/3><obl>:гьолълъо
-гьо<dem><dist.2/3><obl>:гьоглӏо
-вагь<dem><prox.1/4><obl>:вагьадцо
-вагь<dem><prox.1/4><obl>:вагьацо
-вагь<dem><med.1/4><obl>:вагьалцо
-вагь<dem><dist.1/4><obl>:вагьагцо
-вагь<dem><prox.2/3><obl>:вагьадлӏо
-вагь<dem><prox.2/3><obl>:вагьалӏо
-вагь<dem><med.2/3><obl>:вагьаллъо
-вагь<dem><med.2/3><obl>:вагьалълъо
-вагь<dem><dist.2/3><obl>:вагьаглӏо
+гьу<dem><prox><I/IV><obl>:гьоцо
+гьу<dem><med><I/IV><obl>:гьолцо
+гьу<dem><dist><I/IV><obl>:гьогцо
+гьо<dem><prox><II/III><obl>:гьолӏо
+гьо<dem><med><II/III><obl>:гьоллъо
+гьо<dem><med><II/III><obl>:гьолълъо
+гьо<dem><dist><II/III><obl>:гьоглӏо
+вагь<dem><prox><I/IV><obl>:вагьадцо
+вагь<dem><prox><I/IV><obl>:вагьацо
+вагь<dem><med><I/IV><obl>:вагьалцо
+вагь<dem><dist><I/IV><obl>:вагьагцо
+вагь<dem><prox><II/III><obl>:вагьадлӏо
+вагь<dem><prox><II/III><obl>:вагьалӏо
+вагь<dem><med><II/III><obl>:вагьаллъо
+вагь<dem><med><II/III><obl>:вагьалълъо
+вагь<dem><dist><II/III><obl>:вагьаглӏо
 
 LEXICON Demonstratives-Plural-Abs
-гьу<dem><prox.1/4><pl>:гьоддōл
-гьу<dem><med.1/4><pl>:гьоллōл
-гьу<dem><dist.1/4><pl>:гьоггōл
-вагь<dem><prox.1/4><pl>:вагьаддōл
-вагь<dem><med.1/4><pl>:вагьаллōл
-вагь<dem><dist.1/4><pl>:вагьаггōл
-гьо<dem><prox.2/3><pl>:гьоддōл
-гьо<dem><med.2/3><pl>:гьоллōл
-гьо<dem><dist.2/3><pl>:гьоггōл
-вагь<dem><prox.2/3><pl>:вагьаддōл
-вагь<dem><med.2/3>:вагьаллōл
-вагь<dem><prox.2/3>:вагьаггōл
+гьу<dem><prox><I/IV><pl>:гьоддōл
+гьу<dem><med><I/IV><pl>:гьоллōл
+гьу<dem><dist><I/IV><pl>:гьоггōл
+вагь<dem><prox><I/IV><pl>:вагьаддōл
+вагь<dem><med><I/IV><pl>:вагьаллōл
+вагь<dem><dist><I/IV><pl>:вагьаггōл
+гьо<dem><prox><II/III><pl>:гьоддōл
+гьо<dem><med><II/III><pl>:гьоллōл
+гьо<dem><dist><II/III><pl>:гьоггōл
+вагь<dem><prox><II/III><pl>:вагьаддōл
+вагь<dem><med><II/III>:вагьаллōл
+вагь<dem><prox><II/III>:вагьаггōл
 
 LEXICON Demonstratives-Plural-Obl
-гьу<dem><prox.1/4><obl.pl>:гьодло
-гьу<dem><med.1/4><obl.pl>:гьолло
-гьу<dem><dist.1/4><obl.pl>:гьогло
-вагь<dem><prox.1/4><obl.pl>:вагьадло
-вагь<dem><med.1/4><obl.pl>:вагьалло
-вагь<dem><dist.1/4><obl.pl>:вагьагло
-гьо<dem><prox.2/3><obl.pl>:гьодло
-гьо<dem><med.2/3><obl.pl>:гьолло
-гьо<dem><dist.2/3><obl.pl>:гьогло
-вагь<dem><prox.2/3><obl.pl>:вагьадло
-вагь<dem><med.2/3><obl.pl>:вагьалло
-вагь<dem><prox.2/3><obl.pl>:вагьагло
+гьу<dem><prox><I/IV><<obl.pl>:гьодло
+гьу<dem><med><I/IV><obl.pl>:гьолло
+гьу<dem><dist><I/IV><obl.pl>:гьогло
+вагь<dem><prox><I/IV><<obl.pl>:вагьадло
+вагь<dem><med><I/IV><obl.pl>:вагьалло
+вагь<dem><dist><I/IV><obl.pl>:вагьагло
+гьо<dem><prox><II/III><obl.pl>:гьодло
+гьо<dem><med><II/III><obl.pl>:гьолло
+гьо<dem><dist><II/III><obl.pl>:гьогло
+вагь<dem><prox><II/III><obl.pl>:вагьадло
+вагь<dem><med><II/III><obl.pl>:вагьалло
+вагь<dem><prox><II/III><obl.pl>:вагьагло
 
 LEXICON PronAdjectives 
-гьуддийо # вот такой, как этот, невидимый
-вагьаддийо # вот такой, как этот, видимый
-гьуллийо # вот такой, как этот, невидимый
-вагьаллийо # вот такой, как этот, видимый
-гьуггийо # вот такой, как тот, невидимый
-вагьаггийо # вот такой, как тот, видимый
-гьодолас # такой, как столько
-вагьдолас # такой, как столько
-вагьадолас # такой, как столько
-гьололас  # такой, как столько
-вагьлолас # такой, как столько
-вагьалолас # такой, как столько
-гьоголас # такой, как столько
-вагьголас # такой, как столько
-вагьаголас # такой, как столько
-гьодола # столько
-вагьдола # столько
-вагьаддола # столько
-гьолола # столько
-вагьлола # столько
-вагьаллола # столько
-гьогола # столько
-вагьгола # столько
-вагьаггола # столько
+гьу<dem><prox><I/IV>:гьудд[as] # вот такой, как этот, невидимый
+вагь<dem><prox><I/IV>:вагьадд[as] # вот такой, как этот, видимый
+гьу<dem><med><I/IV>:гьулл[as] # вот такой, как этот, невидимый
+вагь<dem><med><I/IV>:вагьалл[as] # вот такой, как этот, видимый
+гьу<dem><dist><I/IV>:гьугг[as] # вот такой, как тот, невидимый
+вагь<dem><dist><I/IV>:вагьагг[as] # вот такой, как тот, видимый
 
 LEXICON Interrogatives
 сукӏо<pron>:сукӏо[who] #кто
@@ -8205,6 +8175,7 @@ LEXICON UniversalRoot
 гāьгьийо<pron>:гāьгьийо # все
 гаьгьийо<pron>:гаьгьийо # все
 къацӏцӏо<pron>:къацӏцӏо # все
+къацӏцӏо<pron>:къацӏцӏā # все
 
 LEXICON UniversalRoot-Obl
 гāьгьийо<pron><obl>:гāьгьийа
@@ -8229,52 +8200,62 @@ LEXICON OtherObl
 бадо<pron><obl>:балӏо
 баддōл<pron><obl>:бадло
 PATTERNS
-Verb Quotative? (Question | ConjClitics | PartClitics)? 
-ClassVerb Quotative? (Question | ConjClitics | PartClitics)?
-DoVerb Quotative? (Question | ConjClitics | PartClitics)?
-LookVerb Quotative? (Question | ConjClitics | PartClitics)?
-Aux Quotative? (Question | ConjClitics | PartClitics)?
 AvarBorrowings
 Light
-ShortForms
-VerbRoot(1) VerbRoot(2) Infinitive
+Rogative
+PresentForms_h > (Mood[hyp] | Mood[irr] | Converb[prs,h] > Converb[since,h]) (Quotative > ConjClitics)?
+PresentForms_s > (Mood[hyp] | Mood[irr] | Converb[prs,h] > Converb[since,h]) (Quotative > ConjClitics)?
+ImperativeForms_h > Mood[rog] (Quotative > ConjClitics)?
+ImperativeForms_s > Mood[rog] (Quotative > ConjClitics)?
 
-PATTERN DoVerb
-Class Do[inf] | Do[val] Modal? (TAM_cons_h | TAM_vowel_h)
-Class Do[val] Valency_h? Modal? (TAM_cons_h | TAM_vowel_h)
-ClassPl Do[pl] Valency_h? Modal? TAM_cons_h | TAM_vowel_h
+Stem_h Valency? TAM_h | NonFiniteInfl_h  (Quotative > ConjClitics)?
+Stem_s Valency? TAM_s (Quotative > ConjClitics)?
+Stem_h Valency (Past[l,h] | Past[c,h] (Converb[pfv,h] | Mood[hyp] | Mood[irr])?) | (Present[c,h] (Mood[hyp] | Mood[irr] | Converb[prs,h])?) (Quotative > ConjClitics)?
+Stem_s Valency (Past[l,s] | Past[c,s] (Converb[pfv,s] | Mood[hyp] | Mood[irr])?) | (Present[c,s] (Mood[hyp] | Mood[irr] | Converb[prs,s])?) (Quotative > ConjClitics)?
+Aux (Quotative > ConjClitics)?
+DoInfl
 
-PATTERN LookVerb
-Look Valency_h? Modal? (TAM_cons_h | TAM_vowel_h)
+VerbRoot(1)[h,-cl] VerbRoot(2)[h,-cl] [<v>:] Antipassive[h] VerbNumber[h]? Zero Present[v,h] | TAM_h | NonFiniteInfl_h  (Quotative > ConjClitics)?
+VerbRoot(1)[s,-cl] VerbRoot(2)[s,-cl] [<v>:] Antipassive[s] VerbNumber[s]? Zero Present[v,s] | TAM_s  (Quotative > ConjClitics)?
+VerbRoot(1)[h,-cl] VerbRoot(2)[h,-cl] [<v>:] VerbNumber[h] Zero Present[v,h] | TAM_h | NonFiniteInfl_h  (Quotative > ConjClitics)?
+VerbRoot(1)[s,-cl] VerbRoot(2)[s,-cl] [<v>:] VerbNumber[s] Zero Present[v,s] | TAM_s (Quotative > ConjClitics)?
+Class VerbRoot(1)[h,cl] VerbRoot(2)[h,cl] [<v>:] Antipassive[h] Zero Present[v,h] | TAM_h | NonFiniteInfl_h  (Quotative > ConjClitics)?
+ClassPl VerbRoot(1)[h,cl] VerbRoot(2)[h,cl] [<v>:] Antipassive[h]? VerbNumber[h] Zero Present[v,h] | TAM_h | NonFiniteInfl_h  (Quotative > ConjClitics)?
+Class VerbRoot(1)[s,cl] VerbRoot(2)[s,cl] [<v>:] Antipassive[s] Zero Present[s,h] | TAM_s (Quotative > ConjClitics)?
+ClassPl VerbRoot(1)[s,cl] VerbRoot(2)[s,cl] [<v>:] Antipassive[s]? VerbNumber[s] Zero Present[v,s] | TAM_s   (Quotative > ConjClitics)?
 
-# ---- h-paradigm (back vowels) -----
+PATTERN DoInfl
+(Class DoRoot[inf]) | (ClassPl DoRoot[pl] [<pl>:]) [<v>:] (Infinitive[h] (Mood[dub] | Participle[fut] | Converb[inf])?) | Mood[imp,а]
+Class DoRoot[t] | DoRoot[inf] [<v>:] Present[v,h] | Past[v,h]
+Class DoRoot[nfin] NonFiniteInfl_h | Participle[prs,h,-obl] | Participle[obl] (Infl | LocativeInflection)
+ClassPl DoRoot[pl] NonFiniteInfl_h | Participle[prs,h,-obl] | Present[c,h] | Past[c,h]
 
-PATTERN Imperative_h
-Mood[imp,h] 
-Mood[imp,h] Mood[rog]
-Mood[imp,h] > ([:а]? Mood[prmI,h]) > [<prmII>:ъ]
-Mood[prmIII,h]
+PATTERN Valency
+Causative[a] > Causative[b] 
+Causative[b] 
 
-PATTERN Valency_h
-Causative[a] Causative[b]
-Causative
+PATTERN Stem_h
+VerbRoot(1)[h,-cl] Antipassive[h]? VerbNumber[h]? VerbRoot(2)[h,-cl] [<v>:] Zero
+Class | ClassPl VerbRoot(1)[h,cl] Antipassive[h]? VerbRoot(2)[h,cl] [<v>:] Zero
+ClassPl VerbRoot(1)[h,cl] Antipassive[h]? VerbNumber VerbRoot(2)[h,cl] [<v>:] Zero
+Class | ClassPl VerbRoot(1)[h,cl] Antipassive[h]? VerbRoot(2)[h,cl] [<v>:] Zero
+VerbRootInf(1)[h] ClassInfix[h] Antipassive[h]? VerbNumber[h]? VerbRootInf(2)[h] [<v>:] Zero
 
-PATTERN TAM_vowel_h
-Past[h] | Present[h] > (Mood[hyp] | Mood[irr])
+PATTERN Stem_s
+VerbRoot(1)[s,-cl] Antipassive[s]? VerbNumber[s]? VerbRoot(2)[s,-cl] [<v>:] Zero
+Class | ClassPl VerbRoot(1)[s,cl] Antipassive[s]? VerbRoot(2)[s,cl] [<v>:] Zero
+ClassPl VerbRoot(1)[s,cl] Antipassive[s]? VerbNumber VerbRoot(2)[s,cl] [<v>:] Zero
+Class | ClassPl VerbRoot(1)[s,cl] Antipassive[s]? VerbRoot(2)[s,cl] [<v>:] Zero
+VerbRootInf(1)[s] ClassInfix[s] Antipassive[s]? VerbNumber[s]? VerbRootInf(2)[s] [<v>:] Zero
+
+PATTERN TAM_h
+Past[h] > Mood[hyp] | Mood[irr]
 Negation[neg,h]? Mood[cond] > ([<invc>:л] | [<cnc>:на])
 Participle[prs,h]
-Converb[pfv,h]
-Converb[simul,h] | Converb[ant,h] | Converb[act,h]
-Essive[ad]
-Converb[how,h] > Converb[why,h]
-Present[h] Converb[prs,h] > Converb[since,h]
 Past[h] Converb[pfv,h] 
 Past[h] Masdar[pst]
 Masdar[st]
-
-PATTERN TAM_cons_h
-Infinitive[h] > Mood[dub] # dubitative mood
-Imperative_h
+Infinitive[h] > Mood[dub]
 Future[h] > Mood[hyp]
 Plusquamperfect[h]
 Mood[proh]
@@ -8282,36 +8263,36 @@ Mood[opt]
 Mood[opt.neg]
 Infinitive[h] Participle[fut]
 Infinitive[h] Converb[inf]
-Converb[after,h] | (Converb[before,h] > Translative)
-Converb[place,h] > (Translative | Lative | Ablative)
-Converb[goal]
-Masdar[st]
-#negation
+Infinitive[h] Converb[goal]
+Participle[pst,obl] Infl | LocativeInflection
+# negation
 Negation[pst,h]
 Negation[prs,h] > Converb[prs,h]
 Negation[neg,h] Present[h] Converb[prs,h] > Converb[since,h]
 Negation[cvb]
 Negation[imp,h]
 Negation[neg] Participle[prs,h]
-Converb[before,h] Negation[loc] Translative
 
-# ---- s-paradigm (front vowels) -----
-PATTERN TAM_vowel_s
-Past[s] | Present[s] > (Mood[hyp] | Mood[irr])
+PATTERN NonFiniteInfl_h
+Converb[pfv,h]
+Converb[simul,h] | Converb[ant,h]
+Converb[how,h] > Converb[why,h]
+Converb[after,h] | (Converb[before,h] > Translative)
+Converb[place,h] > (Translative | Lative | Ablative)
+Converb[before,h] Negation[loc] Translative
+Masdar[st]
+
+PATTERN TAM_s
+Past[s] > Mood[hyp] | Mood[irr]
 Negation[neg,s]? Mood[cond] > ([<invc>:л] | [<cnc>:на])
 Participle[prs,s]
 Converb[pfv,s]
-Converb[simul,s] | Converb[ant,s] | Converb[act,s]
-Essive[ad]
+Converb[simul,s] | Converb[ant,s]
 Converb[how,s] > Converb[why,s]
-Present[s] Converb[prs,s] > Converb[since,s]
 Past[s] Converb[pfv,s] 
 Past[s] Masdar[pst]
 Masdar[st]
-
-PATTERN TAM_cons_s
-Infinitive[s] > Mood[dub] # dubitative mood
-Imperative_h
+Infinitive[s] > Mood[dub]
 Future[s] > Mood[hyp]
 Plusquamperfect[s]
 Mood[proh]
@@ -8323,7 +8304,7 @@ Converb[after,s] | (Converb[before,s] > Translative)
 Converb[place,s] > (Translative | Lative | Ablative)
 Converb[goal]
 Masdar[st]
-#negation
+# negation
 Negation[pst,s]
 Negation[prs,s] > Converb[prs,s]
 Negation[neg,s] Present[s] Converb[prs,s] > Converb[since,s]
@@ -8332,52 +8313,80 @@ Negation[imp,s]
 Negation[neg] Participle[prs,s]
 Converb[before,s] Negation[loc] Translative
 
-PATTERN Imperative_s
-Mood[imp,s] > Mood[rog]
-Mood[imp,s] > ([:а]? Mood[prmI,s]) > [<prmII>:ъ]
-Mood[prmIII,s]
+PATTERN PresentForms_h
+# stems without umlaut
+VerbRoot(1)[h,v,-cl] Antipassive[h]? VerbNumber[h]? VerbRoot(2)[h,-cl,v] [<v>:] Present[h,v]
+VerbRoot(1)[h,c,-cl] Antipassive[h]? VerbNumber[h]? VerbRoot(2)[h,-cl,c] [<v>:] Present[h,c]
+VerbRoot(1)[h,l,-cl] Antipassive[h]? VerbNumber[h]? VerbRoot(2)[h,-cl,l] [<v>:] Present[h,l]
 
-PATTERN Valency_s
-Antipassive[s]
-Causative > Antipassive[s]
+# gender-agreeing
+Class | ClassPl VerbRoot(1)[h,v,cl] Antipassive[h]? VerbRoot(2)[h,cl,v] [<v>:] Present[h,v]
+ClassPl VerbRoot(1)[h,v,cl] Antipassive[h]? VerbNumber VerbRoot(2)[h,cl,v] [<v>:] Present[h,v]
+Class | ClassPl VerbRoot(1)[h,c,cl] Antipassive[h]? VerbRoot(2)[h,cl,c] [<v>:] Present[h,c]
+ClassPl VerbRoot(1)[h,c,cl] Antipassive[h]? VerbNumber VerbRoot(2)[h,cl,c] [<v>:] Present[h,c]
+Class | ClassPl VerbRoot(1)[h,l,cl] Antipassive[h]? VerbRoot(2)[h,cl,l] [<v>:] Present[h,l]
+ClassPl VerbRoot(1)[h,l,cl] Antipassive[h]? VerbNumber VerbRoot(2)[h,cl,l] [<v>:] Present[h,l]
 
-PATTERN Verb # no gender agreement
-VerbRoot(1)[-cl,h] Antipassive[h]? VerbNumberInfix[h]? VerbRoot(2)[-cl,h] Modal? TAM_vowel_h
-VerbRoot-Sh(1)[-cl,h] Antipassive[h]? VerbNumberInfix[h]? VerbRoot-Sh(2)[-cl,h] Modal? TAM_cons_h
-VerbRoot(1)[-cl,h] Antipassive[h]? VerbNumberInfix[h]? VerbRoot(2)[-cl,h] Valency_h Modal? (TAM_vowel_h | TAM_cons_h)
+VerbRootInf(1)[h,v] ClassInfix[h] Antipassive[h]? VerbNumber[h]? VerbRootInf(2)[h,v] [<v>:] Present[h,v]
+VerbRootInf(1)[h,c] ClassInfix[h] Antipassive[h]? VerbNumber[h]? VerbRootInf(2)[h,c] [<v>:] Present[h,c]
+VerbRootInf(1)[h,l] ClassInfix[h] Antipassive[h]? VerbNumber[h]? VerbRootInf(2)[h,l] [<v>:] Present[h,l]
 
-VerbRoot(1)[-cl,s] Antipassive[s]? VerbNumberInfix[s]? VerbRoot(2)[-cl,s] Modal? TAM_vowel_s
-VerbRoot-Sh(1)[-cl,s] Antipassive[s]? VerbNumberInfix[s]? VerbRoot-Sh(2)[-cl,s] Modal? TAM_cons_s
-VerbRoot(1)[-cl,s] Antipassive[s]? VerbNumberInfix[s]? VerbRoot(2)[-cl,s] Valency_s Modal? (TAM_vowel_s | TAM_cons_s)
+PATTERN PresentForms_s
+# stems with umlaut
+VerbRoot(1)[s,v,-cl] Antipassive[s]? VerbNumber[s]? VerbRoot(2)[s,-cl,v] [<v>:] Present[s,v]
+VerbRoot(1)[s,c,-cl] Antipassive[s]? VerbNumber[s]? VerbRoot(2)[s,-cl,c] [<v>:] Present[s,c]
+VerbRoot(1)[s,l,-cl] Antipassive[s]? VerbNumber[s]? VerbRoot(2)[s,-cl,l] [<v>:] Present[s,l]
+# gender-agreeing with umlaut
+Class | ClassPl VerbRoot(1)[s,v,cl] Antipassive[s]? VerbRoot(2)[s,cl,v] [<v>:] Present[s,v]
+Class VerbRoot(1)[s,v,cl] Antipassive[s]? VerbNumber VerbRoot(2)[s,cl,v] [<v>:] Present[s,v]
+Class | ClassPl VerbRoot(1)[s,c,cl] Antipassive[s]? VerbRoot(2)[s,cl,c] [<v>:] Present[s,c]
+ClassPl VerbRoot(1)[s,c,cl] Antipassive[s]? VerbNumber VerbRoot(2)[s,cl,c] [<v>:] Present[s,c]
+Class | ClassPl VerbRoot(1)[s,l,cl] Antipassive[s]? VerbRoot(2)[s,cl,l] [<v>:] Present[s,l]
+ClassPl VerbRoot(1)[s,l,cl] Antipassive[s]? VerbNumber VerbRoot(2)[s,cl,l] [<v>:] Present[s,l]
 
-PATTERN ClassVerb
+VerbRootInf(1)[s,v] ClassInfix[s] Antipassive[s]? VerbNumber[s]? VerbRootInf(2)[s,v] [<v>:] Present[s,v]
+VerbRootInf(1)[s,c] ClassInfix[s] Antipassive[s]? VerbNumber[s]? VerbRootInf(2)[s,c] [<v>:] Present[s,c]
+VerbRootInf(1)[s,l] ClassInfix[s] Antipassive[s]? VerbNumber[s]? VerbRootInf(2)[s,l] [<v>:] Present[s,l]
 
-VerbRootInf(1)[h] ClassInfix[h] Antipassive[h]? VerbNumberInfix[h]? VerbRootInf(2)[h] Modal? TAM_vowel_h
-VerbRootInf-Sh(1)[h] ClassInfix[h] Antipassive[h]? VerbNumberInfix[h]? VerbRootInf-Sh(2)[h] Modal? TAM_cons_h
-VerbRootInf(1)[h] ClassInfix[h] Antipassive[h]? VerbNumberInfix[h]? VerbRootInf(2)[h] Valency_h Modal? (TAM_vowel_h | TAM_cons_h)
+PATTERN Permissive_h
+Mood[prmI,h] > [<prmII>:ъ]
 
-VerbRootInf(1)[s] ClassInfix[s] Antipassive[s]? VerbNumberInfix[s]? VerbRootInf(2)[s] Modal? TAM_vowel_s
-VerbRootInf-Sh(1)[s] ClassInfix[s] Antipassive[s]? VerbNumberInfix[s]? VerbRootInf-Sh(2)[s] Modal? TAM_cons_s
-VerbRootInf(1)[s] ClassInfix[s] Antipassive[s]? VerbNumberInfix[s]? VerbRootInf(2)[s] Valency_s Modal? (TAM_vowel_s | TAM_cons_s)
+PATTERN Permissive_s
+Mood[prmI,s] > [<prmII>:ъ]
+
+PATTERN ImperativeForms_h
+VerbRoot(1)[h,а,-cl] Antipassive[h]? VerbNumber[h]? VerbRoot(2)[h,-cl,а] [<v>:] Zero Mood[imp,h,а](Mood[prmI,h] > [<prmII>:ъ])? 
+VerbRoot(1)[h,0,-cl] Antipassive[h]? VerbNumber[h]? VerbRoot(2)[h,-cl,0] [<v>:] Zero Mood[imp,h,0] ([:а] Mood[prmI,h] > [<prmII>:ъ])? 
+VerbRoot(1)[h,и,-cl] Antipassive[h]? VerbNumber[h]? VerbRoot(2)[h,-cl,и] [<v>:] Zero Mood[imp,h,и]
+# gender-agreeing
+Class | ClassPl VerbRoot(1)[h,а,cl] Antipassive[h]? VerbRoot(2)[h,cl,а] [<v>:] Zero Mood[imp,h,а](Mood[prmI,h] > [<prmII>:ъ])? 
+ClassPl VerbRoot(1)[h,а,cl] Antipassive[h]? VerbNumber VerbRoot(2)[h,cl,а] [<v>:] Zero Mood[imp,h,а] (Mood[prmI,h] > [<prmII>:ъ])? 
+Class | ClassPl VerbRoot(1)[h,0,cl] Antipassive[h]? VerbRoot(2)[h,cl,0] [<v>:] Zero Mood[imp,h,0] ([:а] Mood[prmI,h] > [<prmII>:ъ])? 
+ClassPl VerbRoot(1)[h,0,cl] Antipassive[h]? VerbNumber VerbRoot(2)[h,cl,0] [<v>:] Zero Mood[imp,h,0] ([:а] Mood[prmI,h] > [<prmII>:ъ])? 
+Class | ClassPl VerbRoot(1)[h,и,cl] Antipassive[h]? VerbRoot(2)[h,cl,и] [<v>:]  Zero (Mood[imp,h,и] | ([<imp>:] [:а] Mood[prmI,h] > [<prmII>:ъ]))
+ClassPl VerbRoot(1)[h,и,cl] Antipassive[h]? VerbNumber VerbRoot(2)[h,cl,и] [<v>:]  Zero (Mood[imp,h,и] | ([<imp>:] [:а] Mood[prmI,h] > [<prmII>:ъ]))
+
+VerbRootInf(1)[h,а] ClassInfix[h] Antipassive[h]? VerbNumber[h]? VerbRootInf(2)[h,а] [<v>:] Zero Mood[imp,h,а](Mood[prmI,h] > [<prmII>:ъ])?
+VerbRootInf(1)[h,0] ClassInfix[h] Antipassive[h]? VerbNumber[h]? VerbRootInf(2)[h,0] [<v>:] Zero Mood[imp,h,0](Mood[prmI,h] > [<prmII>:ъ])?
+
+PATTERN ImperativeForms_s
+# stems with umlaut
+VerbRoot(1)[s,аь,-cl] Antipassive[s]? VerbNumber[s]? VerbRoot(2)[s,-cl,аь] [<v>:] Zero Mood[imp,h,аь] (Mood[prmI,s] > [<prmII>:ъ])? 
+VerbRoot(1)[s,0,-cl] Antipassive[s]? VerbNumber[s]? VerbRoot(2)[s,-cl,0] [<v>:] Zero Mood[imp,h,0] ([:аь] Mood[prmI,s] > [<prmII>:ъ])? 
+VerbRoot(1)[s,и,-cl] Antipassive[s]? VerbNumber[s]? VerbRoot(2)[s,-cl,и] [<v>:] Zero Mood[imp,h,и] (Mood[imp,s,и] | ([<imp>:] [:аь] Mood[prmI,s] > [<prmII>:ъ]))
+# gender-agreeing with umlaut
+Class | ClassPl VerbRoot(1)[s,аь,cl] Antipassive[s]? VerbRoot(2)[s,cl,аь] [<v>:] Zero Mood[imp,s,аь] (Mood[prmI,s] > [<prmII>:ъ])?
+Class VerbRoot(1)[s,аь,cl] Antipassive[s]? VerbNumber VerbRoot(2)[s,cl,аь] [<v>:] Zero Mood[imp,s,аь] (Mood[prmI,s] > [<prmII>:ъ])?
+Class | ClassPl VerbRoot(1)[s,0,cl] Antipassive[s]? VerbRoot(2)[s,cl,0] [<v>:] Zero Mood[imp,s,0] ([<imp>:] [:аь] Mood[prmI,s] > [<prmII>:ъ])? 
+ClassPl VerbRoot(1)[s,0,cl] Antipassive[s]? VerbNumber VerbRoot(2)[s,cl,c] [<v>:] Zero Mood[imp,s,0] ([<imp>:] [:аь] Mood[prmI,s] > [<prmII>:ъ])? 
+Class | ClassPl VerbRoot(1)[s,и,cl] Antipassive[s]? VerbRoot(2)[s,cl,и] [<v>:] Zero Mood[imp,s,и] (Mood[imp,s,и] | ([<imp>:] [:аь] Mood[prmI,s] > [<prmII>:ъ]))
+ClassPl VerbRoot(1)[s,и,cl] Antipassive[s]? VerbNumber VerbRoot(2)[s,cl,и] [<v>:] Zero Mood[imp,s,и] (Mood[imp,s,и] | ([<imp>:] [:аь] Mood[prmI,s] > [<prmII>:ъ]))
+
+VerbRootInf(1)[s,а] ClassInfix[s] Antipassive[s]? VerbNumber[s]? VerbRootInf(2)[s,а] [<v>:] Zero Mood[imp,s,а](Mood[prmI,s] > [<prmII>:ъ])?
+VerbRootInf(1)[s,0] ClassInfix[s] Antipassive[s]? VerbNumber[s]? VerbRootInf(2)[s,0] [<v>:] Zero Mood[imp,s,0](Mood[prmI,s] > [<prmII>:ъ])?
 
 
-Class VerbRoot(1)[cl,h] Antipassive[h]? VerbRoot(2)[cl,h] Modal? TAM_vowel_h
-Class VerbRoot-Sh(1)[cl,h] Antipassive[h]? VerbRoot-Sh(2)[cl,h] Modal? TAM_cons_h
-Class VerbRoot(1)[cl,h] Antipassive[h]? VerbRoot(2)[cl,h] Valency_h Modal? (TAM_vowel_h | TAM_cons_h)
-
-Class VerbRoot(1)[cl,s] Antipassive[s]? VerbRoot(2)[cl,s] Modal? TAM_vowel_s
-Class VerbRoot-Sh(1)[cl,s] Antipassive[s]? VerbRoot-Sh(2)[cl,s] Modal? TAM_cons_s
-Class VerbRoot(1)[cl,s] Antipassive[s]? VerbRoot(2)[cl,s] Valency_s Modal? (TAM_vowel_s | TAM_cons_s)
-
-ClassPl VerbRoot(1)[cl,h] Antipassive[h]? VerbNumberInfix[h] VerbRoot(2)[cl,h] Modal? TAM_vowel_h
-ClassPl VerbRoot-Sh(1)[cl,h] Antipassive[h]? VerbNumberInfix[h] VerbRoot-Sh(2)[cl,h] Modal? TAM_cons_h
-ClassPl VerbRoot(1)[cl,h] Antipassive[h]? VerbNumberInfix[h] VerbRoot(2)[cl,h] Valency_h Modal? (TAM_vowel_s | TAM_cons_s)
-
-ClassPl VerbRoot(1)[cl,s] Antipassive[s]? VerbNumberInfix[s] VerbRoot(2)[cl,s] Modal? TAM_vowel_s
-ClassPl VerbRoot-Sh(1)[cl,s] Antipassive[s]? VerbNumberInfix[s] VerbRoot-Sh(2)[cl,s] Modal? TAM_cons_s
-ClassPl VerbRoot(1)[cl,s] Antipassive[s]? VerbNumberInfix[s] VerbRoot(2)[cl,s] Valency_s Modal? (TAM_vowel_s | TAM_cons_s)
-
-LEXICON VerbNumberInfix 
+LEXICON VerbNumber 
 <pl>:а[а,h]
 <pl>:ба[ба,h]
 <pl>:ва[ва,h]
@@ -8386,12 +8395,15 @@ LEXICON VerbNumberInfix
 <pl>:баь[баь,s]
 <pl>:ваь[ваь,s]
 
+LEXICON Zero # zero morpheme for handling vowel hiatus
+:{O}
+
 LEXICON ClassInfix
-<I>:о[h]
-<II>:и[h,s]
-<III/IV>:у[h]
-<I>:оь[s]
-<III/IV>:уь[s]
+<m>:о[h]
+<f>:и[h,s]
+<nh>:у[h]
+<m>:оь[s]
+<nh>:уь[s]
 
 LEXICON Causative 
 <caus>:{L}л[a]
@@ -8407,7 +8419,6 @@ LEXICON Antipassive
 <antip>:а[h]
 <antip>:аь[s]
 <antip>:йа[h]
-<antip>:йаь[s]
 
 #---- Tense ----
 LEXICON Past 
@@ -8433,6 +8444,7 @@ LEXICON Negation
 LEXICON Present
 <prs>:ца[l,c,h]
 <prs>:чаь[l,c,s]
+<prs>:ча[l,c,s]
 <prs>:с[v,s,h]
 <prs>:ш[v,s,h]
 
@@ -8447,26 +8459,21 @@ LEXICON Plusquamperfect
 #---- Mood ----
 
 LEXICON Mood
-<imp>:а[imp,h]
-<imp>:аь[imp,s]
-<imp>:[imp,h,s]
-<imp>:и[imp,h,s]
-<imp>:е[imp,h,s]
-<imp>:о[imp,h]
-<imp>:оь[imp,s]
+<imp>:а[imp,h,а]
+<imp>:аь[imp,s,аь]
+<imp>:[imp,h,s,0]
+<imp>:и[imp,h,s,и]
 <proh>:āкъа[proh]
 <opt>:акъос[opt]
 <opt>:къос[opt]
 <neg.opt>:акъаъас[opt.neg]
 <neg.opt>:къаъас[opt.neg]
 <rog>:лō[rog]
-<rog>:ловале[rog]
-<rog>:лоало[rog]
 <prmI>:ла[prmI,h]
 <prmI>:лаь[prmI,s]
 <prmII>:ъ[prmII]
 <prmIII>:алā[prmIII,h]
-<prmIII>:аьлā[prmIII,s]
+<prmIII>:аьлāь[prmIII,s]
 <cond>:да[cond]
 <irr>:къодā[irr]
 <dub>:лā[dub]
@@ -8474,12 +8481,15 @@ LEXICON Mood
 <dub>:лаъ[dub] # "частица хезитации"
 <hyp>:ле[hyp]
 
+LEXICON Rogative
+ало<rog><f>:ало
+вале<rog><m>:вале
+
 LEXICON Modal
 <pot>:йлъ
 <pot>:лъ
 <pot>:йцӏ
 <pot>:йчӏ
-<vol>:акъ
 <vol>:къа
 <vol>:къо
 
@@ -8495,8 +8505,12 @@ LEXICON Masdar
 
 LEXICON Participle
 <prs.ptsp>:цас[h,prs]
+<prs.ptsp><obl>:цала[h,prs,obl]
 <prs.ptsp>:чаьш[s,prs]
 <pst.ptsp>:{L}йо[pst,h,s]
+<pst.ptsp><obl>:{L}йа[pst,h,s,obl]
+<pst.ptsp><obl>:ва[pst,h,s,obl]
+<pst.ptsp><obl>:ла[pst,h,s,obl]
 <fut.ptsp>:лъийо[fut,h,s]
 
 LEXICON Converb
@@ -8512,14 +8526,8 @@ LEXICON Converb
 <cvb>:лъегьна[inf,h,s]
 <since.cvb>:с[since,h]
 <since.cvb>:ш[since,s]
-<lim.cvb>:ца[lim,h]
-<lim.cvb>:ица[lim,h]
-<lim.cvb>:чаь[lim,s]
-<lim.cvb>:ичаь[lim,s]
-<cvb>:ваъ[act,h,s]
-<cvb>:ийаъ[act,h,s]
-<cvb>:йаъ[act,h,s]
-<cvb>:лаъ[act,h,s]
+<lim.cvb>:{L}ца[lim,h]
+<lim.cvb>:{L}чаь[lim,s]
 <cvb>:гъа[how,h,s]
 <cvb>:дāл[why,h,s]
 <cvb>:āцо[place,h]
@@ -8534,242 +8542,623 @@ LEXICON Question
 
 
 LEXICON Aux
-<aux><prs>:гей	#	есть
-<aux><neg>:гаьъаь
-<aux><neg>:гаьъа
-<aux><irr>:гāь
-<aux><irr>:гāьлъе
-<aux><neg><ptsp>:гаьччоь # не имеющий
-<aux><ptsp>:гаьгьийо # имеющий
-<must>:нуцӏос
+гей<cop><prs>:гей	#	есть
+гей<cop><neg>:гаьъаь
+гей<cop><neg>:гаьъа
+гей<cop><irr>:гāь
+гей<cop><irr>:гāьлъе
+гей<cop><neg><ptsp>:гаьччоь # не имеющий
+гей<cop><neg><ptsp>:гаьччаь # не имеющий, (Forker 2006) p. 37 
+гей<cop><ptsp>:гаьгьийо # имеющий
+гей<cop><cvb><caus>:гаьлълъо # (Forker 2006) p. 38
+гей<cop><cvb><cond><cnc>:гаьлъдана
+гей<cop<neg>cvb>:гаьчӏел
+нуцӏос<aux><prs>:нуцӏос
+нуцӏос<aux><pst>:нуцӏойо
 
-LEXICON Do
+LEXICON DoRoot
 ов:ов[inf]
-ов<pl>:овагь[pl]
-ов:огь[val]
+ов:огь[nfin]
+ов:овагь[pl]
 ов:ой[val]
-ов<prs>:ō[val]
-
-LEXICON ShortForms # стяженные формы настоящего времени; непонятно, как иначе моделировать
-гв<I><v><prs>:гōс
-гв<II><v><pl><prs>:гӣс
-гв<III/IV><v><pl><prs>:гӯс
-
-LEXICON Look
-гоцӏохъ<v><I>:гоцӏохъ
-гоцӏохъ<v><II>:гичӏехъ
-гоцӏохъ<v><III/IV>:гуцӏохъ
-гоцӏохъ<v><pl>:гуцӏобахъ[pl]
-говацӏ<v><I><antip>:говацӏ
-говацӏ<v><II><antip>:гийацӏ
-говацӏ<v><III/IV><antip>:гувацӏ
-говацӏ<v><I><antip><pl>:гувабацӏ
-говацӏ<v><II><antip><pl>:гийабацӏ
-говацӏ<v><III/IV><antip><pl>:гувабацӏ
-говацӏ<v><I><antip>:говацӏо
-говацӏ<v><II><antip>:гийацӏо
-говацӏ<v><III/IV><antip>:гувацӏо
-говацӏ<v><I><antip><pl>:гувабацӏо
-говацӏ<v><II><antip><pl>:гийабацӏо
-говацӏ<v><III/IV><antip><pl>:гувабацӏо
+ов:ō[t]
 
 LEXICON VerbRoot(2) # глагольная основа
-ни[h] со[h]  # сказать
-зо[h] гъ[h] # находиться
-оь[s] л[s] # хватать
-го[h] то[h] # постелить
-ги[h] тӏ[h] # налить
-зу[h] къо[h] # быть
-еᴴ[cl,h] гье[cl,h]	#	открывать
-а[cl,h] тӏ[cl,h]	#	любить
-оᴴ[cl,h] къе[cl,h]	#	приходить
-аᴴса[cl,h] [cl,h]	#	мерить
-аьᴴ[cl,s] хъе[cl,s]	#	шить
-ега[cl,h] [cl,h]	#	виднеться
-аьᴴ[cl,s] че[cl,s]	#	лизать
-а[cl,h] гъо[cl,h]	#	снимать, отнимать
-а[cl,h] къо[cl,h]	#	принести
-а[cl,h] хъ[cl,h]	#	происходить, родиться
-аьчӏ[cl,s] лъ[cl,s]	#	мерзнуть
-аьᴴше[cl,h] лъ[cl,h]	#	быть коротким
-е[cl,h] гъ[cl,h]	#	драться
-егъа[cl,h] кӏ[cl,h]	#	содержать
-и[cl,h] къе[cl,h]	#	знать
-и[cl,h] къо[cl,h]	#	созревать
-и[cl,h] кье[cl,h]	#	убивать
-и[cl,h] тӏ[cl,h]	#	делиться
-еᴴ[cl,h] йе[cl,h]	#	отпустить
-аь[cl,h] кьел[cl,h]	#	ударить
-иᴴъа[cl,h] [cl,h]	#	мокнуть
-иᴴ[cl,h] з[cl,h]	#	искать
-иᴴ[cl,h] хъо[cl,h]	#	закрывать
-иᴴ[cl,h] цо[cl,h]	#	связать
-о[cl,h] гъо[cl,h]	#	кормить
-о[cl,h] кӏ[cl,h]	#	брать
-о[cl,h] лъо[cl,h]	#	заканчиваться
-о[cl,h] х[cl,h]	#	держать
-о[cl,h] кчи[cl,h]	#	брать
-о[cl,h] цӏ[cl,h]	#	гнать
-оь[cl,s] шоь[cl,s]	#	жиреть
-оᴴ[cl,h] со[cl,h]	#	складывать
-оьᴴ[cl,s] тӏоь[cl,s]	#	копать
-у[cl,h] гъо[cl,h]	#	умереть
-укъ[cl,h] лъ[cl,h]	#	расти
-уь[cl,s] к[cl,s]	#	рваться
-у[cl,h] тӏ[cl,h]	#	лечь
-уь[cl,s] чӏ[cl,s]	#	резать
-уьᴴ[cl,s] къоь[cl,s]	#	нагнуться
-уᴴ[cl,h] хо[cl,h]	#	резать
-уьᴴ[cl,s] хъ[cl,s]	#	есть
-уᴴ[cl,h] цо[cl,h]	#	воровать
-оᴴ[cl,h] къо[cl,h]	#	прийти
-е[cl,h] кӏе[cl,h]	#	гореть
-ийа[cl,h] [cl,h]	#	плакать
-е[cl,h] к[cl,h]	#	падать/ронять
-оь[cl,s] чоь[cl,s]	#	уходить
-уьчāь[cl,s] хе[cl,s]	#	спать
-иᴴ[cl,h] хъо[cl,h]	#	находить
-иᴴ[cl,h] со[cl,h]	#	продаваться
-оги[cl,h] цӏ[cl,h]	#	прыгать
-еᴴ[cl,h] хе[cl,h]	#	касаться
-е[cl,h] {ц}е[cl,h]	#	останавливаться
-е[cl,h] с[cl,h]	#	есть
-еᴴ[cl,h] кье[cl,h]	#	идти
-оᴴ[cl,h] со[cl,h]	#	рушиться
-еᴴцца[cl,h] к[cl,h]	#	вырываться
-о[cl,h] ъ[cl,h]	#	теряться
-е[cl,h] {з}е[cl,h]	#	нести
-и[cl,h] {з}е[cl,h]	#	побеждать
-аь[cl,s] хе[cl,s]	#	рваться
-кӏис[h] а[h]	#	играть
-кӏо[h] кӏо[h]	#	болеть
-хъо[h] хъо[h]	#	сохнуть
-ну[h] ко[h]	#	голодать
-гъай[h] лӏо[h]	#	кипеть
-кӏаьй[s] лӏоь[s]	#	поворачиваться
-оьгь[s] лӏоь[s]	#	кашлять
-гье[h] ле[h]	#	вариться
-лъи[h] цӏе[h]	#	одеваться
-гьи[h] цӏе[h]	#	бояться
-гьа[h] ъо[h]	#	молоть
-ту[h] хъ[h]	#	слышать
-низа[h] а[h]	#	мыть
-ни[h] лӏ[h]	#	давать
-лъоᴴва[h] а[h]	#	смеяться
-лала[h] лӏо[h]	#	кричать
-кусу[h] ъ[h]	#	брить
+еᴴ[h,v,а,cl] гье[h,v,а,cl]	#	открывать
+а[h,c,0,cl] тӏ[h,c,0,cl]	#	любить
+оᴴ[h,v,0,а,cl] къе[h,v,0,а,cl]	#	приходить
+аᴴса[h,v,0,cl] а[h,v,0,cl]	#	мерить
+аьᴴ[s,v,аь,cl] хъе[s,v,аь,cl]	#	шить
+ега[h,v,а,cl] [h,v,а,cl]	#	виднеться
+аьᴴ[s,v,аь,cl] че[s,v,аь,cl]	#	лизать
+а[h,v,0,cl] гъо[h,v,0,cl]	#	снимать, отнимать
+а[h,v,а,cl] къо[h,v,а,cl]	#	принести
+а[h,c,0,cl] хъ[h,c,0,cl]	#	происходить, родиться
+аьчӏ[s,c,и,cl] лъ[s,c,и,cl]	#	мерзнуть
+аьᴴше[h,c,0,cl] лъ[h,c,0,cl]	#	быть коротким
+е[h,c,0,cl] гъ[h,c,0,cl]	#	драться
+егъа[h,c,а,cl] кӏ[h,c,а,cl]	#	содержать
+и[h,v,0,cl] къе[h,v,0,cl]	#	знать
+и[h,v,0,cl] къо[h,v,0,cl]	#	созревать
+и[h,v,а,cl,0] кье[h,v,а,cl,0]	#	убивать
+и[h,c,а,cl] тӏ[h,c,а,cl]	#	делиться
+аь[h,l,а,cl] кьел[h,l,а,cl]	#	ударить
+иᴴъа[h,v,а,cl] [h,v,а,cl]	#	мокнуть
+иᴴ[h,c,а,cl] з[h,c,а,cl]	#	искать
+иᴴ[h,v,а,cl] хъо[h,v,а,cl]	#	закрывать
+иᴴ[h,v,а,cl] цо[h,v,а,cl]	#	связать
+о[h,v,а,cl] гъо[h,v,а,cl]	#	кормить
+о[h,c,а,cl] кӏ[h,c,а,cl]	#	брать
+о[h,v,0,cl] лъо[h,v,0,cl]	#	заканчиваться
+о[h,c,а,cl] х[h,c,а,cl]	#	держать
+о[h,v,а,cl] кчи[h,v,а,cl]	#	брать
+оь[s,v,а,cl] кчи[s,v,а,cl]	#	брать
+о[h,c,а,cl] цӏ[h,c,а,cl]	#	гнать
+оь[s,v,0,cl] шоь[s,v,0,cl]	#	жиреть
+оᴴ[h,v,а,cl] со[h,v,а,cl]	#	складывать
+оьᴴ[s,v,аь,cl] тӏоь[s,v,аь,cl]	#	копать
+у[h,v,0,cl] гъо[h,v,0,cl]	#	умереть
+укъ[h,v,c,и,0,cl] лъ[h,v,c,и,0,cl]	#	расти
+уь[s,c,0,cl] к[s,c,0,cl]	#	рваться
+у[h,c,0,cl] тӏ[h,c,0,cl]	#	лечь
+уь[s,c,аь,cl] чӏ[s,c,аь,cl]	#	резать
+уьᴴ[s,v,0,cl] къоь[s,v,0,cl]	#	нагнуться
+уᴴ[h,v,а,cl] хо[h,v,а,cl]	#	резать
+уьᴴ[s,c,аь,cl] хъ[s,c,аь,cl]	#	есть
+уᴴ[h,v,0,cl] цо[h,v,0,cl]	#	воровать
+оᴴ[h,v,0,а,cl] къо[h,v,0,а,cl]	#	прийти
+е[h,v,0,cl] кӏе[h,v,0,cl]	#	гореть
+ийа[h,v,0,cl] а[h,v,0,cl]	#	плакать
+е[h,c,0,cl] к[h,c,0,cl]	#	падать/ронять
+оь[s,v,0,cl] чоь[s,v,0,cl]	#	уходить
+уьчāь[s,v,0,cl] хе[s,v,0,cl]	#	спать
+иᴴ[h,v,0,cl] хъо[h,v,0,cl]	#	находить
+иᴴ[h,v,0,cl] со[h,v,0,cl]	#	продаваться
+оги[h,c,0,cl] цӏ[h,c,0,cl]	#	прыгать
+еᴴ[h,v,е,cl] хе[h,v,е,cl]	#	касаться
+е[h,v,0,cl] це[h,v,0,cl]	#	останавливаться
+е[h,c,0,cl] с[h,c,0,cl]	#	есть
+еᴴ[h,v,0,cl] кье[h,v,0,cl]	#	идти
+оᴴ[h,v,а,cl] со[h,v,а,cl]	#	рушиться
+еᴴцца[h,c,0,cl] к[h,c,0,cl]	#	вырываться
+о[h,c,0,cl] ъ[h,c,0,cl]	#	теряться
+е[h,v,а,cl] зе[h,v,а,cl]	#	нести
+аь[s,v,0,cl] хе[s,v,0,cl]	#	рвать
+и[h,v,0,cl] зе[h,v,0,cl]	#	побеждать
+кӏис[h,v,0] а[h,v,0]	#	играть
+кӏо[h,v,0] кӏо[h,v,0]	#	болеть
+хъо[h,v,0] хъо[h,v,0]	#	сохнуть
+ну[h,v,0] ко[h,v,0]	#	голодать
+гъай[h,v,0] лӏо[h,v,0]	#	кипеть
+кӏаьй[s,v,0] лӏоь[s,v,0]	#	поворачиваться
+оьгь[s,v,аь] лӏоь[s,v,аь]	#	кашлять
+гье[h,v,а] ле[h,v,а]	#	вариться
+лъи[h,v,а] цӏе[h,v,а]	#	одеваться
+гьи[h,v,0] цӏе[h,v,0]	#	бояться
+гьа[h,v,а] ъо[h,v,а]	#	молоть
+ту[h,c,0] хъ[h,c,0]	#	слышать
+низа[h,v,а] а[h,v,а]	#	мыть
+ни[h,c,а] лӏ[h,c,а]	#	давать
+лъоᴴва[h,v,а] а[h,v,а]	#	смеяться
+лала[h,v,а] лӏо[h,v,а]	#	кричать
+кусу[h,c,а] ъ[h,c,а]	#	брить
+ча[h,c,а] х[h,c,а]	#	писать
+ни[h,v,а] со[h,v,а]	#	говорить
+зо[h,c,0] гъ[h,c,0]	#	находиться
+оь[s,l,0] лӏ[s,l,0]	#	хватать
+го[h,v,а] то[h,v,а]	#	класть
+ги[h,c,а] тӏ[h,c,а]	#	лить
+зу[h,v,0] къо[h,v,0]	#	быть
+акьа[h,c] кI[h,c]	#	подготавливать
+акIилдо[h,c,а] кI[h,c,а]	#	резать криво (косо)
+акIилдо[h,c,0] лъ[h,c,0]	#	стать (стано-виться) криво (косо) разрезанным
+ата[h,c,0] ак[h,c,0]	#	1) отодвигаться
+ата[h,c,а] акI[h,c,а]	#	1) отодвигать
+аᴴза[h,c,а] кI[h,c,а]	#	1) марать
+аᴴза[h,c,0] лъ[h,c,0]	#	1) мараться
+аᴴх[h,v,о] со[h,v,о]	#	спешить, торопиться
+аᴴцI[h,c,а] кIи[h,c,а]	#	1) точить, чинить
+аᴴцI[h,c,и] лъи[h,c,и]	#	1) быть (стать) отточенным 2) быть (стать) острым (заостренным)
+аьᴴгь[s,v,и] лъи[s,v,и]	#	дырявиться, прохудиться, продырявливаться
+аьᴴгь[s,c,аь] кI[s,c,аь]	#	дырявить, продырявливать
+аьᴴйда[h,c,0] аьк[h,c,0]	#	1) оказываться впереди, обгонять, опережать
+аьᴴйда[s,c,аь] аькI[s,c,аь]	#	1) продвигать вперед, передвигать
+аьᴴкъе[h,c,а] кI[h,c,а]	#	выделять, отделять (чужого)
+аьᴴкъе[h,c,0] лъ[h,c,0]	#	смотреть подозрительно, вести себя подозрительно
+аьᴴхъ[h,c,а] екI[h,c,а]	#	наклонять
+аьᴴхъе[h,c,0] лъ[h,c,0]	#	наклоняться
+бабало[h,c,а] кI[h,c,а]	#	1) делать блестящим, наводить блеск (глянец) на что-л.
+бабало[h,c,0] лъ[h,c,0]	#	1) блестеть
+бахъандо[h,c,а] кI[h,c,а]	#	удивлять кого-л.
+бахъандо[h,c,0] лъ[h,c,0]	#	удивляться
+б[s,c,аь] аьх[s,c,аь]	#	копать лопатой
+бицдо[h,c,а] кI[h,c,а]	#	1) смягчить (о коже)
+бицдо[h,c,0] лъ[h,c,0]	#	1) смягчиться (о коже)
+бо[h,v,0] ж[h,v,0]	#	верить кому-л.
+боцдо[h,c,а] кI[h,c,а]	#	ослеплять, слепить (глаза)
+боцдо[h,c,0] лъ[h,c,0]	#	становиться слепым, ослепнуть
+боькъоьндоь[s,c,аь] кI[s,c,аь]	#	выражать недовольство (смотреть злым взглядом исподлобья)
+боькъоьндоь[s,c,0] лъ[s,c,0]	#	насупиться
+боьтIоь[s,c,аь] кI[s,c,аь]	#	тупить
+боьтIоь[s,c,0] лъ[s,c,0]	#	становиться тупым
+буь[s,c,аь] ъ[s,c,аь]	#	уничтожать (вши)
+ваьгъ[s,v,оь] лIоь[s,v,оь]	#	плакать (о ребенке)
+ваьр[s,v,оь] лIоь[s,v,оь]	#	говорить
+виш[h,l,а] лIол[h,l,а]	#	сопеть
+гаьме[h,c,а] кI[h,c,а]	#	делать худым (тощим)
+гаьме[h,c,0] лъ[h,c,0]	#	худеть, истощаться
+гейдо[h,c,а] кI[h,c,а]	#	1) делать овальным 2) перен. вылупить, вытаращить (глаза)
+гейдо[h,c,0] лъ[h,c,0]	#	1) быть (стать) овальным
+гер[h,v,о] лIо[h,v,о]	#	ругать
+гилI[h,v,и] ки[h,v,и]	#	сойти, выйти, выходить
+гиса[h,c,0] к[h,c,0]	#	выходить
+гиса[h,c,а] кI[h,c,а]	#	выпускать, вывести на улицу
+ги[h,c,а] тI[h,c,а]	#	лить, наливать
+ги[h,v,а] хе[h,v,а]	#	надевать, натягивая снизу вверх
+ги[h,l,а] хел[h,l,а]	#	надевать на кого-л. (действие, направленное снизу вверх)
+ги[h,c,0] цI[h,c,0]	#	1) втыкаться 2) влезать во что-л.
+гомдо[h,c,а] кI[h,c,а]	#	делать холмистым
+гомдо[h,c,0] лъ[h,c,0]	#	1) бугриться
+гомордо[h,c,а] кI[h,c,а]	#	делать круглым, круглить
+гомордо[h,c,0] лъ[h,c,0]	#	круглеть
+го[h,v,а] то[h,v,а]	#	1) стлать, стелить
+гу[h,l,а] кил[h,l,а]	#	надевать на кого-л. (шапку, фуражку, шляпу, платок)
+гу[h,c,а] кI[h,c,а]	#	надевать (шапку, фуражку, платок)
+гу[h,v,а,cl] цIо[h,v,а,cl]	#	латать, зашивать дыру
+гу[h,c,а] ъ[h,c,а]	#	1) сыпать
+гъай[h,v,о] лIо[h,v,о]	#	кипеть
+гъац[h,v,о] лIо[h,v,о]	#	1) быть (стать) очень густым, обильным (о ягодах, фруктах)
+гъаьгъаьтIоь[s,c,0] лъ[s,c,0]	#	мутнеть, мутиться
+гъаьже[h,c,а] кI[h,c,а]	#	унич. умерщвлять
+гъаьже[h,c,0] лъ[h,c,0]	#	унич. умирать, дохнуть
+гъаьй[s,c,аь] кI[s,c,аь]	#	1) гноить
+гъаьй[s,c,0] лъ[s,c,0]	#	1) гнить, разлагаться
+гъе[h,v,а] се[h,v,а]	#	закрывать, запирать
+гъиг[h,c,а] ъдокI[h,c,а]	#	делать приземистым
+гъигъдо[h,c,0] лъ[h,c,0]	#	стать (быть) приземистым
+гъикъ[h,v,о] лIо[h,v,о]	#	1) согнуться (под тяжестью) 2) трястись
+гъодо[h,c,а] кI[h,c,а]	#	горбить
+гъодо[h,c,0] лъ[h,c,0]	#	быть (стать) горбатым, горбиться
+гъунусдо[h,c,0] лъ[h,c,0]	#	становиться унылым
+гьагьа[h,v,о] лIо[h,v,о]	#	расхватать, купить на расхват
+гьади[h,c,0] цI[h,c,0]	#	потеть
+гьай[h,v,о] лIо[h,v,о]	#	шуметь, резвиться
+гьако[h,c,а] кI[h,c,а]	#	задерживать
+гьако[h,c,0] лъ[h,c,0]	#	опаздывать
+гь[h,c,а] акI[h,c,а]	#	выбирать, подбирать
+гьала[h,v,о] лIо[h,v,о]	#	чесаться
+гьацо[h,c,а] кI[h,c,а]	#	узнавать, прицеливаться
+гьацо[h,c,0] лъ[h,c,0]	#	узнаваться, выясняться
+гь[h,v,а] аъо[h,v,а]	#	молоть
+гьаьгьаьлоь[h,c,аь] кI[h,c,аь]	#	раскалять
+гьаьгьаьлоь[h,c,0] лъ[h,c,0]	#	раскаляться
+гьаьгье[h,c,а] кI[h,c,а]	#	удивлять, 1) раздвигать (о досках на полу) 2) прорежать
+гьаьгье[h,c,0] лъ[h,c,0]	#	удивляться, 1) расходиться (о досках на полу)
+гьаьлдоь[s,c,аь] кI[s,c,аь]	#	белить
+гьаьлдоь[s,c,0] лъ[s,c,0]	#	1) становиться белым
+гьаьте[h,c,0] к[h,c,0]	#	1) опаздывать
+гьаьте[h,c,а] кI[h,c,а]	#	замедлять
+гьаьте[h,c,0] лъ[h,c,0]	#	1) опаздывать
+гье[h,v,а] ле[h,v,а]	#	1. вариться
+гье[h,v,0] лIе[h,v,0]	#	найти общий язык с кем-л.
+гьис[h,v,а] лIо[h,v,а]	#	1) натравливать (о собаке)
+гьица[h,c,0] к[h,c,0]	#	1) подходить близко, приближаться
+гьица[h,c,а] кI[h,c,а]	#	приближать, продвигать вперед (близко к кому-чему-л.)
+гьицIа[h,v,о] къо[h,v,о]	#	пугаться, чувствовать испуг
+гьи[h,v,0] цIе[h,v,0]	#	бояться
+гьиᴴлъ[h,v,о] хо[h,v,о]	#	оставаться
+гьиᴴх[h,v,о] лъо[h,v,о]	#	оставаться
+гьо[h,v,о] ъо[h,v,о]	#	мочь поднимать (и нести)
+гьоъокьа[h,c,0] к[h,c,0]	#	1) подняться, приподняться
+гьоъокьа[h,c,а] кI[h,c,а]	#	1) приподнять
+гьуᴴкьо[h,c,а] кI[h,c,а]	#	расширять, делать широким или шире, свободным или свободнее
+гьуᴴкьо[h,c,0] лъ[h,c,0]	#	расширяться, становиться (стать) широким или шире, свободным или свободнее
+даз[h,v,о] лIо[h,v,о]	#	болеть (о голове)
+дахо[h,c,0] кI[h,c,0]	#	делать тусклым (слабым, неярким)
+дахо[h,c,0] лъ[h,c,0]	#	стать тусклым (слабым, неярким), тускнеть
+даьгь[s,v,аь] кIи[s,v,аь]	#	уменьшать
+даьгь[s,v,и] лъи[s,v,и]	#	уменьшаться
+даьр[s,v,оь] лIоь[s,v,оь]	#	много болтать, бесцельно разговаривать
+дихъ[h,l,а] лIолI[h,l,а]	#	см. даьхълIаьлаьл
+д[h,c,а] ии[h,c,а]	#	увеличивать в числе
+дохъо[h,c,а] кI[h,c,а]	#	делать смуглым
+дохъо[h,c,0] лъ[h,c,0]	#	1) становиться смуглым, смуглеть
+дугъ[h,v,о] лIо[h,v,о]	#	мутнеть
+дуз[h,v,о] лIо[h,v,о]	#	онеметь, отсидеть (о руке, ноге)
+жар[h,v,о] лIо[h,v,о]	#	звякать
+жуьж[s,c,аь] кI[s,c,аь]	#	отделять
+жуьж[s,v,и] лъи[s,v,и]	#	отделяться
+жуь[s,l,а] тIоьл[s,l,а]	#	дать простор, приволье
+жуь[s,c,0] хъ[s,c,0]	#	1) учиться играть
+з[h,v,а] иза[h,v,а]	#	1. жариться
+зизи[h,v,о] лIо[h,v,о]	#	дрожать
+жи[h,v,0] ке[h,v,0]	#	хохотать
+зи[h,c,а] с[h,c,а]	#	сунуть
+зи[h,v,о] хъо[h,v,о]	#	1) хмуриться, злиться
+зи[h,v,о] ъо[h,v,о]	#	быть невысоким (низким)
+зо[h,c,0] гъ[h,c,0]	#	1) находиться, отыскиваться
+зу[h,v,о] къо[h,v,о]	#	быть, находиться
+зу[h,c,а] кI[h,c,а]	#	бить, колотить
+и[h,v,о] гъо[h,v,о]	#	заживать
+и[h,v,а] лIакъо[h,v,а]	#	см. йилIакъал
+и[h,v,а] лIе[h,v,а]	#	1) звать
+иси[h,c,а] ъ[h,c,а]	#	1) сеять, просеивать
+итIно[h,c,а] кI[h,c,а]	#	1) уменьшать, преуменьшать
+итIно[h,c,0] лъ[h,c,0]	#	1) быть (стать) маленьким н (малым)
+ицло[h,c,а] кI[h,c,а]	#	старить
+ицло[h,c,0] лъ[h,c,0]	#	стареть, стариться
+ицI[h,c,а] кIи[h,c,а]	#	обновлять, подновлять
+ицI[h,c,0] лъи[h,c,0]	#	обновляться
+иᴴзо[h,c,0] к[h,c,0]	#	1) образоваться куче (стопке) 2) перен. увеличиваться, умножаться
+йазих[h,v,и] лъи[h,v,и]	#	очутиться в бедственном или беспомощном состоянии
+аь[s,v,0,cl] бе[s,v,0,cl]	#	1) опухать
+аькъ[s,c,аь,cl] кIи[s,c,аь,cl]	#	делать тяжелым, утяжелять
+аь[s,v,0,cl] кье[s,v,0,cl]	#	говорить, разговаривать, беседовать
+аь[h,l,а,cl] хел[h,l,а,cl]	#	1) рвать
+аᴴ[h,v,о,cl] зо[h,v,о,cl]	#	
+аᴴ[h,c,а,cl] к[h,c,а,cl]	#	развязывать
+аᴴкъой[h,v,о,cl] цIо[h,v,о,cl]	#	выпрямляться
+аᴴ[h,v,о,cl] цо[h,v,о,cl]	#	1) чиститься, очищаться
+аьᴴ[s,v,аь,cl] хъе[s,v,аь,cl]	#	шить
+аьᴴ[s,v,аь,cl] че[s,v,аь,cl]	#	лизать
+аьᴴше[h,c,а,cl] кI[h,c,а,cl]	#	1) укорачивать
+аьᴴше[h,c,0,cl] лъ[h,c,0,cl]	#	1) быть (стать) коротким или короче
+е[h,c,0,cl] д[h,c,0,cl]	#	1) гаснуть, тухнуть
+еᴴ[h,v,а,cl] гье[h,v,а,cl]	#	открывать, раскрывать, распахивать
+еᴴ[h,v,0,cl] кье[h,v,0,cl]	#	1) идти, ходить
+еᴴ[h,v,0,cl] лъе[h,v,0,cl]	#	становиться ровным, выровняться
+еᴴ[h,l,а,cl] тел[h,l,а,cl]	#	съесть много (чего-л.)
+еᴴ[h,l,а,cl] хел[h,l,а,cl]	#	1. 1) трогать
+еᴴхетIо[h,c,а,cl] кI[h,c,а,cl]	#	делать липким
+еᴴхетIо[h,c,0,cl] лъ[h,c,0,cl]	#	стать липким
+еᴴцца[h,c,0,cl] к[h,c,0,cl]	#	1) вырываться
+еᴴцца[h,c,а,cl] кI[h,c,а,cl]	#	отпускать
+йи[h,c,0] гь[h,c,0]	#	бродить
+икьа[h,v,о,cl] къо[h,v,о,cl]	#	кончать, завершать
+илIа[h,c,0,cl] лъ[h,c,0,cl]	#	1) стать твердым, затвердеть
+йилI[h,v,и] ки[h,v,и]	#	сбежать (о молоке)
+иᴴлIу[h,c,0,cl] цI[h,c,0,cl]	#	приклеиваться
+иᴴ[h,v,а,cl] со[h,v,а,cl]	#	1. продаваться
+иᴴ[h,v,о,cl] хъо[h,v,о,cl]	#	1) находить
+иᴴхъой[h,c,0,cl] цI[h,c,0,cl]	#	1) прикрываться
+иᴴ[h,v,а,cl] цо[h,v,а,cl]	#	1) связать, завязать, обвязать
+иᴴъа[h,l,а,cl] л[h,l,а,cl]	#	мочить
+о[h,l,а,cl] л[h,l,а,cl]	#	1) молотить
+о[h,c,0,cl] ц[h,c,0,cl]	#	меситься
+йоькькьаь[s,c,аь] кI[s,c,аь]	#	уменьшать
+йоькькьаь[s,c,0] лъ[s,c,0]	#	уменьшаться
+йоь[s,c,аь] лI[s,c,аь]	#	завернуть, заворачивать
+оь[s,c,аь,cl] х[s,c,аь,cl]	#	набрать ведром
+оᴴ[h,c,а,cl] з[h,c,а,cl]	#	собирать
+оᴴ[h,v,о,а,cl] къо[h,v,о,а,cl]	#	1) выйти, выходить
+оᴴкъой[h,c,0,cl] хъ[h,c,0,cl]	#	1) дотрагиваться, касаться
+оᴴ[h,v,а,cl] со[h,v,а,cl]	#	складывать
+оьᴴ[s,v,аь,cl] тIоь[s,v,аь,cl]	#	копать
+оьᴴшоьй[h,c,0,cl] цI[h,c,0,cl]	#	пороться, распарываться
+йу[h,c,0] к[h,c,0]	#	линять (о ткани)
+у[h,c,0,cl] кI[h,c,0,cl]	#	ломаться
+уь[s,c,0,cl] кь[s,c,0,cl]	#	1) рваться
+уь[s,c,аь,cl] чI[s,c,аь,cl]	#	1) резать
+уь[s,c,0,cl] ш[s,c,0,cl]	#	1) падать
+уᴴ[h,v,а,cl] хо[h,v,а,cl]	#	резать (скот)
+уᴴ[h,v,о,cl] цо[h,v,о,cl]	#	1) таять
+уьᴴ[s,c,0,cl] лъ[s,c,0,cl]	#	становиться сухим, вытереться
+уьᴴ[s,c,аь,cl] хъ[s,c,аь,cl]	#	есть, питаться
+какало[h,c,а] кI[h,c,а]	#	скоблить
+какало[h,c,0] лъ[h,c,0]	#	стать (быть) обтесанным, (соскобленным)
+к[h,c,а] ах[h,c,а]	#	1) массажировать, массировать
+каьче[h,c,а] кI[h,c,а]	#	делать светлым
+каьче[h,c,а] лъ[h,c,а]	#	1) светать
+кел[h,c,а] екI[h,c,а]	#	1) изнашивать до ветхости
+келе[h,c,0] лъ[h,c,0]	#	ветшать, становиться ветхим, приходить в ветхость
+ке[h,v,а] се[h,v,а]	#	разматывать
+кешдо[h,c,а] кI[h,c,а]	#	1) делать пестрым, пестрить
+кешдо[h,c,0] лъ[h,c,0]	#	1) становиться пестрым, пестреть
+кеш[s,v,оь] еоь[s,v,оь]	#	1) распускаться
+кешей[h,c,0] цI[h,c,0]	#	распускаться
+кик[h,c,а] кIи[h,c,а]	#	облегчать, делать легким или легче
+кик[h,c,0] лъи[h,c,0]	#	быть (стать) легким или легче
+кодо[h,c,а] кI[h,c,а]	#	отращивать (о волосах)  мед.  192
+кодо[h,c,0] лъ[h,c,0]	#	обрастать
+колI[h,c,а] кIи[h,c,а]	#	темнить
+ку[h,v,а] ко[h,v,а]	#	твердить одно и то же, говорить все время о чем-то
+кусу[h,c,а] ъ[h,c,а]	#	1) брить, бриться
+куьчдоь[s,c,0] лъ[s,c,0]	#	смотреть угрожающе (агрессивно)
+къапI[h,v,о] лIо[h,v,о]	#	ругаться
+къар[h,v,о] лIо[h,v,о]	#	бурчать, урчать
+къацIо[h,c,0] к[h,c,0]	#	собираться, сходиться
+къацIо[h,c,а] кI[h,c,а]	#	собирать кого-что-л. в одном месте (в одну кучу)
+къаькъаьлоь[s,c,аь] кI[s,c,аь]	#	делать худым (тощим)
+къаькъаьлоь[s,c,0] лъ[s,c,0]	#	худеть, быть (стать) худым (худощавым)
+къ[s,v,аь] аьлIлIоь[s,v,аь]	#	тесать
+къ[s,v,аь] аьтлIоь[s,v,аь]	#	тесать
+къаьте[h,c,а] кI[h,c,а]	#	складывать (сложить) аккуратно
+къекъе[h,c,а] кI[h,c,а]	#	расширять что-л.
+къекъ[h,c,0] елъ[h,c,0]	#	расширяться
+къикъи[h,v,о] лIо[h,v,о]	#	1) дрожать
+къицI[h,c,а] кIи[h,c,а]	#	1) делать ровным, разровнять
+къицI[h,c,и] лъи[h,c,и]	#	1) стать ровным, выровняться
+къо[h,v,о] къо[h,v,о]	#	1) портиться
+къокъо[h,l,а] лIол[h,l,а]	#	гоняться за курицей (о петухе)
+къоькъ[s,c,а] лоькI[s,c,а]	#	делать жестким
+къоькъ[s,c,0] лоьлъ[s,c,0]	#	стать (становиться) жестким
+къоьр[s,l,аь] лIоьл[s,l,аь]	#	издеваться, обижать, глумиться
+къу[h,v,а] къо[h,v,а]	#	1) тереть
+къуь[s,v,аь] къоь[s,v,аь]	#	трамбовать, запихивать
+кьакьало[h,c,0] лъ[h,c,0]	#	быть (стать) ветхим, обветшать (об одежде), изнашиваться
+кьаъ[h,v,о] лIо[h,v,о]	#	скрипеть (о бревнах, качелях)
+кьаьй[s,v,0] къе[s,v,0]	#	сесть (на лошадь)
+кьаькъ[s,l,аь] лIоьл[s,l,аь]	#	издавать звук хлопка, хлопнуть
+кь[s,v,аь] аьхъе[s,v,аь]	#	крыть, накладывать кровлю
+кье[h,v,а] къе[h,v,а]	#	шить иголкой
+кьихо[h,c,а] кI[h,c,а]	#	делать полувлажным (полусухим, сырым)
+кьихо[h,c,0] лъ[h,c,0]	#	быть (стать) полувлажным (полусухим)
+кьи[h,l,а] чIел[h,l,а]	#	1) допускать или делать дефекты при вязании
+кьодда[h,c,0] ак[h,c,0]	#	1) подниматься (с места) 2) подниматься, повышаться (о цене)
+кьодда[h,c,а] акI[h,c,а]	#	1) поднимать что-л.
+кьодо[h,c,0] к[h,c,0]	#	залезать на что-л.
+кьодо[h,c,а] кI[h,c,а]	#	помочь (способствовать) залезать на что-л.
+кьоло[h,c,0] лъ[h,c,0]	#	быть (стать) глупым, глупеть
+кьоь[s,c,0] кь[s,c,0]	#	1) взрываться
+кьу[h,c,0] хъ[h,c,0]	#	подходить, оказаться удобным, приемлемым для кого-чего-л.
+кIакIало[h,c,а] кI[h,c,а]	#	1) делать гладким (ровным)
+кI[h,v,о] алIо[h,v,о]	#	отделяться (жидкости от гущи)
+кIатIо[h,c,а] кI[h,c,а]	#	подрезать, подрезывать, укорачивать
+кIатIо[h,c,0] лъ[h,c,0]	#	становиться короче, укорачиваться
+кIаъ[h,v,а] лIо[h,v,а]	#	однокр. визжать (о собаке)
+кIаьй[s,v,оь] лIоь[s,v,оь]	#	1) вращаться, крутиться, вертеться
+кIекIе[h,c,а] кI[h,c,а]	#	1) гнать, разгонять
+кIекIе[h,c,0] лъ[h,c,0]	#	1) разбегаться
+кIетI[h,c,а] кIи[h,c,а]	#	1) улучшать, украшать
+кIетI[h,c,и] лъи[h,c,и]	#	1) быть (стать) хорошим, доброжелательным (добрым)
+кIийе[h,c,а] кI[h,c,а]	#	гнуть
+кIийе[h,c,0] лъ[h,c,0]	#	гнуться
+кIокьа[h,c,0] лъ[h,c,0]	#	вспоминать
+кIо[h,v,о] кIо[h,v,о]	#	1) болеть
+кIор[h,v,о] лIо[h,v,о]	#	почувствовать привязанность, привязаться к кому-л.
+кIо[h,c,0] х[h,c,0]	#	брезговать
+кIоьхдоь[s,c,аь] кI[s,c,аь]	#	делать горбатым (согнутым, крючкообразным)
+кIоьхдоь[s,c,0] лъ[s,c,0]	#	быть (стать) горбатым (согнутым, крючкообразным)
+кIукIу[h,v,о] лIо[h,v,о]	#	ходить (вертеться, носиться) вокруг кого-л.
+кIуь[s,v,аь] чоь[s,v,аь]	#	1) отбивать (лезвие косы, серпа)
+лапI[h,v,о] лIо[h,v,о]	#	однокр. 1) шататься, покачиваться
+лах[h,v,о] лIо[h,v,о]	#	однокр. 1) двигаться, трогаться 2) сдвигаться 3) шевелиться
+лах[h,l,а] лIол[h,l,а]	#	1) качать
+лаькъ[s,v,оь] лIоь[s,v,оь]	#	качаться, шататься
+лаькъ[s,l,аь] лIоьл[s,l,аь]	#	качать, шатать
+лаьхъдоь[s,c,аь] кI[s,c,аь]	#	делать хромым
+лаьхъдоь[h,c,0] лъ[h,c,0]	#	становиться хромым, хромать, охрометь
+лолдо[h,c,а] кI[h,c,а]	#	хмурить
+лолдо[h,c,0] лъ[h,c,0]	#	1) быть (стать) плутоватым, вороватым 2) перен. измениться под влиянием алкоголя (о поведении)
+лъахдо[h,c,а] кI[h,c,а]	#	делать серым
+лъахдо[h,c,0] лъ[h,c,0]	#	стать (становиться) серым, сереть
+лъакъе[h,c,а] кI[h,c,а]	#	вызвать гнев, гневить
+лъакъе[h,c,0] лъ[h,c,0]	#	гневаться
+лъ[h,c,0] екъелъ[h,c,0]	#	гневаться
+лъаьлъаь[s,v,оь] лIоь[s,v,оь]	#	однокр. дергаться, валяться, биться (на полу)
+лъепI[h,v,о] лIо[h,v,о]	#	однокр. всхлипнуть
+лъ[h,v,0] ехъе[h,v,0]	#	наказывать
+лъи[h,c,0] з[h,c,0]	#	запутываться, спутываться
+лъийа[h,c,0] цI[h,c,0]	#	купаться
+лъи[h,v,о] къо[h,v,о]	#	1) кончаться
+лъи[h,v,а] кIо[h,v,а]	#	загородить, перегородить
+лъи[h,c,а] лъ[h,c,а]	#	1) жевать
+лъи[h,v,0] се[h,v,0]	#	гореть
+лъи[h,v,а] цIе[h,v,а]	#	надевать
+лъолъкьа[h,c,а] кI[h,c,а]	#	вспоминать, припоминать
+лъолъо[h,v,о] лIо[h,v,о]	#	еле удержаться на ногах (от испуга, болезни)
+лъу[h,v,а] тIо[h,v,а]	#	кроить
+лъуьъ[s,v,оь] лIоь[s,v,оь]	#	1) просыпаться
+лъуьъ[s,l,аь] лIоьл[s,l,аь]	#	будить
+лIано[h,c,а] кI[h,c,а]	#	делать редким, разрежать, прорежать
+лIано[h,c,0] лъ[h,c,0]	#	быть (стать) редким (негустым), разрежаться, прорежаться
+лI[h,c,а] ах[h,c,а]	#	расчесывать, причесывать
+лIах[h,v,о] лIо[h,v,о]	#	расчесывать, причесывать
+лIаьме[h,c,а] кI[h,c,а]	#	1) делать тонким (или тоньше), утончать
+лIаьме[h,c,0] лъ[h,c,0]	#	1) быть (стать) тонким (или тоньше), утончаться 2) перен. быть (стать) худым, худеть
+лIеᴴйаᴴ[h,v,а] [h,v,а]	#	пускать газ, освобождать кишечник от газов, пукать
+лIийо[h,c,0] к[h,c,0]	#	1) прыгать
+лIийо[h,c,а] кI[h,c,а]	#	спешивать
+лIира[h,v,о] хо[h,v,о]	#	1) бегать, бежать
+лIира[h,v,о] ахо[h,v,о]	#	бегать, заниматься беготней, носиться, суетиться
+лIиᴴ[h,v,а] йо[h,v,а]	#	запрягать
+лIида[h,c,0] ак[h,c,0]	#	1) спускаться вниз 2) снижаться (о цене) 3) приседать
+лIи[h,c,0] йодāк[h,c,0]	#	1) спускаться вниз 2) снижаться (о цене) 3) приседать
+лIида[h,c,а] акI[h,c,а]	#	1) опускать
+лIолIо[h,c,а] гъак[h,c,а]	#	приоткрываться
+лIолIо[h,c,а] гъакI[h,c,а]	#	приоткрывать
+лIуь[s,c,аь] ш[s,c,аь]	#	рел. уст. читать молитву от сглаза, лечить заговором от дурного глаза, заговаривать
+лIуь[s,v,оь] хоь[s,v,оь]	#	1) удавиться, задушиться 2) задыхаться
+мамалилдо[h,c,0] лъ[h,c,0]	#	1) петушиться 2) перен. пререкаться 3) перен. возгордиться
+маьтIаь[s,c,аь] кI[s,c,аь]	#	увеличивать (тляд.)
+маьтIаь[s,c,0] лъ[s,c,0]	#	увеличиваться
+мискиндо[h,c,а] кI[h,c,а]	#	делать бедным, обеднять
+мискиндо[h,c,0] лъ[h,c,0]	#	стать бедным, беднеть
+мо[h,v,о] кьо[h,v,о]	#	линять
+негъ[h,v,о] лIо[h,v,о]	#	капризничать
+нийа[h,c,а] кI[h,c,а]	#	делать сладким, подслащивать
+нийа[h,c,0] лъ[h,c,0]	#	быть (стать) сладким, подслащиваться
+ни[h,c,а] лI[h,c,а]	#	1) давать, отдавать
+ни[h,v,а] со[h,v,а]	#	1) говорить, сказать
+ничдо[h,c,а] кI[h,c,а]	#	1) делать голубым 2) перен. поставить синяки (на теле)
+ничдо[h,c,0] лъ[h,c,0]	#	1) голубеть
+ну[h,v,о] ко[h,v,о]	#	голодать
+нуьшоь[s,c,а] кI[s,c,а]	#	мельчить
+нуьшоь[s,c,0] лъ[s,c,0]	#	1) становиться мелким, мельчать 2) перен. мелочиться
+оь[s,l,0] л[s,l,0]	#	хватать, быть достаточным
+оьхоь[s,c,аь] кI[s,c,аь]	#	делать некрасивым, несимпатичным, грубым
+оьхоь[s,c,0] лъ[s,c,0]	#	стать (становиться) некрасивым, несимпатичным, грубым
+оᴴгу[h,v,о] хо[h,v,о]	#	быть (стать)
+оᴴгу[h,l,а] хол[h,l,а]	#	делать
+пар[h,v,о] лIо[h,v,о]	#	однокр. развеваться, веять, реять
+пигьа[h,c,а] кI[h,c,а]	#	1) удешевлять, уценивать
+пигьа[h,c,а] лъ[h,c,а]	#	1) дешеветь
+пицхилдо[h,c,а] кI[h,c,а]	#	1) горячить 2) перен. торопить
+пицхилдо[h,c,0] лъ[h,c,0]	#	1) горячиться
+пуь[s,v,аь] лIоь[s,v,аь]	#	однокр. дуть
+пIаьр[s,v,оь] лIоь[s,v,оь]	#	болтать
+пIаьпIаьлоь[s,c,аь] кI[s,c,аь]	#	1) делать лысым 2) перен. делать голым
+пIаьпIаьлоь[s,v,0] лъ[s,v,0]	#	1) лысеть
+сагилдо[h,c,а] кI[h,c,а]	#	морщить (об одежде)
+сагилдо[h,c,0] лъ[h,c,0]	#	морщиться (об одежде)
+сасало[h,c,а] кI[h,c,а]	#	1) толочь
+сасало[h,c,0] лъ[h,c,0]	#	1) становиться толченным (дробленным, размельченным), дробиться 2) быть (стать) рассыпчатым
+сидда[h,c,а] акI[h,c,а]	#	убирать в сторону (в одно место)
+си[h,c,а] з[h,c,а]	#	плести
+сиз[h,c,а] кI[h,c,а]	#	1) мять, обрабатывать шкуру
+сима[h,v,о] хъо[h,v,о]	#	злиться, сердиться
+сима[h,l,а] хъол[h,l,а]	#	злить, сердить
+сиси[h,l,а] лIол[h,l,а]	#	знобить, лихорадить
+со[h,c,0] с[h,c,0]	#	1) жечься
+сумурдо[h,c,а] кI[h,c,а]	#	плиссировать
+сумурдо[h,c,0] лъ[h,c,0]	#	стать (быть) плиссированным
+су[h,v,а] со[h,v,а]	#	1) рубить на куски, колоть
+таба[h,c,а] кI[h,c,а]	#	доводить до усталости, утомить
+таба[h,c,0] лъ[h,c,0]	#	уставать
+тели[h,c,а] кI[h,c,а]	#	расти
+тели[h,c,0] лъ[h,c,0]	#	расти
+тигъа[h,c,0] к[h,c,0]	#	приближаться вплотную к чему-л.
+тигъа[h,c,а] кI[h,c,а]	#	сдвинуть вплотную к чему-л.
+ти[h,v,о] къо[h,v,о]	#	1) воткнуться, вонзиться, колоться (о занозе)
+тикьа[h,c,0] к[h,c,0]	#	переходить на другую сторону (на ту сторону)
+ти[h,l,а] л[h,l,а]	#	класть, положить (дрова в огонь)
+тилI[h,c,и,0] ки[h,c,и,0]	#	перепрыгивать, переходить
+тити[h,v,о] лIо[h,v,о]	#	изнашиваться (до дыр)
+ти[h,c,0] цI[h,c,0]	#	надевать (пояс, ремень, кушак), подпоясывать
+ти[h,c,а] ъ[h,c,а]	#	поджаривать
+тоьтлоь[s,c,аь] кI[s,c,аь]	#	мягчить
+тоьтлоь[s,c,0] лъ[s,c,0]	#	мякнуть
+ту[h,c,а] х[h,c,а]	#	1) кормить, угощать
+ту[h,c,0] хъ[h,c,0]	#	1) слышать
+ту[h,v,о] цIо[h,v,о]	#	быть вдетым, вдеваться
+туь[s,v,оь] шоь[s,v,оь]	#	краситься
+тI[s,v,аь] аьлIе[s,v,аь]	#	1) доить, надаивать
+тIи[h,l,а] кел[h,l,а]	#	бросить, кинуть на близкое расстояние кому-л.
+тIикен[h,c,0] ицI[h,c,0]	#	появляться, показаться (на мгновение, на короткое время)
+тIикъо[h,c,0] лъ[h,c,0]	#	обижаться
+тIо[h,v,а] тIо[h,v,а]	#	рубить
+тIоь[s,v,оь] лIоь[s,v,оь]	#	1) раскрываться (о глазах)
+тIутIу[h,v,о] лIо[h,v,о]	#	екать
+тIу[h,v,а] цо[h,v,а]	#	1) выжимать
+х[h,v,о] агъо[h,v,о]	#	сосать (грудь)
+х[h,l,а] агъол[h,l,а]	#	кормить кого-л., дать кому-л. сосать
+хас[h,v,а] лIо[h,v,а]	#	тесать
+хас[h,l,а] лIол[h,l,а]	#	см. хаслIал
+хато[h,c,0] лъ[h,c,0]	#	немного (чуть-чуть) похудеть
+хахало[h,c,0] лъ[h,c,0]	#	шершаветь, становиться шершавым (шероховатым)
+хаха[h,v,о] лIо[h,v,о]	#	1) тереться обо что-л.
+х[s,v,а] аьлIе[s,v,а]	#	однокр. 1) воткнуть, колоть
+х[s,c,аь] аьх[s,c,аь]	#	1) мазать что-л. чем-л.
+хеле[h,c,а] кI[h,c,а]	#	делать ровным, разровнять
+хеле[h,c,0] лъ[h,c,0]	#	быть (стать) ровным, разровняться
+хетIе[h,c,а] кI[h,c,а]	#	делать толстым (или массивным), утолщать
+хетIе[h,c,0] лъ[h,c,0]	#	толстеть
+хи[h,c,0] гъ[h,c,0]	#	обосноваться
+хийо[h,c,а] кI[h,c,а]	#	печалить
+хийо[h,c,0] лъ[h,c,0]	#	печалиться, грустить
+хис[h,v,о] лIо[h,v,о]	#	1) тесать
+хихило[h,c,а] кI[h,c,а]	#	делать скользким
+хихило[h,c,0] лъ[h,c,0]	#	быть (становиться)
+хи[h,v,а] цо[h,v,а]	#	закончить (завершить) вязание
+хицIиндо[h,c,а] кI[h,c,а]	#	увлажнять, смягчать
+хицIиндо[h,c,0] лъ[h,c,0]	#	увлажняться, смягчаться
+хос[h,v,а] лIо[h,v,а]	#	однокр. чесать что-л.
+хоцIо[h,c,а] кI[h,c,а]	#	делать красным
+хоькI[s,v,аь] кIи[s,v,аь]	#	1) делать впалым 2)
+хоькI[s,c,0] лъи[s,c,0]	#	1) осесть, впасть
+хоь[s,v,оь] хаькъоь[s,v,оь]	#	иметь желание грызть
+хоь[s,c,аь] х[s,c,аь]	#	1) грызть
+ху[h,v,а] лIо[h,v,а]	#	1) пить
+хутIу[h,c,а] кI[h,c,а]	#	щекотать (хаш.)
+хутIу[h,c,0] х[h,c,0]	#	щекотать
+ху[h,v,а] хо[h,v,а]	#	1) перебирать шерсть
+хухлокьа[h,c,0] к[h,c,0]	#	становиться дыбом
+хухлокьа[h,c,а] кI[h,c,а]	#	заставить стать дыбом, ощетиниться
+хуь[s,v,аь] жоь[s,v,аь]	#	1. 1) меняться
+хуь[s,v,оь] лоь[s,v,оь]	#	морщиться (о коже, о бобовых)
+хуьчIуь[s,c,аь] кI[s,c,аь]	#	палить
+хуьчIуь[s,c,0] х[s,c,0]	#	опалиться
+хъар[h,v,о] лIо[h,v,о]	#	1) возиться (заниматься) с ч
+хъахъа[h,v,о] лIо[h,v,о]	#	1) возиться, заниматься ч
+хъахъа[h,l,а] лIол[h,l,а]	#	1) волочить, тащить что-л.
+хъе[h,v,0] хъе[h,v,0]	#	раздвигаться, растопыриваться (о ногах)
+хъихъи[h,v,о] лIо[h,v,о]	#	хохотать, смеяться
+хъо[h,v,о] хъо[h,v,о]	#	1) сохнуть
+хъусо[h,c,а] кI[h,c,а]	#	суживать
+хъусо[h,c,0] лъ[h,c,0]	#	суживаться, сужаться
+ц[h,c,а] аᴴгь[h,c,а]	#	1) дать имя, назвать именем, нарекать
+ци[h,c,0] х[h,c,0]	#	пьянеть
+цо[h,v,а] лIлIо[h,v,а]	#	сосать
+цо[h,v,о] цо[h,v,о]	#	1) промаслиться, пропитаться маслом
+цI[h,v,о] акIо[h,v,о]	#	чувствовать
+цIатIо[h,c,а] кI[h,c,а]	#	1) делать узким (опасным), суживать (о дороге) 2) перен. ограничивать
+цIатIо[h,c,0] лъ[h,c,0]	#	1) быть (становиться) узким, опасным (о тропинке)
+цIиле[h,c,а] ъ[h,c,а]	#	наматывать
+цIи[h,c,0] лъ[h,c,0]	#	радоваться, веселиться
+цIи[h,v,о] лIо[h,v,о]	#	1) радоваться
+цIим[h,v,о] лIо[h,v,о]	#	звякать
+цIиъ[h,v,о] лIо[h,v,о]	#	однокр. 1) скрипеть
+цIодоло[h,c,а] кI[h,c,а]	#	чернить, красить в черный цвет
+цIодоло[h,c,0] лъ[h,c,0]	#	чернеть
+цIудо[h,c,а] кI[h,c,а]	#	1) красить
+цIудо[h,c,0] лъ[h,c,0]	#	краснеть
+ч[h,v,а] ах[h,v,а]	#	писать
+чи[h,v,0] ке[h,v,0]	#	1) грязниться
+чи[h,l,а] кел[h,l,а]	#	1) грязнить, пачкать
+чо[h,v,о] гъао[h,v,о]	#	засыхать
+чо[h,l,а] гъол[h,l,а]	#	запекать
+чоь[s,c,0] хъ[s,c,0]	#	слышать, знать
+чуь[s,c,а] кI[s,c,а]	#	искать, ворошить, рыться
+чIаьй[h,c,а] кI[h,c,а]	#	кривить
+чIаьй[h,c,0] лъ[h,c,0]	#	кривиться
+чI[s,v,0] аьлъ[s,v,0]	#	знать
+чI[s,v,а] аьлIе[s,v,а]	#	1) бросать
+чIаьнаь[h,v,а] гъо[h,v,а]	#	1) бегать, бежать
+чIекIдо[h,c,а] кI[h,c,а]	#	1) гнуть
+чIекIдо[h,c,0] лъ[h,c,0]	#	1) гнуться
+чIе[h,v,0] цIе[h,v,0]	#	1) усыхать; гьаьше чIечIейо шкура усохла 2) быть (стать) сухопарым (худым)
+чIуьгьиндо[h,c,а] кI[h,c,а]	#	принаряжать, украшать
+чIуьгьиндо[h,c,0] лъ[h,c,0]	#	принаряжаться
+чI[s,c,аь] у[s,c,аь]	#	полоскать
+чIоьчIлоь[h,c,0] лъ[h,c,0]	#	1) быть (стать) резвым (шустрым) 2) шевелиться
+ш[h,v,0] аже[h,v,0]	#	удовлетворяться
+шай[h,c,а] х[h,c,а]	#	1) тасовать, мешать 2) перен. беспокоить, взбудораживать
+шей[h,c,а] х[h,c,а]	#	1) тасовать, мешать 2) перен. беспокоить, взбудораживать
+шалдо[h,c,а] кI[h,c,а]	#	разрежать, разреживать
+шалдо[h,c,0] лъ[h,c,0]	#	разредиться
+ш[h,v,0] алIе[h,v,0]	#	подсыхать
+шардо[h,v,а] кI[h,v,а]	#	делать хромым (тляд.)
+шардо[h,v,0] лъ[h,v,0]	#	хромать (тляд.)
+шаьтIе[h,c,а] кI[h,c,а]	#	обнажать
+шаьтIе[h,c,0] лъ[h,c,0]	#	обнажаться
+ше[h,c,0] тI[h,c,0]	#	закрываться
+ше[h,v,0] ше[h,v,0]	#	становиться густым, густеть
+шоь[s,v,аь] шоь[s,v,аь]	#	1) перевязывать
+шоь[s,c,0] ъ[s,c,0]	#	забывать
+шуьшоь[s,c,0] лъ[s,c,0]	#	1) быть (стать) тонким или тоньше, утончаться
+шуьшоьгъаь[s,c,0] к[s,c,0]	#	одеваться налегке
+шуьшоь[s,c,аь] кI[s,c,аь]	#	делать тонким или тоньше, утончать
+эле[h,c,а] кI[h,c,а]	#	1) переставлять, расставлять
+эᴴдда[h,c,0] ак[h,c,0]	#	войти (оказаться загнанным) внутрь
+эᴴдда[h,c,а] акI[h,c,а]	#	1) загнать предмет во что-л. задвигать вглубь
+эᴴдо[h,c,0] к[h,c,0]	#	входить, заходить
+эᴴдо[h,c,а] кI[h,c,а]	#	загонять во внутрь
 
-LEXICON VerbRoot-Sh(2) # глагольная основа с усечением гласного (для императива и инфинитива)
-ни:ни[h] со:с[h]  # сказать
-зо:зо[h] гъ:гъ[h] # находиться
-оь:оь[s] л:л[s] # хватать
-го:го[h] то:т[h] # постелить
-ги:ги[h] тӏ:тӏ[h] # налить
-зу:зу[h] къо:къ[h] # быть
-еᴴ:еᴴ[cl,h] гье:гь[cl,h]	#	открывать
-а:а[cl,h] тӏ:тӏ[cl,h]	#	любить
-оᴴ:оᴴ[cl,h] къе:къ[cl,h]	#	приходить
-аᴴса:аᴴса[cl,h] :[cl,h]	#	мерить
-аьᴴ:аьᴴ[cl,s] хъе:хъ[cl,s]	#	шить
-ега:ега[cl,h] :[cl,h]	#	виднеться
-аьᴴ:аьᴴ[cl,s] че:ч[cl,s]	#	лизать
-а:а[cl,h] гъо:гъ[cl,h]	#	снимать, отнимать
-а:а[cl,h] къо:къ[cl,h]	#	принести
-а:а[cl,h] хъ:хъ[cl,h]	#	происходить, родиться
-аьчӏ:аьчӏ[cl,s] лъ:лъ[cl,s]	#	мерзнуть
-аьᴴше:аьᴴше[cl,h] лъ:лъ[cl,h]	#	быть коротким
-е:е[cl,h] гъ:гъ[cl,h]	#	драться
-егъа:егъа[cl,h] кӏ:кӏ[cl,h]	#	содержать
-и:и[cl,h] къе:къ[cl,h]	#	знать
-и:и[cl,h] къо:къ[cl,h]	#	созревать
-и:и[cl,h] кье:кь[cl,h]	#	убивать
-и:и[cl,h] тӏ:тӏ[cl,h]	#	делиться
-еᴴ:еᴴ[cl,h] йе:й[cl,h]	#	отпустить
-аь:аь[cl,h] кьел:кьел[cl,h]	#	ударить
-иᴴъа:иᴴъа[cl,h] :[cl,h]	#	мокнуть
-иᴴ:иᴴ[cl,h] з:з[cl,h]	#	искать
-иᴴ:иᴴ[cl,h] хъо:хъ[cl,h]	#	закрывать
-иᴴ:иᴴ[cl,h] цо:ц[cl,h]	#	связать
-о:о[cl,h] гъо:гъ[cl,h]	#	кормить
-о:о[cl,h] кӏ:кӏ[cl,h]	#	брать
-о:о[cl,h] лъо:лъ[cl,h]	#	заканчиваться
-о:о[cl,h] х:х[cl,h]	#	держать
-о:о[cl,h] кчи:кч[cl,h]	#	брать
-о:о[cl,h] цӏ:цӏ[cl,h]	#	гнать
-оь:оь[cl,s] шоь:ш[cl,s]	#	жиреть
-оᴴ:оᴴ[cl,h] со:с[cl,h]	#	складывать
-оьᴴ:оьᴴ[cl,s] тӏоь:тӏ[cl,s]	#	копать
-у:у[cl,h] гъо:гъ[cl,h]	#	умереть
-укъ:укъ[cl,h] лъ:лъ[cl,h]	#	расти
-уь:уь[cl,s] к:к[cl,s]	#	рваться
-у:у[cl,h] тӏ:тӏ[cl,h]	#	лечь
-уь:уь[cl,s] чӏ:чӏ[cl,s]	#	резать
-уьᴴ:уьᴴ[cl,s] къоь:къ[cl,s]	#	нагнуться
-уᴴ:уᴴ[cl,h] хо:х[cl,h]	#	резать
-уьᴴ:уьᴴ[cl,s] хъ:хъ[cl,s]	#	есть
-уᴴ:уᴴ[cl,h] цо:ц[cl,h]	#	воровать
-оᴴ:оᴴ[cl,h] къо:къ[cl,h]	#	прийти
-е:е[cl,h] кӏе:кӏ[cl,h]	#	гореть
-ийа:ийа[cl,h] :[cl,h]	#	плакать
-е:е[cl,h] к:к[cl,h]	#	падать/ронять
-оь:оь[cl,s] чоь:ч[cl,s]	#	уходить
-уьчāь:уьчāь[cl,s] хе:х[cl,s]	#	спать
-иᴴ:иᴴ[cl,h] хъо:хъ[cl,h]	#	находить
-иᴴ:иᴴ[cl,h] со:с[cl,h]	#	продаваться
-оги:оги[cl,h] цӏ:цӏ[cl,h]	#	прыгать
-еᴴ:еᴴ[cl,h] хе:х[cl,h]	#	касаться
-е:е[cl,h] че:{ц}[cl,h]	#	останавливаться
-е:е[cl,h] с:с[cl,h]	#	есть
-еᴴ:еᴴ[cl,h] кье:кь[cl,h]	#	идти
-оᴴ:оᴴ[cl,h] со:с[cl,h]	#	рушиться
-еᴴцца:еᴴцца[cl,h] к:к[cl,h]	#	вырываться
-о:о[cl,h] ъ:ъ[cl,h]	#	теряться
-е:е[cl,h] же:{з}[cl,h]	#	нести
-и:и[cl,h] же:{з}[cl,h]	#	побеждать
-аь:аь[cl,s] хе:х[cl,s]	#	рваться
-кӏис:кӏис[h] а:[h]	#	играть
-кӏо:кӏо[h] кӏо:кӏ[h]	#	болеть
-хъо:хъо[h] хъо:хъ[h]	#	сохнуть
-ну:ну[h] ко:к[h]	#	голодать
-гъай:гъай[h] лӏо:лӏ[h]	#	кипеть
-кӏаьй:кӏаьй[s] лӏоь:лӏ[s]	#	поворачиваться
-оьгь:оьгь[s] лӏоь:лӏ[s]	#	кашлять
-гье:гье[h] ле:л[h]	#	вариться
-лъи:лъи[h] цӏе:цӏ[h]	#	одеваться
-гьи:гьи[h] цӏе:цӏ[h]	#	бояться
-гьа:гьа[h] ъо:ъ[h]	#	молоть
-ту:ту[h] хъ:хъ[h]	#	слышать
-низа:низа[h] а:[h]	#	мыть
-ни:ни[h] лӏ:лӏ[h]	#	давать
-лъоᴴва:лъоᴴва[h] а:[h]	#	смеяться
-лала:лала[h] лӏо:лӏ[h]	#	кричать
-кусу:кусу[h] ъ:ъ[h]	#	брить
 
 LEXICON VerbRootInf(2)
 г[h] в[h] # идти
-г[h] й[h] # идти
-г[h] л[h] # класть
-т[h] кӏ[h] # использовать
-г[h] цӏо[h] # появиться
-тӏ[h] тӏ[h] # бросить
-н[h] хъ[h]  # просить
-г[h] хъ[h]	#	быть переполненным
-т[h] хъ[h]	#	заниматься
-г[s] {с}е[s]	#	трогать
-г[h] кӏ[h] # бить
-
-LEXICON VerbRootInf-Sh(2)
-г:г[h] в:в[h] # идти
-г:г[h] й:й[h] # идти
-г:г[h] л:л[h] # класть
-т:т[h] кӏ:кӏ[h] # использовать
-г:г[h] цӏо:цӏ[h] # появиться
-тӏ:тӏ[h] тӏ:тӏ[h] # бросить
-н:н[h] хъ:хъ[h]  # просить
-г:г[h] хъ:хъ[h]	#	быть переполненным
-т:т[h] хъ:хъ[h]	#	заниматься
-г:г[s] с:{с}[s]	#	трогать
-г:г[h] кӏ:кӏ[h] # бить
+г[h,v,0] вацӏо[h,v,0] # искать, смотреть
+г[h,l,c,а] л[h,l,c,а] # класть
+т[h,c,а] кӏ[h,c,а] # использовать
+г[h,v,0] цӏо[h,v,0] # появиться
+тӏ[h,c,а] тӏ[h,c,а] # бросить
+н[h,c,0] хъ[h,c,0]  # просить
+г[h,c,0] хъ[h,c,0]	#	быть переполненным
+т[h,c,0] хъ[h,c,0]	#	заниматься
+г[h,v,0,s] се[h,v,0,s]	#	трогать
+г[h,c,0] кӏ[h,c,0] # бить
+т[h,c,0] с[h,c,0] # идти
+г[h,c,0] гь[h,c,0] # идти
 
 LEXICON AvarBorrowings #infinitives borrowed from Avar that function as a part of a complex predicate, (Comrie et al. 2015) p. 567
 вохзи

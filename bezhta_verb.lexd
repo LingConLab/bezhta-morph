@@ -1,49 +1,60 @@
 PATTERNS
-Verb Quotative? (Question | ConjClitics | PartClitics)? 
-ClassVerb Quotative? (Question | ConjClitics | PartClitics)?
-DoVerb Quotative? (Question | ConjClitics | PartClitics)?
-LookVerb Quotative? (Question | ConjClitics | PartClitics)?
-Aux Quotative? (Question | ConjClitics | PartClitics)?
 AvarBorrowings
 Light
-ShortForms
+Rogative
+PresentForms_h > (Mood[hyp] | Mood[irr] | Converb[prs,h] > Converb[since,h]) (Quotative > ConjClitics)?
+PresentForms_s > (Mood[hyp] | Mood[irr] | Converb[prs,h] > Converb[since,h]) (Quotative > ConjClitics)?
+ImperativeForms_h > Mood[rog] (Quotative > ConjClitics)?
+ImperativeForms_s > Mood[rog] (Quotative > ConjClitics)?
 
-PATTERN DoVerb
-Class Do[inf] | Do[val] Modal? (TAM_cons_h | TAM_vowel_h)
-Class Do[val] Valency_h? Modal? (TAM_cons_h | TAM_vowel_h)
-ClassPl Do[pl] Valency_h? Modal? TAM_cons_h | TAM_vowel_h
+Stem_h Valency? TAM_h | NonFiniteInfl_h  (Quotative > ConjClitics)?
+Stem_s Valency? TAM_s (Quotative > ConjClitics)?
+Stem_h Valency (Past[l,h] | Past[c,h] (Converb[pfv,h] | Mood[hyp] | Mood[irr])?) | (Present[c,h] (Mood[hyp] | Mood[irr] | Converb[prs,h])?) (Quotative > ConjClitics)?
+Stem_s Valency (Past[l,s] | Past[c,s] (Converb[pfv,s] | Mood[hyp] | Mood[irr])?) | (Present[c,s] (Mood[hyp] | Mood[irr] | Converb[prs,s])?) (Quotative > ConjClitics)?
+Aux (Quotative > ConjClitics)?
+DoInfl
 
-PATTERN LookVerb
-Look Valency_h? Modal? (TAM_cons_h | TAM_vowel_h)
+VerbRoot(1)[h,-cl] VerbRoot(2)[h,-cl] [<v>:] Antipassive[h] VerbNumber[h]? Zero Present[v,h] | TAM_h | NonFiniteInfl_h  (Quotative > ConjClitics)?
+VerbRoot(1)[s,-cl] VerbRoot(2)[s,-cl] [<v>:] Antipassive[s] VerbNumber[s]? Zero Present[v,s] | TAM_s  (Quotative > ConjClitics)?
+VerbRoot(1)[h,-cl] VerbRoot(2)[h,-cl] [<v>:] VerbNumber[h] Zero Present[v,h] | TAM_h | NonFiniteInfl_h  (Quotative > ConjClitics)?
+VerbRoot(1)[s,-cl] VerbRoot(2)[s,-cl] [<v>:] VerbNumber[s] Zero Present[v,s] | TAM_s (Quotative > ConjClitics)?
+Class VerbRoot(1)[h,cl] VerbRoot(2)[h,cl] [<v>:] Antipassive[h] Zero Present[v,h] | TAM_h | NonFiniteInfl_h  (Quotative > ConjClitics)?
+ClassPl VerbRoot(1)[h,cl] VerbRoot(2)[h,cl] [<v>:] Antipassive[h]? VerbNumber[h] Zero Present[v,h] | TAM_h | NonFiniteInfl_h  (Quotative > ConjClitics)?
+Class VerbRoot(1)[s,cl] VerbRoot(2)[s,cl] [<v>:] Antipassive[s] Zero Present[s,h] | TAM_s (Quotative > ConjClitics)?
+ClassPl VerbRoot(1)[s,cl] VerbRoot(2)[s,cl] [<v>:] Antipassive[s]? VerbNumber[s] Zero Present[v,s] | TAM_s   (Quotative > ConjClitics)?
 
-# ---- h-paradigm (back vowels) -----
+PATTERN DoInfl
+(Class DoRoot[inf]) | (ClassPl DoRoot[pl] [<pl>:]) [<v>:] (Infinitive[h] (Mood[dub] | Participle[fut] | Converb[inf])?) | Mood[imp,а]
+Class DoRoot[t] | DoRoot[inf] [<v>:] Present[v,h] | Past[v,h]
+Class DoRoot[nfin] NonFiniteInfl_h | Participle[prs,h,-obl] | Participle[obl] (Infl | LocativeInflection)
+ClassPl DoRoot[pl] NonFiniteInfl_h | Participle[prs,h,-obl] | Present[c,h] | Past[c,h]
 
-PATTERN Imperative_h
-Mood[imp,h] 
-Mood[imp,h] Mood[rog]
-Mood[imp,h] > ([:а]? Mood[prmI,h]) > [<prmII>:ъ]
-Mood[prmIII,h]
+PATTERN Valency
+Causative[a] > Causative[b] 
+Causative[b] 
 
-PATTERN Valency_h
-Causative[a] Causative[b]
-Causative
+PATTERN Stem_h
+VerbRoot(1)[h,-cl] Antipassive[h]? VerbNumber[h]? VerbRoot(2)[h,-cl] [<v>:] Zero
+Class | ClassPl VerbRoot(1)[h,cl] Antipassive[h]? VerbRoot(2)[h,cl] [<v>:] Zero
+ClassPl VerbRoot(1)[h,cl] Antipassive[h]? VerbNumber VerbRoot(2)[h,cl] [<v>:] Zero
+Class | ClassPl VerbRoot(1)[h,cl] Antipassive[h]? VerbRoot(2)[h,cl] [<v>:] Zero
+VerbRootInf(1)[h] ClassInfix[h] Antipassive[h]? VerbNumber[h]? VerbRootInf(2)[h] [<v>:] Zero
 
-PATTERN TAM_vowel_h
-Past[h] | Present[h] > (Mood[hyp] | Mood[irr])
+PATTERN Stem_s
+VerbRoot(1)[s,-cl] Antipassive[s]? VerbNumber[s]? VerbRoot(2)[s,-cl] [<v>:] Zero
+Class | ClassPl VerbRoot(1)[s,cl] Antipassive[s]? VerbRoot(2)[s,cl] [<v>:] Zero
+ClassPl VerbRoot(1)[s,cl] Antipassive[s]? VerbNumber VerbRoot(2)[s,cl] [<v>:] Zero
+Class | ClassPl VerbRoot(1)[s,cl] Antipassive[s]? VerbRoot(2)[s,cl] [<v>:] Zero
+VerbRootInf(1)[s] ClassInfix[s] Antipassive[s]? VerbNumber[s]? VerbRootInf(2)[s] [<v>:] Zero
+
+PATTERN TAM_h
+Past[h] > Mood[hyp] | Mood[irr]
 Negation[neg,h]? Mood[cond] > ([<invc>:л] | [<cnc>:на])
 Participle[prs,h]
-Converb[pfv,h]
-Converb[simul,h] | Converb[ant,h] | Converb[act,h]
-Essive[ad]
-Converb[how,h] > Converb[why,h]
-Present[h] Converb[prs,h] > Converb[since,h]
 Past[h] Converb[pfv,h] 
 Past[h] Masdar[pst]
 Masdar[st]
-
-PATTERN TAM_cons_h
-Infinitive[h] > Mood[dub] # dubitative mood
-Imperative_h
+Infinitive[h] > Mood[dub]
 Future[h] > Mood[hyp]
 Plusquamperfect[h]
 Mood[proh]
@@ -51,36 +62,36 @@ Mood[opt]
 Mood[opt.neg]
 Infinitive[h] Participle[fut]
 Infinitive[h] Converb[inf]
-Converb[after,h] | (Converb[before,h] > Translative)
-Converb[place,h] > (Translative | Lative | Ablative)
-Converb[goal]
-Masdar[st]
-#negation
+Infinitive[h] Converb[goal]
+Participle[pst,obl] Infl | LocativeInflection
+# negation
 Negation[pst,h]
 Negation[prs,h] > Converb[prs,h]
 Negation[neg,h] Present[h] Converb[prs,h] > Converb[since,h]
 Negation[cvb]
 Negation[imp,h]
 Negation[neg] Participle[prs,h]
-Converb[before,h] Negation[loc] Translative
 
-# ---- s-paradigm (front vowels) -----
-PATTERN TAM_vowel_s
-Past[s] | Present[s] > (Mood[hyp] | Mood[irr])
+PATTERN NonFiniteInfl_h
+Converb[pfv,h]
+Converb[simul,h] | Converb[ant,h]
+Converb[how,h] > Converb[why,h]
+Converb[after,h] | (Converb[before,h] > Translative)
+Converb[place,h] > (Translative | Lative | Ablative)
+Converb[before,h] Negation[loc] Translative
+Masdar[st]
+
+PATTERN TAM_s
+Past[s] > Mood[hyp] | Mood[irr]
 Negation[neg,s]? Mood[cond] > ([<invc>:л] | [<cnc>:на])
 Participle[prs,s]
 Converb[pfv,s]
-Converb[simul,s] | Converb[ant,s] | Converb[act,s]
-Essive[ad]
+Converb[simul,s] | Converb[ant,s]
 Converb[how,s] > Converb[why,s]
-Present[s] Converb[prs,s] > Converb[since,s]
 Past[s] Converb[pfv,s] 
 Past[s] Masdar[pst]
 Masdar[st]
-
-PATTERN TAM_cons_s
-Infinitive[s] > Mood[dub] # dubitative mood
-Imperative_h
+Infinitive[s] > Mood[dub]
 Future[s] > Mood[hyp]
 Plusquamperfect[s]
 Mood[proh]
@@ -92,7 +103,7 @@ Converb[after,s] | (Converb[before,s] > Translative)
 Converb[place,s] > (Translative | Lative | Ablative)
 Converb[goal]
 Masdar[st]
-#negation
+# negation
 Negation[pst,s]
 Negation[prs,s] > Converb[prs,s]
 Negation[neg,s] Present[s] Converb[prs,s] > Converb[since,s]
@@ -101,52 +112,80 @@ Negation[imp,s]
 Negation[neg] Participle[prs,s]
 Converb[before,s] Negation[loc] Translative
 
-PATTERN Imperative_s
-Mood[imp,s] > Mood[rog]
-Mood[imp,s] > ([:а]? Mood[prmI,s]) > [<prmII>:ъ]
-Mood[prmIII,s]
+PATTERN PresentForms_h
+# stems without umlaut
+VerbRoot(1)[h,v,-cl] Antipassive[h]? VerbNumber[h]? VerbRoot(2)[h,-cl,v] [<v>:] Present[h,v]
+VerbRoot(1)[h,c,-cl] Antipassive[h]? VerbNumber[h]? VerbRoot(2)[h,-cl,c] [<v>:] Present[h,c]
+VerbRoot(1)[h,l,-cl] Antipassive[h]? VerbNumber[h]? VerbRoot(2)[h,-cl,l] [<v>:] Present[h,l]
 
-PATTERN Valency_s
-Antipassive[s]
-Causative > Antipassive[s]
+# gender-agreeing
+Class | ClassPl VerbRoot(1)[h,v,cl] Antipassive[h]? VerbRoot(2)[h,cl,v] [<v>:] Present[h,v]
+ClassPl VerbRoot(1)[h,v,cl] Antipassive[h]? VerbNumber VerbRoot(2)[h,cl,v] [<v>:] Present[h,v]
+Class | ClassPl VerbRoot(1)[h,c,cl] Antipassive[h]? VerbRoot(2)[h,cl,c] [<v>:] Present[h,c]
+ClassPl VerbRoot(1)[h,c,cl] Antipassive[h]? VerbNumber VerbRoot(2)[h,cl,c] [<v>:] Present[h,c]
+Class | ClassPl VerbRoot(1)[h,l,cl] Antipassive[h]? VerbRoot(2)[h,cl,l] [<v>:] Present[h,l]
+ClassPl VerbRoot(1)[h,l,cl] Antipassive[h]? VerbNumber VerbRoot(2)[h,cl,l] [<v>:] Present[h,l]
 
-PATTERN Verb # no gender agreement
-VerbRoot(1)[-cl,h] Antipassive[h]? VerbNumberInfix[h]? VerbRoot(2)[-cl,h] Modal? TAM_vowel_h
-VerbRoot-Sh(1)[-cl,h] Antipassive[h]? VerbNumberInfix[h]? VerbRoot-Sh(2)[-cl,h] Modal? TAM_cons_h
-VerbRoot(1)[-cl,h] Antipassive[h]? VerbNumberInfix[h]? VerbRoot(2)[-cl,h] Valency_h Modal? (TAM_vowel_h | TAM_cons_h)
+VerbRootInf(1)[h,v] ClassInfix[h] Antipassive[h]? VerbNumber[h]? VerbRootInf(2)[h,v] [<v>:] Present[h,v]
+VerbRootInf(1)[h,c] ClassInfix[h] Antipassive[h]? VerbNumber[h]? VerbRootInf(2)[h,c] [<v>:] Present[h,c]
+VerbRootInf(1)[h,l] ClassInfix[h] Antipassive[h]? VerbNumber[h]? VerbRootInf(2)[h,l] [<v>:] Present[h,l]
 
-VerbRoot(1)[-cl,s] Antipassive[s]? VerbNumberInfix[s]? VerbRoot(2)[-cl,s] Modal? TAM_vowel_s
-VerbRoot-Sh(1)[-cl,s] Antipassive[s]? VerbNumberInfix[s]? VerbRoot-Sh(2)[-cl,s] Modal? TAM_cons_s
-VerbRoot(1)[-cl,s] Antipassive[s]? VerbNumberInfix[s]? VerbRoot(2)[-cl,s] Valency_s Modal? (TAM_vowel_s | TAM_cons_s)
+PATTERN PresentForms_s
+# stems with umlaut
+VerbRoot(1)[s,v,-cl] Antipassive[s]? VerbNumber[s]? VerbRoot(2)[s,-cl,v] [<v>:] Present[s,v]
+VerbRoot(1)[s,c,-cl] Antipassive[s]? VerbNumber[s]? VerbRoot(2)[s,-cl,c] [<v>:] Present[s,c]
+VerbRoot(1)[s,l,-cl] Antipassive[s]? VerbNumber[s]? VerbRoot(2)[s,-cl,l] [<v>:] Present[s,l]
+# gender-agreeing with umlaut
+Class | ClassPl VerbRoot(1)[s,v,cl] Antipassive[s]? VerbRoot(2)[s,cl,v] [<v>:] Present[s,v]
+Class VerbRoot(1)[s,v,cl] Antipassive[s]? VerbNumber VerbRoot(2)[s,cl,v] [<v>:] Present[s,v]
+Class | ClassPl VerbRoot(1)[s,c,cl] Antipassive[s]? VerbRoot(2)[s,cl,c] [<v>:] Present[s,c]
+ClassPl VerbRoot(1)[s,c,cl] Antipassive[s]? VerbNumber VerbRoot(2)[s,cl,c] [<v>:] Present[s,c]
+Class | ClassPl VerbRoot(1)[s,l,cl] Antipassive[s]? VerbRoot(2)[s,cl,l] [<v>:] Present[s,l]
+ClassPl VerbRoot(1)[s,l,cl] Antipassive[s]? VerbNumber VerbRoot(2)[s,cl,l] [<v>:] Present[s,l]
 
-PATTERN ClassVerb
+VerbRootInf(1)[s,v] ClassInfix[s] Antipassive[s]? VerbNumber[s]? VerbRootInf(2)[s,v] [<v>:] Present[s,v]
+VerbRootInf(1)[s,c] ClassInfix[s] Antipassive[s]? VerbNumber[s]? VerbRootInf(2)[s,c] [<v>:] Present[s,c]
+VerbRootInf(1)[s,l] ClassInfix[s] Antipassive[s]? VerbNumber[s]? VerbRootInf(2)[s,l] [<v>:] Present[s,l]
 
-VerbRootInf(1)[h] ClassInfix[h] Antipassive[h]? VerbNumberInfix[h]? VerbRootInf(2)[h] Modal? TAM_vowel_h
-VerbRootInf-Sh(1)[h] ClassInfix[h] Antipassive[h]? VerbNumberInfix[h]? VerbRootInf-Sh(2)[h] Modal? TAM_cons_h
-VerbRootInf(1)[h] ClassInfix[h] Antipassive[h]? VerbNumberInfix[h]? VerbRootInf(2)[h] Valency_h Modal? (TAM_vowel_h | TAM_cons_h)
+PATTERN Permissive_h
+Mood[prmI,h] > [<prmII>:ъ]
 
-VerbRootInf(1)[s] ClassInfix[s] Antipassive[s]? VerbNumberInfix[s]? VerbRootInf(2)[s] Modal? TAM_vowel_s
-VerbRootInf-Sh(1)[s] ClassInfix[s] Antipassive[s]? VerbNumberInfix[s]? VerbRootInf-Sh(2)[s] Modal? TAM_cons_s
-VerbRootInf(1)[s] ClassInfix[s] Antipassive[s]? VerbNumberInfix[s]? VerbRootInf(2)[s] Valency_s Modal? (TAM_vowel_s | TAM_cons_s)
+PATTERN Permissive_s
+Mood[prmI,s] > [<prmII>:ъ]
+
+PATTERN ImperativeForms_h
+VerbRoot(1)[h,а,-cl] Antipassive[h]? VerbNumber[h]? VerbRoot(2)[h,-cl,а] [<v>:] Zero Mood[imp,h,а](Mood[prmI,h] > [<prmII>:ъ])? 
+VerbRoot(1)[h,0,-cl] Antipassive[h]? VerbNumber[h]? VerbRoot(2)[h,-cl,0] [<v>:] Zero Mood[imp,h,0] ([:а] Mood[prmI,h] > [<prmII>:ъ])? 
+VerbRoot(1)[h,и,-cl] Antipassive[h]? VerbNumber[h]? VerbRoot(2)[h,-cl,и] [<v>:] Zero Mood[imp,h,и]
+# gender-agreeing
+Class | ClassPl VerbRoot(1)[h,а,cl] Antipassive[h]? VerbRoot(2)[h,cl,а] [<v>:] Zero Mood[imp,h,а](Mood[prmI,h] > [<prmII>:ъ])? 
+ClassPl VerbRoot(1)[h,а,cl] Antipassive[h]? VerbNumber VerbRoot(2)[h,cl,а] [<v>:] Zero Mood[imp,h,а] (Mood[prmI,h] > [<prmII>:ъ])? 
+Class | ClassPl VerbRoot(1)[h,0,cl] Antipassive[h]? VerbRoot(2)[h,cl,0] [<v>:] Zero Mood[imp,h,0] ([:а] Mood[prmI,h] > [<prmII>:ъ])? 
+ClassPl VerbRoot(1)[h,0,cl] Antipassive[h]? VerbNumber VerbRoot(2)[h,cl,0] [<v>:] Zero Mood[imp,h,0] ([:а] Mood[prmI,h] > [<prmII>:ъ])? 
+Class | ClassPl VerbRoot(1)[h,и,cl] Antipassive[h]? VerbRoot(2)[h,cl,и] [<v>:]  Zero (Mood[imp,h,и] | ([<imp>:] [:а] Mood[prmI,h] > [<prmII>:ъ]))
+ClassPl VerbRoot(1)[h,и,cl] Antipassive[h]? VerbNumber VerbRoot(2)[h,cl,и] [<v>:]  Zero (Mood[imp,h,и] | ([<imp>:] [:а] Mood[prmI,h] > [<prmII>:ъ]))
+
+VerbRootInf(1)[h,а] ClassInfix[h] Antipassive[h]? VerbNumber[h]? VerbRootInf(2)[h,а] [<v>:] Zero Mood[imp,h,а](Mood[prmI,h] > [<prmII>:ъ])?
+VerbRootInf(1)[h,0] ClassInfix[h] Antipassive[h]? VerbNumber[h]? VerbRootInf(2)[h,0] [<v>:] Zero Mood[imp,h,0](Mood[prmI,h] > [<prmII>:ъ])?
+
+PATTERN ImperativeForms_s
+# stems with umlaut
+VerbRoot(1)[s,аь,-cl] Antipassive[s]? VerbNumber[s]? VerbRoot(2)[s,-cl,аь] [<v>:] Zero Mood[imp,h,аь] (Mood[prmI,s] > [<prmII>:ъ])? 
+VerbRoot(1)[s,0,-cl] Antipassive[s]? VerbNumber[s]? VerbRoot(2)[s,-cl,0] [<v>:] Zero Mood[imp,h,0] ([:аь] Mood[prmI,s] > [<prmII>:ъ])? 
+VerbRoot(1)[s,и,-cl] Antipassive[s]? VerbNumber[s]? VerbRoot(2)[s,-cl,и] [<v>:] Zero Mood[imp,h,и] (Mood[imp,s,и] | ([<imp>:] [:аь] Mood[prmI,s] > [<prmII>:ъ]))
+# gender-agreeing with umlaut
+Class | ClassPl VerbRoot(1)[s,аь,cl] Antipassive[s]? VerbRoot(2)[s,cl,аь] [<v>:] Zero Mood[imp,s,аь] (Mood[prmI,s] > [<prmII>:ъ])?
+Class VerbRoot(1)[s,аь,cl] Antipassive[s]? VerbNumber VerbRoot(2)[s,cl,аь] [<v>:] Zero Mood[imp,s,аь] (Mood[prmI,s] > [<prmII>:ъ])?
+Class | ClassPl VerbRoot(1)[s,0,cl] Antipassive[s]? VerbRoot(2)[s,cl,0] [<v>:] Zero Mood[imp,s,0] ([<imp>:] [:аь] Mood[prmI,s] > [<prmII>:ъ])? 
+ClassPl VerbRoot(1)[s,0,cl] Antipassive[s]? VerbNumber VerbRoot(2)[s,cl,c] [<v>:] Zero Mood[imp,s,0] ([<imp>:] [:аь] Mood[prmI,s] > [<prmII>:ъ])? 
+Class | ClassPl VerbRoot(1)[s,и,cl] Antipassive[s]? VerbRoot(2)[s,cl,и] [<v>:] Zero Mood[imp,s,и] (Mood[imp,s,и] | ([<imp>:] [:аь] Mood[prmI,s] > [<prmII>:ъ]))
+ClassPl VerbRoot(1)[s,и,cl] Antipassive[s]? VerbNumber VerbRoot(2)[s,cl,и] [<v>:] Zero Mood[imp,s,и] (Mood[imp,s,и] | ([<imp>:] [:аь] Mood[prmI,s] > [<prmII>:ъ]))
+
+VerbRootInf(1)[s,а] ClassInfix[s] Antipassive[s]? VerbNumber[s]? VerbRootInf(2)[s,а] [<v>:] Zero Mood[imp,s,а](Mood[prmI,s] > [<prmII>:ъ])?
+VerbRootInf(1)[s,0] ClassInfix[s] Antipassive[s]? VerbNumber[s]? VerbRootInf(2)[s,0] [<v>:] Zero Mood[imp,s,0](Mood[prmI,s] > [<prmII>:ъ])?
 
 
-Class VerbRoot(1)[cl,h] Antipassive[h]? VerbRoot(2)[cl,h] Modal? TAM_vowel_h
-Class VerbRoot-Sh(1)[cl,h] Antipassive[h]? VerbRoot-Sh(2)[cl,h] Modal? TAM_cons_h
-Class VerbRoot(1)[cl,h] Antipassive[h]? VerbRoot(2)[cl,h] Valency_h Modal? (TAM_vowel_h | TAM_cons_h)
-
-Class VerbRoot(1)[cl,s] Antipassive[s]? VerbRoot(2)[cl,s] Modal? TAM_vowel_s
-Class VerbRoot-Sh(1)[cl,s] Antipassive[s]? VerbRoot-Sh(2)[cl,s] Modal? TAM_cons_s
-Class VerbRoot(1)[cl,s] Antipassive[s]? VerbRoot(2)[cl,s] Valency_s Modal? (TAM_vowel_s | TAM_cons_s)
-
-ClassPl VerbRoot(1)[cl,h] Antipassive[h]? VerbNumberInfix[h] VerbRoot(2)[cl,h] Modal? TAM_vowel_h
-ClassPl VerbRoot-Sh(1)[cl,h] Antipassive[h]? VerbNumberInfix[h] VerbRoot-Sh(2)[cl,h] Modal? TAM_cons_h
-ClassPl VerbRoot(1)[cl,h] Antipassive[h]? VerbNumberInfix[h] VerbRoot(2)[cl,h] Valency_h Modal? (TAM_vowel_s | TAM_cons_s)
-
-ClassPl VerbRoot(1)[cl,s] Antipassive[s]? VerbNumberInfix[s] VerbRoot(2)[cl,s] Modal? TAM_vowel_s
-ClassPl VerbRoot-Sh(1)[cl,s] Antipassive[s]? VerbNumberInfix[s] VerbRoot-Sh(2)[cl,s] Modal? TAM_cons_s
-ClassPl VerbRoot(1)[cl,s] Antipassive[s]? VerbNumberInfix[s] VerbRoot(2)[cl,s] Valency_s Modal? (TAM_vowel_s | TAM_cons_s)
-
-LEXICON VerbNumberInfix 
+LEXICON VerbNumber 
 <pl>:а[а,h]
 <pl>:ба[ба,h]
 <pl>:ва[ва,h]
@@ -155,12 +194,15 @@ LEXICON VerbNumberInfix
 <pl>:баь[баь,s]
 <pl>:ваь[ваь,s]
 
+LEXICON Zero # zero morpheme for handling vowel hiatus
+:{O}
+
 LEXICON ClassInfix
-<I>:о[h]
-<II>:и[h,s]
-<III/IV>:у[h]
-<I>:оь[s]
-<III/IV>:уь[s]
+<m>:о[h]
+<f>:и[h,s]
+<nh>:у[h]
+<m>:оь[s]
+<nh>:уь[s]
 
 LEXICON Causative 
 <caus>:{L}л[a]
@@ -176,7 +218,6 @@ LEXICON Antipassive
 <antip>:а[h]
 <antip>:аь[s]
 <antip>:йа[h]
-<antip>:йаь[s]
 
 #---- Tense ----
 LEXICON Past 
@@ -202,6 +243,7 @@ LEXICON Negation
 LEXICON Present
 <prs>:ца[l,c,h]
 <prs>:чаь[l,c,s]
+<prs>:ча[l,c,s]
 <prs>:с[v,s,h]
 <prs>:ш[v,s,h]
 
@@ -216,26 +258,21 @@ LEXICON Plusquamperfect
 #---- Mood ----
 
 LEXICON Mood
-<imp>:а[imp,h]
-<imp>:аь[imp,s]
-<imp>:[imp,h,s]
-<imp>:и[imp,h,s]
-<imp>:е[imp,h,s]
-<imp>:о[imp,h]
-<imp>:оь[imp,s]
+<imp>:а[imp,h,а]
+<imp>:аь[imp,s,аь]
+<imp>:[imp,h,s,0]
+<imp>:и[imp,h,s,и]
 <proh>:āкъа[proh]
 <opt>:акъос[opt]
 <opt>:къос[opt]
 <neg.opt>:акъаъас[opt.neg]
 <neg.opt>:къаъас[opt.neg]
 <rog>:лō[rog]
-<rog>:ловале[rog]
-<rog>:лоало[rog]
 <prmI>:ла[prmI,h]
 <prmI>:лаь[prmI,s]
 <prmII>:ъ[prmII]
 <prmIII>:алā[prmIII,h]
-<prmIII>:аьлā[prmIII,s]
+<prmIII>:аьлāь[prmIII,s]
 <cond>:да[cond]
 <irr>:къодā[irr]
 <dub>:лā[dub]
@@ -243,12 +280,15 @@ LEXICON Mood
 <dub>:лаъ[dub] # "частица хезитации"
 <hyp>:ле[hyp]
 
+LEXICON Rogative
+ало<rog><f>:ало
+вале<rog><m>:вале
+
 LEXICON Modal
 <pot>:йлъ
 <pot>:лъ
 <pot>:йцӏ
 <pot>:йчӏ
-<vol>:акъ
 <vol>:къа
 <vol>:къо
 
@@ -264,8 +304,12 @@ LEXICON Masdar
 
 LEXICON Participle
 <prs.ptsp>:цас[h,prs]
+<prs.ptsp><obl>:цала[h,prs,obl]
 <prs.ptsp>:чаьш[s,prs]
 <pst.ptsp>:{L}йо[pst,h,s]
+<pst.ptsp><obl>:{L}йа[pst,h,s,obl]
+<pst.ptsp><obl>:ва[pst,h,s,obl]
+<pst.ptsp><obl>:ла[pst,h,s,obl]
 <fut.ptsp>:лъийо[fut,h,s]
 
 LEXICON Converb
@@ -281,14 +325,8 @@ LEXICON Converb
 <cvb>:лъегьна[inf,h,s]
 <since.cvb>:с[since,h]
 <since.cvb>:ш[since,s]
-<lim.cvb>:ца[lim,h]
-<lim.cvb>:ица[lim,h]
-<lim.cvb>:чаь[lim,s]
-<lim.cvb>:ичаь[lim,s]
-<cvb>:ваъ[act,h,s]
-<cvb>:ийаъ[act,h,s]
-<cvb>:йаъ[act,h,s]
-<cvb>:лаъ[act,h,s]
+<lim.cvb>:{L}ца[lim,h]
+<lim.cvb>:{L}чаь[lim,s]
 <cvb>:гъа[how,h,s]
 <cvb>:дāл[why,h,s]
 <cvb>:āцо[place,h]

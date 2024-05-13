@@ -24,8 +24,8 @@ Reciprocal
 
 #----DEMONSTRATIVES-----
 PATTERN Demonstrative
-Demonstratives[1,4] Proximity[1,4] [<abs>:]
-Demonstratives[2,3] Proximity[2,3] [<abs>:]
+Demonstratives[1,4] Proximity[1,4] 
+Demonstratives[2,3] Proximity[2,3] 
 Demonstratives[1,4] Proximity[1,4] (Essive Directive? (Lative|Ablative|Translative)?)
 Demonstratives[1,4] Proximity[1,4] Infl[gen2] Essive (Lative|Ablative)? # "местоименные наречия"
 Demonstratives[1,4] Proximity[1,4] Essive Infl[gen2] (Lative|Ablative)?
@@ -37,6 +37,9 @@ Demonstratives-Obl Infl
 Demonstratives-Plural-Obl Infl
 Demonstratives[1,4] DemonstrativeAdv
 Demonstratives[g] [<h><part>:на] | [<nh><part>:ла]
+PronAdjectives[as] [<adj>:ийо] | ([<adj><obl>:ийа] Infl)
+Demonstratives[1,4] Proximity[1,4] [<conj>:ла] [<as>:с]
+Demonstratives[2,3] Proximity[2,3] [<conj>:ла] [<as>:с]
 
 #----INTERROGATIVES-----
 PATTERN Interrogative
@@ -104,7 +107,7 @@ LEXICON PersonalPronoun
 ми<pron><obl><genI>:дибо[2sg]
 ми<pron><obl>:дибо[gen2]
 ми<pron><obl>:ду[dat]
-ми<pron><obl>:дӯ[ins,loc]
+ми<pron><obl>:дȳ[ins,loc]
 
 иле<pron>:иле[abs,erg] #мы
 иле<pron><obl>:ило[gen,dat,ins]
@@ -116,6 +119,7 @@ LEXICON PersonalPronoun
 LEXICON Demonstratives
 гьу<dem>:гьу[1,4,g] 
 вагь<dem>:вагь[1,2,3,4]
+вагьа<dem>:вагьа[1,2,3,4]
 гьо<dem>:гьо[2,3]
 
 LEXICON DemonstrativeAdv
@@ -124,84 +128,66 @@ LEXICON DemonstrativeAdv
 <dist><adv>:гā
 
 LEXICON Proximity
-<prox.1/4>:ди[1,4] # близость к говорящему
-<med.1/4>:ли[1,4] # близость к слушающему
-<dist.1/4>:ги[1,4] # дальность
-<prox.2/3>:до[2,3] # близость к говорящему
-<med.2/3>:ло[2,3] # близость к слушающему
-<dist.2/3>:го[2,3] # дальность
+<prox><I/IV>:ди[1,4] # близость к говорящему
+<med><I/IV>:ли[1,4] # близость к слушающему
+<dist><I/IV>:ги[1,4] # дальность
+<prox><II/III>:до[2,3] # близость к говорящему
+<med><II/III>:ло[2,3] # близость к слушающему
+<dist><II/III>:го[2,3] # дальность
 
 LEXICON Demonstratives-Obl
-гьу<dem><prox.1/4><obl>:гьоцо
-гьу<dem><med.1/4><obl>:гьолцо
-гьу<dem><dist.1/4><obl>:гьогцо
-гьо<dem><prox.2/3><obl>:гьолӏо
-гьо<dem><med.2/3><obl>:гьоллъо
-гьо<dem><med.2/3><obl>:гьолълъо
-гьо<dem><dist.2/3><obl>:гьоглӏо
-вагь<dem><prox.1/4><obl>:вагьадцо
-вагь<dem><prox.1/4><obl>:вагьацо
-вагь<dem><med.1/4><obl>:вагьалцо
-вагь<dem><dist.1/4><obl>:вагьагцо
-вагь<dem><prox.2/3><obl>:вагьадлӏо
-вагь<dem><prox.2/3><obl>:вагьалӏо
-вагь<dem><med.2/3><obl>:вагьаллъо
-вагь<dem><med.2/3><obl>:вагьалълъо
-вагь<dem><dist.2/3><obl>:вагьаглӏо
+гьу<dem><prox><I/IV><obl>:гьоцо
+гьу<dem><med><I/IV><obl>:гьолцо
+гьу<dem><dist><I/IV><obl>:гьогцо
+гьо<dem><prox><II/III><obl>:гьолӏо
+гьо<dem><med><II/III><obl>:гьоллъо
+гьо<dem><med><II/III><obl>:гьолълъо
+гьо<dem><dist><II/III><obl>:гьоглӏо
+вагь<dem><prox><I/IV><obl>:вагьадцо
+вагь<dem><prox><I/IV><obl>:вагьацо
+вагь<dem><med><I/IV><obl>:вагьалцо
+вагь<dem><dist><I/IV><obl>:вагьагцо
+вагь<dem><prox><II/III><obl>:вагьадлӏо
+вагь<dem><prox><II/III><obl>:вагьалӏо
+вагь<dem><med><II/III><obl>:вагьаллъо
+вагь<dem><med><II/III><obl>:вагьалълъо
+вагь<dem><dist><II/III><obl>:вагьаглӏо
 
 LEXICON Demonstratives-Plural-Abs
-гьу<dem><prox.1/4><pl>:гьоддōл
-гьу<dem><med.1/4><pl>:гьоллōл
-гьу<dem><dist.1/4><pl>:гьоггōл
-вагь<dem><prox.1/4><pl>:вагьаддōл
-вагь<dem><med.1/4><pl>:вагьаллōл
-вагь<dem><dist.1/4><pl>:вагьаггōл
-гьо<dem><prox.2/3><pl>:гьоддōл
-гьо<dem><med.2/3><pl>:гьоллōл
-гьо<dem><dist.2/3><pl>:гьоггōл
-вагь<dem><prox.2/3><pl>:вагьаддōл
-вагь<dem><med.2/3>:вагьаллōл
-вагь<dem><prox.2/3>:вагьаггōл
+гьу<dem><prox><I/IV><pl>:гьоддōл
+гьу<dem><med><I/IV><pl>:гьоллōл
+гьу<dem><dist><I/IV><pl>:гьоггōл
+вагь<dem><prox><I/IV><pl>:вагьаддōл
+вагь<dem><med><I/IV><pl>:вагьаллōл
+вагь<dem><dist><I/IV><pl>:вагьаггōл
+гьо<dem><prox><II/III><pl>:гьоддōл
+гьо<dem><med><II/III><pl>:гьоллōл
+гьо<dem><dist><II/III><pl>:гьоггōл
+вагь<dem><prox><II/III><pl>:вагьаддōл
+вагь<dem><med><II/III>:вагьаллōл
+вагь<dem><prox><II/III>:вагьаггōл
 
 LEXICON Demonstratives-Plural-Obl
-гьу<dem><prox.1/4><obl.pl>:гьодло
-гьу<dem><med.1/4><obl.pl>:гьолло
-гьу<dem><dist.1/4><obl.pl>:гьогло
-вагь<dem><prox.1/4><obl.pl>:вагьадло
-вагь<dem><med.1/4><obl.pl>:вагьалло
-вагь<dem><dist.1/4><obl.pl>:вагьагло
-гьо<dem><prox.2/3><obl.pl>:гьодло
-гьо<dem><med.2/3><obl.pl>:гьолло
-гьо<dem><dist.2/3><obl.pl>:гьогло
-вагь<dem><prox.2/3><obl.pl>:вагьадло
-вагь<dem><med.2/3><obl.pl>:вагьалло
-вагь<dem><prox.2/3><obl.pl>:вагьагло
+гьу<dem><prox><I/IV><<obl.pl>:гьодло
+гьу<dem><med><I/IV><obl.pl>:гьолло
+гьу<dem><dist><I/IV><obl.pl>:гьогло
+вагь<dem><prox><I/IV><<obl.pl>:вагьадло
+вагь<dem><med><I/IV><obl.pl>:вагьалло
+вагь<dem><dist><I/IV><obl.pl>:вагьагло
+гьо<dem><prox><II/III><obl.pl>:гьодло
+гьо<dem><med><II/III><obl.pl>:гьолло
+гьо<dem><dist><II/III><obl.pl>:гьогло
+вагь<dem><prox><II/III><obl.pl>:вагьадло
+вагь<dem><med><II/III><obl.pl>:вагьалло
+вагь<dem><prox><II/III><obl.pl>:вагьагло
 
 LEXICON PronAdjectives 
-гьуддийо # вот такой, как этот, невидимый
-вагьаддийо # вот такой, как этот, видимый
-гьуллийо # вот такой, как этот, невидимый
-вагьаллийо # вот такой, как этот, видимый
-гьуггийо # вот такой, как тот, невидимый
-вагьаггийо # вот такой, как тот, видимый
-гьодолас # такой, как столько
-вагьдолас # такой, как столько
-вагьадолас # такой, как столько
-гьололас  # такой, как столько
-вагьлолас # такой, как столько
-вагьалолас # такой, как столько
-гьоголас # такой, как столько
-вагьголас # такой, как столько
-вагьаголас # такой, как столько
-гьодола # столько
-вагьдола # столько
-вагьаддола # столько
-гьолола # столько
-вагьлола # столько
-вагьаллола # столько
-гьогола # столько
-вагьгола # столько
-вагьаггола # столько
+гьу<dem><prox><I/IV>:гьудд[as] # вот такой, как этот, невидимый
+вагь<dem><prox><I/IV>:вагьадд[as] # вот такой, как этот, видимый
+гьу<dem><med><I/IV>:гьулл[as] # вот такой, как этот, невидимый
+вагь<dem><med><I/IV>:вагьалл[as] # вот такой, как этот, видимый
+гьу<dem><dist><I/IV>:гьугг[as] # вот такой, как тот, невидимый
+вагь<dem><dist><I/IV>:вагьагг[as] # вот такой, как тот, видимый
 
 LEXICON Interrogatives
 сукӏо<pron>:сукӏо[who] #кто
@@ -282,6 +268,7 @@ LEXICON UniversalRoot
 гāьгьийо<pron>:гāьгьийо # все
 гаьгьийо<pron>:гаьгьийо # все
 къацӏцӏо<pron>:къацӏцӏо # все
+къацӏцӏо<pron>:къацӏцӏā # все
 
 LEXICON UniversalRoot-Obl
 гāьгьийо<pron><obl>:гāьгьийа

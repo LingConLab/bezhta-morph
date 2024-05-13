@@ -1,3 +1,8 @@
+PATTERN LocativeInflection
+Essive Directive? (Lative|Ablative|Translative)?
+Infl[gen2] Essive (Lative|Ablative)?
+Essive Infl[gen2] (Lative|Ablative)?
+
 LEXICON Infl
 <erg>:[erg]
 <genI>:{gen}[gen]
@@ -6,23 +11,23 @@ LEXICON Infl
 <ins>:д[ins]
 
 LEXICON Essive
-<super><essive>:кьа[super]
-<sub><essive>:лӏ[sub]
-<ad><essive>:гъа[ad]
-<apud><essive>:дой[apud]
-<cum><essive>:гъой[cum]
-<in><essive>:ъ[in]
-<cont><essive>:лъ[cont]
-<poss><essive>:хъа[poss]
+<sup><ess>:кьа[super]
+<sub><ess>:лӏ[sub]
+<ad><ess>:гъа[ad]
+<apud><ess>:дой[apud]
+<cum><ess>:гъой[cum]
+<in><ess>:ъ[in]
+<cont><ess>:лъ[cont]
+<poss><ess>:хъа[poss]
 
 LEXICON Lative
-<lative>:{V}л
+<lat>:{V}л
 
 LEXICON Translative
-<translative>:{C}кьā
+<transl>:{C}кьā
 
 LEXICON Ablative
-<ablative>:{V}с{V2}
+<abl>:{V}с{V2}
 
 LEXICON Directive
 <dir>:дā

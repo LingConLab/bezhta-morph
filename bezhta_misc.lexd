@@ -1,7 +1,7 @@
 PATTERNS
-Conjunctions
-Participles
-Interjections
+Conjunctions [<conj>:]
+Particles [<part>:]
+Interjections [<inter>:]
 
 LEXICON AdpAffixes
 <post>:лабза # вместо, ради
@@ -23,8 +23,8 @@ LEXICON Conjunctions
 вагьалълъобза	#	поэтому
 
 LEXICON ConjClitics
-<conj>:на
-<conj>:наь
+<add>:на
+<add>:наь
 <conj>:ла
 <if>:со
 <conj>:гъас	#	такой, как
@@ -54,14 +54,12 @@ LEXICON PartClitics
 <emph>:āъ
 <emph>:йāъ
 
-LEXICON Participles
+LEXICON Particles
 лабза	#	ради
 бетта	#	да
 ха	#	конечно
 ӣᴴ	#	да
-ало	#	же
 баьгь	#	-ка
-вале	#	же
 вере	#	ну
 гьаᴴ #	а ну
 гьаᴴкъкъа #	-ка
@@ -76,6 +74,7 @@ LEXICON Participles
 эггу	#	разве
 суди	#	либо, -то
 лӏо	#	мол
+эче	# -ка
 
 LEXICON Quotative
 <quot>:лӏо	#	мол
