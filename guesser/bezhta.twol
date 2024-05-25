@@ -67,9 +67,6 @@ C = :Consonants [ :Mods ]*;
 Rules
 
 "vowel dropping in locative forms"
-%>:0 <=> _ ;
- 
-"vowel dropping in locative forms"
 %{и%}:0 <=> _ (%>:) X ; where X in (г х к);
 
 "vowel dropping in locative forms"
@@ -162,28 +159,22 @@ Rules
 о:0 <=> _ %>: б о %{UM%}: .#.  ;
 
 "vowel between two morphemes in verbs" 
-%{L%}:и <=> X (%>:) %{O%}: (%>:) _ л ; where X in C;
-
-"vowel between two morphemes in verbs" 
-%{L%}:и <=> X (%>:) %{O%}: (%>:) _ й ; where X in C;
-
-"zero" 
-%{O%}:0 <=> _;
+%{L%}:и <=> X %>: _ [л | й] ; where X in C;
 
 "handling vowel hiatus in verb paradigms"
-Cx:0 <=> C _ ([ь: | :ь]) (%>:) %{O%}: (%>:) Vowels; 
+Cx:0 <=> C _ ([ь: | :ь]) %>: Vowels; 
 			where Cx in (а о е и)
 			matched;
 			
 "handling vowel hiatus in verb paradigms; umlauts"
-ь:0 <=> [Cx: | :Cx] _ (%>:) %{O%}: (%>:) Vowels; 
+ь:0 <=> [Cx: | :Cx] _ %>: Vowels; 
 			where Cx in (а о е и)
 			matched;
 
 "лI, тI, цI -> ц before ц"
-Cx:ц => _ ӏ: (%{O%}:) (%>:) ц;
+Cx:ц => _ ӏ: %>: ц;
 	where Cx in (т л)
 		matched;
 
 "лI, тI, цI -> ц before ц (ӏ deletion)"
-ӏ:0 => :ц _ (%{O%}:) (%>:) ц;
+ӏ:0 => :ц _ %>: ц;
