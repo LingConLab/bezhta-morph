@@ -1,33 +1,35 @@
 PATTERNS
-AvarBorrowings
-Light
+AvarBorrowings [<cvb>:] ConjClitics?
+Light [<cvb>:] ConjClitics?
 Rogative
-PresentForms_h > (Mood[hyp] | Mood[irr] | Converb[prs,h] > Converb[since,h]) (Quotative > ConjClitics)?
-PresentForms_s > (Mood[hyp] | Mood[irr] | Converb[prs,h] > Converb[since,h]) (Quotative > ConjClitics)?
-ImperativeForms_h > Mood[rog] (Quotative > ConjClitics)?
-ImperativeForms_s > Mood[rog] (Quotative > ConjClitics)?
+PresentForms_h (Mood[hyp] | Mood[irr] | Converb[prs,h] | Converb[since,h])? (Quotative? (ConjClitics | PartClitics)?)?
+PresentForms_s (Mood[hyp] | Mood[irr] | Converb[prs,s] | Converb[since,s])? (Quotative? (ConjClitics | PartClitics)?)?
+ImperativeForms_h Mood[rog]? (Quotative? (ConjClitics | PartClitics)?)?
+ImperativeForms_s Mood[rog]? (Quotative? (ConjClitics | PartClitics)?)?
 
-Stem_h Valency? TAM_h | NonFiniteInfl_h  (Quotative > ConjClitics)?
-Stem_s Valency? TAM_s (Quotative > ConjClitics)?
-Stem_h Valency (Past[l,h] | Past[c,h] (Converb[pfv,h] | Mood[hyp] | Mood[irr])?) | (Present[c,h] (Mood[hyp] | Mood[irr] | Converb[prs,h])?) (Quotative > ConjClitics)?
-Stem_s Valency (Past[l,s] | Past[c,s] (Converb[pfv,s] | Mood[hyp] | Mood[irr])?) | (Present[c,s] (Mood[hyp] | Mood[irr] | Converb[prs,s])?) (Quotative > ConjClitics)?
-Aux (Quotative > ConjClitics)?
-DoInfl
+Stem_h Valency? (Modal Zero)? TAM_h | NonFiniteInfl_h  (Quotative? (ConjClitics | PartClitics)?)?
+Stem_s Valency? (Modal Zero)? TAM_s (Quotative? (ConjClitics | PartClitics)?)?
+Stem_h Valency? Modal Zero (Past[h] (Converb[pfv,h] | Mood[hyp] | Mood[irr])?) | (Present[h] (Mood[hyp] | Mood[irr] | Converb[prs,h])?)
+Stem_s Valency? Modal Zero (Past[s] (Converb[pfv,s] | Mood[hyp] | Mood[irr])?) | (Present[s] (Mood[hyp] | Mood[irr] | Converb[prs,s])?)
+Stem_h Valency (Past[l,h] | Past[c,h] (Converb[pfv,h] | Mood[hyp] | Mood[irr])?) | (Present[c,h] (Mood[hyp] | Mood[irr] | Converb[prs,h])?) (Quotative? (ConjClitics | PartClitics)?)?
+Stem_s Valency (Past[l,s] | Past[c,s] (Converb[pfv,s] | Mood[hyp] | Mood[irr])?) | (Present[c,s] (Mood[hyp] | Mood[irr] | Converb[prs,s])?) (Quotative? (ConjClitics | PartClitics)?)?
+Aux (Quotative? (ConjClitics | PartClitics)?)?
+DoInfl (Quotative? (ConjClitics | PartClitics)?)?
 
-VerbRoot(1)[h,-cl] VerbRoot(2)[h,-cl] [<v>:] Antipassive[h] VerbNumber[h]? Zero Present[v,h] | TAM_h | NonFiniteInfl_h  (Quotative > ConjClitics)?
-VerbRoot(1)[s,-cl] VerbRoot(2)[s,-cl] [<v>:] Antipassive[s] VerbNumber[s]? Zero Present[v,s] | TAM_s  (Quotative > ConjClitics)?
-VerbRoot(1)[h,-cl] VerbRoot(2)[h,-cl] [<v>:] VerbNumber[h] Zero Present[v,h] | TAM_h | NonFiniteInfl_h  (Quotative > ConjClitics)?
-VerbRoot(1)[s,-cl] VerbRoot(2)[s,-cl] [<v>:] VerbNumber[s] Zero Present[v,s] | TAM_s (Quotative > ConjClitics)?
-Class VerbRoot(1)[h,cl] VerbRoot(2)[h,cl] [<v>:] Antipassive[h] Zero Present[v,h] | TAM_h | NonFiniteInfl_h  (Quotative > ConjClitics)?
-ClassPl VerbRoot(1)[h,cl] VerbRoot(2)[h,cl] [<v>:] Antipassive[h]? VerbNumber[h] Zero Present[v,h] | TAM_h | NonFiniteInfl_h  (Quotative > ConjClitics)?
-Class VerbRoot(1)[s,cl] VerbRoot(2)[s,cl] [<v>:] Antipassive[s] Zero Present[s,h] | TAM_s (Quotative > ConjClitics)?
-ClassPl VerbRoot(1)[s,cl] VerbRoot(2)[s,cl] [<v>:] Antipassive[s]? VerbNumber[s] Zero Present[v,s] | TAM_s   (Quotative > ConjClitics)?
+VerbRoot(1)[h,-cl] VerbRoot(2)[h,-cl] [<v>:] Antipassive[h] VerbNumber[h]? Zero Present[v,h] | TAM_h | NonFiniteInfl_h  (Quotative? (ConjClitics | PartClitics)?)?
+VerbRoot(1)[s,-cl] VerbRoot(2)[s,-cl] [<v>:] Antipassive[s] VerbNumber[s]? Zero Present[v,s] | TAM_s  (Quotative? (ConjClitics | PartClitics)?)?
+VerbRoot(1)[h,-cl] VerbRoot(2)[h,-cl] [<v>:] VerbNumber[h] Zero Present[v,h] | TAM_h | NonFiniteInfl_h  (Quotative? (ConjClitics | PartClitics)?)?
+VerbRoot(1)[s,-cl] VerbRoot(2)[s,-cl] [<v>:] VerbNumber[s] Zero Present[v,s] | TAM_s (Quotative? (ConjClitics | PartClitics)?)?
+Class VerbRoot(1)[h,cl] VerbRoot(2)[h,cl] [<v>:] Antipassive[h] Zero Present[v,h] | TAM_h | NonFiniteInfl_h  (Quotative? (ConjClitics | PartClitics)?)?
+ClassPl VerbRoot(1)[h,cl] VerbRoot(2)[h,cl] [<v>:] Antipassive[h]? VerbNumber[h] Zero Present[v,h] | TAM_h | NonFiniteInfl_h  (Quotative? (ConjClitics | PartClitics)?)?
+Class VerbRoot(1)[s,cl] VerbRoot(2)[s,cl] [<v>:] Antipassive[s] Zero Present[s,h] | TAM_s (Quotative? (ConjClitics | PartClitics)?)?
+ClassPl VerbRoot(1)[s,cl] VerbRoot(2)[s,cl] [<v>:] Antipassive[s]? VerbNumber[s] Zero Present[v,s] | TAM_s (Quotative? (ConjClitics | PartClitics)?)?
 
 PATTERN DoInfl
 (Class DoRoot[inf]) | (ClassPl DoRoot[pl] [<pl>:]) [<v>:] (Infinitive[h] (Mood[dub] | Participle[fut] | Converb[inf])?) | Mood[imp,а]
 Class DoRoot[t] | DoRoot[inf] [<v>:] Present[v,h] | Past[v,h]
-Class DoRoot[nfin] NonFiniteInfl_h | Participle[prs,h,-obl] | Participle[obl] (Infl | LocativeInflection)
-ClassPl DoRoot[pl] NonFiniteInfl_h | Participle[prs,h,-obl] | Present[c,h] | Past[c,h]
+Class DoRoot[nfin] | DoRoot[val] [<v>:] Negation[cvb] | NonFiniteInfl_h | Participle[prs,h,-obl] | (Participle[obl] (Infl | LocativeInflection))
+ClassPl DoRoot[pl] [<v>:] NonFiniteInfl_h | Participle[prs,h,-obl] | Present[c,h] | Past[c,h]
 
 PATTERN Valency
 Causative[a] > Causative[b] 
@@ -186,157 +188,157 @@ VerbRootInf(1)[s,0] ClassInfix[s] Antipassive[s]? VerbNumber[s]? VerbRootInf(2)[
 
 
 LEXICON VerbNumber 
-<pl>:а[а,h]
-<pl>:ба[ба,h]
-<pl>:ва[ва,h]
-<pl>:йа[йа,h]
-<pl>:аь[аь,s]
-<pl>:баь[баь,s]
-<pl>:ваь[ваь,s]
+<pl>:>а[а,h]
+<pl>:>ба[ба,h]
+<pl>:>ва[ва,h]
+<pl>:>йа[йа,h]
+<pl>:>аь[аь,s]
+<pl>:>баь[баь,s]
+<pl>:>ваь[ваь,s]
 
 LEXICON Zero # zero morpheme for handling vowel hiatus
 :{O}
 
 LEXICON ClassInfix
-<m>:о[h]
-<f>:и[h,s]
-<nh>:у[h]
-<m>:оь[s]
-<nh>:уь[s]
+<m>:>о>[h]
+<f>:>и>[h,s]
+<nh>:>у>[h]
+<m>:>оь>[s]
+<nh>:>уь>[s]
 
 LEXICON Causative 
-<caus>:{L}л[a]
-<caus>:{L}лл[b]
+<caus>:>{L}л[a]
+<caus>:>{L}лл[b]
 
 LEXICON Antipassive
-<antip>:ла[h]
-<antip>:лаь[s]
-<antip>:да[h]
-<antip>:даь[s]
-<antip>:ва[h]
-<antip>:ваь[s]
-<antip>:а[h]
-<antip>:аь[s]
-<antip>:йа[h]
+<antip>:>ла[h]
+<antip>:>лаь[s]
+<antip>:>да[h]
+<antip>:>даь[s]
+<antip>:>ва[h]
+<antip>:>ваь[s]
+<antip>:>а[h]
+<antip>:>аь[s]
+<antip>:>йа[h]
 
 #---- Tense ----
 LEXICON Past 
-<pst>:{L}йо[h,s,c,v]
-<pst>:ло[l,h]
-<pst>:лоь[l,s]
+<pst>:>{L}йо[h,s,c,v]
+<pst>:>ло[l,h]
+<pst>:>лоь[l,s]
 
 LEXICON Negation
-<neg>:аъ[neg,h]
-<neg>:аьъ[neg,s]
-<neg>:еъ[h,s,loc]
-<neg><pst>:еъеш[pst,h,s]
-<neg><pst>:йъеш[pst,h,s]
-<neg><prs>:аъас[prs,h] 
-<neg><prs>:аьъаьш[prs,s]
-<neg><imp>:ассаъ[imp,h]
-<neg><imp>:ссаъ[imp,h]
-<neg><imp>:аьшшаьъ[imp,s]
-<neg><imp>:шшаьъ[imp,s]
-<neg><pfv.cvb>:ечӏе[cvb,h,s]
-<neg><pfv.cvb>:йчӏе[cvb,h,s]
+<neg>:>аъ[neg,h]
+<neg>:>аьъ[neg,s]
+<neg>:>еъ[h,s,loc]
+<neg><pst>:>еъе>ш[pst,h,s]
+<neg><pst>:>йъе>ш[pst,h,s]
+<neg><prs>:>аъа>с[prs,h] 
+<neg><prs>:>аьъаь>ш[prs,s]
+<neg><imp>:>ассаъ[imp,h]
+<neg><imp>:>ссаъ[imp,h]
+<neg><imp>:>аьшшаьъ[imp,s]
+<neg><imp>:>шшаьъ[imp,s]
+<neg><pfv.cvb>:>ечӏе[cvb,h,s]
+<neg><pfv.cvb>:>йчӏе[cvb,h,s]
 
 LEXICON Present
-<prs>:ца[l,c,h]
-<prs>:чаь[l,c,s]
-<prs>:ча[l,c,s]
-<prs>:с[v,s,h]
-<prs>:ш[v,s,h]
+<prs>:>ца[l,c,h]
+<prs>:>чаь[l,c,s]
+<prs>:>ча[l,c,s]
+<prs>:>с[v,s,h]
+<prs>:>ш[v,s,h]
 
 LEXICON Future
-<fut>:ас[h]
-<fut>:аьш[s]
+<fut>:>ас[h]
+<fut>:>аьш[s]
 
 LEXICON Plusquamperfect
-<ppf>:āгьийо[h]
-<ppf>:āьгьийо[s]
+<ppf>:>āгьийо[h]
+<ppf>:>āьгьийо[s]
 
 #---- Mood ----
 
 LEXICON Mood
-<imp>:а[imp,h,а]
-<imp>:аь[imp,s,аь]
+<imp>:>а[imp,h,а]
+<imp>:>аь[imp,s,аь]
 <imp>:[imp,h,s,0]
-<imp>:и[imp,h,s,и]
-<proh>:āкъа[proh]
-<opt>:акъос[opt]
-<opt>:къос[opt]
-<neg.opt>:акъаъас[opt.neg]
-<neg.opt>:къаъас[opt.neg]
-<rog>:лō[rog]
-<prmI>:ла[prmI,h]
-<prmI>:лаь[prmI,s]
-<prmII>:ъ[prmII]
-<prmIII>:алā[prmIII,h]
-<prmIII>:аьлāь[prmIII,s]
-<cond>:да[cond]
-<irr>:къодā[irr]
-<dub>:лā[dub]
-<dub>:лāъ[dub]
-<dub>:лаъ[dub] # "частица хезитации"
-<hyp>:ле[hyp]
+<imp>:>и[imp,h,s,и]
+<proh>:>āкъа[proh]
+<opt>:>акъос[opt]
+<opt>:>къос[opt]
+<neg.opt>:>акъаъас[opt.neg]
+<neg.opt>:>къаъас[opt.neg]
+<rog>:>лō[rog]
+<prmI>:>ла[prmI,h]
+<prmI>:>лаь[prmI,s]
+<prmII>:>ъ[prmII]
+<prmIII>:>алā[prmIII,h]
+<prmIII>:>аьлāь[prmIII,s]
+<cond>:>да[cond]
+<irr>:>къодā[irr]
+<dub>:>лā[dub]
+<dub>:>лāъ[dub]
+<dub>:>лаъ[dub] # "частица хезитации"
+<hyp>:>ле[hyp]
 
 LEXICON Rogative
 ало<rog><f>:ало
 вале<rog><m>:вале
 
 LEXICON Modal
-<pot>:йлъ
-<pot>:лъ
-<pot>:йцӏ
-<pot>:йчӏ
-<vol>:къа
-<vol>:къо
+<pot>:>йлъ
+<pot>:>лъ
+<pot>:>йцӏ
+<pot>:>йчӏ
+<vol>:>къа
+<vol>:>къо
 
 #---- Non-finite forms ----
 
 LEXICON Infinitive 
-<inf>:ал[h]
-<inf>:аьл[s]
+<inf>:>ал[h]
+<inf>:>аьл[s]
 
 LEXICON Masdar
-<nmlz>:лъи[pst]
-<nmlz>:ни[st]
+<nmlz>:>лъи[pst]
+<nmlz>:>ни[st]
 
 LEXICON Participle
-<prs.ptsp>:цас[h,prs]
-<prs.ptsp><obl>:цала[h,prs,obl]
-<prs.ptsp>:чаьш[s,prs]
-<pst.ptsp>:{L}йо[pst,h,s]
-<pst.ptsp><obl>:{L}йа[pst,h,s,obl]
-<pst.ptsp><obl>:ва[pst,h,s,obl]
-<pst.ptsp><obl>:ла[pst,h,s,obl]
-<fut.ptsp>:лъийо[fut,h,s]
+<prs.ptsp>:>ца>с[h,prs]
+<prs.ptsp><obl>:>ца>ла[h,prs,obl]
+<prs.ptsp>:>чаь>ш[s,prs]
+<pst.ptsp>:>{L}йо[pst,h,s]
+<pst.ptsp><obl>:>{L}йа[pst,h,s,obl]
+<pst.ptsp><obl>:>ва[pst,h,s,obl]
+<pst.ptsp><obl>:>ла[pst,h,s,obl]
+<fut.ptsp>:>лъийо[fut,h,s]
 
 LEXICON Converb
-<pfv.cvb>:на[h,pfv]
-<pfv.cvb>:наь[s,pfv]
-<prs.cvb>:лаъ[h,prs]
-<prs.cvb>:лаьъ[s,prs]
-<simul.cvb>:лъ[h,s,simul]
-<simul.cvb>:лъо[h,s,simul]
-<ant.cvb>:лъол[h,s,ant]
-<cvb>:āлъо[h,s,after]
-<cvb>:āлъол[h,s,before]
-<cvb>:лъегьна[inf,h,s]
-<since.cvb>:с[since,h]
-<since.cvb>:ш[since,s]
-<lim.cvb>:{L}ца[lim,h]
-<lim.cvb>:{L}чаь[lim,s]
-<cvb>:гъа[how,h,s]
-<cvb>:дāл[why,h,s]
-<cvb>:āцо[place,h]
-<cvb>:āьчоь[place,s]
-<cvb>:ъгъа[goal,h,s]
+<pfv.cvb>:>на[h,pfv]
+<pfv.cvb>:>наь[s,pfv]
+<prs.cvb>:>лаъ[h,prs]
+<prs.cvb>:>лаьъ[s,prs]
+<simul.cvb>:>лъ[h,s,simul]
+<simul.cvb>:>лъо[h,s,simul]
+<ant.cvb>:>лъол[h,s,ant]
+<cvb>:>āлъо[h,s,after]
+<cvb>:>āлъол[h,s,before]
+<cvb>:>лъегьна[inf,h,s]
+<since.cvb>:>с[since,h]
+<since.cvb>:>ш[since,s]
+<lim.cvb>:>{L}ца[lim,h]
+<lim.cvb>:>{L}чаь[lim,s]
+<cvb>:>гъа[how,h,s]
+<cvb>:>дāл[why,h,s]
+<cvb>:>āцо[place,h]
+<cvb>:>āьчоь[place,s]
+<cvb>:>ъгъа[goal,h,s]
 
 # ---- Discourse ----
 LEXICON Question
-<q>:д
-<q>:ди
+<q>:>д
+<q>:>ди
 
 
 

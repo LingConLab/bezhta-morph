@@ -1,36 +1,24 @@
 PATTERNS
-(NumRoot[-1,-2] Tens) ((Part Ordinal (OblSuffix[ord] Infl)?) | (CompoundOrdinal CompOrdInfl | CompOrdInfl_Attr))? | Part # порядковые и собирательные 30-90
-NumRoot Hundreds Part? # 100-900
-NumRoot | Ten | Twenty [<abs>:]
-NumRoot-Obl OblSuffix[digit] Infl #склонение по основным падежам 1-10, 20
-NumRoot-Obl[1] OblSuffix[digit] Infl[-genII] Reciprocal #реципрокальное местоимение 
-(NumRoot[-1,-2] Tens) | (NumRoot Hundreds) | Thousand OblSuffix[num] Infl #склонение по основным падежам 30-1000 
+(NumRoot[-1,-2] DeclType[num] Tens) ((Part Ordinal (OblSuffix[ord] Infl)?) | (CompoundOrdinal CompOrdInfl | CompOrdInfl_Attr))? | Part # порядковые и собирательные 30-90
+NumRoot DeclType[num] Hundreds Part? # 100-900
+NumRoot-Obl DeclType[num] OblSuffix[digit] Infl #склонение по основным падежам 1-10, 20
+NumRoot-Obl[1] DeclType[num] OblSuffix[digit] Infl[-genII] Reciprocal #реципрокальное местоимение 
+(NumRoot[-1,-2] DeclType[num] Tens) | (NumRoot DeclType[num] Hundreds) | Thousand OblSuffix[num] Infl #склонение по основным падежам 30-1000 
 
-Ten|Twenty Part 
-NumRoot[-1,-4]|Ten|Twenty (Ordinal (OblSuffix[ord] Infl)?) | (CompoundOrdinal CompOrdInfl | CompOrdInfl_Attr) # порядковые 2-10
-First [<ord>:]
-NumRoot[1] (Part Ordinal (OblSuffix[ord] Infl)?) |  (CompoundOrdinal CompOrdInfl | CompOrdInfl_Attr) # порядковое 1
-NumRoot[4] ([<ord>:ш] Infl?) | (CompoundOrdinal CompOrdInfl | CompOrdInfl_Attr) # порядковое 4
-NumRoot Hundreds (Part Ordinal (OblSuffix[ord] Infl)?) | (CompoundOrdinal CompOrdInfl | CompOrdInfl_Attr) # порядковые 100-900
-(NumRoot Hundreds)? Thousand (Part Ordinal (OblSuffix[ord] Infl)?) | (CompoundOrdinal_2 CompOrdInfl | CompOrdInfl_Attr) # Xсоттысячный
+Ten|Twenty DeclType[num] Part 
+NumRoot[-1,-4]|Ten|Twenty DeclType[num] (Ordinal (OblSuffix[ord] Infl)?) | (CompoundOrdinal CompOrdInfl | CompOrdInfl_Attr) # порядковые 2-10
+NumRoot[1] DeclType[num] (Part Ordinal (OblSuffix[ord] Infl)?) |  (CompoundOrdinal CompOrdInfl | CompOrdInfl_Attr) # порядковое 1
+NumRoot[4] DeclType[num] ([<ord>:ш] Infl?) | (CompoundOrdinal CompOrdInfl | CompOrdInfl_Attr) # порядковое 4
+NumRoot DeclType[num] Hundreds (Part Ordinal (OblSuffix[ord] Infl)?) | (CompoundOrdinal CompOrdInfl | CompOrdInfl_Attr) # порядковые 100-900
+(NumRoot DeclType[num] Hundreds)? Thousand (Part Ordinal (OblSuffix[ord] Infl)?) | (CompoundOrdinal_2 CompOrdInfl | CompOrdInfl_Attr) # Xсоттысячный
 
 
-NumRoot-Mult[-1] Multiple Part # кратные 2-10, 20
-NumRoot-Mult[1] [<mult>:]
-NumRoot[-1,-2] Tens|Hundreds|Thousand Inf Multiple # большие кратные
-NumRoot[1] Hundreds Inf Multiple
-Thousand Inf Multiple 
-NumRoot Part # собирательные
-Distributive[-1] [<dstr>:] [<abs>:а] | (OblSuffix[digit] Infl)  # дистрибутивные (по X)
-
-#пространственная парадигма
-NumRoot-Obl[-1] Essive (Directive|Infl[gen2])? (Lative|Translative|Ablative)?
-NumRoot-Obl[-1] Infl[gen2] Essive (Lative|Ablative)?
-NumRoot-Obl[1] Essive[-sub,-in,-cont] (Directive|Infl[gen2])? (Lative|Translative|Ablative)? Reciprocal?
-NumRoot-Obl[1] OblSuffix[digit] Essive[sub]|Essive[cont] (Directive|Infl[gen2])? (Lative|Translative|Ablative)? Reciprocal?
-NumRoot-Obl[1] OblSuffix[digit] Essive[in] (Directive|Infl[gen2])? (Lative|Translative|Ablative)? Reciprocal?
-NumRoot-Obl[1] Infl[gen2] Essive[-in,-cont] (Lative|Ablative)? Reciprocal?
-NumRoot-Obl[1] OblSuffix[digit] Infl[genII] Essive[in]|Essive[cont] (Lative|Ablative)? Reciprocal?
+NumRoot-Mult[-1] DeclType[num] Multiple Part # кратные 2-10, 20
+NumRoot[-1,-2] DeclType[num] Tens|Hundreds|Thousand Inf Multiple # большие кратные
+NumRoot[1]  DeclType[num]Hundreds Inf Multiple
+Thousand DeclType[num] Inf Multiple 
+NumRoot DeclType[num] Part # собирательные
+Distributive[-1] DeclType[num] [<dstr>:] [<abs>:а] | (OblSuffix[digit] Infl)  # дистрибутивные (по X)
 
 LEXICON NumRoot
 гьоᴴс<num>:гьоᴴс[1]	# один

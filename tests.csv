@@ -92,87 +92,86 @@ analysis,form,mustpass,source,page,description
 лъина<num><hundred><obl><dat>,лъиначӏитӏлал,pass,Comrie&Khalilov&Khalilova,295,датив
 лъина<num><hundred><obl><ins>,лъиначӏитӏлад,pass,Comrie&Khalilov&Khalilova,295,инструменталис
 гьоᴴс<num><sup><ess>,сидкьа,pass,Comrie&Khalilov&Khalilova,296,суперэссив I
-гьоᴴс<num><sup><ess><dir>,сидкьадā,pass,Comrie&Khalilov&Khalilova,296,суперэссив II
+гьоᴴс<num><sup><ess><appr>,сидкьадā,pass,Comrie&Khalilov&Khalilova,296,суперэссив II
 гьоᴴс<num><genII><sup><ess>,сидлакьа,pass,Comrie&Khalilov&Khalilova,296,суперэссив III
 гьоᴴс<num><sup><ess><genII>,сидкьала,pass,Comrie&Khalilov&Khalilova,296,суперэссив IV
 гьоᴴс<num><sup><ess><lat>,сидкьал,pass,Comrie&Khalilov&Khalilova,296,суперлатив I
-гьоᴴс<num><sup><ess><dir><lat>,сидкьадāл,pass,Comrie&Khalilov&Khalilova,296,суперлатив II
+гьоᴴс<num><sup><ess><appr><lat>,сидкьадāл,pass,Comrie&Khalilov&Khalilova,296,суперлатив II
 гьоᴴс<num><genII><sup><ess><lat>,сидлакьал,pass,Comrie&Khalilov&Khalilova,296,суперлатив III
 гьоᴴс<num><sup><ess><genII><lat>,сидкьалал,pass,Comrie&Khalilov&Khalilova,296,суперлатив IV
 гьоᴴс<num><sup><ess><abl>,сидкьас,pass,Comrie&Khalilov&Khalilova,296,супераблатив I
-гьоᴴс<num><sup><ess><dir><abl>,сидкьадāс,pass,Comrie&Khalilov&Khalilova,296,супераблатив II
+гьоᴴс<num><sup><ess><appr><abl>,сидкьадāс,pass,Comrie&Khalilov&Khalilova,296,супераблатив II
 гьоᴴс<num><genII><sup><ess><abl>,сидлакьас,pass,Comrie&Khalilov&Khalilova,296,супераблатив III
 гьоᴴс<num><sup><ess><genII><abl>,сидкьалас,pass,Comrie&Khalilov&Khalilova,296,супераблатив IV
 гьоᴴс<num><sup><ess><transl>,сидкьалкьā,pass,Comrie&Khalilov&Khalilova,296,супертранслатив I
-гьоᴴс<num><sup><ess><dir><transl>,сидкьадāкьā,pass,Comrie&Khalilov&Khalilova,296,супертранслатив II
+гьоᴴс<num><sup><ess><appr><transl>,сидкьадāкьā,pass,Comrie&Khalilov&Khalilova,296,супертранслатив II
 гьоᴴс<num><sup><ess><genII><transl>,сидкьалакьā,pass,Comrie&Khalilov&Khalilova,296,супертранслатив IV
 гьоᴴс<num><obl><sub><ess>,сидилӏ,pass,Comrie&Khalilov&Khalilova,296,субэссив I
-гьоᴴс<num><obl><sub><ess><dir>,сидилӏдā,pass,Comrie&Khalilov&Khalilova,296,субэссив II
+гьоᴴс<num><obl><sub><ess><appr>,сидилӏдā,pass,Comrie&Khalilov&Khalilova,296,субэссив II
 гьоᴴс<num><genII><sub><ess>,сидлалӏ,pass,Comrie&Khalilov&Khalilova,296,субэссив III
 гьоᴴс<num><obl><sub><ess><genII>,сидилӏла,pass,Comrie&Khalilov&Khalilova,296,субэссив IV
 гьоᴴс<num><obl><sub><ess><lat>,сидилӏил,pass,Comrie&Khalilov&Khalilova,296,сублатив I
-гьоᴴс<num><obl><sub><ess><dir><lat>,сидилӏдāл,pass,Comrie&Khalilov&Khalilova,296,сублатив II
+гьоᴴс<num><obl><sub><ess><appr><lat>,сидилӏдāл,pass,Comrie&Khalilov&Khalilova,296,сублатив II
 гьоᴴс<num><genII><sub><ess><lat>,сидлалӏил,pass,Comrie&Khalilov&Khalilova,296,сублатив III
 гьоᴴс<num><obl><sub><ess><genII><lat>,сидилӏлал,pass,Comrie&Khalilov&Khalilova,296,сублатив IV
 гьоᴴс<num><obl><sub><ess><abl>,сидилӏсо,pass,Comrie&Khalilov&Khalilova,296,субаблатив I
-гьоᴴс<num><obl><sub><ess><dir><abl>,сидилӏдāс,pass,Comrie&Khalilov&Khalilova,296,субаблатив II
+гьоᴴс<num><obl><sub><ess><appr><abl>,сидилӏдāс,pass,Comrie&Khalilov&Khalilova,296,субаблатив II
 гьоᴴс<num><obl><sub><ess><transl>,сидилӏкьā,pass,Comrie&Khalilov&Khalilova,296,субтранслатив I
-гьоᴴс<num><obl><sub><ess><dir><transl>,сидилӏдāкьā,pass,Comrie&Khalilov&Khalilova,296,субтранслатив II
+гьоᴴс<num><obl><sub><ess><appr><transl>,сидилӏдāкьā,pass,Comrie&Khalilov&Khalilova,296,субтранслатив II
 гьоᴴс<num><obl><sub><ess><genII><transl>,сидилӏлакьā,pass,Comrie&Khalilov&Khalilova,296,субтранслатив IV
 гьоᴴс<num><ad><ess>,сидгъа,pass,Comrie&Khalilov&Khalilova,296,адэссив I
-гьоᴴс<num><ad><ess><dir>,сидгъадā,pass,Comrie&Khalilov&Khalilova,296,адэссив II
+гьоᴴс<num><ad><ess><appr>,сидгъадā,pass,Comrie&Khalilov&Khalilova,296,адэссив II
 гьоᴴс<num><genII><ad><ess>,сидлагъа,pass,Comrie&Khalilov&Khalilova,296,адэссив III
 гьоᴴс<num><ad><ess><lat>,сидгъал,pass,Comrie&Khalilov&Khalilova,296,адлатив I
-гьоᴴс<num><ad><ess><dir><lat>,сидгъадāл,pass,Comrie&Khalilov&Khalilova,296,адлатив II
+гьоᴴс<num><ad><ess><appr><lat>,сидгъадāл,pass,Comrie&Khalilov&Khalilova,296,адлатив II
 гьоᴴс<num><genII><ad><ess><lat>,сидлагъал,pass,Comrie&Khalilov&Khalilova,296,адлатив III
 гьоᴴс<num><ad><ess><genII><lat>,сидгъалал,pass,Comrie&Khalilov&Khalilova,296,адлатив IV
 гьоᴴс<num><ad><ess><abl>,сидгъас,pass,Comrie&Khalilov&Khalilova,296,адаблатив I
-гьоᴴс<num><ad><ess><dir><abl>,сидгъадāс,pass,Comrie&Khalilov&Khalilova,296,адаблатив II
+гьоᴴс<num><ad><ess><appr><abl>,сидгъадāс,pass,Comrie&Khalilov&Khalilova,296,адаблатив II
 гьоᴴс<num><genII><ad><ess><abl>,сидлагъас,pass,Comrie&Khalilov&Khalilova,296,адаблатив III
 гьоᴴс<num><ad><ess><genII><abl>,сидгъалас,pass,Comrie&Khalilov&Khalilova,296,адаблатив IV
-гьоᴴс<num><ad><ess><transl>,сидгъакьā,pass,Comrie&Khalilov&Khalilova,296,адтранслатив I
-гьоᴴс<num><ad><ess><dir><transl>,сидгъадāкьā,pass,Comrie&Khalilov&Khalilova,296,адтранслатив II
+гьоᴴс<num><ad><ess><appr><transl>,сидгъадāкьā,pass,Comrie&Khalilov&Khalilova,296,адтранслатив II
 гьоᴴс<num><ad><ess><genII><transl>,сидгъалакьā,pass,Comrie&Khalilov&Khalilova,296,адтранслатив IV
 гьоᴴс<num><apud><ess>,сиддой,pass,Comrie&Khalilov&Khalilova,296,апудэссив I
-гьоᴴс<num><apud><ess><dir>,сиддойдā,pass,Comrie&Khalilov&Khalilova,296,апудэссив II
+гьоᴴс<num><apud><ess><appr>,сиддойдā,pass,Comrie&Khalilov&Khalilova,296,апудэссив II
 гьоᴴс<num><apud><ess><lat>,сиддойл,pass,Comrie&Khalilov&Khalilova,296,апудлатив I
-гьоᴴс<num><apud><ess><dir><lat>,сиддойдāл,pass,Comrie&Khalilov&Khalilova,296,апудлатив II
+гьоᴴс<num><apud><ess><appr><lat>,сиддойдāл,pass,Comrie&Khalilov&Khalilova,296,апудлатив II
 гьоᴴс<num><apud><ess><abl>,сиддойс,pass,Comrie&Khalilov&Khalilova,296,апудаблатив I
-гьоᴴс<num><apud><ess><dir><abl>,сиддойдāс,pass,Comrie&Khalilov&Khalilova,296,апудаблатив II
+гьоᴴс<num><apud><ess><appr><abl>,сиддойдāс,pass,Comrie&Khalilov&Khalilova,296,апудаблатив II
 гьоᴴс<num><apud><ess><transl>,сиддойкьā,pass,Comrie&Khalilov&Khalilova,296,апудтранслатив I
-гьоᴴс<num><apud><ess><dir><transl>,сиддойдāкьā,pass,Comrie&Khalilov&Khalilova,296,апудтранслатив II
+гьоᴴс<num><apud><ess><appr><transl>,сиддойдāкьā,pass,Comrie&Khalilov&Khalilova,296,апудтранслатив II
 гьоᴴс<num><cum><ess>,сидгъой,pass,Comrie&Khalilov&Khalilova,296,кумэссив I
-гьоᴴс<num><cum><ess><dir>,сидгъойдā,pass,Comrie&Khalilov&Khalilova,296,кумэссив II
+гьоᴴс<num><cum><ess><appr>,сидгъойдā,pass,Comrie&Khalilov&Khalilova,296,кумэссив II
 гьоᴴс<num><cum><ess><lat>,сидгъойл,pass,Comrie&Khalilov&Khalilova,296,кумлатив I
-гьоᴴс<num><cum><ess><dir><lat>,сидгъойдāл,pass,Comrie&Khalilov&Khalilova,296,кумлатив II
+гьоᴴс<num><cum><ess><appr><lat>,сидгъойдāл,pass,Comrie&Khalilov&Khalilova,296,кумлатив II
 гьоᴴс<num><cum><ess><abl>,сидгъойс,pass,Comrie&Khalilov&Khalilova,296,кумаблатив I
-гьоᴴс<num><cum><ess><dir><abl>,сидгъойдāс,pass,Comrie&Khalilov&Khalilova,296,кумаблатив II
+гьоᴴс<num><cum><ess><appr><abl>,сидгъойдāс,pass,Comrie&Khalilov&Khalilova,296,кумаблатив II
 гьоᴴс<num><cum><ess><transl>,сидгъойкьā,pass,Comrie&Khalilov&Khalilova,296,кумтранслатив I
-гьоᴴс<num><cum><ess><dir><transl>,сидгъойдāкьā,pass,Comrie&Khalilov&Khalilova,296,кумтранслатив II
+гьоᴴс<num><cum><ess><appr><transl>,сидгъойдāкьā,pass,Comrie&Khalilov&Khalilova,296,кумтранслатив II
 гьоᴴс<num><obl><in><ess>,сидиъ,pass,Comrie&Khalilov&Khalilova,296,инэссив I
-гьоᴴс<num><obl><in><ess><dir>,сидиъдā,pass,Comrie&Khalilov&Khalilova,296,инэссив II
+гьоᴴс<num><obl><in><ess><appr>,сидиъдā,pass,Comrie&Khalilov&Khalilova,296,инэссив II
 гьоᴴс<num><obl><in><ess><lat>,сидиъил,pass,Comrie&Khalilov&Khalilova,296,инлатив I
-гьоᴴс<num><obl><in><ess><dir><lat>,сидиъдāл,pass,Comrie&Khalilov&Khalilova,296,инлатив II
+гьоᴴс<num><obl><in><ess><appr><lat>,сидиъдāл,pass,Comrie&Khalilov&Khalilova,296,инлатив II
 гьоᴴс<num><obl><in><ess><abl>,сидиъис,pass,Comrie&Khalilov&Khalilova,296,инаблатив I
-гьоᴴс<num><obl><in><ess><dir><abl>,сидиъдāс,pass,Comrie&Khalilov&Khalilova,296,инаблатив II
+гьоᴴс<num><obl><in><ess><appr><abl>,сидиъдāс,pass,Comrie&Khalilov&Khalilova,296,инаблатив II
 гьоᴴс<num><obl><in><ess><transl>,сидиъкьā,pass,Comrie&Khalilov&Khalilova,296,интранслатив I
-гьоᴴс<num><obl><in><ess><dir><transl>,сидиъдāкьā,pass,Comrie&Khalilov&Khalilova,296,интранслатив II
+гьоᴴс<num><obl><in><ess><appr><transl>,сидиъдāкьā,pass,Comrie&Khalilov&Khalilova,296,интранслатив II
 гьоᴴс<num><obl><cont><ess>,сидилъ,pass,Comrie&Khalilov&Khalilova,296,контэссив I
-гьоᴴс<num><obl><cont><ess><dir>,сидилъдā,pass,Comrie&Khalilov&Khalilova,296,контэссив II
+гьоᴴс<num><obl><cont><ess><appr>,сидилъдā,pass,Comrie&Khalilov&Khalilova,296,контэссив II
 гьоᴴс<num><obl><cont><ess><lat>,сидилъил,pass,Comrie&Khalilov&Khalilova,296,контлатив I
-гьоᴴс<num><obl><cont><ess><dir><lat>,сидилъдāл,pass,Comrie&Khalilov&Khalilova,296,контлатив II
+гьоᴴс<num><obl><cont><ess><appr><lat>,сидилъдāл,pass,Comrie&Khalilov&Khalilova,296,контлатив II
 гьоᴴс<num><obl><cont><ess><abl>,сидилъсо,pass,Comrie&Khalilov&Khalilova,296,контаблатив I
-гьоᴴс<num><obl><cont><ess><dir><abl>,сидилъдāс,pass,Comrie&Khalilov&Khalilova,296,контаблатив II
+гьоᴴс<num><obl><cont><ess><appr><abl>,сидилъдāс,pass,Comrie&Khalilov&Khalilova,296,контаблатив II
 гьоᴴс<num><obl><cont><ess><transl>,сидилъкьā,pass,Comrie&Khalilov&Khalilova,296,конттранслатив I
-гьоᴴс<num><obl><cont><ess><dir><transl>,сидилъдāкьā,pass,Comrie&Khalilov&Khalilova,296,конттранслатив II
+гьоᴴс<num><obl><cont><ess><appr><transl>,сидилъдāкьā,pass,Comrie&Khalilov&Khalilova,296,конттранслатив II
 гьоᴴс<num><poss><ess>,сидхъа,pass,Comrie&Khalilov&Khalilova,296,поссэссив I
-гьоᴴс<num><poss><ess><dir>,сидхъадā,pass,Comrie&Khalilov&Khalilova,296,поссэссив II
+гьоᴴс<num><poss><ess><appr>,сидхъадā,pass,Comrie&Khalilov&Khalilova,296,поссэссив II
 гьоᴴс<num><poss><ess><lat>,сидхъал,pass,Comrie&Khalilov&Khalilova,296,посслатив I
-гьоᴴс<num><poss><ess><dir><lat>,сидхъадāл,pass,Comrie&Khalilov&Khalilova,296,посслатив II
+гьоᴴс<num><poss><ess><appr><lat>,сидхъадāл,pass,Comrie&Khalilov&Khalilova,296,посслатив II
 гьоᴴс<num><poss><ess><abl>,сидхъас,pass,Comrie&Khalilov&Khalilova,296,поссаблатив I
-гьоᴴс<num><poss><ess><dir><abl>,сидхъадāс,pass,Comrie&Khalilov&Khalilova,296,поссаблатив II
+гьоᴴс<num><poss><ess><appr><abl>,сидхъадāс,pass,Comrie&Khalilov&Khalilova,296,поссаблатив II
 гьоᴴс<num><poss><ess><transl>,сидхъалкьā,pass,Comrie&Khalilov&Khalilova,296,посстранслатив I
-гьоᴴс<num><poss><ess><dir><transl>,сидхъадāкьā,pass,Comrie&Khalilov&Khalilova,296,посстранслатив II
+гьоᴴс<num><poss><ess><appr><transl>,сидхъадāкьā,pass,Comrie&Khalilov&Khalilova,296,посстранслатив II
 до<pron><abs>,до,pass,Comrie&Khalilov&Khalilova,300,местоимение "я"
 до<pron><erg>,до,pass,Comrie&Khalilov&Khalilova,300,местоимение "я"
 до<pron><obl><genI>,дие,pass,Comrie&Khalilov&Khalilova,300,местоимение "я"
@@ -185,7 +184,7 @@ analysis,form,mustpass,source,page,description
 до<pron><obl><genII><sup><ess><abl>,дӣлакьас,pass,Comrie&Khalilov&Khalilova,300,местоимение "я"
 до<pron><obl><sup><ess><genII><abl>,дӣкьалас,pass,Comrie&Khalilov&Khalilova,300,местоимение "я"
 до<pron><obl><sup><ess><transl>,дӣкьалкьā,pass,Comrie&Khalilov&Khalilova,300,местоимение "я"
-до<pron><obl><sup><ess><dir><transl>,дӣкьадāкьā,pass,Comrie&Khalilov&Khalilova,300,местоимение "я"
+до<pron><obl><sup><ess><appr><transl>,дӣкьадāкьā,pass,Comrie&Khalilov&Khalilova,300,местоимение "я"
 до<pron><obl><sub><ess><abl>,дӣлӏсо,pass,Comrie&Khalilov&Khalilova,300,местоимение "я"
 ми<pron><abs>,ми,pass,Comrie&Khalilov&Khalilova,300,местоимение "ты"
 ми<pron><erg>,ми,pass,Comrie&Khalilov&Khalilova,300,местоимение "ты"
@@ -205,31 +204,31 @@ analysis,form,mustpass,source,page,description
 миже<pron><obl><genII>,мизола,pass,Comrie&Khalilov&Khalilova,300,местоимение "вы"
 миже<pron><obl><dat>,мизол,pass,Comrie&Khalilov&Khalilova,300,местоимение "вы"
 миже<pron><obl><ins>,мизод,pass,Comrie&Khalilov&Khalilova,300,местоимение "вы"
-гьу<dem><prox><I/IV><abs>,гьуди,pass,Comrie&Khalilov&Khalilova,305,склонение демонстративов
+гьу<dem><prox><I/IV>,гьуди,pass,Comrie&Khalilov&Khalilova,305,склонение демонстративов
 гьу<dem><prox><I/IV><obl><erg>,гьоцо,pass,Comrie&Khalilov&Khalilova,305,склонение демонстративов
 гьу<dem><prox><I/IV><obl><genI>,гьоцос,pass,Comrie&Khalilov&Khalilova,305,склонение демонстративов
 гьу<dem><prox><I/IV><obl><genII>,гьоцола,pass,Comrie&Khalilov&Khalilova,305,склонение демонстративов
 гьу<dem><prox><I/IV><obl><dat>,гьоцол,pass,Comrie&Khalilov&Khalilova,305,склонение демонстративов
 гьу<dem><prox><I/IV><obl><ins>,гьоцод,pass,Comrie&Khalilov&Khalilova,305,склонение демонстративов
-гьу<dem><med><I/IV><abs>,гьули,pass,Comrie&Khalilov&Khalilova,305,склонение демонстративов
+гьу<dem><med><I/IV>,гьули,pass,Comrie&Khalilov&Khalilova,305,склонение демонстративов
 гьу<dem><med><I/IV><obl><erg>,гьолцо,pass,Comrie&Khalilov&Khalilova,305,склонение демонстративов
 гьу<dem><med><I/IV><obl><genI>,гьолцос,pass,Comrie&Khalilov&Khalilova,305,склонение демонстративов
 гьу<dem><med><I/IV><obl><genII>,гьолцола,pass,Comrie&Khalilov&Khalilova,305,склонение демонстративов
 гьу<dem><med><I/IV><obl><dat>,гьолцол,pass,Comrie&Khalilov&Khalilova,305,склонение демонстративов
 гьу<dem><med><I/IV><obl><ins>,гьолцод,pass,Comrie&Khalilov&Khalilova,305,склонение демонстративов
-гьу<dem><dist><I/IV><abs>,гьуги,pass,Comrie&Khalilov&Khalilova,305,склонение демонстративов
+гьу<dem><dist><I/IV>,гьуги,pass,Comrie&Khalilov&Khalilova,305,склонение демонстративов
 гьу<dem><dist><I/IV><obl><erg>,гьогцо,pass,Comrie&Khalilov&Khalilova,305,склонение демонстративов
 гьу<dem><dist><I/IV><obl><genI>,гьогцос,pass,Comrie&Khalilov&Khalilova,305,склонение демонстративов
 гьу<dem><dist><I/IV><obl><genII>,гьогцола,pass,Comrie&Khalilov&Khalilova,305,склонение демонстративов
 гьу<dem><dist><I/IV><obl><dat>,гьогцол,pass,Comrie&Khalilov&Khalilova,305,склонение демонстративов
 гьу<dem><dist><I/IV><obl><ins>,гьогцод,pass,Comrie&Khalilov&Khalilova,305,склонение демонстративов
-гьо<dem><prox><II/III><abs>,гьодо,pass,Comrie&Khalilov&Khalilova,306,склонение демонстративов
+гьо<dem><prox><II/III>,гьодо,pass,Comrie&Khalilov&Khalilova,306,склонение демонстративов
 гьо<dem><prox><II/III><obl><erg>,гьолӏо,pass,Comrie&Khalilov&Khalilova,306,склонение демонстративов
 гьо<dem><prox><II/III><obl><genI>,гьолӏос,pass,Comrie&Khalilov&Khalilova,306,склонение демонстративов
 гьо<dem><prox><II/III><obl><genII>,гьолӏола,pass,Comrie&Khalilov&Khalilova,306,склонение демонстративов
 гьо<dem><prox><II/III><obl><dat>,гьолӏол,pass,Comrie&Khalilov&Khalilova,306,склонение демонстративов
 гьо<dem><prox><II/III><obl><ins>,гьолӏод,pass,Comrie&Khalilov&Khalilova,306,склонение демонстративов
-гьо<dem><med><II/III><abs>,гьоло,pass,Comrie&Khalilov&Khalilova,306,склонение демонстративов
+гьо<dem><med><II/III>,гьоло,pass,Comrie&Khalilov&Khalilova,306,склонение демонстративов
 гьо<dem><med><II/III><obl><erg>,гьоллъо,pass,Comrie&Khalilov&Khalilova,306,склонение демонстративов
 гьо<dem><med><II/III><obl><genI>,гьоллъос,pass,Comrie&Khalilov&Khalilova,306,склонение демонстративов
 гьо<dem><med><II/III><obl><genII>,гьоллъола,pass,Comrie&Khalilov&Khalilova,306,склонение демонстративов
@@ -260,7 +259,7 @@ analysis,form,mustpass,source,page,description
 гьо<dem><dist><II/III><obl.pl><dat>,гьоглол,pass,Comrie&Khalilov&Khalilova,306,склонение демонстративов
 гьо<dem><dist><II/III><obl.pl><ins>,гьоглод,pass,Comrie&Khalilov&Khalilova,306,склонение демонстративов
 гьу<dem><med><I/IV><obl><sup><ess><transl>,гьолцокьалкьā,pass,Comrie&Khalilov&Khalilova,307,склонение демонстративов по локативным падежам
-гьу<dem><med><I/IV><obl><sup><ess><dir><transl>,гьолцокьадāкьā,pass,Comrie&Khalilov&Khalilova,307,склонение демонстративов по локативным падежам
+гьу<dem><med><I/IV><obl><sup><ess><appr><transl>,гьолцокьадāкьā,pass,Comrie&Khalilov&Khalilova,307,склонение демонстративов по локативным падежам
 гьу<dem><med><I/IV><obl><in><ess><abl>,гьолцоъос,pass,Comrie&Khalilov&Khalilova,307,склонение демонстративов по локативным падежам
 гьу<dem><med><I/IV><obl><in><ess><lat>,гьолцоъол,pass,Comrie&Khalilov&Khalilova,307,склонение демонстративов по локативным падежам
 гьу<dem><med><I/IV><obl><cont><ess><lat>,гьолцолъил,pass,Comrie&Khalilov&Khalilova,307,склонение демонстративов по локативным падежам
@@ -432,12 +431,10 @@ analysis,form,mustpass,source,page,description
 <II>укъо<adj><obl.sg><ins>,йукъад,pass,Comrie&Khalilov&Khalilova,289,склонение прилагательных
 аваданаб<adj><obl.sg>,аваданабли,pass,Comrie&Khalilov&Khalilova,289,склонение прилагательных, заимствованных из аварского 
 аваданаб<adj><obl.pl>,аваданабла,pass,Comrie&Khalilov&Khalilova,290,склонение прилагательных, заимствованных из аварского
-боцдий<adj><abs.sg><emp>,боцдийосо,pass,Comrie&Khalilov&Khalilova,291,выделительная форма 
 лӏаьммоь<adj><abs.sg><emp>,лӏаьммоьшоь,pass,Comrie&Khalilov&Khalilova,291,выделительная форма 
 муьш<n><pl><abs>,муьшаь,pass,Comrie&Khalilov&Khalilova,225,множественное число существительных 
 абоц<n><pl><abs>,абоца,pass,Comrie&Khalilov&Khalilova,225,множественное число существительных   
 ичӏей<n><pl><abs>,ичӏейба,pass,Comrie&Khalilov&Khalilova,226,множественное число существительных
-шаьъаьт<n><pl><abs>,шаьъаьтбаь,pass,Comrie&Khalilov&Khalilova,226,множественное число существительных
 тӏиган<n><pl><abs>,тӏигалла,pass,Comrie&Khalilov&Khalilova,227,множественное число существительных
 кид<n><obl><genII>,киббала,pass,Comrie&Khalilov&Khalilova,227,падежная парадигма существительных
 зогъ<v><inf>,зогъал,pass,Comrie&Khalilov&Khalilova,324,глагол
@@ -446,15 +443,14 @@ analysis,form,mustpass,source,page,description
 зогъ<v><imp>,зогъ,pass,Comrie&Khalilov&Khalilova,324,глагол
 оьл<v><inf>,оьлаьл,pass,Comrie&Khalilov&Khalilova,324,глагол
 оьл<v><pst>,оьллоь,pass,Comrie&Khalilov&Khalilova,324,глагол
-го<pl>т<v><inf>,говатал,pass,Comrie&Khalilov&Khalilova,324,глагол
-гот<v><inf>,готал,pass,Comrie&Khalilov&Khalilova,324,глагол
+го<pl>то<v><inf>,говатал,pass,Comrie&Khalilov&Khalilova,324,глагол
+гото<v><inf>,готал,pass,Comrie&Khalilov&Khalilova,324,глагол
 г<m>л<v><inf>,голал,pass,Comrie&Khalilov&Khalilova,324,глагол
-<nhpl>угъо<v><pl><inf>,йувагъал,pass,Comrie&Khalilov&Khalilova,382,глагол
+<nhpl>у<pl>гъо<v><inf>,йувагъал,pass,Comrie&Khalilov&Khalilova,382,глагол
 <II>угъо<v><imp><prmI>,йугъала,pass,Comrie&Khalilov&Khalilova,382,глагол
 <II>угъо<v><imp><prmI><prmII>,йугъалаъ,pass,Comrie&Khalilov&Khalilova,383,глагол
-<II>олъ<v><imp><prmI><prmII>,йолъалаъ,pass,Comrie&Khalilov&Khalilova,383,глагол
-г<nh>л<v><prmIII>,гулалā,pass,Comrie&Khalilov&Khalilova,324,глагол
-зогъ<v><sg><cond>,зогъда,pass,Comrie&Khalilov&Khalilova,384,глагол
+<II>олъо<v><imp><prmI><prmII>,йолъалаъ,pass,Comrie&Khalilov&Khalilova,383,глагол
+зогъ<v><cond>,зогъда,pass,Comrie&Khalilov&Khalilova,384,глагол
 г<nh>л<v><prs><irr>,гулцакъодā,pass,Comrie&Khalilov&Khalilova,385,глагол
 г<nh>л<v><pst><irr>,гуллокъодā,pass,Comrie&Khalilov&Khalilova,385,глагол
 г<nh>л<v><cond><cnc>,гулдана,pass,Comrie&Khalilov&Khalilova,387,глагол
@@ -466,5 +462,5 @@ analysis,form,mustpass,source,page,description
 г<nh>л<v><neg><prs>,гулаъас,pass,Comrie&Khalilov&Khalilova,392,отрицание
 зогъ<v><neg><pfv.cvb>,зогъечӏе,pass,Comrie&Khalilov&Khalilova,392,отрицание
 зогъ<v><pfv.cvb>,зогъна,pass,Comrie&Khalilov&Khalilova,392,деепричастие
-<II>угъо<v><sg><inf>,йугъал,pass,Comrie&Khalilov&Khalilova,,глагол
+<II>угъо<v><inf>,йугъал,pass,Comrie&Khalilov&Khalilova,,глагол
 нисо<v><pst>,нисойо,pass,Comrie&Khalilov&Khalilova,,глагол

@@ -20,21 +20,21 @@ Class AdjRoot[cl] [<adj>:] AdjObl[sg] Infl | LocativeInflection
 ClassPl AdjRoot[cl] [<adj>:] AdjObl[pl,-avar] Infl | LocativeInflection
 
 LEXICON AdjNumber
-<abs.sg>:о{UM}[sg]
-<abs.pl>:а{UM}[pl.a]
-<abs.pl>:вā[pl.a]
-<abs.pl>:ла{UM}[avar]
-<abs.pl>:ā{UM}[pl.aus]
+<abs.sg>:>о{UM}[sg]
+<abs.pl>:>а{UM}[pl.a]
+<abs.pl>:>вā[pl.a]
+<abs.pl>:>ла{UM}[avar]
+<abs.pl>:>ā{UM}[pl.aus]
 
 LEXICON Emphasis
-<emp>:со
-<emp>:шоь
+<emp>:>со
+<emp>:>шоь
 
 LEXICON AdjObl
-<obl.sg>:а{UM}[sg]
-<obl.sg>:ли[avar]
-<obl.pl>:ā{UM}[pl]
-<obl.pl>:ла{UM}[avar,pl]
+<obl.sg>:>а{UM}[sg]
+<obl.sg>:>ли[avar]
+<obl.pl>:>ā{UM}[pl]
+<obl.pl>:>ла{UM}[avar,pl]
 
 LEXICON AdjRoot
 акӏойо:акӏо[suff] # рябой

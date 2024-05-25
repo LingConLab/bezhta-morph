@@ -1,100 +1,19 @@
 PATTERNS
-Personal Quotative? (Question | ConjClitics | PartClitics)?
 Demonstrative Quotative? (Question | ConjClitics | PartClitics)?
-Interrogative Quotative? (Question | ConjClitics | PartClitics)?
-IndefiniteP Quotative? (Question | ConjClitics | PartClitics)?
-ReflexiveP Quotative? (Question | ConjClitics | PartClitics)?
-UniversalP Quotative? (Question | ConjClitics | PartClitics)?
-DistributiveP Quotative? (Question | ConjClitics | PartClitics)?
-OtherPronoun Quotative? (Question | ConjClitics | PartClitics)?
-PronounLocatives Quotative? (Question | ConjClitics | PartClitics)?
-
-#----PERSONAL PRONOUNS-----
-PATTERN Personal
-PersonalPronoun[abs] [<abs>:]
-PersonalPronoun[erg] Infl[erg]
-PersonalPronoun[gen] Infl[gen]
-PersonalPronoun[gen2] Infl[gen2]
-PersonalPronoun[dat] Infl[dat]
-PersonalPronoun[ins] Infl[ins]
-PersonalPronoun[1sg]
-PersonalPronoun[2sg]
-Reciprocal
-
 
 #----DEMONSTRATIVES-----
 PATTERN Demonstrative
-Demonstratives[1,4] Proximity[1,4] 
-Demonstratives[2,3] Proximity[2,3] 
-Demonstratives[1,4] Proximity[1,4] (Essive Directive? (Lative|Ablative|Translative)?)
-Demonstratives[1,4] Proximity[1,4] Infl[gen2] Essive (Lative|Ablative)? # "местоименные наречия"
-Demonstratives[1,4] Proximity[1,4] Essive Infl[gen2] (Lative|Ablative)?
-Demonstratives[2,3] Proximity[2,3] (Essive Directive? (Lative|Ablative|Translative)?)
-Demonstratives[2,3] Proximity[2,3] Infl[gen2] Essive (Lative|Ablative)?
-Demonstratives[2,3] Proximity[2,3]  Essive Infl[gen2] (Lative|Ablative)?
-Demonstratives-Plural-Abs [<abs>:]
-Demonstratives-Obl Infl
-Demonstratives-Plural-Obl Infl
-Demonstratives[1,4] DemonstrativeAdv
-Demonstratives[g] [<h><part>:на] | [<nh><part>:ла]
-PronAdjectives[as] [<adj>:ийо] | ([<adj><obl>:ийа] Infl)
-Demonstratives[1,4] Proximity[1,4] [<conj>:ла] [<as>:с]
-Demonstratives[2,3] Proximity[2,3] [<conj>:ла] [<as>:с]
-
-#----INTERROGATIVES-----
-PATTERN Interrogative
-Interrogatives [<abs>:] (Indefinite IndefiniteParticle?)?
-Interrogatives [<abs>:] Negative (Universal UniversalParticle?)?
-Interrogatives-Obl[what] Infl (Indefinite IndefiniteParticle?)?
-Interrogatives-Obl[what] Infl (Negative (Universal UniversalParticle?)?)?
-Interrogatives-Obl[who] Infl[erg] (Indefinite IndefiniteParticle?)?
-Interrogatives-Obl[who] Infl[erg] (Negative (Universal UniversalParticle?)?)?
-Interrogatives-Obl[who] [<genI>:й] (Negative (Universal UniversalParticle?)?)?
-Interrogatives-Obl[who] [<genI>:йс] Indefinite IndefiniteParticle?
-Interrogatives-Obl[who2] Infl[-erg,-gen] (Indefinite IndefiniteParticle?)?
-Interrogatives-Obl[who2] Infl[-erg,-gen] (Negative (Universal UniversalParticle?)?)?
-
-#----INDEFINITES-----
-PATTERN IndefiniteP
-ExpressiveIndefinite[-cl]|(Class ExpressiveIndefinite[cl])|ExpressiveIndefinite-Pl[-cl]|(ClassPl ExpressiveIndefinite-Pl) [<abs>:]
-ExpressiveIndefinite-Obl[-cl]|(Class ExpressiveIndefinite-Obl[cl])|ExpressiveIndefinite-Pl-Obl[-cl]|(ClassPl ExpressiveIndefinite-Pl-Obl[cl]) Infl
-NegativeIndefinite [<pron>:] [<neg>:]
-
-#----REFLEXIVES----- 
-PATTERN ReflexiveP
-Reflexive ReflexivePlural?
-(PersonalPronoun[abs] [<abs>:]) | Demonstratives Reflexive 
-Reflexive-Obl Infl
-
-#----UNIVERSAL PRONOUNS----- 
-PATTERN UniversalP
-UniversalRoot [<abs>:]
-UniversalRoot-Obl Infl
-
-#----DISTRIBUTIVES----- 
-PATTERN DistributiveP
-DistributiveRoot [<abs>:]
-DistributiveRoot [<obl>:ли] Infl
-
-#----Other----- 
-PATTERN OtherPronoun
-Other [<abs>:] [<add>:на]?
-Other [<abs>:] [<add>:со]?
-OtherObl Infl
-
-#----Locatives-----
-
-PATTERN PronounLocatives
-
-PersonalPronoun[ins]|Demonstratives-Obl|Demonstratives-Plural-Obl|Reflexive-Obl|UniversalRoot-Obl|(DistributiveRoot [<obl>:ли])|ExpressiveIndefinite-Obl[-cl]|(Class ExpressiveIndefinite-Obl[cl])|ExpressiveIndefinite-Pl-Obl[-cl]|(ClassPl ExpressiveIndefinite-Pl-Obl[cl]) Essive Directive? (Lative|Ablative|Translative)?
-
-PersonalPronoun[ins]|Demonstratives-Obl|Demonstratives-Plural-Obl|UniversalRoot-Obl|(DistributiveRoot [<obl>:ли])|ExpressiveIndefinite-Obl[-cl]|(Class ExpressiveIndefinite-Obl[cl])|ExpressiveIndefinite-Pl-Obl[-cl]|(ClassPl ExpressiveIndefinite-Pl-Obl[cl]) Infl[gen2] Essive (Lative|Ablative)?
-PersonalPronoun[ins]|Demonstratives-Obl|Demonstratives-Plural-Obl|UniversalRoot-Obl|(DistributiveRoot [<obl>:ли])|ExpressiveIndefinite-Obl[-cl]|(Class ExpressiveIndefinite-Obl[cl])|ExpressiveIndefinite-Pl-Obl[-cl]|(ClassPl ExpressiveIndefinite-Pl-Obl[cl]) Essive Infl[gen2] (Lative|Ablative)?
-
-Interrogatives-Obl[-who] Essive Directive? (Lative|Ablative|Translative)? (Indefinite IndefiniteParticle?)? | (Negative (Universal UniversalParticle?)?)?
-
-Interrogatives-Obl[-who] Infl[gen2] Essive (Lative|Ablative)? (Indefinite IndefiniteParticle?)? | (Negative (Universal UniversalParticle?)?)?
-Interrogatives-Obl[-who] Essive Infl[gen2] (Lative|Ablative)? (Indefinite IndefiniteParticle?)? | (Negative (Universal UniversalParticle?)?)?
+Demonstratives[1,4] DeclType[dem] Proximity[1,4] 
+Demonstratives[2,3] DeclType[dem] Proximity[2,3] 
+Demonstratives[1,4] DeclType[dem] Proximity[1,4] (Essive Directive? (Lative|Ablative|Translative)?)
+Demonstratives[1,4] DeclType[dem] Proximity[1,4] Infl[gen2] Essive (Lative|Ablative)? # "местоименные наречия"
+Demonstratives[1,4] DeclType[dem] Proximity[1,4] Essive Infl[gen2] (Lative|Ablative)?
+Demonstratives[2,3] DeclType[dem] Proximity[2,3] (Essive Directive? (Lative|Ablative|Translative)?)
+Demonstratives[2,3] DeclType[dem] Proximity[2,3] Infl[gen2] Essive (Lative|Ablative)?
+Demonstratives[2,3] DeclType[dem] Proximity[2,3]  Essive Infl[gen2] (Lative|Ablative)?
+Demonstratives[1,4] DeclType[dem] DemonstrativeAdv
+Demonstratives[1,4] DeclType[dem] Proximity[1,4] [<conj>:ла] [<as>:с]
+Demonstratives[2,3] DeclType[dem] Proximity[2,3] [<conj>:ла] [<as>:с]
 
 LEXICON PersonalPronoun
 до<pron>:до[abs,erg] # я
@@ -128,12 +47,12 @@ LEXICON DemonstrativeAdv
 <dist><adv>:>г>ā
 
 LEXICON Proximity
-<prox><I/IV>:>ди[1,4] # близость к говорящему
-<med><I/IV>:>ли[1,4] # близость к слушающему
-<dist><I/IV>:>ги[1,4] # дальность
-<prox><II/III>:>до[2,3] # близость к говорящему
-<med><II/III>:>ло[2,3] # близость к слушающему
-<dist><II/III>:>го[2,3] # дальность
+<prox><I/IV>:>д>и[1,4] # близость к говорящему
+<med><I/IV>:>л>и[1,4] # близость к слушающему
+<dist><I/IV>:>г>и[1,4] # дальность
+<prox><II/III>:>д>о[2,3] # близость к говорящему
+<med><II/III>:>л>о[2,3] # близость к слушающему
+<dist><II/III>:>г>о[2,3] # дальность
 
 LEXICON Demonstratives-Obl
 гьу<dem><prox><I/IV><obl>:гьоцо
@@ -208,8 +127,8 @@ LEXICON Interrogatives-Obl
 сийо<pron><obl>:лъин{и}[what] #что
 
 LEXICON Reflexive
-<refl>:жуь
-<refl>:зу
+<refl>:>жуь
+<refl>:>зу
 
 LEXICON ReflexivePlural
 <pl>:>вōьл

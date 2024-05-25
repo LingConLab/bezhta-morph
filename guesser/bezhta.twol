@@ -67,6 +67,9 @@ C = :Consonants [ :Mods ]*;
 Rules
 
 "vowel dropping in locative forms"
+%>:0 <=> _ ;
+ 
+"vowel dropping in locative forms"
 %{и%}:0 <=> _ (%>:) X ; where X in (г х к);
 
 "vowel dropping in locative forms"

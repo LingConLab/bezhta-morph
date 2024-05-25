@@ -3,8 +3,14 @@ Essive Directive? (Lative|Ablative|Translative)?
 Infl[gen2] Essive (Lative|Ablative)?
 Essive Infl[gen2] (Lative|Ablative)?
 
+
+LEXICON DeclType
+<TypeVerb>:[v]
+<TypeNoun>:[n]
+<TypeNum>:[num]
+<TypeDem>:[dem]
+
 LEXICON Infl
-<erg>:[erg]
 <genI>:>{gen}[gen]
 <genII>:>ла{UM}[gen2]
 <dat>:>л[dat]

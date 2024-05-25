@@ -1,0 +1,8 @@
+Alphabet
+а ā б в г д ē е ж з и ӣ й к л м н ō о п р с т у ӯ х ц ч ш ъ ь ӏ э ю я %- %>
+%>:0
+;
+Rules
+
+"vowel dropping in locative forms"
+%>:0 <=> _ ;

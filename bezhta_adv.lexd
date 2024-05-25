@@ -1,6 +1,6 @@
 PATTERNS 
 Adverb [<adv>:] > (PartClitics | ConjClitics)
-Adverb [<adv>:] Infl[-erg] | LocativeInflection
+Adverb [<adv>:] Infl[-erg] | [<obl>:ла] LocativeInflection
 
 Class Adverb[cl]
 

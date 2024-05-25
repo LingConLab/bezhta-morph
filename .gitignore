@@ -1,2 +1,4 @@
 *.hfst
 *.hfstol
+*.res
+*.mchar

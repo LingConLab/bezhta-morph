@@ -1,0 +1,55 @@
+PATTERNS
+Noun Quotative? (Question | ConjClitics | PartClitics)?
+
+PATTERN Noun
+#множественное число
+NounRoot[а] [<n>:] DeclType[n] NounPl[а] [<abs>:] | (Noun-Pl-Obl[-ла,-лаь,h] Infl | LocativeInflection)
+NounRoot[аь] [<n>:] DeclType[n] NounPl[аь] [<abs>:] | (Noun-Pl-Obl[-ла,-лаь,s] Infl | LocativeInflection)
+NounRoot[ба] [<n>:] DeclType[n] NounPl[ба] [<abs>:] | (Noun-Pl-Obl[-ла,-лаь,h] Infl | LocativeInflection)
+NounRoot[баь] [<n>:] DeclType[n] NounPl[баь] [<abs>:] | (Noun-Pl-Obl[-ла,-лаь,s] Infl | LocativeInflection)
+NounRoot[ва] [<n>:] DeclType[n] NounPl[ва] [<abs>:] | (Noun-Pl-Obl[-ла,-лаь,h] Infl | LocativeInflection)
+NounRoot[ваь] [<n>:] DeclType[n] NounPl[ваь] [<abs>:] | (Noun-Pl-Obl[-ла,-лаь,s] Infl | LocativeInflection)
+NounRoot[да] [<n>:] DeclType[n] NounPl[да] [<abs>:] | (Noun-Pl-Obl[-ла,-лаь,h] Infl | LocativeInflection)
+NounRoot[даь] [<n>:] DeclType[n] NounPl[даь] [<abs>:] | (Noun-Pl-Obl[-ла,-лаь,s] Infl | LocativeInflection)
+NounRoot[йа] [<n>:] DeclType[n] NounPl[йа] [<abs>:] | (Noun-Pl-Obl[-ла,-лаь,h] Infl | LocativeInflection)
+NounRoot[йаь] [<n>:] DeclType[n] NounPl[йаь] [<abs>:] | (Noun-Pl-Obl[-ла,-лаь,s] Infl | LocativeInflection)
+NounRoot[ла] [<n>:] DeclType[n] NounPl[ла] [<abs>:] | (Noun-Pl-Obl[-ла,-лаь,h] Infl | LocativeInflection)
+NounRoot[лаь] [<n>:] DeclType[n] NounPl[лаь] [<abs>:] | (Noun-Pl-Obl[-ла,-лаь,s] Infl | LocativeInflection)
+NounRoot[бо] [<n>:] DeclType[n] (NounPl[бо] [<abs>:]) | (Noun-Pl-Obl[ла] Infl | LocativeInflection)
+NounRoot[боь] [<n>:] DeclType[n](NounPl[боь] [<abs>:]) | (Noun-Pl-Obl[лаь] Infl | LocativeInflection)
+NounRoot[рол] [<n>:] DeclType[n] NounPl[рол] [<abs>:] | (Noun-Pl-Obl[-ла,-лаь,h] Infl | LocativeInflection)
+NounRoot[ро] [<n>:] DeclType[n] NounPl[ро] [<abs>:] | (Noun-Pl-Obl[-ла,-лаь,h] Infl | LocativeInflection)
+NounRoot[роь] [<n>:] DeclType[n] NounPl[роь] [<abs>:] | (Noun-Pl-Obl[-ла,-лаь,s] Infl | LocativeInflection)
+NounRootLong[ā] [<n>:] DeclType[n] NounPl[ā] [<abs>:] | (Noun-Pl-Obl[no] Infl | LocativeInflection)
+
+#склонение по падежам
+NounRoot-Obl DeclType[n] Infl | LocativeInflection
+SuppletiveRoot [<n>:] DeclType[n] Infl | LocativeInflection
+
+LEXICON NounPl
+<pl>:>а{UM}[а] # аа -> ā held by variants.hfst 
+<pl>:>аь[аь]
+<pl>:>ба{UM}[ба]
+<pl>:>баь[баь]
+<pl>:>ва{UM}[ва]
+<pl>:>ваь[ваь]
+<pl>:>да{UM}[да]
+<pl>:>да[даь]
+<pl>:>йа{UM}[йа]
+<pl>:>йа[йаь]
+<pl>:>ла{UM}[ла]
+<pl>:>лаь[лаь]
+<pl>:>бо{UM}[бо]
+<pl>:>боь[боь]
+<pl>:>ро{UM}л[рол]
+<pl>:>ро{UM}[ро]
+<pl>:>роь[роь]
+<pl>:>ā{UM}[ā]
+
+LEXICON Noun-Pl-Obl
+<obl>:>а[а,h]
+<obl>:>аь[аь,s]
+<obl>:>ла[ла,h]
+<obl>:>лаь[лаь,s]
+<obl>:[no,h,s]
+

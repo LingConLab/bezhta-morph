@@ -3,53 +3,59 @@ Noun Quotative? (Question | ConjClitics | PartClitics)?
 
 PATTERN Noun
 #множественное число
-NounRoot[а] [<n>:] NounPl[а] [<abs>:]
-NounRoot[аь] [<n>:] NounPl[аь] [<abs>:]
-NounRoot[ба] [<n>:] NounPl[ба] [<abs>:]
-NounRoot[баь] [<n>:] NounPl[баь] [<abs>:]
-NounRoot[ва] [<n>:] NounPl[ва] [<abs>:]
-NounRoot[ваь] [<n>:] NounPl[ваь] [<abs>:]
-NounRoot[да] [<n>:] NounPl[да] [<abs>:]
-NounRoot[даь] [<n>:] NounPl[даь] [<abs>:]
-NounRoot[йа] [<n>:] NounPl[йа] [<abs>:]
-NounRoot[йаь] [<n>:] NounPl[йаь] [<abs>:]
-NounRoot[ла] [<n>:] NounPl[ла] [<abs>:]
-NounRoot[лаь] [<n>:] NounPl[лаь] [<abs>:]
+NounRoot[а] [<n>:] NounPl[а] [<abs>:] | (Noun-Pl-Obl[-ла,-лаь,h,-ā] Infl | LocativeInflection)
+NounRoot[аь] [<n>:] NounPl[аь] [<abs>:] | (Noun-Pl-Obl[-ла,-лаь,s,-ā] Infl | LocativeInflection)
+NounRoot[ба] [<n>:] NounPl[ба] [<abs>:] | (Noun-Pl-Obl[-ла,-лаь,h,-ā] Infl | LocativeInflection)
+NounRoot[баь] [<n>:] NounPl[баь] [<abs>:] | (Noun-Pl-Obl[-ла,-лаь,s,-ā] Infl | LocativeInflection)
+NounRoot[ва] [<n>:] NounPl[ва] [<abs>:] | (Noun-Pl-Obl[-ла,-лаь,h,-ā] Infl | LocativeInflection)
+NounRoot[ваь] [<n>:] NounPl[ваь] [<abs>:] | (Noun-Pl-Obl[-ла,-лаь,s,-ā] Infl | LocativeInflection)
+NounRoot[да] [<n>:] NounPl[да] [<abs>:] | (Noun-Pl-Obl[-ла,-лаь,h,-ā] Infl | LocativeInflection)
+NounRoot[даь] [<n>:] NounPl[даь] [<abs>:] | (Noun-Pl-Obl[-ла,-лаь,s,-ā] Infl | LocativeInflection)
+NounRoot[йа] [<n>:] NounPl[йа] [<abs>:] | (Noun-Pl-Obl[-ла,-лаь,h,-ā] Infl | LocativeInflection)
+NounRoot[йаь] [<n>:] NounPl[йаь] [<abs>:] | (Noun-Pl-Obl[-ла,-лаь,s,-ā] Infl | LocativeInflection)
+NounRoot[ла] [<n>:] NounPl[ла] [<abs>:] | (Noun-Pl-Obl[-ла,-лаь,h,-ā] Infl | LocativeInflection)
+NounRoot[лаь] [<n>:] NounPl[лаь] [<abs>:] | (Noun-Pl-Obl[-ла,-лаь,s,-ā] Infl | LocativeInflection)
 NounRoot[бо] [<n>:] NounPl[бо] [<abs>:]
-NounRoot[боь] [<n>:] NounPl[боь] [<abs>:]
-NounRoot[рол] [<n>:] NounPl[рол] [<abs>:]
-NounRoot[ро] [<n>:] NounPl[ро] [<abs>:]
-NounRoot[роь] [<n>:] NounPl[роь] [<abs>:]
-NounRootLong[ā] [<n>:] NounPl[ā] [<abs>:]
+NounRoot[бо] [<n>:]Noun-Pl-Obl[ла] Infl | LocativeInflection
+NounRoot[боь] [<n>:] (NounPl[боь] [<abs>:]) | (Noun-Pl-Obl[лаь] Infl | LocativeInflection)
+NounRoot[рол] [<n>:] NounPl[рол] [<abs>:] | (Noun-Pl-Obl[-ла,-лаь,h,-ā] Infl | LocativeInflection)
+NounRoot[ро] [<n>:] NounPl[ро] [<abs>:] | (Noun-Pl-Obl[-ла,-лаь,h,-ā] Infl | LocativeInflection)
+NounRoot[ро] [<n>:] NounPl[ол] [<abs>:] | (Noun-Pl-Obl[ā] Infl | LocativeInflection)
+NounRoot[роь] [<n>:] NounPl[роь] [<abs>:] | (Noun-Pl-Obl[-ла,-лаь,s,-ā] Infl | LocativeInflection)
+NounRootLong[ā] [<n>:] NounPl[ā] [<abs>:] | (Noun-Pl-Obl[no] Infl | LocativeInflection)
 SuppletiveRoot [<n>:] [<pl>:]
 
 #склонение по падежам
 NounRoot [<n>:] [<abs>:]
 NounRoot-Obl Infl | LocativeInflection
-NounRoot | SuppletiveRoot Noun-Pl-Obl [<n>:] Infl | LocativeInflection
+SuppletiveRoot [<n>:] Infl | LocativeInflection
 
 LEXICON NounPl
-<pl>:а{UM}[а] # КАК СДЕЛАТЬ аа -> ā??
-<pl>:аь[аь]
-<pl>:ба{UM}[ба]
-<pl>:баь[баь]
-<pl>:ва{UM}[ва]
-<pl>:ваь[ваь]
-<pl>:да{UM}[да]
-<pl>:да[даь]
-<pl>:йа{UM}[йа]
-<pl>:йа[йаь]
-<pl>:ла{UM}[ла]
-<pl>:лаь[лаь]
-<pl>:бо{UM}[бо]
-<pl>:боь[боь]
-<pl>:ро{UM}л[рол]
-<pl>:ро{UM}[ро]
-<pl>:роь[роь]
-<pl>:ā{UM}[ā]
+<pl>:>а{UM}[а] 
+<pl>:>аь[аь]
+<pl>:>ба{UM}[ба]
+<pl>:>баь[баь]
+<pl>:>ва{UM}[ва]
+<pl>:>ваь[ваь]
+<pl>:>да{UM}[да]
+<pl>:>да[даь]
+<pl>:>йа{UM}[йа]
+<pl>:>йа[йаь]
+<pl>:>ла{UM}[ла]
+<pl>:>лаь[лаь]
+<pl>:>бо{UM}[бо]
+<pl>:>боь[боь]
+<pl>:>ро{UM}л[рол]
+<pl>:>ро{UM}[ро]
+<pl>:>роь[роь]
+<pl>:>ā{UM}[ā]
+<pl>:>о{UM}л[ол]
 
 LEXICON Noun-Pl-Obl
-<pl><obl>:а{UM}
-<pl><obl>:ла{UM}
-<pl><obl>:
+<obl>:>а[а,h]
+<obl>:>аь[аь,s]
+<obl>:>ла[ла,h]
+<obl>:>лаь[лаь,s]
+<obl>:[no,h,s]
+<obl>:>ā[ā]
 

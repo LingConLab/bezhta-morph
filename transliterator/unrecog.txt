@@ -1,11 +1,11 @@
       1 ^aɣoldas/*aɣoldas$
       1 ^aⁿcoldas/*aⁿcoldas$
       1 ^aⁿłod/*aⁿłod$
-      1 ^baq’olliyo/*baq’olliyo$
-      1 ^baq’oyłiyo/*baq’oyłiyo$
+      1 ^baq'olliyo/*baq'olliyo$
+      1 ^baq'oyłiyo/*baq'oyłiyo$
       1 ^begaayłiyo/*begaayłiyo$
       1 ^bekiyłiyo/*bekiyłiyo$
-      1 ^biq’eyłiyo/*biq’eyłiyo$
+      1 ^biq'eyłiyo/*biq'eyłiyo$
       1 ^biłoqan/*biłoqan$
       1 ^booyliyo/*booyliyo$
       1 ^boylis/*boylis$
@@ -14,10 +14,10 @@
       1 ^buɣoyɬiyo/*buɣoyɬiyo$
       1 ^bäxillis/*bäxillis$
       1 ^bäxiyłiyo/*bäxiyłiyo$
-      1 ^bäƛ’elliyo/*bäƛ’elliyo$
-      1 ^bäƛ’eyłiyo/*bäƛ’eyłiyo$
-      1 ^büč’illiyo/*büč’illiyo$
-      1 ^büč’iyłiyo/*büč’iyłiyo$
+      1 ^bäƛ'elliyo/*bäƛ'elliyo$
+      1 ^bäƛ'eyłiyo/*bäƛ'eyłiyo$
+      1 ^büč'illiyo/*büč'illiyo$
+      1 ^büč'iyłiyo/*büč'iyłiyo$
       1 ^diʔiläd/*diʔiläd$
       1 ^elliyo/*elliyo$
       1 ^eqilca/*eqilca$
@@ -25,12 +25,12 @@
       1 ^eⁿeyo/*eⁿeyo$
       1 ^eⁿšlid/*eⁿšlid$
       1 ^fenlid/*fenlid$
-      1 ^git’illiyo/*git’illiyo$
-      1 ^git’iyłiyo/*git’iyłiyo$
+      1 ^git'illiyo/*git'illiyo$
+      1 ^git'iyłiyo/*git'iyłiyo$
       1 ^gič/*gič$
-      1 ^goc’oqilliyo/*goc’oqilliyo$
-      1 ^goc’oqiyo/*goc’oqiyo$
-      1 ^goc’oqiyłiyo/*goc’oqiyłiyo$
+      1 ^goc'oqilliyo/*goc'oqilliyo$
+      1 ^goc'oqiyo/*goc'oqiyo$
+      1 ^goc'oqiyłiyo/*goc'oqiyłiyo$
       1 ^gulilliyo/*gulilliyo$
       1 ^gulliyo/*gulliyo$
       1 ^guus/*guus$
@@ -42,13 +42,13 @@
       1 ^haʔoyłiyo/*haʔoyłiyo$
       1 ^helelliyo/*helelliyo$
       1 ^heleyłiyo/*heleyłiyo$
-      1 ^hič’egolca/*hič’egolca$
-      1 ^hič’egolilliyo/*hič’egolilliyo$
-      1 ^hič’eyłiyo/*hič’eyłiyo$
-      1 ^iq’lašegolca/*iq’lašegolca$
+      1 ^hič'egolca/*hič'egolca$
+      1 ^hič'egolilliyo/*hič'egolilliyo$
+      1 ^hič'eyłiyo/*hič'eyłiyo$
+      1 ^iq'lašegolca/*iq'lašegolca$
       1 ^is/*is$
+      1 ^ist'iqa/*ist'iqa$
       1 ^istoliyaʎ/*istoliyaʎ$
-      1 ^ist’iqa/*ist’iqa$
       1 ^iyagolca/*iyagolca$
       1 ^iyłiyo/*iyłiyo$
       1 ^išeldas/*išeldas$
@@ -56,19 +56,19 @@
       1 ^iƛellis/*iƛellis$
       1 ^iƛeyłiyo/*iƛeyłiyo$
       1 ^iƛeš/*iƛeš$
+      1 ^k'atuwas/*k'atuwas$
+      1 ^k'isagolca/*k'isagolca$
+      1 ^k'isayłiyo/*k'isayłiyo$
+      1 ^k'iyasas/*k'iyasas$
+      1 ^k'ok'oyłiyo/*k'ok'oyłiyo$
+      1 ^k'äyƛölca/*k'äyƛölca$
+      1 ^k'äyƛöyłiyo/*k'äyƛöyłiyo$
       1 ^kezibooyo/*kezibooyo$
       1 ^keziyaqiyo/*keziyaqiyo$
       1 ^kuntalałla/*kuntalałla$
       1 ^kusuʔiyo/*kusuʔiyo$
       1 ^kusuʔiyłiyo/*kusuʔiyłiyo$
       1 ^kusuʔliyo/*kusuʔliyo$
-      1 ^k’atuwas/*k’atuwas$
-      1 ^k’isagolca/*k’isagolca$
-      1 ^k’isayłiyo/*k’isayłiyo$
-      1 ^k’iyasas/*k’iyasas$
-      1 ^k’ok’oyłiyo/*k’ok’oyłiyo$
-      1 ^k’äyƛölca/*k’äyƛölca$
-      1 ^k’äyƛöyłiyo/*k’äyƛöyłiyo$
       1 ^laladayo/*laladayo$
       1 ^lalaƛolliyo/*lalaƛolliyo$
       1 ^lalaƛoyłiyo/*lalaƛoyłiyo$
@@ -85,7 +85,7 @@
       1 ^micał/*micał$
       1 ^micolliyo/*micolliyo$
       1 ^micoyłiyo/*micoyłiyo$
-      1 ^moq’olliyo/*moq’olliyo$
+      1 ^moq'olliyo/*moq'olliyo$
       1 ^mosolliyo/*mosolliyo$
       1 ^mosoyłiyo/*mosoyłiyo$
       1 ^müč/*müč$
@@ -100,16 +100,16 @@
       1 ^niƛiyłiyo/*niƛiyłiyo$
       1 ^nukogolca/*nukogolca$
       1 ^nukoyłiyo/*nukoyłiyo$
-      1 ^ogic’iyłiyo/*ogic’iyłiyo$
+      1 ^ogic'iyłiyo/*ogic'iyłiyo$
       1 ^olid/*olid$
       1 ^pacpaƛolca/*pacpaƛolca$
       1 ^pacpaƛoldas/*pacpaƛoldas$
       1 ^pacpaƛos/*pacpaƛos$
       1 ^pacpaƛoyo/*pacpaƛoyo$
       1 ^pacpaƛoyłiyo/*pacpaƛoyłiyo$
+      1 ^q'ac'iccad/*q'ac'iccad$
       1 ^qoqoldas/*qoqoldas$
       1 ^qoqoyłiyo/*qoqoyłiyo$
-      1 ^q’ac’iccad/*q’ac’iccad$
       1 ^urɣeziaqiyo/*urɣeziaqiyo$
       1 ^urɣeziaqiyłiyo/*urɣeziaqiyłiyo$
       1 ^urɣezibooyo/*urɣezibooyo$
@@ -134,24 +134,24 @@
       1 ^yeⁿeyliyo/*yeⁿeyliyo$
       1 ^yeⁿyliyo/*yeⁿyliyo$
       1 ^yeⁿyłiyo/*yeⁿyłiyo$
+      1 ^yiq'eldas/*yiq'eldas$
+      1 ^yiq'lašeš/*yiq'lašeš$
       1 ^yiqollo/*yiqollo$
       1 ^yiqoyo/*yiqoyo$
-      1 ^yiq’eldas/*yiq’eldas$
-      1 ^yiq’lašeš/*yiq’lašeš$
       1 ^yiyas/*yiyas$
-      1 ^yogic’iyłiyo/*yogic’iyłiyo$
+      1 ^yogic'iyłiyo/*yogic'iyłiyo$
       1 ^yohdas/*yohdas$
       1 ^yokčildas/*yokčildas$
       1 ^yokčilliyo/*yokčilliyo$
       1 ^yokčiyłiyo/*yokčiyłiyo$
       1 ^yoq/*yoq$
       1 ^yoyliyo/*yoyliyo$
-      1 ^yoⁿq’oyłiyo/*yoⁿq’oyłiyo$
+      1 ^yoⁿq'oyłiyo/*yoⁿq'oyłiyo$
       1 ^yurɣanlid/*yurɣanlid$
       1 ^yuⁿcolliyo/*yuⁿcolliyo$
       1 ^yuⁿcoyliyo/*yuⁿcoyliyo$
       1 ^yäxeyɬiyo/*yäxeyɬiyo$
-      1 ^yäč’k/*yäč’k$
+      1 ^yäč'k/*yäč'k$
       1 ^yüⁿqdagilca/*yüⁿqdagilca$
       1 ^zistuqilca/*zistuqilca$
       1 ^zistuqildas/*zistuqildas$
@@ -163,22 +163,22 @@
       1 ^öhƛöyłiyo/*öhƛöyłiyo$
       1 ^öždiqa/*öždiqa$
       1 ^öždää/*öždää$
-      1 ^üč’das/*üč’das$
-      1 ^č’anad/*č’anad$
-      1 ^č’anaɣoylis/*č’anaɣoylis$
-      1 ^č’anaɣoyłiyo/*č’anaɣoyłiyo$
-      1 ^č’anaɣoš/*č’anaɣoš$
+      1 ^üč'das/*üč'das$
+      1 ^č'anad/*č'anad$
+      1 ^č'anaɣoylis/*č'anaɣoylis$
+      1 ^č'anaɣoyłiyo/*č'anaɣoyłiyo$
+      1 ^č'anaɣoš/*č'anaɣoš$
       1 ^łohdas/*łohdas$
       1 ^łowagilca/*łowagilca$
       1 ^łowas/*łowas$
-      1 ^ɣanq’izibaqiyo/*ɣanq’izibaqiyo$
-      1 ^ɣanq’izibaqiyłiyo/*ɣanq’izibaqiyłiyo$
-      1 ^ɣanq’izibooyo/*ɣanq’izibooyo$
+      1 ^ɣanq'izibaqiyo/*ɣanq'izibaqiyo$
+      1 ^ɣanq'izibaqiyłiyo/*ɣanq'izibaqiyłiyo$
+      1 ^ɣanq'izibooyo/*ɣanq'izibooyo$
       1 ^ɣayƛoldas/*ɣayƛoldas$
       1 ^ɣayƛoyłiyo/*ɣayƛoyłiyo$
       2 ^bišello/*bišello$
-      2 ^biƛ’elliyo/*biƛ’elliyo$
-      2 ^biƛ’eyłiyo/*biƛ’eyłiyo$
+      2 ^biƛ'elliyo/*biƛ'elliyo$
+      2 ^biƛ'eyłiyo/*biƛ'eyłiyo$
       2 ^booyłiyo/*booyłiyo$
       2 ^eldas/*eldas$
       2 ^eyłiyo/*eyłiyo$
@@ -187,33 +187,32 @@
       2 ^guliyłiyo/*guliyłiyo$
       2 ^ildas/*ildas$
       2 ^illiyo/*illiyo$
-      2 ^ist’i/*ist’i$
+      2 ^ist'i/*ist'i$
       2 ^kuntalałco/*kuntalałco$
       2 ^meeyo/*meeyo$
       2 ^mähmädi/*mähmädi$
       2 ^nänilaɬ/*nänilaɬ$
-      2 ^niƛaƛo/*niƛaƛo$
       2 ^uštelli/*uštelli$
-      2 ^yiq’lašeyłiyo/*yiq’lašeyłiyo$
+      2 ^yiq'lašeyłiyo/*yiq'lašeyłiyo$
       2 ^yiyayłiyo/*yiyayłiyo$
       2 ^yurɣan/*yurɣan$
       2 ^yuⁿcoyłiyo/*yuⁿcoyłiyo$
       2 ^łiid/*łiid$
       3 ^aⁿło/*aⁿło$
-      3 ^eⁿƛ’eyłiyo/*eⁿƛ’eyłiyo$
+      3 ^eⁿƛ'eyłiyo/*eⁿƛ'eyłiyo$
       3 ^isilco/*isilco$
       3 ^o/*o$
       3 ^okko/*okko$
       3 ^simindiyala/*simindiyala$
-      3 ^t’äš/*t’äš$
+      3 ^t'äš/*t'äš$
       3 ^yeⁿeyo/*yeⁿeyo$
       3 ^ä/*ä$
       3 ^äƛaʔaš/*äƛaʔaš$
-      3 ^č’an/*č’an$
+      3 ^č'an/*č'an$
       3 ^łiis/*łiis$
       3 ^ʔarab/*ʔarab$
-      4 ^q’ac’icco/*q’ac’icco$
-      4 ^t’eklad/*t’eklad$
+      4 ^q'ac'icco/*q'ac'icco$
+      4 ^t'eklad/*t'eklad$
       4 ^xöxił/*xöxił$
       4 ^äš/*äš$
       4 ^łic/*łic$
@@ -223,5 +222,5 @@
       7 ^xöxƛ/*xöxƛ$
       7 ^łi/*łi$
      12 ^a/*a$
-     18 ^ist’id/*ist’id$
-     24 ^t’ek/*t’ek$
+     18 ^ist'id/*ist'id$
+     24 ^t'ek/*t'ek$

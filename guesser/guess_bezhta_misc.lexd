@@ -1,8 +1,3 @@
-PATTERNS
-Conjunctions [<conj>:]
-Particles [<part>:]
-Interjections [<inter>:]
-
 LEXICON AdpAffixes
 <post>:>лабза # вместо, ради
 <post>:>аъ # кроме
@@ -49,6 +44,7 @@ LEXICON PartClitics
 <part>:>д
 <part>:>ди
 <part>:>ле
+<quot>:>лӏо
 <emph>:>сāъ
 <emph>:>āъ
 <emph>:>йāъ
