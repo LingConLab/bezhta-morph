@@ -5,7 +5,7 @@ The project is distributed under the [GNU General Public License v3.0](https://g
 
 ## Sources
 ### Grammar & dictionary
-The parser follows (Comri et al., 2015) and (Madieva, 1965) descriptions of Bezhta Proper with the lexicon gathered from (Khalilov, 2015) dictionary. The digitized version of the dictionary is available at TBD.
+The parser follows (Comri et al., 2015) and (Madieva, 1965) descriptions of Bezhta Proper with the lexicon gathered from (Khalilov, 2015) dictionary. The digitized version of the dictionary is available at (bezhta_dict)[https://github.com/zadushevno/bezhta_dict].
 ### Texts
 For evaluation, I use Bezhta translation of The Gospel of Luke and The Book of Proverbs, a text from Madieva's grammar (1964) and two annotated texts. 
 The texts are available in the [corpora directory](https://github.com/LingConLab/bezhta-morph/tree/main/coverage/corpus)
