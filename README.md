@@ -77,7 +77,7 @@ make bezhta.tr.analyzer.hfst
 mv bezhta.tr.analyzer.hfst transliterator
 make check-coverage
 ```
-Note: some symbols may be recognized incorrectly, I recommend using `[notebook]` instead. 
+Note: some symbols may be recognized incorrectly, I recommend using [`transliterator_coverage.ipynb`](https://github.com/LingConLab/bezhta-morph/blob/main/transliterator/transliterator_coverage.ipynb) instead. 
 ### Evaluating accuracy
 ```bash
 make bezhta.analyzer.hfstol
@@ -106,4 +106,4 @@ Guessing a token:
 ```bash
 echo 'войъис' bezhta.guesser.hfst
 ```
-For evaluation, see [TBD]
+For evaluation, see [`guesser_evaluation.ipynb`](https://github.com/LingConLab/bezhta-morph/blob/main/guesser/guesser_evaluation.ipynb)
