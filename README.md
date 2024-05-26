@@ -27,26 +27,40 @@ echo 'соралила' | hfst-lookup bezhta.analyzer.hfst
 ```
 
 ### Making the transliterator
+Transliterator allows to transliterate Bezhta words from Cyrillic to Latin script. 
 ```bash
 make cy2lat.transliterator.disam.hfst
 ```
 Transliterate a word: 
 ```bash
 echo 'соралила' | hfst-lookup cy2lat.transliterator.disam.hfst
-
 ```
+
 Build transliterated analyzer: 
 ```bash
 make bezhta.tr.analyzer.hfst
 ```
+
 Look up a word in Latin script: 
 ```bash
 echo 'soralila' | hfst-lookup bezhta.tr.analyzer.hfst
 ```
 
 ### Making the segmenter
-
+The segmenter identifies the morpheme boundaries in the input word. 
+```bash
+make bezhta.segm.hfst
+```
+Segmenting a word:
+```bash
+echo 'нисойо' | hfst-lookup bezhta.segm.hfst
+```
+Result: 
+```
+ нисойо        нисо>йо
+```
 ### Evaluating coverage
+Analyzer:
 ```bash
 make bezhta.analyzer.hfstol
 mv bezhta.analyzer.hfstol coverage
@@ -55,20 +69,41 @@ make check-coverage
 ```
 Additionally, `make-check-unrecog` can be used to get a list of unrecognized tokens. Note that all text files should start with `text-`
 
+Current performance: ~75% naive coverage
+
+Transliterator:
+```bash
+make bezhta.tr.analyzer.hfst
+mv bezhta.tr.analyzer.hfst transliterator
+make check-coverage
+```
+Note: some symbols may be recognized incorrectly, I recommend using `[notebook]` instead. 
 ### Evaluating accuracy
 ```bash
 make bezhta.analyzer.hfstol
 mv bezhta.analyzer.hfstol accuracy
 cd accuracy
 ```
+
 To analyze texts with the parser, use 
 ```bash
 hfst-proc bezhta.analyzer.hfstol text-annotated-1.txt > FILENAME-1.txt
 hfst-proc bezhta.analyzer.hfstol text-annotated-1.txt > FILENAME-2.txt
 ```
+
 Then compute accuracy:
 ```bash
 python3 accuracy.py FILENAME-1.txt text-1-gold.txt
 python3 accuracy.py FILENAME-2.txt text-2-gold.txt
 ```
-### 
+
+### Making the guesser
+```bash
+cd guesser
+make bezhta.guesser.hfst
+```
+Guessing a token:
+```bash
+echo 'войъис' bezhta.guesser.hfst
+```
+For evaluation, see [TBD]
