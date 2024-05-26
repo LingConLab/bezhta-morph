@@ -43,11 +43,10 @@ Alphabet
 	о:0
 	%{L%}:0
 	%{L%}:и
-	
-	%{O%}:0
 	л:ц
 	л:н
 	т:ц
+	т:д
 	ӏ:0
 ;
 
@@ -127,13 +126,13 @@ Rules
 %{UM%}:ь <=> Vowels [:ь | ь:] [(%>:) X (%>:)]+ [ā | а | о | у] _  ; where X in C;
 
 "с --> ш"
-с:ш <=> :ь (%>:) _ ; и _ е ; е: _ е ; а _ е ;
+с:ш <=> :ь (%>:) _ ; и _ (%>:) е: ; е: _ (%>:) е: ; а _ (%>:) е: ; е %>: %{L%}: _ [.#. | %>:];
 
 "ц --> ч"
-ц:ч <=> и _ (ӏ:) е ; е: _ (ӏ:) е ; а _ (ӏ:) е ;
+ц:ч <=> и _ (ӏ:) (%>:) е: ; е: _ (ӏ:) (%>:) е: ; а _ (ӏ:) (%>:) е: ;
 
 "з --> ж"
-з:ж <=> и _ е ; е: _ е ; а _ е ;
+з:ж <=> и _ (%>:) е: ; е: _  (%>:) е: ; а _ (%>:) е: ;
 
 "б --> м before nasalyzed"
 %{N%}:м <=> .#. _ (%>:) Nasalyzed (ь) ᴴ: ;
@@ -155,26 +154,37 @@ Rules
 "л --> н before на" 
 л:н <=>  _ %>: н а; 
 
-"обо -> бо" 
-о:0 <=> _ %>: б о %{UM%}: .#.  ;
+"Vбо -> бо" 
+Cx:0 <=> C _ %>: б о [%{UM%}: | ь:] .#.  ;
+	except 
+		.#. C _ %>: б о %{UM%}: .#.  ;
+			where Cx in (а о е и)
+			matched;
 
 "vowel between two morphemes in verbs" 
-%{L%}:и <=> X %>: _ [л | й] ; where X in C;
+%{L%}:и <=> X %>: _ [л | й | с] ; where X in C;
 
 "handling vowel hiatus in verb paradigms"
-Cx:0 <=> C _ ([ь: | :ь]) %>: Vowels; 
+Cx:0 <=> C _ ([ь: | :ь]) %>: Vowels;
+	except
+		C _ ([ь: | :ь]) %>: и й ā л ӏ е й;
 			where Cx in (а о е и)
-			matched;
-			
+			matched;			
 "handling vowel hiatus in verb paradigms; umlauts"
 ь:0 <=> [Cx: | :Cx] _ %>: Vowels; 
+	except
+		C _ ([ь: | :ь]) %>: и й ā л ӏ е й;
 			where Cx in (а о е и)
-			matched;
+			matched;	
 
 "лI, тI, цI -> ц before ц"
-Cx:ц => _ ӏ: %>: ц;
+Cx:ц <=> _ ӏ: %>: ц;
 	where Cx in (т л)
 		matched;
 
-"лI, тI, цI -> ц before ц (ӏ deletion)"
-ӏ:0 => :ц _ %>: ц;
+"ӏ deletion in assimilations"
+ӏ:0 <=> :ц _ %>: ц; :д _ %>: д; :ч _ %>: ч;
+
+"тI -> д before д"
+т:д <=> _ ӏ: %>: д;
+

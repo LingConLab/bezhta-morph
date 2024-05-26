@@ -8203,12 +8203,17 @@ PresentForms_s (Mood[hyp] | Mood[irr] | Converb[prs,s] | Converb[since,s])? (Quo
 ImperativeForms_h Mood[rog]? (Quotative? (ConjClitics | PartClitics)?)?
 ImperativeForms_s Mood[rog]? (Quotative? (ConjClitics | PartClitics)?)?
 
-Stem_h Valency? (Modal )? TAM_h | NonFiniteInfl_h  (Quotative? (ConjClitics | PartClitics)?)?
-Stem_s Valency? (Modal )? TAM_s (Quotative? (ConjClitics | PartClitics)?)?
-Stem_h Valency? Modal  (Past[h] (Converb[pfv,h] | Mood[hyp] | Mood[irr])?) | (Present[h] (Mood[hyp] | Mood[irr] | Converb[prs,h])?)
-Stem_s Valency? Modal  (Past[s] (Converb[pfv,s] | Mood[hyp] | Mood[irr])?) | (Present[s] (Mood[hyp] | Mood[irr] | Converb[prs,s])?)
-Stem_h Valency (Past[l,h] | Past[c,h] (Converb[pfv,h] | Mood[hyp] | Mood[irr])?) | (Present[c,h] (Mood[hyp] | Mood[irr] | Converb[prs,h])?) (Quotative? (ConjClitics | PartClitics)?)?
-Stem_s Valency (Past[l,s] | Past[c,s] (Converb[pfv,s] | Mood[hyp] | Mood[irr])?) | (Present[c,s] (Mood[hyp] | Mood[irr] | Converb[prs,s])?) (Quotative? (ConjClitics | PartClitics)?)?
+Stem_h TAM_h | NonFiniteInfl_h  (Quotative? (ConjClitics | PartClitics)?)?
+Stem_s TAM_s (Quotative? (ConjClitics | PartClitics)?)?
+
+Stem_h Valency? Modal (Past[h] (Converb[pfv,h] | Mood[hyp] | Mood[irr])?) | (Present[h] (Mood[hyp] | Mood[irr] | Converb[prs,h])?)
+Stem_s Valency? Modal (Past[s] (Converb[pfv,s] | Mood[hyp] | Mood[irr])?) | (Present[s] (Mood[hyp] | Mood[irr] | Converb[prs,s])?)
+
+Stem_h Causative[l] (Past[l,h] | Past[c,h] (Converb[pfv,h] | Mood[hyp] | Mood[irr] | (Masdar[pst] ([<obl>:ла] Infl | LocativeInflection)?) )?) | (Present[c,h] (Mood[hyp] | Mood[irr] | Converb[prs,h])?) | Caus_h (Quotative? (ConjClitics | PartClitics)?)?
+Stem_h Causative[ll] (Past[v,h] (Converb[pfv,h] | Mood[hyp] | Mood[irr] | (Masdar[pst] ([<obl>:ла] Infl | LocativeInflection)?))?) | (Present[v,h] (Mood[hyp] | Mood[irr] | Converb[prs,h])?) | Caus_h (Quotative? (ConjClitics | PartClitics)?)?
+Stem_s Causative[l] (Past[l,s] | Past[c,s] (Converb[pfv,s] | Mood[hyp] | Mood[irr]) | (Masdar[pst] ([<obl>:ла] Infl | LocativeInflection)?)?) | (Present[c,s] (Mood[hyp] | Mood[irr] | Converb[prs,s])?) | Caus_s (Quotative? (ConjClitics | PartClitics)?)?
+Stem_s Causative[ll] (Past[v,s] (Converb[pfv,s] | Mood[hyp] | Mood[irr]) | (Masdar[pst] ([<obl>:ла] Infl | LocativeInflection)?)?) | (Present[v,s] (Mood[hyp] | Mood[irr] | Converb[prs,s])?) | Caus_s (Quotative? (ConjClitics | PartClitics)?)?
+
 Aux (Quotative? (ConjClitics | PartClitics)?)?
 DoInfl (Quotative? (ConjClitics | PartClitics)?)?
 
@@ -8216,6 +8221,7 @@ VerbRoot(1)[h,-cl] VerbRoot(2)[h,-cl] [<v>:] Antipassive[h] VerbNumber[h]?  Pres
 VerbRoot(1)[s,-cl] VerbRoot(2)[s,-cl] [<v>:] Antipassive[s] VerbNumber[s]?  Present[v,s] | TAM_s  (Quotative? (ConjClitics | PartClitics)?)?
 VerbRoot(1)[h,-cl] VerbRoot(2)[h,-cl] [<v>:] VerbNumber[h]  Present[v,h] | TAM_h | NonFiniteInfl_h  (Quotative? (ConjClitics | PartClitics)?)?
 VerbRoot(1)[s,-cl] VerbRoot(2)[s,-cl] [<v>:] VerbNumber[s]  Present[v,s] | TAM_s (Quotative? (ConjClitics | PartClitics)?)?
+
 Class VerbRoot(1)[h,cl] VerbRoot(2)[h,cl] [<v>:] Antipassive[h]  Present[v,h] | TAM_h | NonFiniteInfl_h  (Quotative? (ConjClitics | PartClitics)?)?
 ClassPl VerbRoot(1)[h,cl] VerbRoot(2)[h,cl] [<v>:] Antipassive[h]? VerbNumber[h]  Present[v,h] | TAM_h | NonFiniteInfl_h  (Quotative? (ConjClitics | PartClitics)?)?
 Class VerbRoot(1)[s,cl] VerbRoot(2)[s,cl] [<v>:] Antipassive[s]  Present[s,h] | TAM_s (Quotative? (ConjClitics | PartClitics)?)?
@@ -8228,8 +8234,8 @@ Class DoRoot[nfin] | DoRoot[val] [<v>:] Negation[cvb] | NonFiniteInfl_h | Partic
 ClassPl DoRoot[pl] [<v>:] NonFiniteInfl_h | Participle[prs,h,-obl] | Present[c,h] | Past[c,h]
 
 PATTERN Valency
-Causative[a] > Causative[b] 
-Causative[b] 
+Causative[l]
+Causative[ll] 
 
 PATTERN Stem_h
 VerbRoot(1)[h,-cl] Antipassive[h]? VerbNumber[h]? VerbRoot(2)[h,-cl] [<v>:] 
@@ -8250,25 +8256,54 @@ Past[h] > Mood[hyp] | Mood[irr]
 Negation[neg,h]? Mood[cond] > ([<invc>:л] | [<cnc>:на])
 Participle[prs,h]
 Past[h] Converb[pfv,h] 
-Past[h] Masdar[pst]
+Past[h] Masdar[pst] ([<obl>:ла] Infl | LocativeInflection)?
 Masdar[st]
 Infinitive[h] > Mood[dub]
 Future[h] > Mood[hyp]
 Plusquamperfect[h]
 Mood[proh]
-Mood[opt]
 Mood[opt.neg]
 Infinitive[h] Participle[fut]
 Infinitive[h] Converb[inf]
 Infinitive[h] Converb[goal]
 Participle[pst,obl] Infl | LocativeInflection
 # negation
-Negation[pst,h]
+Negation[pst,h] > (Masdar[pst] ([<obl>:ла] Infl | LocativeInflection)?)
 Negation[prs,h] > Converb[prs,h]
 Negation[neg,h] Present[h] Converb[prs,h] > Converb[since,h]
 Negation[cvb]
 Negation[imp,h]
 Negation[neg] Participle[prs,h]
+Mood[prmIII,h]
+
+PATTERN Caus_h
+Negation[neg,h]? Mood[cond] > ([<invc>:л] | [<cnc>:на])
+Participle[prs,h]
+Masdar[st]
+Infinitive[h] > Mood[dub]
+Future[h] > Mood[hyp]
+Plusquamperfect[h]
+Mood[proh]
+Mood[opt.neg]
+Infinitive[h] Participle[fut]
+Infinitive[h] Converb[inf]
+Infinitive[h] Converb[goal]
+Participle[pst,obl] Infl | LocativeInflection
+# negation
+Negation[pst,h] > (Masdar[pst] ([<obl>:ла] Infl | LocativeInflection)?)
+Negation[prs,h] > Converb[prs,h]
+Negation[neg,h] Present[h] Converb[prs,h] > Converb[since,h]
+Negation[cvb]
+Negation[imp,h]
+Negation[neg] Participle[prs,h]
+Converb[pfv,h]
+Converb[simul,h] | Converb[ant,h]
+Converb[how,h] > Converb[why,h]
+Converb[after,h] | (Converb[before,h] > Translative)
+Converb[place,h] > (Translative | Lative | Ablative)
+Converb[before,h] Negation[loc] Translative
+Masdar[st]
+Mood[prmIII,h]
 
 PATTERN NonFiniteInfl_h
 Converb[pfv,h]
@@ -8287,22 +8322,50 @@ Converb[pfv,s]
 Converb[simul,s] | Converb[ant,s]
 Converb[how,s] > Converb[why,s]
 Past[s] Converb[pfv,s] 
-Past[s] Masdar[pst]
+Past[s] Masdar[pst] ([<obl>:ла] Infl | LocativeInflection)?
 Masdar[st]
 Infinitive[s] > Mood[dub]
 Future[s] > Mood[hyp]
 Plusquamperfect[s]
 Mood[proh]
-Mood[opt]
 Mood[opt.neg]
 Infinitive[s] Participle[fut]
 Infinitive[s] Converb[inf]
 Converb[after,s] | (Converb[before,s] > Translative)
 Converb[place,s] > (Translative | Lative | Ablative)
 Converb[goal]
+Mood[prmIII,s]
 Masdar[st]
 # negation
-Negation[pst,s]
+Negation[pst,s] > (Masdar[pst] ([<obl>:ла] Infl | LocativeInflection)?)
+Negation[prs,s] > Converb[prs,s]
+Negation[neg,s] Present[s] Converb[prs,s] > Converb[since,s]
+Negation[cvb]
+Negation[imp,s]
+Negation[neg] Participle[prs,s]
+Converb[before,s] Negation[loc] Translative
+
+PATTERN Caus_s
+Negation[neg,s]? Mood[cond] > ([<invc>:л] | [<cnc>:на])
+Participle[prs,s]
+Converb[pfv,s]
+Converb[simul,s] | Converb[ant,s]
+Converb[how,s] > Converb[why,s]
+Masdar[st]
+Infinitive[s] > Mood[dub]
+Future[s] > Mood[hyp]
+Plusquamperfect[s]
+Mood[proh]
+Mood[opt.neg]
+Infinitive[s] Participle[fut]
+Infinitive[s] Converb[inf]
+Mood[prmIII,s]
+Converb[after,s] | (Converb[before,s] > Translative)
+Converb[place,s] > (Translative | Lative | Ablative)
+Converb[goal]
+Masdar[st]
+# negation
+Negation[pst,s] > (Masdar[pst] ([<obl>:ла] Infl | LocativeInflection)?)
 Negation[prs,s] > Converb[prs,s]
 Negation[neg,s] Present[s] Converb[prs,s] > Converb[since,s]
 Negation[cvb]
@@ -8401,8 +8464,8 @@ LEXICON ClassInfix
 <nh>:>уь>[s]
 
 LEXICON Causative 
-<caus>:>{L}л[a]
-<caus>:>{L}лл[b]
+<caus>:>{L}л[l]
+<caus>:>{L}лл[ll]
 
 LEXICON Antipassive
 <antip>:>ла[h]
@@ -8430,9 +8493,7 @@ LEXICON Negation
 <neg><prs>:>аъа>с[prs,h] 
 <neg><prs>:>аьъаь>ш[prs,s]
 <neg><imp>:>ассаъ[imp,h]
-<neg><imp>:>ссаъ[imp,h]
 <neg><imp>:>аьшшаьъ[imp,s]
-<neg><imp>:>шшаьъ[imp,s]
 <neg><pfv.cvb>:>ечӏе[cvb,h,s]
 <neg><pfv.cvb>:>йчӏе[cvb,h,s]
 
@@ -8440,8 +8501,8 @@ LEXICON Present
 <prs>:>ца[l,c,h]
 <prs>:>чаь[l,c,s]
 <prs>:>ча[l,c,s]
-<prs>:>с[v,s,h]
-<prs>:>ш[v,s,h]
+<prs>:>{L}с[v,h]
+<prs>:>ш[v,s]
 
 LEXICON Future
 <fut>:>ас[h]
@@ -8459,10 +8520,7 @@ LEXICON Mood
 <imp>:[imp,h,s,0]
 <imp>:>и[imp,h,s,и]
 <proh>:>āкъа[proh]
-<opt>:>акъос[opt]
-<opt>:>къос[opt]
-<neg.opt>:>акъаъас[opt.neg]
-<neg.opt>:>къаъас[opt.neg]
+<vol><neg><prs>:>акъа>ъа>с[opt.neg]
 <rog>:>лō[rog]
 <prmI>:>ла[prmI,h]
 <prmI>:>лаь[prmI,s]
@@ -8485,8 +8543,7 @@ LEXICON Modal
 <pot>:>лъ
 <pot>:>йцӏ
 <pot>:>йчӏ
-<vol>:>къа
-<vol>:>къо
+<vol>:>акъо
 
 #---- Non-finite forms ----
 
