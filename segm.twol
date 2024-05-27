@@ -4,5 +4,5 @@ Alphabet
 ;
 Rules
 
-"vowel dropping in locative forms"
+"drop morpheme boundary"
 %>:0 <=> _ ;
